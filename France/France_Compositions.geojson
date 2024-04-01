@@ -3507,7 +3507,7 @@
 { "type": "Feature", "properties": { "id": 3510, "start": "Le Mont", "stop": "Pointe de Rassassat", "routes": null, "mdiff": 5, "importance": 2, "segments": [ 6627, 6632, 6629, 6631 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3511, "start": "Le Mont", "stop": "Pointe de Ressassat", "routes": null, "mdiff": 6, "importance": 2, "segments": [ 6627, 6630, 6631 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3512, "start": "Le Crot", "stop": "Pointe de sans Bet", "routes": null, "mdiff": 4, "importance": 2, "segments": [ 6633, 6634 ] }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3513, "start": "Le Crot", "stop": "Pointe de Bellegarde", "routes": null, "mdiff": 6, "importance": 2, "segments": [ 6633, 6637, 6635 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3513, "start": "Le Crot", "stop": "Pointe de Bellegarde", "routes": null, "mdiff": 6, "importance": 1, "segments": [ 6633, 6637, 6635 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3514, "start": "Le Crot", "stop": "Les Avoudrues", "routes": null, "mdiff": 9, "importance": 2, "segments": [ 6633, 6637, 6636 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3515, "start": "Plan des Lacs", "stop": "Grand Ruan", "routes": null, "mdiff": 10, "importance": 2, "segments": [ 6638 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3516, "start": "Passy", "stop": "Croix de la Frête", "routes": null, "mdiff": 3, "importance": 2, "segments": [ 6639 ] }, "geometry": null },
@@ -3518,6 +3518,9 @@
 { "type": "Feature", "properties": { "id": 3521, "start": "Pont de Sales", "stop": "Tête de Moëde", "routes": null, "mdiff": 5, "importance": 2, "segments": [ 6644, 6648 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3522, "start": "Les Grandes Platières", "stop": "Pointe d'Anterne", "routes": null, "mdiff": 4, "importance": 2, "segments": [ 6649, 6652, 6655, 6650 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3523, "start": "Pont de Sales", "stop": "Col de la Portette", "routes": null, "mdiff": 5, "importance": 2, "segments": [ 6644, 6645, 6647, 6653, 6652, 6651 ] }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3524, "start": "Le Brévent", "stop": "Aiguille de Carlanon", "routes": null, "mdiff": 1, "importance": 0, "segments": [ 5905, 5908, 5913 ] }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3524, "start": "Le Brévent", "stop": "Aiguille de Carlanon", "routes": null, "mdiff": 1, "importance": 0, "segments": [ 5905, 5908, 5913 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3525, "start": "Chalets", "stop": "Col Pelouse", "routes": null, "mdiff": 7, "importance": 0, "segments": [ 6657, 6660, 6658 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3526, "start": "Chalets", "stop": "Tête de Balacha", "routes": null, "mdiff": 7, "importance": 0, "segments": [ 6657, 6660, 6659 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3527, "start": "Chalets", "stop": "Les verdets", "routes": null, "mdiff": 8, "importance": 0, "segments": [ 6657, 6661 ] }, "geometry": null }
 ]
 }
