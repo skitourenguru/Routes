@@ -29,7 +29,7 @@ END if;
 
 /*************************** Merge segments *************************************/
 
-IF (TG_OP = 'INSERT') or (TG_OP = 'DELETE') THEN
+IF (TG_OP = 'INSERT') THEN
 
 	WITH
 	a AS (SELECT seg, id FROM public.compositions, unnest(segments) AS seg 
