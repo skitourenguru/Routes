@@ -2,7 +2,7 @@
 
 
 /****************   Snap warn. Check if all the following segments are well snap *************************
-*****************       and check if two followings segments are the same id      ************************/
+*****************       and check if two followings segments have the same id      ************************/
 
 WITH a AS (SELECT compositions.id as compoid, ordinality AS num, segid, st_collect(segments.geom) AS geom
 		FROM compositions, UNNEST(segments) WITH ordinality AS segid 

@@ -3200,12 +3200,6 @@
 { "type": "Feature", "properties": { "id": 3494, "start": "Saint-Alban-des-Villards", "stop": "Pic sud du Merlet", "routes": null, "mdiff": null, "segments": "{6603,6604,1658,1669,1700,1979,1978}" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3495, "start": "Saint-Alban-des-Villards", "stop": "Col de Villonet", "routes": null, "mdiff": 3, "segments": "{6603,6604,1658,1669,1700,1657,1698}" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3496, "start": "Le Premier Villard", "stop": "Crêtes des Fouages", "routes": null, "mdiff": 6, "segments": "{6603,6604,1658,1670,1671}" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3497, "start": "Saint-Alban-des-Villards", "stop": "Le Grand Jarpalet", "routes": null, "mdiff": 9, "segments": "{6603,6604,1980}" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3524, "start": "Le Brévent", "stop": "Aiguille de Carlanon", "routes": null, "mdiff": 1, "segments": "{5905,5908,5913}" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3525, "start": "Chalets", "stop": "Col Pelouse", "routes": null, "mdiff": 7, "segments": "{6657,6660,6658}" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3526, "start": "Chalets", "stop": "Tête de Balacha", "routes": null, "mdiff": 7, "segments": "{6657,6660,6659}" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3527, "start": "Chalets", "stop": "Les verdets", "routes": null, "mdiff": 8, "segments": "{6657,6661}" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3528, "start": "dzeioje", "stop": "eznze", "routes": null, "mdiff": null, "segments": "{6664,6665}" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3529, "start": "dozeij", "stop": "dzeknez", "routes": null, "mdiff": null, "segments": { } }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3497, "start": "Saint-Alban-des-Villards", "stop": "Le Grand Jarpalet", "routes": null, "mdiff": 9, "segments": "{6603,6604,1980}" }, "geometry": null }
 ]
 }

@@ -19,9 +19,9 @@ head = repo.head.name
 if head == "refs/heads/main":
     
     statement = """
-        SELECT id, start, stop, segments::text 
+        SELECT id, start, stop, routes, mdiff, segments::text 
         FROM compositions
-        WHERE importance='0' 
+        WHERE importance='0' AND NOT segments = '{}'
         ORDER BY id
     """
 
