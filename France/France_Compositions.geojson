@@ -3507,7 +3507,7 @@
 { "type": "Feature", "properties": { "id": 3510, "start": "Le Mont", "stop": "Pointe de Rassassat", "routes": null, "mdiff": 5, "importance": 2, "segments": [ 6627, 6632, 6629, 6631 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3511, "start": "Le Mont", "stop": "Pointe de Ressassat", "routes": null, "mdiff": 6, "importance": 2, "segments": [ 6627, 6630, 6631 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3512, "start": "Le Crot", "stop": "Pointe de sans Bet", "routes": null, "mdiff": 4, "importance": 2, "segments": [ 6633, 6634 ] }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3513, "start": "Le Crot", "stop": "Pointe de Bellegarde", "routes": null, "mdiff": 6, "importance": 1, "segments": [ 6633, 6637, 6635 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3513, "start": "Le Crot", "stop": "Pointe de Bellegarde", "routes": null, "mdiff": 6, "importance": 2, "segments": [ 6633, 6637, 6635 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3514, "start": "Le Crot", "stop": "Les Avoudrues", "routes": null, "mdiff": 9, "importance": 2, "segments": [ 6633, 6637, 6636 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3515, "start": "Plan des Lacs", "stop": "Grand Ruan", "routes": null, "mdiff": 10, "importance": 2, "segments": [ 6638 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3516, "start": "Passy", "stop": "Croix de la Frête", "routes": null, "mdiff": 3, "importance": 2, "segments": [ 6639 ] }, "geometry": null },
