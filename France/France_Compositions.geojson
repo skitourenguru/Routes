@@ -1728,9 +1728,9 @@
 { "type": "Feature", "properties": { "id": 1728, "start": "Mazoirs", "stop": "Oreille du Loup", "routes": null, "mdiff": 8, "importance": 0, "segments": [ 2687 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1729, "start": "Rivier d'Ornon", "stop": "La Pyramide d'Ornon", "routes": null, "mdiff": 8, "importance": 0, "segments": [ 2688 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1730, "start": "Grenonière", "stop": "Le Taillefer", "routes": null, "mdiff": 6, "importance": 0, "segments": [ 2678, 3012, 2679, 2719, 2722, 2901, 2904, 2832 ] }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 1731, "start": "Grenonière", "stop": "Grand Galbert", "routes": null, "mdiff": 4, "importance": 0, "segments": [ 2678, 3012, 2709, 2875 ] }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 1732, "start": "Oulles", "stop": "Grand Galbert", "routes": null, "mdiff": 6, "importance": 0, "segments": [ 2677 ] }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 1733, "start": "Poursollet", "stop": "Grand Galbert", "routes": null, "mdiff": 3, "importance": 0, "segments": [ 2682, 2719, 2720, 2875 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 1731, "start": "Grenonière", "stop": "Grand Galbert", "routes": null, "mdiff": 4, "importance": 0, "segments": [ 2678, 3012, 2709, 2875, 6658, 6659 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 1732, "start": "Oulles", "stop": "Grand Galbert", "routes": null, "mdiff": 6, "importance": 0, "segments": [ 2677, 6659 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 1733, "start": "Poursollet", "stop": "Grand Galbert", "routes": null, "mdiff": 3, "importance": 0, "segments": [ 2682, 2719, 2720, 2875, 6658, 6659 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1734, "start": "Grenonière", "stop": "Le Taillefer", "routes": null, "mdiff": 6, "importance": 0, "segments": [ 2678, 3012, 2679, 2719, 2722, 2899, 2912, 2900, 2898, 2832 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1735, "start": "Grenonière", "stop": "La Pyramide d’Ornon", "routes": null, "mdiff": 0, "importance": 0, "segments": [ 2678, 3012, 2679, 2719, 2722, 2899, 2911, 2908 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1736, "start": "La Morte", "stop": "Crête de Brouffier", "routes": null, "mdiff": 3, "importance": 0, "segments": [ 2683, 2680 ] }, "geometry": null },
@@ -3515,8 +3515,10 @@
 { "type": "Feature", "properties": { "id": 3518, "start": "Salvagny", "stop": "Frêtes de Villy", "routes": null, "mdiff": 4, "importance": 2, "segments": [ 6640, 6642 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3519, "start": "Pont de Sales", "stop": "Pointe de la Mitraille", "routes": null, "mdiff": 6, "importance": 2, "segments": [ 6644, 6645, 6647, 6654, 6650 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3520, "start": "Pont de Sales", "stop": "Pointe de Sales", "routes": null, "mdiff": 6, "importance": 2, "segments": [ 6644, 6645, 6646 ] }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3521, "start": "Pont de Sales", "stop": "Tête de Moëde", "routes": null, "mdiff": 5, "importance": 2, "segments": [ 6644, 6648 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3521, "start": "Pont de Sales", "stop": "Tête de Moëde", "routes": null, "mdiff": 5, "importance": 2, "segments": [ 6644, 6648, 6660 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3522, "start": "Les Grandes Platières", "stop": "Pointe d'Anterne", "routes": null, "mdiff": 4, "importance": 2, "segments": [ 6649, 6652, 6655, 6650 ] }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3523, "start": "Pont de Sales", "stop": "Col de la Portette", "routes": null, "mdiff": 5, "importance": 2, "segments": [ 6644, 6645, 6647, 6653, 6652, 6651 ] }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3523, "start": "Pont de Sales", "stop": "Col de la Portette", "routes": null, "mdiff": 5, "importance": 2, "segments": [ 6644, 6645, 6647, 6653, 6652, 6651 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3524, "start": "Oulles", "stop": "Le Grand Galbert", "routes": null, "mdiff": 4, "importance": 0, "segments": [ 6657, 6658, 6659 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3525, "start": "Plaine Joux", "stop": "Tête de Moëde", "routes": null, "mdiff": 4, "importance": 2, "segments": [ 6656, 6660 ] }, "geometry": null }
 ]
 }
