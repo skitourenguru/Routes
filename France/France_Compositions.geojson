@@ -3519,6 +3519,8 @@
 { "type": "Feature", "properties": { "id": 3522, "start": "Les Grandes Platières", "stop": "Pointe d'Anterne", "routes": null, "mdiff": 4, "importance": 2, "segments": [ 6649, 6652, 6655, 6650 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3523, "start": "Pont de Sales", "stop": "Col de la Portette", "routes": null, "mdiff": 5, "importance": 2, "segments": [ 6644, 6645, 6647, 6653, 6652, 6651 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3524, "start": "Oulles", "stop": "Le Grand Galbert", "routes": null, "mdiff": 4, "importance": 0, "segments": [ 6657, 6658, 6659 ] }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3525, "start": "Plaine Joux", "stop": "Tête de Moëde", "routes": null, "mdiff": 4, "importance": 2, "segments": [ 6656, 6660 ] }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3525, "start": "Plaine Joux", "stop": "Tête de Moëde", "routes": null, "mdiff": 4, "importance": 2, "segments": [ 6656, 6663, 6662, 6660 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3526, "start": "Plaine Joux", "stop": "Pointe Noire de Pormenaz", "routes": null, "mdiff": 5, "importance": 2, "segments": [ 6656, 6661, 6665 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3527, "start": "Plaine Joux", "stop": "Pointe Noire de Pormenaz", "routes": null, "mdiff": 7, "importance": 2, "segments": [ 6656, 6664, 6665 ] }, "geometry": null }
 ]
 }
