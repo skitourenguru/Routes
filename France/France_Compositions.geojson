@@ -167,7 +167,7 @@
 { "type": "Feature", "properties": { "id": 163, "start": "La Chèvrerie", "stop": "Haute Pointe", "routes": null, "mdiff": 4, "importance": 2, "segments": [ 6445, 6456, 6458, 205, 843, 6504, 6459 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 164, "start": "La Chèvrerie", "stop": "Haut de la Cheminée", "routes": null, "mdiff": 6, "importance": 2, "segments": [ 6439, 6441, 6461, 6427 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 165, "start": "La Chèvrerie", "stop": "Col Ratti", "routes": null, "mdiff": 6, "importance": 2, "segments": [ 6439, 6441, 6461, 6427, 6424, 6425, 6314 ] }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 166, "start": "Chez Béroud", "stop": "Le Môle", "routes": null, "mdiff": null, "importance": 2, "segments": [ 1446 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 166, "start": "Chez Béroud", "stop": "Le Môle", "routes": null, "mdiff": 4, "importance": 2, "segments": [ 1446, 6672, 6674, 6677 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 167, "start": "Les Esserts", "stop": "Mont Billiat", "routes": null, "mdiff": 5, "importance": 2, "segments": [ 6428 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 168, "start": "Les Combes", "stop": "La Belle Étoile", "routes": null, "mdiff": 6, "importance": 0, "segments": [ 35 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 169, "start": "Marthod", "stop": "Rocher Prani", "routes": null, "mdiff": 5, "importance": 0, "segments": [ 32, 31 ] }, "geometry": null },
@@ -3522,6 +3522,10 @@
 { "type": "Feature", "properties": { "id": 3525, "start": "Plaine Joux", "stop": "Tête de Moëde", "routes": null, "mdiff": 4, "importance": 2, "segments": [ 6656, 6663, 6662, 6660 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3526, "start": "Plaine Joux", "stop": "Pointe Noire de Pormenaz", "routes": null, "mdiff": 5, "importance": 2, "segments": [ 6656, 6663, 6661, 6668, 6665, 6667 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3527, "start": "Plaine Joux", "stop": "Pointe Noire de Pormenaz", "routes": null, "mdiff": 7, "importance": 2, "segments": [ 6656, 6664, 6665, 6667 ] }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3528, "start": "Plaine Joux", "stop": "Pointe Noire de Pormenaz", "routes": null, "mdiff": 5, "importance": 2, "segments": [ 6656, 6663, 6666, 6667 ] }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3528, "start": "Plaine Joux", "stop": "Pointe Noire de Pormenaz", "routes": null, "mdiff": 5, "importance": 2, "segments": [ 6656, 6663, 6666, 6667 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3529, "start": "Chez Béroud", "stop": "Le Môle", "routes": null, "mdiff": 4, "importance": 2, "segments": [ 1446, 6671, 6673 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3530, "start": "Route de Chargieux", "stop": "Le Môle", "routes": null, "mdiff": 4, "importance": 0, "segments": [ 6669, 6673 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3531, "start": "Les Pablas", "stop": "Le Môle", "routes": null, "mdiff": 4, "importance": 0, "segments": [ 6670, 6676, 6674, 6677 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3532, "start": "Les Pablas", "stop": "Le Môle", "routes": null, "mdiff": 7, "importance": 0, "segments": [ 6670, 6675, 6677 ] }, "geometry": null }
 ]
 }
