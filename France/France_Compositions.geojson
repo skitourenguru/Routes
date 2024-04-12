@@ -3528,7 +3528,9 @@
 { "type": "Feature", "properties": { "id": 3531, "start": "Les Pablas", "stop": "Le Môle", "routes": null, "mdiff": 4, "importance": 0, "segments": [ 6670, 6676, 6674, 6677 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3532, "start": "Les Pablas", "stop": "Le Môle", "routes": null, "mdiff": 7, "importance": 0, "segments": [ 6670, 6675, 6677 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3533, "start": "Les Grandes Platières", "stop": "Tête de l'Âne", "routes": null, "mdiff": 6, "importance": 0, "segments": [ 6649, 6652, 6655, 6650, 6678 ] }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3534, "start": "Les Grandes Platières", "stop": "Tête des Lindars", "routes": null, "mdiff": 2, "importance": 2, "segments": [ 6680, 6682 ] }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3535, "start": "Les Grandes Platières", "stop": "Col de la Portette", "routes": null, "mdiff": 4, "importance": 2, "segments": [ 6680, 6681, 6685 ] }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3534, "start": "Les Grandes Platières", "stop": "Tête des Lindars", "routes": null, "mdiff": 2, "importance": 0, "segments": [ 6680, 6684, 6685, 6687, 6682 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3535, "start": "Les Grandes Platières", "stop": "Col de la Portette", "routes": null, "mdiff": 4, "importance": 0, "segments": [ 6680, 6681, 6685, 6687 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3536, "start": "Les Grandes Platières", "stop": "Le Sautet", "routes": null, "mdiff": 7, "importance": 0, "segments": [ 6680, 6684, 6683 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3537, "start": "Les Grandes Platières", "stop": "Les Grandes Platières", "routes": null, "mdiff": 4, "importance": 0, "segments": [ 6680, 6684, 6685, 6686 ] }, "geometry": null }
 ]
 }
