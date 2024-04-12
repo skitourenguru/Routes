@@ -113,7 +113,7 @@
 { "type": "Feature", "properties": { "id": 109, "start": "La Lanche", "stop": "Pointe de la Croix", "routes": null, "mdiff": 4, "importance": 0, "segments": [ 6246, 6248, 6251, 6252, 6262, 6249 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 110, "start": "La Lanche", "stop": "Pointe de la Croix", "routes": null, "mdiff": 6, "importance": 0, "segments": [ 6246, 6248, 6250, 6252, 6262, 6249 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 111, "start": "La Lanche", "stop": "Pointe de la Croix", "routes": null, "mdiff": 8, "importance": 0, "segments": [ 6246, 6247, 6249 ] }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 112, "start": "Col du Corbier", "stop": "Mont Ouzon ", "routes": null, "mdiff": 3, "importance": 0, "segments": [ 6253, 6257, 6258 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 112, "start": "Col du Corbier", "stop": "Mont Ouzon ", "routes": null, "mdiff": 3, "importance": 0, "segments": [ 6253, 6257, 6258, 6702 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 113, "start": "Col du Corbier", "stop": "Sur Gémet", "routes": null, "mdiff": 3, "importance": 0, "segments": [ 6253, 6257, 6255, 6254 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 114, "start": "Col du Corbier", "stop": "Sur Gémet", "routes": null, "mdiff": 3, "importance": 0, "segments": [ 6253, 6256, 6254 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 115, "start": "Les Onchets", "stop": "Pointe de la Croix", "routes": null, "mdiff": 1, "importance": 0, "segments": [ 6259, 6261 ] }, "geometry": null },
@@ -3532,9 +3532,12 @@
 { "type": "Feature", "properties": { "id": 3535, "start": "Les Grandes Platières", "stop": "Col de la Portette", "routes": null, "mdiff": 4, "importance": 0, "segments": [ 6680, 6694, 6681, 6685, 6687, 6693 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3536, "start": "Les Grandes Platières", "stop": "Le Sautet", "routes": null, "mdiff": 7, "importance": 0, "segments": [ 6680, 6694, 6684, 6683 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3537, "start": "Les Grandes Platières", "stop": "Tête des Lindars", "routes": null, "mdiff": 4, "importance": 0, "segments": [ 6691, 6686, 6685, 6681, 6682 ] }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3538, "start": "Les Grandes Platières", "stop": "Col de la Portette", "routes": null, "mdiff": 3, "importance": 2, "segments": [ 6649, 6689, 6690 ] }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3539, "start": "Les Grandes Platières", "stop": "Col de la Portette", "routes": null, "mdiff": 5, "importance": 2, "segments": [ 6691, 6692, 6693 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3538, "start": "Les Grandes Platières", "stop": "Col de la Portette", "routes": null, "mdiff": 3, "importance": 0, "segments": [ 6649, 6689, 6690 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3539, "start": "Les Grandes Platières", "stop": "Col de la Portette", "routes": null, "mdiff": 5, "importance": 0, "segments": [ 6691, 6692, 6693 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3540, "start": "Flaine", "stop": "Chapeau Gaspard", "routes": null, "mdiff": 8, "importance": 0, "segments": [ 6695 ] }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3541, "start": "Bay", "stop": "Aiguille de Varan", "routes": null, "mdiff": 9, "importance": 2, "segments": [ 6696 ] }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3541, "start": "Bay", "stop": "Aiguille de Varan", "routes": null, "mdiff": 9, "importance": 0, "segments": [ 6696 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3542, "start": "Nicodex", "stop": "Arête des Aiguillettes", "routes": null, "mdiff": 2, "importance": 0, "segments": [ 6697, 6701 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3543, "start": "Les Glaciers", "stop": "Arête des Aiguillettes", "routes": null, "mdiff": 3, "importance": 0, "segments": [ 6698, 6699, 6701 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3544, "start": "Les Glaciers", "stop": "Mont Ouzon", "routes": null, "mdiff": 5, "importance": 0, "segments": [ 6698, 6700, 6702 ] }, "geometry": null }
 ]
 }
