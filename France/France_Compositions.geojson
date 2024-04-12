@@ -3516,8 +3516,8 @@
 { "type": "Feature", "properties": { "id": 3519, "start": "Pont de Sales", "stop": "Pointe de la Mitraille", "routes": null, "mdiff": 6, "importance": 0, "segments": [ 6644, 6645, 6647, 6654, 6650, 6679 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3520, "start": "Pont de Sales", "stop": "Pointe de Sales", "routes": null, "mdiff": 6, "importance": 0, "segments": [ 6644, 6645, 6646 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3521, "start": "Pont de Sales", "stop": "Tête de Moëde", "routes": null, "mdiff": 5, "importance": 0, "segments": [ 6644, 6648, 6660 ] }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3522, "start": "Les Grandes Platières", "stop": "Pointe d'Anterne", "routes": null, "mdiff": 4, "importance": 0, "segments": [ 6649, 6652, 6655, 6650, 6679 ] }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3523, "start": "Pont de Sales", "stop": "Col de la Portette", "routes": null, "mdiff": 5, "importance": 0, "segments": [ 6644, 6645, 6647, 6653, 6652, 6651 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3522, "start": "Les Grandes Platières", "stop": "Pointe d'Anterne", "routes": null, "mdiff": 4, "importance": 0, "segments": [ 6649, 6688, 6652, 6655, 6650, 6679 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3523, "start": "Pont de Sales", "stop": "Col de la Portette", "routes": null, "mdiff": 5, "importance": 0, "segments": [ 6644, 6645, 6647, 6653, 6652, 6651, 6690 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3524, "start": "Oulles", "stop": "Le Grand Galbert", "routes": null, "mdiff": 4, "importance": 0, "segments": [ 6657, 6658, 6659 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3525, "start": "Plaine Joux", "stop": "Tête de Moëde", "routes": null, "mdiff": 4, "importance": 0, "segments": [ 6656, 6663, 6662, 6660 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3526, "start": "Plaine Joux", "stop": "Pointe Noire de Pormenaz", "routes": null, "mdiff": 5, "importance": 0, "segments": [ 6656, 6663, 6661, 6668, 6665, 6667 ] }, "geometry": null },
@@ -3527,10 +3527,12 @@
 { "type": "Feature", "properties": { "id": 3530, "start": "Route de Chargieux", "stop": "Le Môle", "routes": null, "mdiff": 4, "importance": 0, "segments": [ 6669, 6673 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3531, "start": "Les Pablas", "stop": "Le Môle", "routes": null, "mdiff": 4, "importance": 0, "segments": [ 6670, 6676, 6674, 6677 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3532, "start": "Les Pablas", "stop": "Le Môle", "routes": null, "mdiff": 7, "importance": 0, "segments": [ 6670, 6675, 6677 ] }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3533, "start": "Les Grandes Platières", "stop": "Tête de l'Âne", "routes": null, "mdiff": 6, "importance": 0, "segments": [ 6649, 6652, 6655, 6650, 6678 ] }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3534, "start": "Les Grandes Platières", "stop": "Tête des Lindars", "routes": null, "mdiff": 2, "importance": 0, "segments": [ 6680, 6684, 6685, 6687, 6682 ] }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3535, "start": "Les Grandes Platières", "stop": "Col de la Portette", "routes": null, "mdiff": 4, "importance": 0, "segments": [ 6680, 6681, 6685, 6687 ] }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3536, "start": "Les Grandes Platières", "stop": "Le Sautet", "routes": null, "mdiff": 7, "importance": 0, "segments": [ 6680, 6684, 6683 ] }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3537, "start": "Les Grandes Platières", "stop": "Les Grandes Platières", "routes": null, "mdiff": 4, "importance": 0, "segments": [ 6680, 6684, 6685, 6686 ] }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3533, "start": "Les Grandes Platières", "stop": "Tête de l'Âne", "routes": null, "mdiff": 6, "importance": 0, "segments": [ 6649, 6688, 6652, 6655, 6650, 6678 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3534, "start": "Les Grandes Platières", "stop": "Tête des Lindars", "routes": null, "mdiff": 2, "importance": 0, "segments": [ 6680, 6694, 6682 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3535, "start": "Les Grandes Platières", "stop": "Col de la Portette", "routes": null, "mdiff": 4, "importance": 0, "segments": [ 6680, 6694, 6681, 6685, 6687, 6693 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3536, "start": "Les Grandes Platières", "stop": "Le Sautet", "routes": null, "mdiff": 7, "importance": 0, "segments": [ 6680, 6694, 6684, 6683 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3537, "start": "Les Grandes Platières", "stop": "Tête des Lindars", "routes": null, "mdiff": 4, "importance": 0, "segments": [ 6691, 6686, 6685, 6681, 6682 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3538, "start": "Les Grandes Platières", "stop": "Col de la Portette", "routes": null, "mdiff": 3, "importance": 2, "segments": [ 6649, 6689, 6690 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3539, "start": "Les Grandes Platières", "stop": "Col de la Portette", "routes": null, "mdiff": 5, "importance": 2, "segments": [ 6691, 6692, 6693 ] }, "geometry": null }
 ]
 }
