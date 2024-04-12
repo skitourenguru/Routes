@@ -3533,6 +3533,8 @@
 { "type": "Feature", "properties": { "id": 3536, "start": "Les Grandes Platières", "stop": "Le Sautet", "routes": null, "mdiff": 7, "importance": 0, "segments": [ 6680, 6694, 6684, 6683 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3537, "start": "Les Grandes Platières", "stop": "Tête des Lindars", "routes": null, "mdiff": 4, "importance": 0, "segments": [ 6691, 6686, 6685, 6681, 6682 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3538, "start": "Les Grandes Platières", "stop": "Col de la Portette", "routes": null, "mdiff": 3, "importance": 2, "segments": [ 6649, 6689, 6690 ] }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3539, "start": "Les Grandes Platières", "stop": "Col de la Portette", "routes": null, "mdiff": 5, "importance": 2, "segments": [ 6691, 6692, 6693 ] }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3539, "start": "Les Grandes Platières", "stop": "Col de la Portette", "routes": null, "mdiff": 5, "importance": 2, "segments": [ 6691, 6692, 6693 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3540, "start": "Flaine", "stop": "Chapeau Gaspard", "routes": null, "mdiff": 8, "importance": 0, "segments": [ 6695 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3541, "start": "Bay", "stop": "Aiguille de Varan", "routes": null, "mdiff": 9, "importance": 2, "segments": [ 6696 ] }, "geometry": null }
 ]
 }
