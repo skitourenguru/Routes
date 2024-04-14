@@ -297,7 +297,7 @@
 { "type": "Feature", "properties": { "id": 293, "start": "Le Plan", "stop": "Croisse Baulet", "routes": null, "mdiff": 4, "segments": "{69,248,370,366,247}" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 294, "start": "Le Plan", "stop": "Le Petit Croisse Baulet", "routes": null, "mdiff": 0, "segments": "{69,248}" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 295, "start": "Le Plan", "stop": "Trou de la Mouche", "routes": null, "mdiff": 9, "segments": "{252,251,253,249}" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 296, "start": "Le Plan", "stop": "Passage de la grande Forclaz", "routes": null, "mdiff": 5, "segments": "{252,251,250,255,258}" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 296, "start": "Le Plan", "stop": "Passage de la grande Forclaz", "routes": null, "mdiff": 5, "segments": "{252,251,250,255,258,6704}" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 297, "start": "Le Plan", "stop": "La Miaz", "routes": null, "mdiff": 6, "segments": "{252,251,250,257,254}" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 298, "start": "Le Plan", "stop": "Le Petit Croisse Baulet", "routes": null, "mdiff": 3, "segments": "{372,367}" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 299, "start": "Le Plan", "stop": "Croisse Baulet", "routes": null, "mdiff": 4, "segments": "{372,367,248,370,366,247}" }, "geometry": null },
@@ -305,7 +305,7 @@
 { "type": "Feature", "properties": { "id": 301, "start": "Cornillon", "stop": "Croisse Baulet", "routes": null, "mdiff": 0, "segments": "{365,369,366,247}" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 302, "start": "Cornillon", "stop": "Le Petit Croisse Baulet", "routes": null, "mdiff": null, "segments": "{365,368}" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 303, "start": "Lintre", "stop": "La Miaz", "routes": null, "mdiff": 7, "segments": "{256,266,262,278,260,254}" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 304, "start": "Lintre", "stop": "Passage de la grande Forclaz", "routes": null, "mdiff": 0, "segments": "{256,266,262,278,259,258}" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 304, "start": "Lintre", "stop": "Passage de la grande Forclaz", "routes": null, "mdiff": 0, "segments": "{256,266,262,278,259,258,6704}" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 305, "start": "Lintre", "stop": "Croisse Baulet", "routes": null, "mdiff": 0, "segments": "{256,266,261,279,276,264,271,270,247}" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 306, "start": "Lintre", "stop": "Refuge de Mayère", "routes": null, "mdiff": 2, "segments": "{256,265}" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 307, "start": "Les Molliards", "stop": "Croix de la Tête Noire", "routes": null, "mdiff": 1, "segments": "{267,273}" }, "geometry": null },
@@ -3425,7 +3425,7 @@
 { "type": "Feature", "properties": { "id": 3533, "start": "Les Grandes Platières", "stop": "Tête de l'Âne", "routes": null, "mdiff": 6, "segments": "{6649,6688,6652,6655,6650,6678}" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3534, "start": "Les Grandes Platières", "stop": "Tête des Lindars", "routes": null, "mdiff": 2, "segments": "{6680,6694,6682}" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3535, "start": "Les Grandes Platières", "stop": "Col de la Portette", "routes": null, "mdiff": 4, "segments": "{6680,6694,6681,6685,6687,6693}" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3536, "start": "Les Grandes Platières", "stop": "Le Sautet", "routes": null, "mdiff": 7, "segments": "{6680,6694,6684,6683}" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3536, "start": "Les Grandes Platières", "stop": "Le Sautet", "routes": null, "mdiff": 7, "segments": "{6680,6684,6683}" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3537, "start": "Les Grandes Platières", "stop": "Tête des Lindars", "routes": null, "mdiff": 4, "segments": "{6691,6686,6685,6681,6682}" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3538, "start": "Les Grandes Platières", "stop": "Col de la Portette", "routes": null, "mdiff": 3, "segments": "{6649,6689,6690}" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3539, "start": "Les Grandes Platières", "stop": "Col de la Portette", "routes": null, "mdiff": 5, "segments": "{6691,6692,6693}" }, "geometry": null },
@@ -3433,6 +3433,7 @@
 { "type": "Feature", "properties": { "id": 3541, "start": "Bay", "stop": "Aiguille de Varan", "routes": null, "mdiff": 9, "segments": "{6696}" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3542, "start": "Nicodex", "stop": "Arête des Aiguillettes", "routes": null, "mdiff": 2, "segments": "{6697,6701}" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3543, "start": "Les Glaciers", "stop": "Arête des Aiguillettes", "routes": null, "mdiff": 3, "segments": "{6698,6699,6701}" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3544, "start": "Les Glaciers", "stop": "Mont Ouzon", "routes": null, "mdiff": 5, "segments": "{6698,6700,6702}" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3544, "start": "Les Glaciers", "stop": "Mont Ouzon", "routes": null, "mdiff": 5, "segments": "{6698,6700,6702}" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3545, "start": "Lintre", "stop": "L'Ambrevetta", "routes": null, "mdiff": 6, "segments": "{256,266,262,278,259,258,6703}" }, "geometry": null }
 ]
 }
