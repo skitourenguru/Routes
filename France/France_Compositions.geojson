@@ -3530,7 +3530,7 @@
 { "type": "Feature", "properties": { "id": 3533, "start": "Les Grandes Platières", "stop": "Tête de l'Âne", "routes": null, "mdiff": 6, "importance": 0, "segments": [ 6649, 6688, 6652, 6655, 6650, 6678 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3534, "start": "Les Grandes Platières", "stop": "Tête des Lindars", "routes": null, "mdiff": 2, "importance": 0, "segments": [ 6680, 6694, 6682 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3535, "start": "Les Grandes Platières", "stop": "Col de la Portette", "routes": null, "mdiff": 4, "importance": 0, "segments": [ 6680, 6694, 6681, 6685, 6687, 6693 ] }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3536, "start": "Les Grandes Platières", "stop": "Le Sautet", "routes": null, "mdiff": 7, "importance": 0, "segments": [ 6680, 6694, 6684, 6683 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3536, "start": "Les Grandes Platières", "stop": "Le Sautet", "routes": null, "mdiff": 7, "importance": 0, "segments": [ 6680, 6684, 6683 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3537, "start": "Les Grandes Platières", "stop": "Tête des Lindars", "routes": null, "mdiff": 4, "importance": 0, "segments": [ 6691, 6686, 6685, 6681, 6682 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3538, "start": "Les Grandes Platières", "stop": "Col de la Portette", "routes": null, "mdiff": 3, "importance": 0, "segments": [ 6649, 6689, 6690 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3539, "start": "Les Grandes Platières", "stop": "Col de la Portette", "routes": null, "mdiff": 5, "importance": 0, "segments": [ 6691, 6692, 6693 ] }, "geometry": null },
@@ -3539,6 +3539,6 @@
 { "type": "Feature", "properties": { "id": 3542, "start": "Nicodex", "stop": "Arête des Aiguillettes", "routes": null, "mdiff": 2, "importance": 0, "segments": [ 6697, 6701 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3543, "start": "Les Glaciers", "stop": "Arête des Aiguillettes", "routes": null, "mdiff": 3, "importance": 0, "segments": [ 6698, 6699, 6701 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3544, "start": "Les Glaciers", "stop": "Mont Ouzon", "routes": null, "mdiff": 5, "importance": 0, "segments": [ 6698, 6700, 6702 ] }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3545, "start": "Lintre", "stop": "L'Ambrevetta", "routes": null, "mdiff": 6, "importance": 2, "segments": [ 256, 266, 262, 278, 259, 258, 6703 ] }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3545, "start": "Lintre", "stop": "L'Ambrevetta", "routes": null, "mdiff": 6, "importance": 0, "segments": [ 256, 266, 262, 278, 259, 258, 6703 ] }, "geometry": null }
 ]
 }
