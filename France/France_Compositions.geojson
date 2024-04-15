@@ -3547,6 +3547,8 @@
 { "type": "Feature", "properties": { "id": 3550, "start": "Le Tunnel du Mont-Blanc", "stop": "Le Mont-Blanc", "routes": null, "mdiff": null, "importance": 2, "segments": "6710,6720,6712,6717,6714" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3551, "start": "Le Plan de l'Aiguille", "stop": "Le Mont-Blanc", "routes": null, "mdiff": null, "importance": 2, "segments": "6719,6720,6712,6718,6713,6714" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3552, "start": "Le Plan de l'Aiguille", "stop": "Le Mont-Blanc", "routes": null, "mdiff": null, "importance": 2, "segments": "6719,6720,6712,6718,6715,6705" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3553, "start": "Le Plan de l'Aiguille", "stop": "Le Mont-Blanc", "routes": null, "mdiff": null, "importance": 2, "segments": "6719,6720,6712,6717,6714" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3553, "start": "Le Plan de l'Aiguille", "stop": "Le Mont-Blanc", "routes": null, "mdiff": null, "importance": 2, "segments": "6719,6720,6712,6717,6714" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3554, "start": "Le Plan de l'Aiguille", "stop": "Les Grands Mulets", "routes": null, "mdiff": null, "importance": 2, "segments": "6719,6720,6711" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3555, "start": "Le Tunnel du Mont-Blanc", "stop": "Les Grands Mulets", "routes": null, "mdiff": null, "importance": 2, "segments": "6710,6720,6711" }, "geometry": null }
 ]
 }
