@@ -3539,6 +3539,14 @@
 { "type": "Feature", "properties": { "id": 3542, "start": "Nicodex", "stop": "Arête des Aiguillettes", "routes": null, "mdiff": 2, "importance": 0, "segments": [ 6697, 6701 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3543, "start": "Les Glaciers", "stop": "Arête des Aiguillettes", "routes": null, "mdiff": 3, "importance": 0, "segments": [ 6698, 6699, 6701 ] }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3544, "start": "Les Glaciers", "stop": "Mont Ouzon", "routes": null, "mdiff": 5, "importance": 0, "segments": [ 6698, 6700, 6702 ] }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3545, "start": "Lintre", "stop": "L'Ambrevetta", "routes": null, "mdiff": 6, "importance": 0, "segments": [ 256, 266, 262, 278, 259, 258, 6703 ] }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3545, "start": "Lintre", "stop": "L'Ambrevetta", "routes": null, "mdiff": 6, "importance": 0, "segments": [ 256, 266, 262, 278, 259, 258, 6703 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3546, "start": "Refuge des Cosmiques", "stop": "Mont-Blanc", "routes": null, "mdiff": null, "importance": 2, "segments": [ 6706, 6709, 6716, 6705 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3547, "start": "Aiguille du Midi", "stop": "Mont-Blonc du Tacul", "routes": null, "mdiff": null, "importance": 2, "segments": [ 6707, 6709, 6708 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3548, "start": "Le Tunnel du Mont-Blanc", "stop": "Le Mont-Blanc", "routes": null, "mdiff": null, "importance": 2, "segments": [ 6710, 6720, 6712, 6718, 6713, 6714 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3549, "start": "Le Tunnel du Mont-Blanc", "stop": "Le Mont-Blanc", "routes": null, "mdiff": null, "importance": 2, "segments": [ 6710, 6720, 6712, 6718, 6715, 6705 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3550, "start": "Le Tunnel du Mont-Blanc", "stop": "Le Mont-Blanc", "routes": null, "mdiff": null, "importance": 2, "segments": [ 6710, 6720, 6712, 6717, 6714 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3551, "start": "Le Plan de l'Aiguille", "stop": "Le Mont-Blanc", "routes": null, "mdiff": null, "importance": 2, "segments": [ 6719, 6720, 6712, 6718, 6713, 6714 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3552, "start": "Le Plan de l'Aiguille", "stop": "Le Mont-Blanc", "routes": null, "mdiff": null, "importance": 2, "segments": [ 6719, 6720, 6712, 6718, 6715, 6705 ] }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3553, "start": "Le Plan de l'Aiguille", "stop": "Le Mont-Blanc", "routes": null, "mdiff": null, "importance": 2, "segments": [ 6719, 6720, 6712, 6717, 6714 ] }, "geometry": null }
 ]
 }
