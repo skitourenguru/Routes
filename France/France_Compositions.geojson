@@ -3559,7 +3559,7 @@
 { "type": "Feature", "properties": { "id": 3562, "start": "Gare de Montenvers", "stop": "Brèche Puiseux", "routes": null, "mdiff": null, "importance": 2, "segments": "6726,6721,6723", "massif": "Mont-Blanc" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3563, "start": "Aiguille du Midi", "stop": "Aiguille d'Entrèves", "routes": null, "mdiff": null, "importance": 2, "segments": "6724,6737,6734,6735,6746,6744,6743", "massif": "Mont-Blanc" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3564, "start": "Aiguille du Midi", "stop": "Gare de Montenvers", "routes": null, "mdiff": null, "importance": 2, "segments": "6724,6737,6736,6733,6728,6730,6727,6721,6726", "massif": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3565, "start": "Pointe Helbronner", "stop": "Gare de Montenvers", "routes": null, "mdiff": null, "importance": 2, "segments": "6741,6739,6746,6742,6738,6733,6728,6730,6727,6721,6726", "massif": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3566, "start": "Pointe Helbronner", "stop": "Col d'Entrèves", "routes": null, "mdiff": null, "importance": 2, "segments": "6741,6740,6743", "massif": null }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3565, "start": "Pointe Helbronner", "stop": "Gare de Montenvers", "routes": null, "mdiff": null, "importance": 2, "segments": "6741,6739,6746,6742,6738,6733,6728,6730,6727,6721,6726", "massif": "Mont-Blanc" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3566, "start": "Pointe Helbronner", "stop": "Col d'Entrèves", "routes": null, "mdiff": null, "importance": 2, "segments": "6741,6740,6743", "massif": "Mont-Blanc" }, "geometry": null }
 ]
 }
