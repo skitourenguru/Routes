@@ -3541,7 +3541,7 @@
 { "type": "Feature", "properties": { "id": 3544, "start": "Les Glaciers", "stop": "Mont Ouzon", "routes": null, "mdiff": 5, "importance": 0, "segments": "6698,6700,6702" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3545, "start": "Lintre", "stop": "L'Ambrevetta", "routes": null, "mdiff": 6, "importance": 0, "segments": "256,266,262,278,259,258,6703" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3546, "start": "Refuge des Cosmiques", "stop": "Mont-Blanc", "routes": null, "mdiff": null, "importance": 2, "segments": "6706,6709,6716,6705" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3547, "start": "Aiguille du Midi", "stop": "Mont-Blonc du Tacul", "routes": null, "mdiff": null, "importance": 2, "segments": "6707,6709,6708" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3547, "start": "Aiguille du Midi", "stop": "Mont-Blonc du Tacul", "routes": null, "mdiff": null, "importance": 2, "segments": "6724,6707,6709,6708" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3548, "start": "Le Tunnel du Mont-Blanc", "stop": "Le Mont-Blanc", "routes": null, "mdiff": null, "importance": 2, "segments": "6710,6720,6712,6718,6713,6714" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3549, "start": "Le Tunnel du Mont-Blanc", "stop": "Le Mont-Blanc", "routes": null, "mdiff": null, "importance": 2, "segments": "6710,6720,6712,6718,6715,6705" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3550, "start": "Le Tunnel du Mont-Blanc", "stop": "Le Mont-Blanc", "routes": null, "mdiff": null, "importance": 2, "segments": "6710,6720,6712,6717,6714" }, "geometry": null },
@@ -3549,6 +3549,13 @@
 { "type": "Feature", "properties": { "id": 3552, "start": "Le Plan de l'Aiguille", "stop": "Le Mont-Blanc", "routes": null, "mdiff": null, "importance": 2, "segments": "6719,6720,6712,6718,6715,6705" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3553, "start": "Le Plan de l'Aiguille", "stop": "Le Mont-Blanc", "routes": null, "mdiff": null, "importance": 2, "segments": "6719,6720,6712,6717,6714" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3554, "start": "Le Plan de l'Aiguille", "stop": "Les Grands Mulets", "routes": null, "mdiff": null, "importance": 2, "segments": "6719,6720,6711" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3555, "start": "Le Tunnel du Mont-Blanc", "stop": "Les Grands Mulets", "routes": null, "mdiff": null, "importance": 2, "segments": "6710,6720,6711" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3555, "start": "Le Tunnel du Mont-Blanc", "stop": "Les Grands Mulets", "routes": null, "mdiff": null, "importance": 2, "segments": "6710,6720,6711" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3556, "start": "Gare de Montenvers", "stop": "Brèche Puiseux", "routes": null, "mdiff": null, "importance": 2, "segments": "6726,6721,6727,6731,6722" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3557, "start": "Gare de Montenvers", "stop": "Refuge du Requin", "routes": null, "mdiff": null, "importance": 2, "segments": "6726,6721,6727,6730,6728,6732" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3558, "start": "Aiguille du Midi", "stop": "Refuge du Requin", "routes": null, "mdiff": null, "importance": 2, "segments": "6724,6733,6732" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3559, "start": "Aiguille du Midi", "stop": "Brèche Puiseux", "routes": null, "mdiff": null, "importance": 2, "segments": "6724,6733,6728,6729,6722" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3560, "start": "Aiguille du Midi", "stop": "Gare de Montenvers", "routes": "La Mer de Glace", "mdiff": null, "importance": 2, "segments": "6724,6733,6728,6730,6727,6721,6726" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3561, "start": "Aiguille du Midi", "stop": "Chamonix", "routes": null, "mdiff": null, "importance": 2, "segments": "6724,6733,6728,6730,6727,6721,6725" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3562, "start": "Gare de Montenvers", "stop": "Brèche Puiseux", "routes": null, "mdiff": null, "importance": 2, "segments": "6726,6721,6723" }, "geometry": null }
 ]
 }
