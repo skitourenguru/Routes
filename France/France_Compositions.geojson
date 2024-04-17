@@ -3562,8 +3562,11 @@
 { "type": "Feature", "properties": { "id": 3565, "start": "Pointe Helbronner", "stop": "Gare de Montenvers", "routes": null, "mdiff": null, "importance": 2, "segments": "6741,6739,6746,6742,6738,6733,6728,6730,6727,6721,6726", "massif": "Mont-Blanc" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3566, "start": "Pointe Helbronner", "stop": "Col d'Entrèves", "routes": null, "mdiff": null, "importance": 2, "segments": "6741,6740,6743", "massif": "Mont-Blanc" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3567, "start": "Gare de Montenvers", "stop": "Aiguille Verte", "routes": null, "mdiff": null, "importance": 2, "segments": "6726,6721,6748,6747", "massif": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3568, "start": "Argentière", "stop": "Col d'Argentière", "routes": null, "mdiff": null, "importance": 2, "segments": "6749,6753,6751", "massif": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3569, "start": "Argentière", "stop": "Col du Tour Noir", "routes": null, "mdiff": null, "importance": 2, "segments": "6749,6753,6750", "massif": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3570, "start": "Argentière", "stop": "Aiguille d'Argentière", "routes": null, "mdiff": null, "importance": 2, "segments": "6749,6752", "massif": null }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3568, "start": "Argentière", "stop": "Col d'Argentière", "routes": null, "mdiff": null, "importance": 2, "segments": "6749,6755,6759,6753,6751", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3569, "start": "Argentière", "stop": "Col du Tour Noir", "routes": null, "mdiff": null, "importance": 2, "segments": "6749,6755,6759,6753,6750", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3570, "start": "Argentière", "stop": "Aiguille d'Argentière", "routes": null, "mdiff": null, "importance": 2, "segments": "6749,6755,6759,6752", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3571, "start": "Argentière", "stop": "Col du Chardonnet", "routes": null, "mdiff": null, "importance": 2, "segments": "6749,6754,6757", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3572, "start": "Argentière", "stop": "Col du Passon", "routes": null, "mdiff": null, "importance": 2, "segments": "6749,6757,6756", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3573, "start": "Argentière", "stop": "Aiguille des Grands Montets", "routes": null, "mdiff": null, "importance": 2, "segments": "6749,6755,6758", "massif": null }, "geometry": null }
 ]
 }
