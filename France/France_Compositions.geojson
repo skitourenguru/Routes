@@ -100,11 +100,11 @@
 { "type": "Feature", "properties": { "id": 96, "start": "Les Plagnes", "stop": "Pointe de la Chavache", "routes": null, "mdiff": 9, "importance": 0, "segments": "6213,6214,6219,6217", "massif": "Chablais" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 97, "start": "Les Plagnes", "stop": "Pointe de la Chavache", "routes": null, "mdiff": 8, "importance": 0, "segments": "6213,6214,6218,6221,6227", "massif": "Chablais" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 98, "start": "Les Plagnes", "stop": "Pointe d’Ardens", "routes": null, "mdiff": 1, "importance": 0, "segments": "6213,6214,6218,6220,6228", "massif": "Chablais" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 99, "start": "Les Plagnes", "stop": "Pointe d’entre Deux Pertuis", "routes": null, "mdiff": 6, "importance": 0, "segments": "6213,6214,6218,6220,6226,6230,6225,6241,6224", "massif": "Chablais" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 99, "start": "Les Plagnes", "stop": "Pointe d’entre Deux Pertuis", "routes": null, "mdiff": 6, "importance": 0, "segments": "6213,6214,6218,6220,6226,6230,6225,6241,6224,6773,6771", "massif": "Chablais" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 100, "start": "Les Plagnes", "stop": "Pointe d’entre Deux Pertuis", "routes": null, "mdiff": 6, "importance": 0, "segments": "6213,6214,6218,6221,6222,6223", "massif": "Chablais" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 101, "start": "Les Plagnes", "stop": "Pointe d’Ardens", "routes": null, "mdiff": 6, "importance": 0, "segments": "6213,6214,6218,6220,6226,6229", "massif": "Chablais" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 102, "start": "Prétairié", "stop": "Roc de Tavaneuse", "routes": null, "mdiff": 7, "importance": 0, "segments": "6231,6232,6240,6237", "massif": "Chablais" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 103, "start": "Prétairié", "stop": "Roc de Tavaneuse", "routes": null, "mdiff": 6, "importance": 0, "segments": "6231,6232,6236,6241,6235", "massif": "Chablais" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 103, "start": "Prétairié", "stop": "Roc de Tavaneuse", "routes": null, "mdiff": 6, "importance": 0, "segments": "6231,6232,6236,6241,6235,6772", "massif": "Chablais" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 104, "start": "Prétairié", "stop": "Roc de Tavaneuse", "routes": null, "mdiff": 5, "importance": 0, "segments": "6231,6239,6244,6233,6242,6276,6237", "massif": "Chablais" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 105, "start": "Prétairié", "stop": "Pointe de Savolaire", "routes": null, "mdiff": 3, "importance": 0, "segments": "6231,6239,6244,6233,6234,6316", "massif": "Chablais" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 106, "start": "Prétairié", "stop": "Pic de la Corne", "routes": null, "mdiff": 5, "importance": 0, "segments": "6231,6239,6244,6238,6273,6272,6245,6267,6263", "massif": "Chablais" }, "geometry": null },
@@ -126,7 +126,7 @@
 { "type": "Feature", "properties": { "id": 122, "start": "Essert la Pierre", "stop": "Passage de Savolaire", "routes": null, "mdiff": null, "importance": 0, "segments": "6278,6288,6281,6279", "massif": "Chablais" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 123, "start": "Essert la Pierre", "stop": "Roc de Taverneuse", "routes": null, "mdiff": 3, "importance": 0, "segments": "6278,6288,6281,6280,6276,6237", "massif": "Chablais" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 124, "start": "Essert la Pierre", "stop": "Roc de Taverneuse", "routes": null, "mdiff": 5, "importance": 0, "segments": "6278,6288,6282,6285,6283", "massif": "Chablais" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 125, "start": "Essert la Pierre", "stop": "Pointe de Nantaux", "routes": null, "mdiff": 7, "importance": 0, "segments": "6278,6288,6282,6284", "massif": "Chablais" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 125, "start": "Essert la Pierre", "stop": "Pointe de Nantaux", "routes": null, "mdiff": 7, "importance": 0, "segments": "6278,6288,6282,6284,6767", "massif": "Chablais" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 126, "start": "Essert la Pierre", "stop": "Pointe de Nantaux", "routes": null, "mdiff": 7, "importance": 0, "segments": "6278,6287,6286", "massif": "Chablais" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 127, "start": "Le Brochau", "stop": "Pointe de Vorlaz", "routes": null, "mdiff": 5, "importance": 0, "segments": "6289", "massif": "Chablais" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 128, "start": "Le Brochau", "stop": "Pointe de Vorlaz", "routes": null, "mdiff": 7, "importance": 0, "segments": "6290", "massif": "Chablais" }, "geometry": null },
@@ -3534,7 +3534,7 @@
 { "type": "Feature", "properties": { "id": 3537, "start": "Les Grandes Platières", "stop": "Tête des Lindars", "routes": null, "mdiff": 4, "importance": 0, "segments": "6691,6686,6685,6681,6682", "massif": "Chablais" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3538, "start": "Les Grandes Platières", "stop": "Col de la Portette", "routes": null, "mdiff": 3, "importance": 0, "segments": "6649,6689,6690", "massif": "Chablais" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3539, "start": "Les Grandes Platières", "stop": "Col de la Portette", "routes": null, "mdiff": 5, "importance": 0, "segments": "6691,6692,6693", "massif": "Chablais" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3540, "start": "Flaine", "stop": "Chapeau Gaspard", "routes": null, "mdiff": 8, "importance": 0, "segments": "6695", "massif": "Chablais" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3540, "start": "Flaine", "stop": "Chapeau Gaspard", "routes": null, "mdiff": 8, "importance": 0, "segments": "6776,6695", "massif": "Chablais" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3541, "start": "Bay", "stop": "Aiguille de Varan", "routes": null, "mdiff": 9, "importance": 0, "segments": "6696", "massif": "Chablais" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3542, "start": "Nicodex", "stop": "Arête des Aiguillettes", "routes": null, "mdiff": 2, "importance": 0, "segments": "6697,6701", "massif": "Chablais" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3543, "start": "Les Glaciers", "stop": "Arête des Aiguillettes", "routes": null, "mdiff": 3, "importance": 0, "segments": "6698,6699,6701", "massif": "Chablais" }, "geometry": null },
@@ -3569,6 +3569,8 @@
 { "type": "Feature", "properties": { "id": 3572, "start": "Argentière", "stop": "Col du Passon", "routes": null, "mdiff": null, "importance": 2, "segments": "6749,6757,6756", "massif": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3573, "start": "Argentière", "stop": "Aiguille des Grands Montets", "routes": null, "mdiff": null, "importance": 2, "segments": "6749,6755,6758", "massif": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3574, "start": null, "stop": null, "routes": null, "mdiff": null, "importance": 2, "segments": "6749,6757,6754,6760", "massif": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3575, "start": "Follebin", "stop": "Mont de la Grange", "routes": null, "mdiff": null, "importance": 2, "segments": "6208,6210,6765,6766,6212", "massif": null }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3575, "start": "Follebin", "stop": "Mont de la Grange", "routes": null, "mdiff": null, "importance": 2, "segments": "6208,6210,6765,6766,6212", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3576, "start": "Essert la Pierre", "stop": "Roc de Taverneuse", "routes": null, "mdiff": 4, "importance": 2, "segments": "6278,6288,6282,6284,6769,6773,6770,6772,6283", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3577, "start": "Flaine", "stop": "Tête du Colonney", "routes": null, "mdiff": null, "importance": 2, "segments": "6776,6775", "massif": null }, "geometry": null }
 ]
 }
