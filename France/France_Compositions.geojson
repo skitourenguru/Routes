@@ -530,7 +530,7 @@
 { "type": "Feature", "properties": { "id": 527, "start": "Les Chaffauds", "stop": "Croix du Col de la Sambuy", "routes": null, "mdiff": 4, "importance": 0, "segments": "386,6484", "massif": "Bauges" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 528, "start": "Abbaye de Tamié", "stop": "Pointe de Côte Favre", "routes": null, "mdiff": 0, "importance": 0, "segments": "384,378,382,380", "massif": "Bauges" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 529, "start": "Abbaye de Tamié", "stop": "Pointe de Côte Favre", "routes": null, "mdiff": 4, "importance": 0, "segments": "384,378,385,6491", "massif": "Bauges" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 530, "start": "Ne pas tenir compte", "stop": null, "routes": null, "mdiff": null, "importance": 1, "segments": "", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 530, "start": "Ne pas tenir compte", "stop": null, "routes": null, "mdiff": null, "importance": 1, "segments": "100000", "massif": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 531, "start": "Abbaye de Tamié", "stop": "Pointe de Chaurionde", "routes": null, "mdiff": 5, "importance": 0, "segments": "384,378,385,6490,376", "massif": "Bauges" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 532, "start": "Abbaye de Tamié", "stop": "Pointe de Chaurionde", "routes": null, "mdiff": 5, "importance": 0, "segments": "384,381,376", "massif": "Bauges" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 533, "start": "Abbaye de Tamié", "stop": "Tête Noire", "routes": null, "mdiff": null, "importance": 0, "segments": "383", "massif": "Bauges" }, "geometry": null },
