@@ -3578,6 +3578,8 @@
 { "type": "Feature", "properties": { "id": 3581, "start": "Les Chavants", "stop": "Le Prarion", "routes": null, "mdiff": 3, "importance": 2, "segments": "6791,6793,6795,6796", "massif": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3582, "start": "Bellevarde", "stop": "Mont Lachat", "routes": null, "mdiff": 5, "importance": 2, "segments": "6799,6802", "massif": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3583, "start": "Bellavarde", "stop": "Mont Lachat", "routes": null, "mdiff": 5, "importance": 2, "segments": "6799,6801", "massif": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3584, "start": "Téléphérique des Houches-Bellevue", "stop": "Mont Lachat", "routes": null, "mdiff": 1, "importance": 2, "segments": "6804,6805", "massif": null }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3584, "start": "Téléphérique des Houches-Bellevue", "stop": "Mont Lachat", "routes": null, "mdiff": 1, "importance": 2, "segments": "6804,6805", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3585, "start": "Téléphérique des Houches-Bellevue", "stop": "Épaules du Gouter", "routes": null, "mdiff": 6, "importance": 2, "segments": "6804,6807", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3586, "start": "Les Houches", "stop": "Épaules du Gouter", "routes": null, "mdiff": 10, "importance": 2, "segments": "6809", "massif": null }, "geometry": null }
 ]
 }
