@@ -3575,6 +3575,8 @@
 { "type": "Feature", "properties": { "id": 3578, "start": "Argentière", "stop": "Col du Chardonnet", "routes": null, "mdiff": null, "importance": 2, "segments": "6749,6755,6780", "massif": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3579, "start": "Les Confins", "stop": "Sous la Tête de Paccaly", "routes": null, "mdiff": 5, "importance": 2, "segments": "12,174,362,6788,6787,190,364,6785", "massif": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3580, "start": "Les Chavants", "stop": "Le Prarion", "routes": null, "mdiff": 3, "importance": 2, "segments": "6791,6797,6796", "massif": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3581, "start": "Les Chavants", "stop": "Le Prarion", "routes": null, "mdiff": 3, "importance": 2, "segments": "6791,6793,6795,6796", "massif": null }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3581, "start": "Les Chavants", "stop": "Le Prarion", "routes": null, "mdiff": 3, "importance": 2, "segments": "6791,6793,6795,6796", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3582, "start": "Bellevarde", "stop": "Mont Lachat", "routes": null, "mdiff": 5, "importance": 2, "segments": "6799,6802", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3583, "start": "Bellavarde", "stop": "Mont Lachat", "routes": null, "mdiff": 5, "importance": 2, "segments": "6799,6801", "massif": null }, "geometry": null }
 ]
 }
