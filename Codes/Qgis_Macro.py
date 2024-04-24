@@ -1,5 +1,5 @@
 from qgis.core import *
-from qgis.gui import *
+from qgis.gui import
 from qgis.PyQt.QtWidgets import *
 from qgis.analysis import QgsNativeAlgorithms
 from qgis.utils import iface
