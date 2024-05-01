@@ -23,7 +23,7 @@ END;
 $$ LANGUAGE plpgsql;
 
 CREATE or REPLACE TRIGGER make_routes
-AFTER UPDATE or INSERT or DELETE
+AFTER UPDATE of geom or INSERT or DELETE
 ON segments
 FOR EACH ROW
 EXECUTE FUNCTION make_routes();

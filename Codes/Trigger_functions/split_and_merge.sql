@@ -81,7 +81,7 @@ END;
 $$ LANGUAGE plpgsql;
 
 CREATE or REPLACE TRIGGER split_and_merge
-AFTER INSERT or DELETE
+AFTER INSERT
 ON segments
 FOR EACH ROW
 EXECUTE FUNCTION split_and_merge();
