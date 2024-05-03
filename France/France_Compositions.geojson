@@ -3586,6 +3586,8 @@
 { "type": "Feature", "properties": { "id": 3589, "start": "Le Pleynet", "stop": "Col de l'Évêque", "routes": null, "mdiff": null, "importance": 0, "segments": "1324,1332,1343,6820,6818", "massif": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3590, "start": "Le Pleynet", "stop": "Pic de la Belle Étoile", "routes": null, "mdiff": null, "importance": 0, "segments": "1324,1326,6816,6818,6823,6821,1327,489", "massif": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3591, "start": "Le Pleynet", "stop": "Dent du Pra", "routes": null, "mdiff": null, "importance": 0, "segments": "1324,1332,1343,6822,6821,1336,6825,6826,1386", "massif": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3592, "start": "Le Pleynet", "stop": "Col de Pendet", "routes": null, "mdiff": null, "importance": 0, "segments": "1331,1090", "massif": null }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3592, "start": "Le Pleynet", "stop": "Col de Pendet", "routes": null, "mdiff": null, "importance": 0, "segments": "1331,1090", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3593, "start": "Saint-Véran", "stop": "Tête de Longet", "routes": null, "mdiff": 6, "importance": 0, "segments": "4302,4340,4329,6833,6832,4327", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3594, "start": "Saint-Véran", "stop": "Bosse 2764", "routes": null, "mdiff": 3, "importance": 0, "segments": "4302,4340,4329,6833,6832,4328", "massif": null }, "geometry": null }
 ]
 }
