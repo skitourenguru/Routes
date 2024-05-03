@@ -1,76 +1,144 @@
 CREATE or REPLACE FUNCTION split_and_merge() RETURNS TRIGGER AS $$
 BEGIN
 
-/*************************** Split segments *************************************/
+/************************************************* Split segments **************************************************/
 
-WITH 
-    a AS (SELECT id FROM public.segments GROUP BY id HAVING count(id)>1),
-    b as (SELECT compositions.id as compoid, ORDINALITY as num, segid, segments.geom
-		    FROM compositions, UNNEST(segments) WITH ordinality AS segid
-		    JOIN segments ON segments.id = segid),
-    t as(SELECT c.segid, c.compoid                                      -- On cherche les segments inversés.
-		    FROM b JOIN b c on b.compoid = c.compoid and b.num+1 = c.num 
-		    JOIN a on c.segid = a.id
-		    WHERE st_intersects(st_endpoint(c.geom),(b.geom)))
+IF EXISTS (SELECT id FROM segments GROUP BY id HAVING count(id)>1) THEN
 
-    UPDATE public.compositions
-    SET segments = segments[:array_position(segments,a.id)-1] -- Là où les segments sont inversés, on ajoute le nouveau segment à la gauche de l'ancien
-					||(SELECT max(id)+1 FROM public.segments)::int|| 
-					segments[array_position(segments, a.id):]
-							
-    FROM a, t
-    WHERE a.id = ANY(segments) and  t.compoid = compositions.id;
+    WITH 
+        doublons AS (
+            SELECT id 
+            FROM segments 
+            GROUP BY id 
+            HAVING count(id)>1
+        ),
+
+    /****************************************************************************************************************
+    ******************************************** Segments uniques inversés ******************************************
+    *****************************************************************************************************************/
+    
+                startpoint AS (
+                    SELECT segments.id AS id,
+                           st_value(rast, st_startpoint(geom), true) AS altitude
+                    FROM segments
+                    JOIN mnt ON st_startpoint(geom) && mnt.rast
+                ),
+                endpoint AS (
+                    SELECT segments.id AS id,
+                           st_value(rast, st_endpoint(geom), true) AS altitude
+                    FROM segments
+                    JOIN mnt ON st_endpoint(geom) && mnt.rast
+                ),
+                segments_uniques AS (
+                    SELECT segid,
+                           id 
+                    FROM compositions,
+                         unnest(segments) AS segid 
+                    WHERE cardinality(segments) = 1
+                ),
+        segment_unique_inverse AS (
+            SELECT segments_uniques.id AS compoid
+            FROM startpoint 
+            JOIN endpoint ON startpoint.id = endpoint.id
+            JOIN segments_uniques ON segments_uniques.segid = endpoint.id
+            WHERE startpoint.altitude > endpoint.altitude
+        ),
+
+    /****************************************************************************************************************
+    ****************************** Premiers segments et segments du milieu inversés *********************************
+    *****************************************************************************************************************/
+    
+                b AS (
+                    SELECT compositions.id AS compoid,
+                           ORDINALITY AS num,
+                           segid,
+                           segments.geom
+                    FROM compositions,
+                         UNNEST(segments) WITH ordinality AS segid
+                    JOIN segments ON segments.id = segid
+                ),
+        premier_milieu_inverse AS (
+                SELECT b.compoid
+                FROM b JOIN b c ON b.compoid = c.compoid AND b.num+1 = c.num 
+                JOIN doublons ON doublons.id = b.segid
+                WHERE st_startpoint(b.geom) && (c.geom)
+        ),        
+        
+    
+    /****************************************************************************************************************
+    ***************************************** Derniers segments inversés ********************************************
+    *****************************************************************************************************************/
+    
+                avant_dernier AS (
+                    SELECT segments[array_length(segments, 1) -1] AS segid,
+                           compositions.id AS compoid,
+                           segments.geom
+                    FROM compositions
+                    JOIN segments ON segments.id = segments[array_length(segments, 1) - 1]
+                ),
+            
+                dernier AS (			
+                    SELECT segments[array_length(segments, 1)] AS segid,
+                           compositions.id AS compoid,
+                           segments.geom 
+                    FROM compositions
+                    JOIN segments ON segments.id = segments[array_length(segments, 1)]
+                ),
+        dernier_inverse AS (
+            SELECT dernier.compoid
+            FROM dernier
+            JOIN avant_dernier ON avant_dernier.compoid = dernier.compoid
+            WHERE st_endpoint(dernier.geom) && avant_dernier.geom
+        )
 
 
-WITH 
-    a AS (SELECT id FROM public.segments GROUP BY id HAVING count(id)>1),
-    b as (SELECT compositions.id as compoid, ORDINALITY as num, segid, segments.geom
-		    FROM compositions, UNNEST(segments) WITH ordinality AS segid
-		    JOIN segments ON segments.id = segid),
-	r as (SELECT c.segid, c.compoid, b.num as left, c.num as duplique, b.segid as leftid -- On cherche les segments dont le premiers points touche le dernier du segment précédant
-		    FROM b JOIN b c on b.compoid = c.compoid and b.num = c.num - 1
-		    JOIN a on c.segid = a.id
-		    WHERE st_intersects(st_startpoint(c.geom),(b.geom)))
+    UPDATE compositions
+    SET segments = CASE
+    WHEN   compositions.id IN (SELECT segment_unique_inverse.compoid FROM segment_unique_inverse)
+        OR compositions.id IN (SELECT premier_milieu_inverse.compoid FROM premier_milieu_inverse)
+        OR compositions.id IN (SELECT dernier_inverse.compoid FROM dernier_inverse)
+    THEN
+        segments[:array_position(segments,doublons.id)-1] 
+        ||(SELECT max(id)+1 FROM public.segments)::int|| 
+        segments[array_position(segments, doublons.id):]
+    ELSE
+        segments[:array_position(segments,doublons.id)] 
+        ||(SELECT max(id)+1 FROM public.segments)::int|| 
+        segments[array_position(segments, doublons.id)+1:] 
+    END
+    FROM doublons
+    Where doublons.id = any(segments);
 
-    UPDATE public.compositions
-    SET segments = segments[:array_position(segments,a.id)] -- Pour ces segments, on ajoute le nouveau segment à droite
-					||(SELECT max(id)+1 FROM public.segments)::int|| 
-					segments[array_position(segments, a.id)+1:]
-							
-    FROM a, r
-    WHERE a.id = ANY(segments) and r.compoid = compositions.id;
 
-WITH 
-    a AS (SELECT id FROM public.segments GROUP BY id HAVING count(id)>1),
-    b as (SELECT compositions.id as compoid, ORDINALITY as num, segid, segments.geom
-		    FROM compositions, UNNEST(segments) WITH ordinality AS segid 
-		    JOIN segments ON segments.id = segid
-			WHERE ordinality = 1)                       -- On cherche les premiers segments, où les segments faisant à eux seuls itinéraires
-	
-    UPDATE public.compositions
-    SET segments = segments[:array_position(segments,a.id)] 
-					||(SELECT max(id)+1 FROM public.segments)::int|| -- Dans ce cas, on ajoute le nouveau segment à droite de l'ancien
-					segments[array_position(segments, a.id)+1:]
-							
-    FROM a, b
-    WHERE b.segid = a.id and b.compoid = compositions.id;
 
-	    UPDATE public.segments
-    SET  id  = (SELECT max(id)+1 FROM public.segments) -- On met à jour l'id du nouveau segment
+    -- On met à jour l'id du nouveau segment
+    UPDATE public.segments
+    SET  id  = (SELECT max(id)+1 FROM public.segments) 
     WHERE fid  = new.fid;
+
+
+
+END iF;
 
 /*************************** Merge segments *************************************/
 
 IF (TG_OP = 'INSERT') THEN
 
 	WITH
-	a AS (SELECT seg, id FROM public.compositions, unnest(segments) AS seg 
-	WHERE seg NOT IN (SELECT segments.id FROM public.segments)) -- On cherche les segments de compositions qui ne sont pas dans segments
+        -- On cherche les segments de compositions qui ne sont pas dans segments
+	    segments_inexistants AS (
+            SELECT segid,
+                   id 
+            FROM compositions,
+                 unnest(segments) AS segid 
+	        WHERE segid NOT IN (SELECT segments.id FROM segments)
+        ) 
 
-	UPDATE public.compositions
-	SET segments = array_remove(segments, a.seg) -- On les supprime.
-	FROM a
-	WHERE compositions.id = a.id;
+    -- On les supprime.
+	UPDATE compositions
+	SET segments = array_remove(segments, segments_inexistants.segid)
+	FROM segments_inexistants
+	WHERE compositions.id = segments_inexistants.id;
 
 END IF;
 
@@ -79,7 +147,7 @@ END;
 $$ LANGUAGE plpgsql;
 
 CREATE or REPLACE TRIGGER split_and_merge
-AFTER INSERT or DELETE
+AFTER INSERT
 ON segments
 FOR EACH ROW
 EXECUTE FUNCTION split_and_merge();
