@@ -2,7 +2,7 @@
 
 # Modifiez seulement les deux variables ci-dessous : 
 
-db="France_Alpes"
+db="test"
 dossier="/home/ulysse/Dropbox/skitourenguru/Routes/France/"
 
 
