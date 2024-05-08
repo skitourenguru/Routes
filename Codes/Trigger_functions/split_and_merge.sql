@@ -41,7 +41,6 @@ IF EXISTS (SELECT id FROM segments GROUP BY id HAVING count(id)>1) THEN
             FROM startpoint 
             JOIN endpoint ON startpoint.id = endpoint.id
             JOIN segments_uniques ON segments_uniques.segid = endpoint.id
-			JOIN doublons on doublons.id = endpoint.id
             WHERE startpoint.altitude > endpoint.altitude
         ),
 
@@ -84,7 +83,6 @@ IF EXISTS (SELECT id FROM segments GROUP BY id HAVING count(id)>1) THEN
                            segments.geom 
                     FROM compositions
                     JOIN segments ON segments.id = segments[array_length(segments, 1)]
-					JOIN doublons ON doublons.id = segments[array_length(segments, 1)]
                 ),
         dernier_inverse AS (
             SELECT dernier.compoid
@@ -101,21 +99,21 @@ IF EXISTS (SELECT id FROM segments GROUP BY id HAVING count(id)>1) THEN
         OR compositions.id IN (SELECT dernier_inverse.compoid FROM dernier_inverse)
     THEN
         segments[:array_position(segments,doublons.id)-1] 
-        ||(SELECT max(id)+1 FROM segments)::int|| 
+        ||(SELECT max(id)+1 FROM public.segments)::int|| 
         segments[array_position(segments, doublons.id):]
     ELSE
         segments[:array_position(segments,doublons.id)] 
-        ||(SELECT max(id)+1 FROM segments)::int|| 
+        ||(SELECT max(id)+1 FROM public.segments)::int|| 
         segments[array_position(segments, doublons.id)+1:] 
     END
     FROM doublons
-    WHERE doublons.id = ANY(segments);
+    Where doublons.id = any(segments);
 
 
 
     -- On met à jour l'id du nouveau segment
-    UPDATE segments
-    SET  id  = (SELECT max(id)+1 FROM segments) 
+    UPDATE public.segments
+    SET  id  = (SELECT max(id)+1 FROM public.segments) 
     WHERE fid  = new.fid;
 
 
