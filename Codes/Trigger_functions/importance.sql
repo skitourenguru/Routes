@@ -1,7 +1,3 @@
-/*********************************************************************
-* Permet de synchroniser l'importance entre segments et compositions *
-**********************************************************************/
-
 CREATE or REPLACE FUNCTION importance() RETURNS TRIGGER AS $$
 BEGIN
 
