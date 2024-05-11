@@ -41,7 +41,7 @@ IF EXISTS (SELECT id FROM segments GROUP BY id HAVING count(id)>1) THEN
             FROM startpoint 
             JOIN endpoint ON startpoint.id = endpoint.id
             JOIN segments_uniques ON segments_uniques.segid = endpoint.id
-			JOIN doublons on doublons.id = endpoint.id
+	    JOIN doublons on doublons.id = endpoint.id
             WHERE startpoint.altitude > endpoint.altitude
         ),
 
@@ -84,7 +84,7 @@ IF EXISTS (SELECT id FROM segments GROUP BY id HAVING count(id)>1) THEN
                            segments.geom 
                     FROM compositions
                     JOIN segments ON segments.id = segments[array_length(segments, 1)]
-					JOIN doublons ON doublons.id = segments[array_length(segments, 1)]
+		    JOIN doublons ON doublons.id = segments[array_length(segments, 1)]
                 ),
         dernier_inverse AS (
             SELECT dernier.compoid
