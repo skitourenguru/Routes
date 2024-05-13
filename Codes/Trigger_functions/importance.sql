@@ -6,7 +6,7 @@ IF (TG_OP = 'UPDATE') Then
 UPDATE segments 
 SET importance = compositions.importance
 FROM compositions, unnest(segments) AS segid
-WHERE segid = segments.id
+WHERE segid = segments.id;
 
 END IF;
 RETURN NEW;
