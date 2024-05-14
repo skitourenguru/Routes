@@ -9,7 +9,7 @@ echo .
 
 
 rem Git commands must be here before dir is changed
-git tags -d release
+git tag -d release
 git pull
 
 for /f "Delims=" %%a In ('git rev-parse HEAD') do set MYREVISION=%%a
