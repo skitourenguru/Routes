@@ -7,10 +7,17 @@ echo 1. Update git
 echo ******************************************************************
 echo .
 
+
+rem Git commands must be here before dir is changed
 git pull
 
 for /f "Delims=" %%a In ('git rev-parse HEAD') do set MYREVISION=%%a
 echo MYREVISION=%MYREVISION%
+
+for /f "delims=" %%a in ('git describe --tags') do (
+    set "TAG=%%a"
+)
+echo TAG=%TAG%
 
 :Step2
 echo ******************************************************************
@@ -269,9 +276,6 @@ echo 12. Publish ZIP
 echo ******************************************************************
 echo .
 
-for /f "delims=" %%a in ('git describe --tags') do (
-    set "TAG=%%a"
-)
 if "%TAG%" == "release" (
 	set ZIP_FILE=%PUBLIC_DIR%\%NAME%-Ski.zip
 	echo copy /y "%ZIP_FILE%" "%PUBLIC_DIR%"
