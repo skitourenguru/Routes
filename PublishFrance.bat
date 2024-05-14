@@ -280,8 +280,7 @@ if "%TAG%" == "release" (
 	set BACKUP_ZIP_FILE=%PUBLIC_DIR%\%NAME%-Ski-%MYDATE%-%MYREVISION%.zip
 	echo copy /y "%ZIP_FILE%" "%BACKUP_ZIP_FILE%"
 	copy /y "%ZIP_FILE%" "%BACKUP_ZIP_FILE%"
-)
-else (
+) else (
 	set BACKUP_ZIP_FILE=%PUBLIC_DIR%\%NAME%-Ski-%MYDATE%-%MYREVISION%.zip
 	echo copy /y "%ZIP_FILE%" "%BACKUP_ZIP_FILE%"
 	copy /y "%ZIP_FILE%" "%BACKUP_ZIP_FILE%"
