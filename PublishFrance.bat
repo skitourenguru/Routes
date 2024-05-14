@@ -269,13 +269,17 @@ echo 12. Publish ZIP
 echo ******************************************************************
 echo .
 
-for /f "delims=" %%a in ('git describe --tags --exact-match') do (
+for /f "delims=" %%a in ('git describe --tags') do (
     set "TAG=%%a"
 )
 if "%TAG%" == "release" (
 	set ZIP_FILE=%PUBLIC_DIR%\%NAME%-Ski.zip
 	echo copy /y "%ZIP_FILE%" "%PUBLIC_DIR%"
 	copy /y "%ZIP_FILE%" "%PUBLIC_DIR%"
+
+	set BACKUP_ZIP_FILE=%PUBLIC_DIR%\%NAME%-Ski-%MYDATE%-%MYREVISION%.zip
+	echo copy /y "%ZIP_FILE%" "%BACKUP_ZIP_FILE%"
+	copy /y "%ZIP_FILE%" "%BACKUP_ZIP_FILE%"
 )
 else (
 	set BACKUP_ZIP_FILE=%PUBLIC_DIR%\%NAME%-Ski-%MYDATE%-%MYREVISION%.zip
