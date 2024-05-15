@@ -6,10 +6,10 @@ dossier = "/home/ulysse/Dropbox/skitourenguru/Routes/France"
 compo_name = "France_Compositions.geojson"
 segments_name = "France_Segments.geojson"
 db = """host=localhost
-                dbname=France_Alpes 
-                user=postgres 
-                password=postgres 
-                port=5432
+        dbname=France_Alpes 
+        user=postgres 
+        password=postgres 
+        port=5432
      """
 
 
