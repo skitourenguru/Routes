@@ -2,7 +2,7 @@ import subprocess
 from pygit2 import Repository
 from qgis.utils import iface
 
-dossier = "/home/ulysse/Dropbox/skitourenguru/Routes/France"
+dossier = "/home/ulysse/Data/Vecteurs/Routes/France"
 compo_name = "France_Compositions.geojson"
 segments_name = "France_Segments.geojson"
 db = """host=localhost
