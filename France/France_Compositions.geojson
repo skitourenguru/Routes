@@ -3595,6 +3595,6 @@
 { "type": "Feature", "properties": { "id": 3598, "start": "Gare de Montenvers", "stop": "Col du Mont Mallet", "routes": null, "mdiff": 5, "importance": 2, "segments": "6726,6721,6848,6748,6839,6842,6845,6723", "massif": "Mont-Blanc" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3599, "start": "Refuge de Leschaux", "stop": "Col du Mont Mallet", "routes": null, "mdiff": 5, "importance": 2, "segments": "6843,6841,6845,6844", "massif": "Mont-Blanc" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3600, "start": "Aiguille du Midi", "stop": "Refuge de Leschaux", "routes": null, "mdiff": null, "importance": 2, "segments": "6724,6737,6734,6745,6738,6733,6728,6730,6846,6847,6748,6839,6840,6843", "massif": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3601, "start": "Gare de Montenvers", "stop": "Pointe Isabella", "routes": null, "mdiff": 6, "importance": 2, "segments": "6726,6721,6848,6748,6850,6749", "massif": null }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3601, "start": "Gare de Montenvers", "stop": "Pointe Isabella", "routes": null, "mdiff": 6, "importance": 2, "segments": "6726,6721,6848,6748,6850,6849", "massif": null }, "geometry": null }
 ]
 }
