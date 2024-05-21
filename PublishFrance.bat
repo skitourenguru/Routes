@@ -14,7 +14,7 @@ git pull
 for /f "Delims=" %%a In ('git rev-parse HEAD') do set MYREVISION=%%a
 echo MYREVISION=%MYREVISION%
 
-for /f "Delims=" %%a In ('git tag --points-at HEAD') do set "TAG=%%a"
+for /f "Delims=" %%a In ('git tag --points-at HEAD') do set TAG=%%a
 
 if defined TAG (
     echo TAG
