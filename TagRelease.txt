@@ -1,0 +1,18 @@
+Marche à suivre pour tagué un commit comme étant prêt à être publié.
+
+À la fin de ce processus, le commit tagué sera publié sur le serveur de Skitourenguru https://download.skitourenguru.com/public/
+où toutes les personnes et institutions intérressé par ces traces viendront les chercher.
+
+Dans le dossier Routes local:
+
+1. Supprimer l'ancien tag release local :
+git tag -d release
+
+2. Supprimer l'ancien tag release distant :
+git push --delete release
+
+3. Ajouter le tag sur le nouveau commit : 
+git tag release
+
+4. Pousser le nouveau tag sur le repo distant : 
+git push --tags
