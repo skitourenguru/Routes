@@ -3,10 +3,44 @@ BEGIN
 
 IF (TG_OP = 'UPDATE') Then
 
+UPDATE segments
+SET importance = 0;
+
+WITH
+a AS (
+	SELECT 	unnest(segments) AS id,
+	 		importance 
+	FROM 	compositions 
+	WHERE 	importance = 0),  
+b AS (
+	SELECT 	unnest(segments) AS id,
+			importance 
+	FROM	compositions 
+	WHERE 	importance = 1
+	),
+d AS (
+	SELECT 	unnest(segments) AS id,
+			importance 
+	FROM 	compositions 
+	WHERE 	importance = 2
+	),
+c AS (
+	SELECT 	b.id,
+			b.importance 
+	FROM 	b 
+	WHERE 	b.id NOT IN (SELECT a.id FROM a) 
+	UNION
+	SELECT 	d.id, 
+			d.importance 
+	FROM 	d 
+	WHERE 	d.id NOT IN (SELECT a.id FROM a)
+	)
+
 UPDATE segments 
-SET importance = compositions.importance
-FROM compositions, unnest(segments) AS segid
-WHERE segid = segments.id
+SET importance = c.importance
+FROM c
+WHERE c.id = segments.id;
+
 
 END IF;
 RETURN NEW;
