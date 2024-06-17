@@ -3636,13 +3636,17 @@
 { "type": "Feature", "properties": { "id": 3656, "start": "La Frasse", "stop": "Mont Turc", "routes": null, "mdiff": 1, "segments": "{6940,6945,6949,6946}" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3657, "start": "La Frasse", "stop": "Crête de Turc", "routes": null, "mdiff": 1, "segments": "{6940,6945,6949,6947}" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3658, "start": "La Frasse", "stop": "Crête de Turc", "routes": null, "mdiff": 8, "segments": "{6940,6945,6948}" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3659, "start": "La Gruvaz", "stop": "Pointe Inférieure de Tricot", "routes": null, "mdiff": 8, "segments": "{6950,6953,6951}" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3660, "start": "La Gruvaz", "stop": "Pointe Centrale de Tricot", "routes": null, "mdiff": 10, "segments": "{6950,6953,6952}" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3659, "start": "La Gruvaz", "stop": "Pointe Inférieure de Tricot", "routes": null, "mdiff": 9, "segments": "{6950,6953,6951}" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3660, "start": "La Gruvaz", "stop": "Pointe Centrale de Tricot", "routes": null, "mdiff": 11, "segments": "{6950,6953,6952}" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3661, "start": "La Gruvaz", "stop": "Col de Tricot", "routes": null, "mdiff": 4, "segments": "{6950,6954}" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3662, "start": "La Gruvaz", "stop": "Mont Vorassay", "routes": null, "mdiff": 5, "segments": "{6950,6954,6955}" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3663, "start": "Le Champel", "stop": "Mont Vorassay", "routes": null, "mdiff": 5, "segments": "{6956}" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3664, "start": "Les Bettières", "stop": "Col de Tricot", "routes": null, "mdiff": 4, "segments": "{6957}" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3665, "start": "Les Bettières", "stop": "Mont Vorassay", "routes": null, "mdiff": 5, "segments": "{6957,6955}" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3666, "start": "Le Baptieu", "stop": "Tête de la Combazz", "routes": null, "mdiff": 5, "segments": "{6958}" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3666, "start": "Le Baptieu", "stop": "Tête de la Combazz", "routes": null, "mdiff": 5, "segments": "{6958}" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3667, "start": "Les Communailles", "stop": "Mont Joux", "routes": null, "mdiff": 6, "segments": "{6959,6961}" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3668, "start": "Les Communailles ", "stop": "Mont Joly", "routes": null, "mdiff": 6, "segments": "{6959,6960,6962,6964}" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3669, "start": "Les Communailles ", "stop": "Mont Joly", "routes": null, "mdiff": 6, "segments": "{6959,6960,6963,6964}" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3670, "start": "Le Planay", "stop": "Mont Joly", "routes": null, "mdiff": 7, "segments": "{6965}" }, "geometry": null }
 ]
 }
