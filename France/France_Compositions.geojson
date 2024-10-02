@@ -3710,7 +3710,8 @@
 { "type": "Feature", "properties": { "id": 3713, "start": "Le Châtelard", "stop": "Bec Rouge", "routes": null, "mdiff": 3, "importance": 2, "segments": "7044,7051", "massif": null, "geom": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3714, "start": "Le Châtelard", "stop": "Bec Rouge", "routes": null, "mdiff": 5, "importance": 2, "segments": "7044,7053", "massif": null, "geom": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3715, "start": "La Masure", "stop": "Roche Jaille", "routes": null, "mdiff": 5, "importance": 2, "segments": "7055,7056", "massif": null, "geom": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3716, "start": "La Masure", "stop": "Pointe des Couloureuses", "routes": null, "mdiff": 5, "importance": 2, "segments": "7055,7057,7060,7058", "massif": null, "geom": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3717, "start": "La Masure", "stop": "Col de la Louïe Blanche", "routes": null, "mdiff": 3, "importance": 2, "segments": "7055,7057,7059", "massif": null, "geom": null }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3716, "start": "La Masure", "stop": "Pointe des Couloureuses", "routes": null, "mdiff": 5, "importance": 2, "segments": "7055,7057,7063,7060,7058", "massif": null, "geom": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3717, "start": "La Masure", "stop": "Col de la Louïe Blanche", "routes": null, "mdiff": 3, "importance": 2, "segments": "7055,7057,7063,7059", "massif": null, "geom": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3718, "start": "La Masure", "stop": "Col du Tachuy", "routes": null, "mdiff": 3, "importance": 2, "segments": "7055,7057,7063,7059,7061", "massif": null, "geom": null }, "geometry": null }
 ]
 }
