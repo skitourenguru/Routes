@@ -3716,6 +3716,8 @@
 { "type": "Feature", "properties": { "id": 3719, "start": "La Masure", "stop": "Les Dent Rouges", "routes": null, "mdiff": 6, "importance": 2, "segments": "7055,7057,7073,7072,7065,7064", "massif": null, "geom": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3720, "start": "La Masure", "stop": "Col du Tachuy", "routes": null, "mdiff": 3, "importance": 2, "segments": "7055,7057,7073,7072,7065,7070,7062", "massif": null, "geom": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3721, "start": "La Masure", "stop": "Tête du Ruitor", "routes": null, "mdiff": 6, "importance": 2, "segments": "7055,7057,7073,7072,7065,7070,7066,7071", "massif": null, "geom": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3722, "start": "La Masure", "stop": "Tête du Ruitor", "routes": null, "mdiff": 6, "importance": 2, "segments": "7055,7057,7073,7072,7065,7067,7071", "massif": null, "geom": null }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3722, "start": "La Masure", "stop": "Tête du Ruitor", "routes": null, "mdiff": 6, "importance": 2, "segments": "7055,7057,7073,7072,7065,7067,7071", "massif": null, "geom": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3723, "start": "La Masure", "stop": "Sommet du Louprama", "routes": null, "mdiff": 5, "importance": 2, "segments": "7055,7057,7073,7074,7069", "massif": null, "geom": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3724, "start": "La Masure", "stop": "Col de la Sassière", "routes": null, "mdiff": 5, "importance": 2, "segments": "7055,7057,7073,7074,7068", "massif": null, "geom": null }, "geometry": null }
 ]
 }
