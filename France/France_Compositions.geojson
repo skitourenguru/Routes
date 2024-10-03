@@ -3731,6 +3731,7 @@
 { "type": "Feature", "properties": { "id": 3734, "start": "La Masure", "stop": "Pointe d'Archeboc", "routes": null, "mdiff": 8, "importance": 2, "segments": "7055,7076,7085,7088,7090,7091,7092", "massif": null, "geom": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3735, "start": "Chenal", "stop": "Pointe d'Ormelune", "routes": null, "mdiff": 8, "importance": 2, "segments": "7089,7097,7091,7093", "massif": null, "geom": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3736, "start": "La Masure", "stop": "Pointe du Grande Soliet", "routes": null, "mdiff": 6, "importance": 2, "segments": "7055,7076,7085,7088,7094,7101,7087", "massif": null, "geom": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3737, "start": "Télésiège de l'Aiguille", "stop": "Pointe d'Archeboc", "routes": null, "mdiff": 6, "importance": 2, "segments": "7096,7100,7097,7091,7092", "massif": null, "geom": null }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3737, "start": "Télésiège de l'Aiguille", "stop": "Pointe d'Archeboc", "routes": null, "mdiff": 6, "importance": 2, "segments": "7096,7100,7097,7091,7092", "massif": null, "geom": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3738, "start": "Chenal", "stop": "Pointe du Grand Soliet", "routes": null, "mdiff": 5, "importance": 2, "segments": "7089,7098,7099,7087", "massif": null, "geom": null }, "geometry": null }
 ]
 }
