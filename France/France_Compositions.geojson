@@ -3719,6 +3719,9 @@
 { "type": "Feature", "properties": { "id": 3722, "start": "La Masure", "stop": "Tête du Ruitor", "routes": null, "mdiff": 6, "importance": 2, "segments": "7055,7057,7073,7072,7065,7067,7071", "massif": null, "geom": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3723, "start": "La Masure", "stop": "Sommet du Louprama", "routes": null, "mdiff": 5, "importance": 2, "segments": "7055,7057,7073,7074,7069", "massif": null, "geom": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3724, "start": "La Masure", "stop": "Col de la Sassière", "routes": null, "mdiff": 5, "importance": 2, "segments": "7055,7057,7073,7074,7068", "massif": null, "geom": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3725, "start": "La Masure", "stop": "Col du Mont", "routes": null, "mdiff": 5, "importance": 2, "segments": "7055,7057,7073,7074,7068", "massif": null, "geom": null }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3725, "start": "La Masure", "stop": "Col du Mont", "routes": null, "mdiff": 5, "importance": 2, "segments": "7055,7057,7073,7074,7068", "massif": null, "geom": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3726, "start": "La Masure", "stop": "Col du Mont", "routes": null, "mdiff": 3, "importance": 2, "segments": "7055,7076,7078", "massif": null, "geom": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3727, "start": "La Masure", "stop": "Col de Montséti", "routes": null, "mdiff": 4, "importance": 2, "segments": "7055,7076,7077,7079", "massif": null, "geom": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3728, "start": "La Masure", "stop": "Sommet du Louprama", "routes": null, "mdiff": 4, "importance": 2, "segments": "7055,7076,7077,7080", "massif": null, "geom": null }, "geometry": null }
 ]
 }
