@@ -3725,8 +3725,9 @@
 { "type": "Feature", "properties": { "id": 3728, "start": "La Masure", "stop": "Sommet du Louprama", "routes": null, "mdiff": 4, "importance": 2, "segments": "7055,7076,7086,7077,7080", "massif": null, "geom": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3729, "start": "La Mesure", "stop": "Col de Montséti", "routes": null, "mdiff": 4, "importance": 2, "segments": "7055,7057,7073,7074,7082,7081", "massif": null, "geom": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3730, "start": "La Mesure", "stop": "Bec de l'Âne", "routes": null, "mdiff": 10, "importance": 2, "segments": "7055,7057,7073,7074,7084,7083", "massif": null, "geom": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3731, "start": "La Masure", "stop": "Col de l'Argentière", "routes": null, "mdiff": 5, "importance": 2, "segments": "7055,7076,7086,7085,7088", "massif": null, "geom": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3731, "start": "La Masure", "stop": "Col de l'Argentière", "routes": null, "mdiff": 5, "importance": 2, "segments": "7055,7076,7085,7088", "massif": null, "geom": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3732, "start": "La Masure", "stop": "Pointe du Grand Soliet", "routes": null, "mdiff": 6, "importance": 2, "segments": "7055,7076,7085,7087", "massif": null, "geom": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3733, "start": "Chenal", "stop": "Pointe d'Archeboc", "routes": null, "mdiff": 7, "importance": 2, "segments": "7089,7091", "massif": null, "geom": null }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3733, "start": "Chenal", "stop": "Pointe d'Archeboc", "routes": null, "mdiff": 7, "importance": 2, "segments": "7089,7091", "massif": null, "geom": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3734, "start": "La Masure", "stop": "Pointe d'Archeboc", "routes": null, "mdiff": 8, "importance": 2, "segments": "7055,7076,7085,7088,7090,7091", "massif": null, "geom": null }, "geometry": null }
 ]
 }
