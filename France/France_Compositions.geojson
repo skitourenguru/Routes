@@ -3738,10 +3738,12 @@
 { "type": "Feature", "properties": { "id": 3741, "start": "Chenal", "stop": "Pointe de la Foglietta", "routes": null, "mdiff": 5, "importance": 2, "segments": "7089,7113,7108,7098,7099,7104,7106", "massif": null, "geom": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3742, "start": "Chenal", "stop": "Pointe des Mines", "routes": null, "mdiff": 8, "importance": 2, "segments": "7089,7113,7108,7110,7111", "massif": null, "geom": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3743, "start": "Chenal", "stop": "Col des Mines", "routes": null, "mdiff": 7, "importance": 2, "segments": "7089,7113,7108,7110", "massif": null, "geom": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3744, "start": "Chenal", "stop": "Aiguile de la Grande Sassière", "routes": null, "mdiff": 8, "importance": 2, "segments": "7089,7112,7117,7115,7119", "massif": null, "geom": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3744, "start": "Chenal", "stop": "Aiguile de la Grande Sassière", "routes": null, "mdiff": 8, "importance": 2, "segments": "7089,7112,7117,7115,7119,7125", "massif": null, "geom": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3745, "start": "Chenal", "stop": "Pierre Pointe", "routes": null, "mdiff": 6, "importance": 2, "segments": "7089,7112,7117,7114", "massif": null, "geom": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3746, "start": "Chenal", "stop": "Pierre Pointe", "routes": null, "mdiff": 6, "importance": 2, "segments": "7089,7112,7116", "massif": null, "geom": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3747, "start": "Chenal", "stop": "Pointe du Nant Cruet", "routes": null, "mdiff": 9, "importance": 2, "segments": "7089,7112,7117,7115,7118,7121", "massif": null, "geom": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3748, "start": "Chenal", "stop": "Pointe des Plates des Chamois", "routes": null, "mdiff": 9, "importance": 2, "segments": "7089,7112,7117,7115,7118,7120", "massif": null, "geom": null }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3748, "start": "Chenal", "stop": "Pointe des Plates des Chamois", "routes": null, "mdiff": 9, "importance": 2, "segments": "7089,7112,7117,7115,7118,7120", "massif": null, "geom": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3749, "start": "Le Villaret des Brévières", "stop": "Rocher de la Davie", "routes": null, "mdiff": 4, "importance": 2, "segments": "7122,7124", "massif": null, "geom": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3750, "start": "Chenal", "stop": "Rocher de la Davie", "routes": null, "mdiff": 5, "importance": 2, "segments": "7089,7112,7117,7115,7119,7123,7124", "massif": null, "geom": null }, "geometry": null }
 ]
 }
