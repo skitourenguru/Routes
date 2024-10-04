@@ -1,3 +1,7 @@
+"""
+Permet de supprimer un segment dans la colonne segments de la table compositions.
+"""
+
 import psycopg2
 
 # Choisir le segment à supprimer

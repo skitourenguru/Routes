@@ -1,3 +1,7 @@
+"""
+Permet d'inserer un segment dans la colonne segments de la table compositions.
+"""
+
 import psycopg2
 
 # Où insérer un segment ?
@@ -23,7 +27,7 @@ conn = psycopg2.connect(
 cur = conn.cursor()
 
 if Au_debut == 1:
-    
+
     cur.execute(f"""
         UPDATE compositions
         SET segments = array_prepend({segment_a_insere}, segments)

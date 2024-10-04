@@ -1,6 +1,8 @@
 #!/bin/bash
 
-# Modifiez seulement les deux variables ci-dessous : 
+# Permet de renouveller à partir des sauvegardes les données de Segments et Compositions dans la base de données.
+
+# Modifiez seulement les deux variables ci-dessous :
 
 db="test"
 dossier="/home/ulysse/Dropbox/skitourenguru/Routes/France/"
@@ -34,8 +36,8 @@ ALTER TABLE compositions ALTER COLUMN segments TYPE INTEGER[] USING string_to_ar
 
 WITH
     a AS (SELECT compositions.id, st_collect(segments.geom) AS geom
-		FROM compositions, UNNEST(segments) AS iti 
-		JOIN segments ON segments.id = iti 
+		FROM compositions, UNNEST(segments) AS iti
+		JOIN segments ON segments.id = iti
 		GROUP BY compositions.id)
 
 	UPDATE compositions
@@ -44,4 +46,3 @@ WITH
 	WHERE a.id = compositions.id;
 
 EOF
-
