@@ -4,8 +4,8 @@
 
 # Modifiez seulement les deux variables ci-dessous :
 
-db="test"
-dossier="/home/ulysse/Dropbox/skitourenguru/Routes/France/"
+db="France_Alpes"
+dossier="/home/ulysse/Data/Vecteurs/Routes/France/"
 
 
 psql -U postgres -d $db <<EOF
