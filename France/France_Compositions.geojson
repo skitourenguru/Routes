@@ -3747,11 +3747,11 @@
 { "type": "Feature", "properties": { "id": 3750, "start": "Chenal", "stop": "Rocher de la Davie", "routes": null, "mdiff": 5, "importance": 2, "segments": "7089,7112,7117,7115,7119,7123,7124", "massif": null, "geom": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3751, "start": "Chenal", "stop": "Col du Rocher Blanc", "routes": null, "mdiff": 3, "importance": 2, "segments": "7089,7113,7108,7130,7097,7126", "massif": null, "geom": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3752, "start": "Chenal", "stop": "Col du Lac Noir", "routes": null, "mdiff": 3, "importance": 2, "segments": "7089,7113,7108,7130,7097,7129,7127", "massif": null, "geom": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3753, "start": "Le Franchet", "stop": "Aiguile de la Grande Sassière", "routes": null, "mdiff": 8, "importance": 2, "segments": "7133,7131", "massif": null, "geom": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3753, "start": "Le Franchet", "stop": "Aiguile de la Grande Sassière", "routes": null, "mdiff": 8, "importance": 2, "segments": "7143,7133,7131", "massif": null, "geom": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3754, "start": "Le Chevril", "stop": "Aiguille de la Grande Sassière", "routes": null, "mdiff": 7, "importance": 2, "segments": "7132,7131", "massif": null, "geom": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3755, "start": "Le Franchet", "stop": "Col de Rhêmes-Golette", "routes": null, "mdiff": 3, "importance": 2, "segments": "7134,7140", "massif": null, "geom": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3756, "start": "Le Franchet", "stop": "La Tsanteleina", "routes": null, "mdiff": 9, "importance": 2, "segments": "7133,7134,7140,7137,7139,7142", "massif": null, "geom": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3757, "start": "Le Franchet", "stop": "Col de la Tsanteleina", "routes": null, "mdiff": 5, "importance": 2, "segments": "7133,7134,7140,7137", "massif": null, "geom": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3758, "start": "Le Franchet", "stop": "La Tsanteleina", "routes": null, "mdiff": 10, "importance": 2, "segments": "7133,7134,7141,7142", "massif": null, "geom": null }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3756, "start": "Le Franchet", "stop": "La Tsanteleina", "routes": null, "mdiff": 9, "importance": 2, "segments": "7133,7143,7134,7140,7137,7139,7142", "massif": null, "geom": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3757, "start": "Le Franchet", "stop": "Col de la Tsanteleina", "routes": null, "mdiff": 5, "importance": 2, "segments": "7133,7143,7134,7140,7137", "massif": null, "geom": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3758, "start": "Le Franchet", "stop": "La Tsanteleina", "routes": null, "mdiff": 10, "importance": 2, "segments": "7133,7143,7134,7141,7142", "massif": null, "geom": null }, "geometry": null }
 ]
 }
