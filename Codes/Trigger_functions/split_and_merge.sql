@@ -5,18 +5,18 @@ BEGIN
 
 IF EXISTS (SELECT id FROM segments GROUP BY id HAVING count(id)>1) THEN
 
-    WITH 
+    WITH
         doublons AS (
-            SELECT id 
-            FROM segments 
-            GROUP BY id 
+            SELECT id
+            FROM segments
+            GROUP BY id
             HAVING count(id)>1
         ),
 
     /****************************************************************************************************************
     ******************************************** Segments uniques inversés ******************************************
     *****************************************************************************************************************/
-    
+
                 startpoint AS (
                     SELECT segments.id AS id,
                            st_value(rast, st_startpoint(geom), true) AS altitude
@@ -31,24 +31,24 @@ IF EXISTS (SELECT id FROM segments GROUP BY id HAVING count(id)>1) THEN
                 ),
                 segments_uniques AS (
                     SELECT segid,
-                           id 
+                           id
                     FROM compositions,
-                         unnest(segments) AS segid 
+                         unnest(segments) AS segid
                     WHERE cardinality(segments) = 1
                 ),
         segment_unique_inverse AS (
             SELECT segments_uniques.id AS compoid
-            FROM startpoint 
+            FROM startpoint
             JOIN endpoint ON startpoint.id = endpoint.id
             JOIN segments_uniques ON segments_uniques.segid = endpoint.id
-	    JOIN doublons on doublons.id = endpoint.id
+            JOIN doublons on doublons.id = endpoint.id
             WHERE startpoint.altitude > endpoint.altitude
         ),
 
     /****************************************************************************************************************
     ****************************** Premiers segments et segments du milieu inversés *********************************
     *****************************************************************************************************************/
-    
+
                 b AS (
                     SELECT compositions.id AS compoid,
                            ORDINALITY AS num,
@@ -60,16 +60,16 @@ IF EXISTS (SELECT id FROM segments GROUP BY id HAVING count(id)>1) THEN
                 ),
         premier_milieu_inverse AS (
                 SELECT b.compoid
-                FROM b JOIN b c ON b.compoid = c.compoid AND b.num+1 = c.num 
+                FROM b JOIN b c ON b.compoid = c.compoid AND b.num+1 = c.num
                 JOIN doublons ON doublons.id = b.segid
                 WHERE st_startpoint(b.geom) && (c.geom)
-        ),        
-        
-    
+        ),
+
+
     /****************************************************************************************************************
     ***************************************** Derniers segments inversés ********************************************
     *****************************************************************************************************************/
-    
+
                 avant_dernier AS (
                     SELECT segments[array_length(segments, 1) -1] AS segid,
                            compositions.id AS compoid,
@@ -77,14 +77,14 @@ IF EXISTS (SELECT id FROM segments GROUP BY id HAVING count(id)>1) THEN
                     FROM compositions
                     JOIN segments ON segments.id = segments[array_length(segments, 1) - 1]
                 ),
-            
-                dernier AS (			
+
+                dernier AS (
                     SELECT segments[array_length(segments, 1)] AS segid,
                            compositions.id AS compoid,
-                           segments.geom 
+                           segments.geom
                     FROM compositions
                     JOIN segments ON segments.id = segments[array_length(segments, 1)]
-		    JOIN doublons ON doublons.id = segments[array_length(segments, 1)]
+                    JOIN doublons ON doublons.id = segments[array_length(segments, 1)]
                 ),
         dernier_inverse AS (
             SELECT dernier.compoid
@@ -100,13 +100,13 @@ IF EXISTS (SELECT id FROM segments GROUP BY id HAVING count(id)>1) THEN
         OR compositions.id IN (SELECT premier_milieu_inverse.compoid FROM premier_milieu_inverse)
         OR compositions.id IN (SELECT dernier_inverse.compoid FROM dernier_inverse)
     THEN
-        segments[:array_position(segments,doublons.id)-1] 
-        ||(SELECT max(id)+1 FROM segments)::int|| 
+        segments[:array_position(segments,doublons.id)-1]
+        ||(SELECT max(id)+1 FROM segments)::int||
         segments[array_position(segments, doublons.id):]
     ELSE
-        segments[:array_position(segments,doublons.id)] 
-        ||(SELECT max(id)+1 FROM segments)::int|| 
-        segments[array_position(segments, doublons.id)+1:] 
+        segments[:array_position(segments,doublons.id)]
+        ||(SELECT max(id)+1 FROM segments)::int||
+        segments[array_position(segments, doublons.id)+1:]
     END
     FROM doublons
     WHERE doublons.id = ANY(segments);
@@ -115,7 +115,7 @@ IF EXISTS (SELECT id FROM segments GROUP BY id HAVING count(id)>1) THEN
 
     -- On met à jour l'id du nouveau segment
     UPDATE segments
-    SET  id  = (SELECT max(id)+1 FROM segments) 
+    SET  id  = (SELECT max(id)+1 FROM segments)
     WHERE fid  = new.fid;
 
 
@@ -130,11 +130,11 @@ IF (TG_OP = 'INSERT') THEN
         -- On cherche les segments de compositions qui ne sont pas dans segments
 	    segments_inexistants AS (
             SELECT segid,
-                   id 
+                   id
             FROM compositions,
-                 unnest(segments) AS segid 
+                 unnest(segments) AS segid
 	        WHERE segid NOT IN (SELECT segments.id FROM segments)
-        ) 
+        )
 
     -- On les supprime.
 	UPDATE compositions
