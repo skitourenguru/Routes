@@ -164,7 +164,8 @@ rem       positives negatives
 rem true      22223   1847724
 rem false     47281      9456
 
-set THREASHOLD=0.065
+rem set THREASHOLD=0.065
+set THREASHOLD=0.069
 
 
 
