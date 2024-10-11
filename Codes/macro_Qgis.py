@@ -26,7 +26,7 @@ def saveProject():
                 port=5432"""
 
         statement = """
-        SELECT id, start, stop, routes, mdiff, importance, REPLACE(REPLACE(segments::text, '{', ''), '}', '') as segments, massif, NULL AS geom
+        SELECT id, start, stop, routes, mdiff, importance, REPLACE(REPLACE(segments::text, '{', ''), '}', '') as segments, massif
         FROM compositions
         ORDER BY id
         """
