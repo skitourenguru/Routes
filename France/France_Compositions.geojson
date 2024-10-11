@@ -3760,7 +3760,6 @@
 { "type": "Feature", "properties": { "id": 3763, "start": "Le Fornet", "stop": "Pointe de Bazel", "routes": null, "mdiff": 6, "importance": 2, "segments": "7152,7155,7162,7159,7157", "massif": null, "geom": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3764, "start": "Le Fornet", "stop": "Pointe de Calabre", "routes": null, "mdiff": 8, "importance": 2, "segments": "7152,7155,7162,7159,7156", "massif": null, "geom": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3765, "start": "Le Fornet", "stop": "Col de Rhêmes-Calabre", "routes": null, "mdiff": 5, "importance": 2, "segments": "7152,7155,7162,7159", "massif": null, "geom": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3766, "start": "Le Fornet", "stop": "Roc de Bassagne", "routes": null, "mdiff": 11, "importance": 2, "segments": "7152,7155,7160,7163,7161", "massif": null, "geom": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3767, "start": "Le Fornet", "stop": "Pointe de la Galise", "routes": null, "mdiff": 7, "importance": 2, "segments": "7152,7155,7160,7164", "massif": null, "geom": null }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3766, "start": "Le Fornet", "stop": "Roc de Bassagne", "routes": null, "mdiff": 11, "importance": 2, "segments": "7152,7155,7160,7161", "massif": null, "geom": null }, "geometry": null }
 ]
 }
