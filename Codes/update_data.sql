@@ -1,7 +1,7 @@
 ************************************************************************
 ************************** Update data in Database **********************
 ************************************************************************
-	
+
 -- Truncate the existing tables
 
 TRUNCATE TABLE compositions, segments;
@@ -16,12 +16,12 @@ DISABLE TRIGGER ALL;
 
 ------------------------------------------------------------------------------------
 Adapt and copy this line in your shell :
-ogr2ogr -f PostgreSQL "PG:user=postgres password=postgres dbname=test" /home/ulysse/Dropbox/skitourenguru/Ski-Routes/France-Alpes/France_Alpes_Compositions.geojson && ogr2ogr -f PostgreSQL "PG:user=postgres password=postgres dbname=test" /home/ulysse/Dropbox/skitourenguru/Ski-Routes/France-Alpes/France_Alpes_Segments.geojson	
+ogr2ogr -f PostgreSQL "PG:user=postgres password=postgres dbname=test" /chemin/vers/Routes/Pays/Pays_Compositions.geojson && ogr2ogr -f PostgreSQL "PG:user=postgres password=postgres dbname=test" /chemin/vers/Routes/Pays/Pays_Segments.geojson
 ---------------------------------------------------------------------------------
 
-	
+
 -- Enable again the triggers
-	
+
 ALTER TABLE compositions
 ENABLE TRIGGER ALL;
 
@@ -32,8 +32,8 @@ ENABLE TRIGGER ALL;
 
 WITH
     a AS (SELECT compositions.id, st_collect(segments.geom) AS geom
-		FROM compositions, UNNEST(segments) AS iti 
-		JOIN segments ON segments.id = iti 
+		FROM compositions, UNNEST(segments) AS iti
+		JOIN segments ON segments.id = iti
 		GROUP BY compositions.id)
 
 	UPDATE compositions
