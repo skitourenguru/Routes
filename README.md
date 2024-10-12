@@ -2,7 +2,7 @@
 
 This readme is also in [:fr:](https://github.com/skitourenguru/Routes/blob/main/README.md)
 
-In this repository, you will find skitouring routes drawn by the Petzl Foundation in collaboration with Skitourenguru Gmbh.
+In this repository, you will find skitouring routes drawn by the [Petzl Foundation](https://www.petzl.com/fondation/) in collaboration with [Skitourenguru](https://skitourenguru.ch/) Gmbh.
 For now, only French routes are present. In the future, all Alpine routes should be included.
 
 These routes have not yet received their final treatment. Do not use them under any circumstances. If you wish to obtain them, send an email to
