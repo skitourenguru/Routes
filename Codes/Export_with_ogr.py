@@ -2,11 +2,17 @@ import subprocess
 from pygit2 import Repository
 from qgis.utils import iface
 
-dossier = "/home/ulysse/Data/Vecteurs/Routes/France"
-compo_name = "France_Compositions.geojson"
-segments_name = "France_Segments.geojson"
+# You're Git repo + contry name
+dossier = "/Git/Repo/Routes/Contry"
+
+# Name of you're Compositions layer
+compo_name = "XXX_Compositions.geojson"
+# Name of you're Segments layer
+segments_name = "XXX_Segments.geojson"
+
+# Info about you're  DB.
 db = """host=localhost
-        dbname=France_Alpes 
+        dbname=XXXX
         user=postgres 
         password=postgres 
         port=5432
