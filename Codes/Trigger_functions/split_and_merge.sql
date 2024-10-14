@@ -3,7 +3,7 @@ BEGIN
 
 /************************************************* Split segments **************************************************/
 
-/* Lorsqu'un segment est coupé en deux, ceux-ci partage un même id. Nous savons donc quel segment a été coupé en cherchant le id dupliqués. */
+/* Lorsqu'un segment est coupé en deux, ceux-ci partagent un même id. Nous savons donc quel segment a été coupé en cherchant le id dupliqués. */
 
 IF EXISTS (SELECT id FROM segments GROUP BY id HAVING count(id)>1) THEN
 
