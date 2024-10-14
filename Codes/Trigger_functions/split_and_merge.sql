@@ -15,7 +15,7 @@ IF EXISTS (SELECT id FROM segments GROUP BY id HAVING count(id)>1) THEN
             HAVING count(id)>1
         ),
 
-/* Le nouveau segment créé lors de la scission est ajouté APRÈS l'ancien, i.e. dans l'ordre des points, par ex. le résultat de la scission du segment 12 de coordonnées (1,2,3,4,5)
+/* Le nouveau segment créé lors de la scission est ajouté APRÈS l'ancien (dans l'ordre des points), par ex. le résultat de la scission du segment 12 de coordonnées (1,2,3,4,5)
 coupé à (3) sera : segment 12 (1,2,3), segment 13 (4,5). Le nouveau segment est discriminable de l'ancien avec la fonction NEW de postgres. Mais un segment peut-être partagé par
 des compositions n'allant pas dans la même direction, ou un segment peut-être à l'envers. Tout l'art est de savoir s'il faut l'insérer à la droite ou à la gauche de l'ancien.
 Trois cas de figures s'offrent à nous :
