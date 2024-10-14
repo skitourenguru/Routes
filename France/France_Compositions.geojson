@@ -3772,6 +3772,9 @@
 { "type": "Feature", "properties": { "id": 3775, "start": "Station du Fornet", "stop": "Refuge de Prarion", "routes": null, "mdiff": 3, "importance": 2, "segments": "7174,7175,7176,7173", "massif": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3776, "start": "Le Fornet", "stop": "Grand Cocor", "routes": null, "mdiff": 2, "importance": 0, "segments": "7155,7160,7171,7173,7165,7180", "massif": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3777, "start": "Refuge de Prarion", "stop": "Grand Cocor", "routes": null, "mdiff": 2, "importance": 0, "segments": "7165,7180", "massif": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3778, "start": "Le Fornet", "stop": "Grande Aiguille Rousse", "routes": null, "mdiff": 5, "importance": 2, "segments": "7155,7160,7171,7173,7181,7184", "massif": null }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3778, "start": "Le Fornet", "stop": "Grande Aiguille Rousse", "routes": null, "mdiff": 5, "importance": 2, "segments": "7155,7160,7171,7173,7181,7186,7184", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3779, "start": "Le Fornet", "stop": "Pointe du Gros Caval", "routes": null, "mdiff": 4, "importance": 0, "segments": "7155,7160,7171,7173,7181,7185", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3780, "start": "Téléski du Montet", "stop": "Grande Aiguille Rousse", "routes": null, "mdiff": 6, "importance": 0, "segments": "7182", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3781, "start": "Refuge de Prarion", "stop": "Pointe du Gros Caval", "routes": null, "mdiff": 4, "importance": 0, "segments": "7181,7185", "massif": null }, "geometry": null }
 ]
 }
