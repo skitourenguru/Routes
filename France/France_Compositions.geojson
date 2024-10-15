@@ -3777,6 +3777,9 @@
 { "type": "Feature", "properties": { "id": 3780, "start": "Téléski du Montet", "stop": "Grande Aiguille Rousse", "routes": null, "mdiff": 6, "importance": 0, "segments": "7182", "massif": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3781, "start": "Refuge de Prarion", "stop": "Pointe du Gros Caval", "routes": null, "mdiff": 4, "importance": 0, "segments": "7181,7185,7188,7189", "massif": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3782, "start": "Refuge de Prarion", "stop": "Pointe du Gros Caval", "routes": null, "mdiff": 4, "importance": 0, "segments": "7181,7185,7187,7189", "massif": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3783, "start": "Le Fornet", "stop": "Pointe du Gros Caval", "routes": null, "mdiff": 4, "importance": 0, "segments": "7155,7160,7171,7173,7181,7185,7187,7189", "massif": null }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3783, "start": "Le Fornet", "stop": "Pointe du Gros Caval", "routes": null, "mdiff": 4, "importance": 0, "segments": "7155,7160,7171,7173,7181,7185,7187,7189", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3784, "start": "Le Manchet", "stop": "Pélaou Blanc", "routes": null, "mdiff": 6, "importance": 0, "segments": "7190,7191", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3785, "start": "Le Manchet", "stop": "Col des Fours", "routes": null, "mdiff": 3, "importance": 0, "segments": "7190,7192,7193", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3786, "start": "Le Manchet", "stop": "Pointe des Fours", "routes": null, "mdiff": 5, "importance": 0, "segments": "7190,7192,7194", "massif": null }, "geometry": null }
 ]
 }
