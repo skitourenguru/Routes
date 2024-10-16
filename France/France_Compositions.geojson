@@ -1478,7 +1478,7 @@
 { "type": "Feature", "properties": { "id": 1477, "start": "Les Bruyères", "stop": "Pointe de la Masse", "routes": null, "mdiff": 0, "importance": 0, "segments": "2195,2204", "massif": "Vanoise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1478, "start": "Le Suffet", "stop": "Pointe de la Sana", "routes": null, "mdiff": 0, "importance": 0, "segments": "2238,2247,6591,2242,6592,2240", "massif": "Vanoise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1479, "start": "Le Suffet", "stop": "Col des Barmes de l'Ours", "routes": null, "mdiff": 0, "importance": 0, "segments": "2238,2247,6591,2242,6592", "massif": "Vanoise" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 1480, "start": "Le Suffet", "stop": "Pointe de Méan Martin", "routes": null, "mdiff": 0, "importance": 0, "segments": "2238,2247,6591,2242,2241,2244,2248", "massif": "Vanoise" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 1480, "start": "Le Suffet", "stop": "Pointe de Méan Martin", "routes": null, "mdiff": 0, "importance": 0, "segments": "2238,2247,6591,2242,2241,2244,2248,7199,7197", "massif": "Vanoise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1481, "start": "Le Suffet", "stop": "Aiguille de Méan Martin", "routes": null, "mdiff": 0, "importance": 0, "segments": "2238,2247,6591,2242,2241,2243", "massif": "Vanoise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1482, "start": "Le Suffet", "stop": "Point nord-est du Châtelard", "routes": null, "mdiff": 0, "importance": 0, "segments": "2238,2247,6591,2245", "massif": "Vanoise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1483, "start": "Le Suffet", "stop": "Pointe du Grand Vallon", "routes": null, "mdiff": 0, "importance": 0, "segments": "2238,2246,6539", "massif": null }, "geometry": null },
@@ -3779,7 +3779,14 @@
 { "type": "Feature", "properties": { "id": 3782, "start": "Refuge de Prarion", "stop": "Pointe du Gros Caval", "routes": null, "mdiff": 4, "importance": 0, "segments": "7181,7185,7187,7189", "massif": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3783, "start": "Le Fornet", "stop": "Pointe du Gros Caval", "routes": null, "mdiff": 4, "importance": 0, "segments": "7155,7160,7171,7173,7181,7185,7187,7189", "massif": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3784, "start": "Le Manchet", "stop": "Pélaou Blanc", "routes": null, "mdiff": 6, "importance": 0, "segments": "7190,7191", "massif": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3785, "start": "Le Manchet", "stop": "Col des Fours", "routes": null, "mdiff": 3, "importance": 0, "segments": "7190,7192,7193", "massif": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3786, "start": "Le Manchet", "stop": "Pointe des Fours", "routes": null, "mdiff": 5, "importance": 0, "segments": "7190,7192,7194", "massif": null }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3785, "start": "Le Manchet", "stop": "Col des Fours", "routes": null, "mdiff": 3, "importance": 0, "segments": "7190,7192,7200,7193", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3786, "start": "Le Manchet", "stop": "Pointe des Fours", "routes": null, "mdiff": 5, "importance": 0, "segments": "7190,7192,7200,7194", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3787, "start": "Le Manchet", "stop": "Pointe de Méan Martin", "routes": null, "mdiff": 5, "importance": 0, "segments": "7190,7192,7200,7195,7196", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3788, "start": "Le Manchet", "stop": "Pointe de Méan Martin", "routes": null, "mdiff": 5, "importance": 0, "segments": "7190,7192,7200,7195,7198,7199,7197", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3789, "start": "Refuge du Fond des Fours", "stop": "Pélou Blanc", "routes": null, "mdiff": 6, "importance": 0, "segments": "7191", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3790, "start": "Refuge du Fond des Fours", "stop": "Pointe des Fours", "routes": null, "mdiff": 5, "importance": 0, "segments": "7192,7200,7194", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3791, "start": "Refuge du Fond des Fours", "stop": "Col des Fours", "routes": null, "mdiff": 3, "importance": 0, "segments": "7192,7200,7193", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3792, "start": "Refuge du Fond des Fours", "stop": "Pointe de Méan Martin", "routes": null, "mdiff": 5, "importance": 0, "segments": "7192,7200,7195,7198,7199,7197", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3793, "start": "Refuge du Fond des Fours", "stop": "Pointe de Méan Martin", "routes": null, "mdiff": 5, "importance": 0, "segments": "7192,7200,7195,7196", "massif": null }, "geometry": null }
 ]
 }
