@@ -107,7 +107,7 @@ iface.showAttributeTable(layer)
 ############################################################################################
 ########################### Check if there is Warnings #####################################
 ############################################################################################
-
+"""
 command = "curl https://download.skitourenguru.com/public/Warnings.log --output /home/ulysse/Data/Vecteurs/Skitourenguru_Public/Warnings.log"
 
 try:
@@ -181,6 +181,6 @@ elif re.search(problems, content):
     iface.messageBar().pushWidget(widget, Qgis.Warning)
 else:
     iface.messageBar().pushMessage("Warnings ", "Aucune correspondance trouvé. Vérifiez que Warnings.log soit bien téléchargé", level=Qgis.Info, duration=6)
-
+"""
 cur.close()
 conn.close()
