@@ -1476,7 +1476,7 @@
 { "type": "Feature", "properties": { "id": 1475, "start": "Les Bruyères", "stop": "Mont du Chat", "routes": null, "mdiff": 0, "importance": 0, "segments": "2195,2205,2203,2198,2200", "massif": "Vanoise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1476, "start": "Les Bruyères", "stop": "Col de Montfiot", "routes": null, "mdiff": null, "importance": 0, "segments": "2195,2205,2202", "massif": "Vanoise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1477, "start": "Les Bruyères", "stop": "Pointe de la Masse", "routes": null, "mdiff": 0, "importance": 0, "segments": "2195,2204", "massif": "Vanoise" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 1478, "start": "Le Suffet", "stop": "Pointe de la Sana", "routes": null, "mdiff": 0, "importance": 0, "segments": "2238,2247,6591,2242,6592,2240,7207", "massif": "Vanoise" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 1478, "start": "Le Suffet", "stop": "Pointe de la Sana", "routes": null, "mdiff": 0, "importance": 0, "segments": "2238,2247,6591,2242,6592,2240,7211,7207", "massif": "Vanoise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1479, "start": "Le Suffet", "stop": "Col des Barmes de l'Ours", "routes": null, "mdiff": 0, "importance": 0, "segments": "2238,2247,6591,2242,6592", "massif": "Vanoise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1480, "start": "Le Suffet", "stop": "Pointe de Méan Martin", "routes": null, "mdiff": 0, "importance": 0, "segments": "2238,2247,6591,2242,2241,2244,2248,7199,7197", "massif": "Vanoise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1481, "start": "Le Suffet", "stop": "Aiguille de Méan Martin", "routes": null, "mdiff": 0, "importance": 0, "segments": "2238,2247,6591,2242,2241,2243", "massif": "Vanoise" }, "geometry": null },
@@ -3788,7 +3788,7 @@
 { "type": "Feature", "properties": { "id": 3792, "start": "Refuge du Fond des Fours", "stop": "Pointe de Méan Martin", "routes": null, "mdiff": 5, "importance": 2, "segments": "7192,7200,7195,7198,7201,7199,7197", "massif": "Tarentaise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3793, "start": "Refuge du Fond des Fours", "stop": "Pointe de Méan Martin", "routes": null, "mdiff": 5, "importance": 2, "segments": "7192,7200,7195,7196", "massif": "Tarentaise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3794, "start": "Refuge du Fond des Fours", "stop": "Refuge de la Femma", "routes": null, "mdiff": 3, "importance": 2, "segments": "7192,7200,7195,7198,7202,2249,2244,2241,2242", "massif": "Tarentaise" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3795, "start": "Refuge de la Femma", "stop": "Pointe de la Sana", "routes": null, "mdiff": null, "importance": 0, "segments": "2242,6592,2240,7207", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3795, "start": "Refuge de la Femma", "stop": "Pointe de la Sana", "routes": null, "mdiff": null, "importance": 0, "segments": "2242,6592,2240,7211,7207", "massif": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3796, "start": "Refuge de la Femma", "stop": "Col des Barmes de l'Ours", "routes": null, "mdiff": null, "importance": 0, "segments": "2242,2241,2244,2248,7199,7197", "massif": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3797, "start": "Refuge de la Femma", "stop": "Pointe de Méan Martin", "routes": null, "mdiff": null, "importance": 0, "segments": "2242,2241,2244,2248,7199,7197", "massif": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3798, "start": "Refuge de la Femma", "stop": "Aiguille de Méan Martin", "routes": null, "mdiff": null, "importance": 0, "segments": "2242,2241,2243", "massif": null }, "geometry": null },
@@ -3801,6 +3801,7 @@
 { "type": "Feature", "properties": { "id": 3805, "start": "Le Franchet", "stop": "Pointe de la Golette", "routes": null, "mdiff": 3, "importance": 2, "segments": "7143,7134,7144,7140,7137,7138,7136", "massif": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3806, "start": "Le Fornet", "stop": "Roc de Bassagne", "routes": null, "mdiff": 6, "importance": 2, "segments": "7152,7155,7162,7158,7161,7170", "massif": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3807, "start": "Téléski du Montet", "stop": "Grande Aiguille Rousse", "routes": null, "mdiff": 5, "importance": 2, "segments": "7182,7183", "massif": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3808, "start": "Refuge de la Femma", "stop": "Pointe du Charbonnier", "routes": null, "mdiff": 6, "importance": 0, "segments": "2242,6592,2240,7206", "massif": null }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3808, "start": "Refuge de la Femma", "stop": "Pointe du Charbonnier", "routes": null, "mdiff": 6, "importance": 0, "segments": "2242,6592,2240,7211,7206", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3809, "start": "Le Manchet", "stop": "Pointe du Charbonnier", "routes": null, "mdiff": 6, "importance": 2, "segments": "7190,7213,7209,7208,7206", "massif": null }, "geometry": null }
 ]
 }
