@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Permet de renouveller à partir des sauvegardes les données de Segments et Compositions dans la base de données.
+# Permet de renouveler à partir des sauvegardes les données de Segments et Compositions dans la base de données.
 
 # Modifiez seulement les deux variables ci-dessous :
 
-db="France_Alpes"
+db="test"
 dossier="/home/ulysse/Data/Vecteurs/Routes/France/"
 
 
