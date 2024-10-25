@@ -3805,8 +3805,8 @@
 { "type": "Feature", "properties": { "id": 3809, "start": "Le Manchet", "stop": "Pointe du Charbonnier", "routes": null, "mdiff": 6, "importance": 2, "segments": "7190,7213,7214,7209,7208,7206", "massif": "Tarentaise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3810, "start": "Le Manchet", "stop": "Pointe de la Sana", "routes": null, "mdiff": 5, "importance": 2, "segments": "7190,7213,7216,7212,7211,7207", "massif": "Tarentaise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3811, "start": "Le Manchet", "stop": "Pointe du Charbonnier", "routes": null, "mdiff": 6, "importance": 2, "segments": "7190,7213,7216,7212,7211,7206", "massif": "Tarentaise" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3812, "start": "La Gurraz", "stop": "Refuge de la Martin", "routes": null, "mdiff": null, "importance": 2, "segments": "7217", "massif": "Tarentaise" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3813, "start": "Refuge de la Martin", "stop": "Dôme de la Sache", "routes": null, "mdiff": 6, "importance": 2, "segments": "7218", "massif": "Tarentaise" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3814, "start": "La Gurraz", "stop": "Dôme de la Sache", "routes": null, "mdiff": 6, "importance": 2, "segments": "7217,7218", "massif": "Tarentaise" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3812, "start": "La Gurraz", "stop": "Refuge de la Martin", "routes": null, "mdiff": null, "importance": 2, "segments": "7217,7221", "massif": "Tarentaise" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3813, "start": "Refuge de la Martin", "stop": "Dôme de la Sache", "routes": null, "mdiff": 6, "importance": 2, "segments": "7218,7220", "massif": "Tarentaise" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3814, "start": "La Gurraz", "stop": "Dôme de la Sache", "routes": null, "mdiff": 6, "importance": 2, "segments": "7217,7221,7218,7220", "massif": "Tarentaise" }, "geometry": null }
 ]
 }
