@@ -3807,6 +3807,10 @@
 { "type": "Feature", "properties": { "id": 3811, "start": "Le Manchet", "stop": "Pointe du Charbonnier", "routes": null, "mdiff": 6, "importance": 2, "segments": "7190,7213,7216,7212,7211,7206", "massif": "Tarentaise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3812, "start": "La Gurraz", "stop": "Refuge de la Martin", "routes": null, "mdiff": null, "importance": 2, "segments": "7217,7221", "massif": "Tarentaise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3813, "start": "Refuge de la Martin", "stop": "Dôme de la Sache", "routes": null, "mdiff": 6, "importance": 2, "segments": "7218,7220", "massif": "Tarentaise" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3814, "start": "La Gurraz", "stop": "Dôme de la Sache", "routes": null, "mdiff": 6, "importance": 2, "segments": "7217,7221,7218,7220", "massif": "Tarentaise" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3814, "start": "La Gurraz", "stop": "Dôme de la Sache", "routes": null, "mdiff": 6, "importance": 2, "segments": "7217,7221,7218,7220", "massif": "Tarentaise" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3815, "start": "La Gurraz", "stop": "Dôme de la Sache", "routes": null, "mdiff": 6, "importance": 2, "segments": "7217,7226,7219,7220", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3816, "start": "La Gurraz", "stop": "Refuge de Turia", "routes": null, "mdiff": 3, "importance": 2, "segments": "7222,7224", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3817, "start": "La Gurraz", "stop": "Dôme de la Sache", "routes": null, "mdiff": 4, "importance": 2, "segments": "7222,7223,7219,7220", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3818, "start": "Refuge de la Turia", "stop": "Dôme de la Sache", "routes": null, "mdiff": 4, "importance": 2, "segments": "7224,7223,7219,7220", "massif": null }, "geometry": null }
 ]
 }
