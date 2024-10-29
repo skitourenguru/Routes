@@ -3814,6 +3814,8 @@
 { "type": "Feature", "properties": { "id": 3818, "start": "Refuge de la Turia", "stop": "Dôme de la Sache", "routes": null, "mdiff": 4, "importance": 2, "segments": "7224,7223,7219,7220", "massif": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3819, "start": "Télésiège du Grand Col", "stop": "Refuge de la Turia", "routes": null, "mdiff": 5, "importance": 2, "segments": "7227,7228", "massif": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3820, "start": "Télésiège du Grand Col", "stop": "Dôme de la Sache", "routes": null, "mdiff": 5, "importance": 2, "segments": "7227,7228,7224,7223,7219,7220", "massif": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3821, "start": "Télésiège du Grand Col", "stop": "Mont Pourri", "routes": null, "mdiff": 8, "importance": 2, "segments": "7227,7228,7229,7230", "massif": null }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3821, "start": "Télésiège du Grand Col", "stop": "Mont Pourri", "routes": null, "mdiff": 8, "importance": 2, "segments": "7227,7228,7229,7230", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3822, "start": "Arc 2000", "stop": "Mont Pourri", "routes": null, "mdiff": 8, "importance": 2, "segments": "7232,7231,7230", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3823, "start": "La Chénarie", "stop": "Aiguille Grive", "routes": null, "mdiff": 4, "importance": 2, "segments": "7233", "massif": null }, "geometry": null }
 ]
 }
