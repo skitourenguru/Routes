@@ -51,8 +51,11 @@ def saveProject():
         except subprocess.CalledProcessError as e:
             print("La commande a échoué avec le code de sortie : ", e.returncode)
 
-        os.popen(f'cd {dossier} && git commit -a -m "backup" && git push')
-        os.popen(f'cd {dropbox} && git pull')
+        push = f"cd {dossier} && git commit -a -m \"backup\" && git push"
+        subprocess.run(push, shell=True)
+
+        drop_pull = f"cd {dropbox} && git pull"
+        subprocess.run(drop_pull, shell=True)
 
         iface.messageBar().pushMessage("Couches compositions et segments exportées et poussées sur la branche 'backup' avec succès.")
     else:
