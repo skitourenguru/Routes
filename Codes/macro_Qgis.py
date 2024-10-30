@@ -52,10 +52,10 @@ def saveProject():
             print("La commande a échoué avec le code de sortie : ", e.returncode)
 
         push = f"cd {dossier} && git commit -a -m \"backup\" && git push"
-        subprocess.run(push, shell=True)
+        subprocess.run(push, shell=True, timeout=10)
 
         drop_pull = f"cd {dropbox} && git pull"
-        subprocess.run(drop_pull, shell=True)
+        subprocess.run(drop_pull, shell=True, timeout=10)
 
         iface.messageBar().pushMessage("Couches compositions et segments exportées et poussées sur la branche 'backup' avec succès.")
     else:
