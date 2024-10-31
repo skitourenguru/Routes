@@ -173,10 +173,10 @@ def openProject():
                 print(message)
 
                 def showError():
-                    subprocess.run(["flatpak run org.gnome.TextEditor", f"{logs}/Warnings_short.log"])
+                        subprocess.run(["flatpak", "run", "org.gnome.TextEditor", f"{logs}/Warnings_short.log"])
 
                 widget = iface.messageBar().createMessage("Warnings ", f"Problème avec {segments_problematiques} routes.")
-                button = QPushButton(widget)
+                button = QPushButton(widget)Warnings_short.log"])
                 button.setText("Voir")
                 button.pressed.connect(showError)
                 widget.layout().addWidget(button)
