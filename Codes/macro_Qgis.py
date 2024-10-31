@@ -107,6 +107,9 @@ conn.commit()
 layer = QgsProject.instance().mapLayersByName('compositions')[0]
 iface.showAttributeTable(layer)
 
+cur.close()
+conn.close()
+
 ############################################################################################
 ########################### Check if there is Warnings #####################################
 ############################################################################################
@@ -134,6 +137,13 @@ def get_frequence(segids: list) -> dict:
     return collections.Counter(segids)
 
 def openProject():
+    conn = psycopg2.connect(
+        host = "localhost",
+        database = "France_Alpes",
+        user = "postgres",
+        password = "postgres" )
+    cur = conn.cursor()
+
     path_to_warn = "/home/ulysse/Data/Vecteurs/Skitourenguru_Public"
     logs = "/home/ulysse/Code/logs"
     today = datetime.date.today()
