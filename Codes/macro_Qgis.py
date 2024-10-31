@@ -117,26 +117,21 @@ def truncate(logs : str) -> None:
         f.write("")
     cur.execute(f"TRUNCATE TABLE Alerte")
 
-def find_warnings(texte: str, stop_here: str, capture_that: str) -> tuple[int,int]:
+def find_warnings(texte: str, stop_here: str, capture_that: str) -> list:
     # Chercher les warnings dans le fichier téléchargé aujourd'hui.
     segids = []
-    frequence = 0
-    segments_problematiques = 0
 
     match_arret = re.search(stop_here, texte, re.DOTALL)
     if match_arret:
         texte_avant_arret = texte[:match_arret.start()]
         for match in re.finditer(capture_that, texte_avant_arret):
             segids.append(match.group(1))
+    return segids
 
-    if segids:
-        s = collections.Counter(segids)
-        for segments_id, freq in sorted(s.items()):
-            segments_problematiques = int(segments_id)
-            frequence = int(freq)
 
-    return segments_problematiques, frequence
+def get_frequence(segids: list) -> dict:
 
+    return collections.Counter(segids)
 
 def openProject():
     path_to_warn = "/home/ulysse/Data/Vecteurs/Skitourenguru_Public"
@@ -156,34 +151,40 @@ def openProject():
 
         with open(f"{path_to_warn}/Warnings.log", "r") as f:
             texte = f.read()
+
+        nombre_de_problemes = re.search(problems, texte)
         if re.search(no_problems, texte):
             iface.messageBar().pushMessage("Warnings ", "Aucun problème trouvé", level=Qgis.Success, duration=6)
 
         else:
-            segments_problematiques, frequence = find_warnings(texte, stop_here, capture_that)
+            liste_problems = find_warnings(texte, stop_here, capture_that)
+            if liste_problems:
+                frequences = get_frequence(liste_problems)
 
-            if frequence > 0:
-                if frequence == 1:
-                    message = f"Problème avec le segment {segments_problematiques}"
-                else:
-                    message = f"Problème avec le segment {segments_problematiques} dans {frequence} itinéraires."
+                for segment_id, freq in frequences.items():
+                    if freq == 1:
+                        message = f"Problème avec le segment {segment_id}"
+                    else:
+                        message = f"Problème avec le segment {segment_id} dans {freq} itinéraires."
 
-                with open(f"{logs}/Warnings_short.log", "a") as f:
-                    f.write(f'{today} : {message}.\n')
-                print(message)
+                    with open(f"{logs}/Warnings_short.log", "a") as f:
+                        f.write(f'{today} : {message}.\n')
+                    print(message)
+
+                    cur.execute(f"INSERT INTO Alerte (id, geom) SELECT {segment_id}, geom FROM segments WHERE {segment_id} = segments.id ")
+                    conn.commit()
 
                 def showError():
                         subprocess.run(["flatpak", "run", "org.gnome.TextEditor", f"{logs}/Warnings_short.log"])
 
-                widget = iface.messageBar().createMessage("Warnings ", f"Problème avec {segments_problematiques} routes.")
-                button = QPushButton(widget)Warnings_short.log"])
+                widget = iface.messageBar().createMessage("Warnings ", f"Problème avec {nombre_de_problemes} routes.")
+                button = QPushButton(widget)
                 button.setText("Voir")
                 button.pressed.connect(showError)
                 widget.layout().addWidget(button)
                 iface.messageBar().pushWidget(widget, Qgis.Warning)
 
-                cur.execute(f"INSERT INTO Alerte (id, geom) SELECT {segments_problematiques}, geom FROM segments WHERE {segments_problematiques} = segments.id ")
-                conn.commit()
+
 
     except subprocess.TimeoutExpired:
         iface.messageBar().pushMessage("Erreur", "Timeout lors du téléchargement du fichier Warnings.log",
