@@ -152,7 +152,12 @@ def openProject():
         with open(f"{path_to_warn}/Warnings.log", "r") as f:
             texte = f.read()
 
-        nombre_de_problemes = re.search(problems, texte)
+        match_problems = re.search(problems, texte)
+        if match_problems:
+            nombre_de_problemes = match_problems.group(1)
+        else:
+            nombre_de_problemes = 0
+
         if re.search(no_problems, texte):
             iface.messageBar().pushMessage("Warnings ", "Aucun problème trouvé", level=Qgis.Success, duration=6)
 
