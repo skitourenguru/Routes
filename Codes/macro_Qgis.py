@@ -110,80 +110,93 @@ iface.showAttributeTable(layer)
 ############################################################################################
 ########################### Check if there is Warnings #####################################
 ############################################################################################
-"""
-command = "curl https://download.skitourenguru.com/public/Warnings.log --output /home/ulysse/Data/Vecteurs/Skitourenguru_Public/Warnings.log"
 
-try:
-    subprocess.check_call(command, shell=True)
-except subprocess.CalledProcessError as e:
-    print("La commande a échoué avec le code de sortie : ", e.returncode)
+def truncate(logs : str) -> None:
+    # Avant de chercher les warnings, vider les logs et alertes de la dernière fois.
+    with open(f"{logs}/Warnings_short.log", "w") as f:
+        f.write("")
+    cur.execute(f"TRUNCATE TABLE Alerte")
 
+def find_warnings(texte: str, stop_here: str, capture_that: str) -> tuple[int,int]:
+    # Chercher les warnings dans le fichier téléchargé aujourd'hui.
+    segids = []
+    frequence = 0
+    segments_problematiques = 0
 
-no_problems = r"Had no problems"
-problems = r"Had problems with (\d+) routes"
-path = "/home/ulysse/Data/Vecteurs/Skitourenguru_Public"
-logs = "/home/ulysse/Code/logs"
-today = datetime.date.today()
+    match_arret = re.search(stop_here, texte, re.DOTALL)
+    if match_arret:
+        texte_avant_arret = texte[:match_arret.start()]
+        for match in re.finditer(capture_that, texte_avant_arret):
+            segids.append(match.group(1))
 
+    if segids:
+        s = collections.Counter(segids)
+        for segments_problematiques, freq in sorted(s.items()):
+            frequence = int(freq)
 
-with open(f"{logs}/Warnings_short.log", "w") as f:
-    f.write("")
-cur.execute("TRUNCATE TABLE Alerte")
-conn.commit()
-
-segid = r"Segment (\d+) is not"
-regex_arret = r"Created"
-
-with open(f"{path}/Warnings.log", "r") as f:
-    texte = f.read()
-
-segids = []
-match_arret = re.search(regex_arret, texte, re.DOTALL)
-if match_arret:
-
-    texte_avant_arret = texte[:match_arret.start()]
-    for match in re.finditer(segid, texte_avant_arret):
-        segids.append(match.group(1))
-
-else:
-    for match in re.finditer(regex_interessant, texte):
-        occurrences.append(match.group())
-
-s = collections.Counter(segids)
-for nombre, frequence in sorted(s.items()):
-    if frequence < 2:
-        print(f'Problème avec le segment {nombre} dans {frequence} itinéraire.')
-        with open(f"{logs}/Warnings_short.log", "a") as f:
-            f.write(f'{today} : Problème avec le segment {nombre} dans {frequence} itinéraire.\n')
-    else:
-        print(f'Problème avec le segment {nombre} dans {frequence} itinéraires.')
-        with open(f"{logs}/Warnings_short.log", "a") as f:
-            f.write(f'{today} : Problème avec le segment {nombre} dans {frequence} itinéraires.\n')
-
-    cur.execute(f"INSERT INTO Alerte (id, geom) SELECT {nombre}, geom FROM segments WHERE {nombre} = segments.id ")
-    conn.commit()
+    return segments_problematiques, frequence
 
 
-with open(f"{path}/Warnings.log", "r") as f:
-    content = f.read()
+def main():
+    path_to_warn = "/home/ulysse/Data/Vecteurs/Skitourenguru_Public"
+    logs = "/home/ulysse/Code/logs"
+    today = datetime.date.today()
+    # Expressions régulières :
+    no_problems = r"Had no problems"
+    problems = r"Had problems with (\d+) routes"
+    stop_here = r"Created"
+    capture_that = r"Segment (\d+) is not"
 
-if re.search(no_problems, content):
-    iface.messageBar().pushMessage("Warnings ", "Aucun problème trouvé", level=Qgis.Success, duration=6)
-elif re.search(problems, content):
-    match = re.search(problems, content)
-    if match:
-        nombre = match.group(1)
-    def showError():
-        subprocess.run(["gnome-text-editor", f"{logs}/Warnings_short.log"])
+    try :
+        download_warnings = "curl https://download.skitourenguru.com/public/Warnings.log --output /home/ulysse/Data/Vecteurs/Skitourenguru_Public/Warnings.log"
+        subprocess.run(download_warnings, shell=True, timeout=5)
 
-    widget = iface.messageBar().createMessage("Warnings ", f"Problème avec {nombre} routes.")
-    button = QPushButton(widget)
-    button.setText("Voir")
-    button.pressed.connect(showError)
-    widget.layout().addWidget(button)
-    iface.messageBar().pushWidget(widget, Qgis.Warning)
-else:
-    iface.messageBar().pushMessage("Warnings ", "Aucune correspondance trouvé. Vérifiez que Warnings.log soit bien téléchargé", level=Qgis.Info, duration=6)
-"""
-cur.close()
-conn.close()
+        truncate(logs)
+
+        with open(f"{path_to_warn}/Warnings.log", "r") as f:
+            texte = f.read()
+        if re.search(no_problems, texte):
+            iface.messageBar().pushMessage("Warnings ", "Aucun problème trouvé", level=Qgis.Success, duration=6)
+
+        else:
+            segments_problematiques, frequence = find_warnings(texte, stop_here, capture_that)
+
+            if frequence < 2:
+                message = f"Problème avec le segment {segments_problematiques}"
+
+            else:
+                message = f"Problème avec le segment {segments_problematiques} dans {frequence} itinéraires."
+
+            with open(f"{logs}/Warnings_short.log", "a") as f:
+                f.write(f'{today} : {message}.\n')
+            print(message)
+
+            def showError():
+                subprocess.run(["gedit", f"{logs}/Warnings_short.log"])
+
+            widget = iface.messageBar().createMessage("Warnings ", f"Problème avec {segments_problematiques} routes.")
+            button = QPushButton(widget)
+            button.setText("Voir")
+            button.pressed.connect(showError)
+            widget.layout().addWidget(button)
+            iface.messageBar().pushWidget(widget, Qgis.Warning)
+
+            cur.execute(f"INSERT INTO Alerte (id, geom) SELECT {segments_problematiques}, geom FROM segments WHERE {segments_problematiques} = segments.id ")
+            conn.commit()
+
+    except subprocess.TimeoutExpired:
+        iface.messageBar().pushMessage("Erreur", "Timeout lors du téléchargement du fichier Warnings.log",
+                                        level=Qgis.MessageLevel.Critical)
+    except FileNotFoundError:
+        iface.messageBar().pushMessage("Erreur", "Impossible de trouver le fichier Warnings.log",
+                                        level=Qgis.MessageLevel.Critical)
+    except Exception as e:
+        iface.messageBar().pushMessage("Erreur", f"Une erreur inattendue s'est produite: {str(e)}",
+                                        level=Qgis.MessageLevel.Critical)
+
+    finally:
+        cur.close()
+        conn.close()
+
+if __name__ == "__main__":
+    main()
