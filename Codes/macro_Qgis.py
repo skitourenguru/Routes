@@ -173,7 +173,7 @@ def openProject():
                 print(message)
 
                 def showError():
-                    subprocess.run(["gedit", f"{logs}/Warnings_short.log"])
+                    subprocess.run(["gte", f"{logs}/Warnings_short.log"])
 
                 widget = iface.messageBar().createMessage("Warnings ", f"Problème avec {segments_problematiques} routes.")
                 button = QPushButton(widget)
