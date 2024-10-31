@@ -131,21 +131,22 @@ def find_warnings(texte: str, stop_here: str, capture_that: str) -> tuple[int,in
 
     if segids:
         s = collections.Counter(segids)
-        for segments_problematiques, freq in sorted(s.items()):
+        for segments_id, freq in sorted(s.items()):
+            segments_problematiques = int(segments_id)
             frequence = int(freq)
 
     return segments_problematiques, frequence
 
 
-def main():
+def openProject():
     path_to_warn = "/home/ulysse/Data/Vecteurs/Skitourenguru_Public"
     logs = "/home/ulysse/Code/logs"
     today = datetime.date.today()
     # Expressions régulières :
     no_problems = r"Had no problems"
     problems = r"Had problems with (\d+) routes"
-    stop_here = r"Created"
-    capture_that = r"Segment (\d+) is not"
+    stop_here = r"Created \d+ new routes"
+    capture_that = r"Segment (\d+) is not well connected"
 
     try :
         download_warnings = "curl https://download.skitourenguru.com/public/Warnings.log --output /home/ulysse/Data/Vecteurs/Skitourenguru_Public/Warnings.log"
@@ -161,28 +162,28 @@ def main():
         else:
             segments_problematiques, frequence = find_warnings(texte, stop_here, capture_that)
 
-            if frequence < 2:
-                message = f"Problème avec le segment {segments_problematiques}"
+            if frequence > 0:
+                if frequence == 1:
+                    message = f"Problème avec le segment {segments_problematiques}"
+                else:
+                    message = f"Problème avec le segment {segments_problematiques} dans {frequence} itinéraires."
 
-            else:
-                message = f"Problème avec le segment {segments_problematiques} dans {frequence} itinéraires."
+                with open(f"{logs}/Warnings_short.log", "a") as f:
+                    f.write(f'{today} : {message}.\n')
+                print(message)
 
-            with open(f"{logs}/Warnings_short.log", "a") as f:
-                f.write(f'{today} : {message}.\n')
-            print(message)
+                def showError():
+                    subprocess.run(["gedit", f"{logs}/Warnings_short.log"])
 
-            def showError():
-                subprocess.run(["gedit", f"{logs}/Warnings_short.log"])
+                widget = iface.messageBar().createMessage("Warnings ", f"Problème avec {segments_problematiques} routes.")
+                button = QPushButton(widget)
+                button.setText("Voir")
+                button.pressed.connect(showError)
+                widget.layout().addWidget(button)
+                iface.messageBar().pushWidget(widget, Qgis.Warning)
 
-            widget = iface.messageBar().createMessage("Warnings ", f"Problème avec {segments_problematiques} routes.")
-            button = QPushButton(widget)
-            button.setText("Voir")
-            button.pressed.connect(showError)
-            widget.layout().addWidget(button)
-            iface.messageBar().pushWidget(widget, Qgis.Warning)
-
-            cur.execute(f"INSERT INTO Alerte (id, geom) SELECT {segments_problematiques}, geom FROM segments WHERE {segments_problematiques} = segments.id ")
-            conn.commit()
+                cur.execute(f"INSERT INTO Alerte (id, geom) SELECT {segments_problematiques}, geom FROM segments WHERE {segments_problematiques} = segments.id ")
+                conn.commit()
 
     except subprocess.TimeoutExpired:
         iface.messageBar().pushMessage("Erreur", "Timeout lors du téléchargement du fichier Warnings.log",
@@ -197,6 +198,3 @@ def main():
     finally:
         cur.close()
         conn.close()
-
-if __name__ == "__main__":
-    main()
