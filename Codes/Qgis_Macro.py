@@ -1,66 +1,159 @@
+from contextlib import contextmanager
+import psycopg2
+from pygit2 import Repository
+from qgis.utils import iface
 from qgis.core import *
 from qgis.gui import *
-from qgis.PyQt.QtWidgets import *
-from qgis.analysis import QgsNativeAlgorithms
-from qgis.utils import iface
-from qgis.core import QgsVectorFileWriter
-import psycopg2
+import subprocess
+import os
+from PyQt5.QtWidgets import QPushButton
+import re
+import collections
+import datetime
+import requests
 
-######################################################### Reload Compositions layer #############################################################################
+# You only have to change the CONFIG below, and normally, just to change the database name and the group name.
 
-# When you reload Qgis, we have to make Qgis believe segments column is text, because it's easier to use, but in the database the column need to be an array.
+CONFIG = {
+    'database': {
+        'host': 'localhost',
+        'database': 'France_Alpes',
+        'user': 'postgres',
+        'password': 'postgres',
+        'port': 5432
+    },
+    'group': 'Postgres'
+}
+
+class DatabaseConnexion:
+    @contextmanager
+    def get_db_connexion(self):
+        conn = psycopg2.connect(**CONFIG['database'])
+        try:
+            yield conn
+        finally:
+            conn.close()
+
+    def check_column_type(self):
+        with self.get_db_connexion() as conn:
+            with conn.cursor() as cur:
+                cur.execute("""
+                    SELECT data_type
+                    FROM information_schema.columns
+                    WHERE table_name = 'compositions'
+                    AND column_name = 'segments';
+                    """)
+                result = cur.fetchone()
+                return result [0] if result else None
 
 
+    def array_to_text(self):
+        with self.get_db_connexion() as conn:
+            with conn.cursor() as cur:
+                cur.execute("""
+                    ALTER TABLE compositions
+                    ALTER segments TYPE TEXT
+                    USING array_to_string(segments, ',');
+                """)
+                conn.commit()
 
-# Change the variables here
-db_name = "Routes"
-# group inside which you're compositions and segments layers are inside, in Qgis Legend Interface.
-group = "PostGis"
+    def text_to_array(self):
+        with self.get_db_connexion() as conn:
+            with conn.cursor() as cur:
+                cur.execute("""
+                    ALTER TABLE compositions
+                    ALTER segments TYPE INTEGER[]
+                    USING string_to_array(segments, ',')::int[];
+                """)
+                conn.commit()
+
+class QgisHandler:
+    def __init__(self):
+        self.project = QgsProject.instance()
+        self.iface = iface
+
+    def remove_layer(self, layer_name):
+        """Supprime une couche du projet QGIS par son nom."""
+        if self.project:
+            layers = self.project.mapLayersByName(layer_name)
+            if layers:
+                self.project.removeMapLayer(layers[0].id())
+                return True
+        return False
+
+    def create_postgres_layer(self, table_name, geometry_column="geom"):
+
+        uri = QgsDataSourceUri()
+        uri.setConnection(
+            CONFIG['database']['host'],
+            str(CONFIG['database']['port']),
+            CONFIG['database']['database'],
+            CONFIG['database']['user'],
+            CONFIG['database']['password']
+        )
+        uri.setDataSource("public", table_name, geometry_column)
+
+        layer = QgsVectorLayer(uri.uri(), table_name, "postgres")
+        if not layer.isValid():
+            self.iface.messageBar().pushMessage(
+                "Erreur",
+                f"La couche {table_name} n'a pas pu être chargée",
+                level=Qgis.Critical
+            )
+            return None
+        return layer
+
+    def add_layer_to_group(self, layer, group_name, position=None):
+        """Ajoute une couche à un groupe spécifique."""
+        if self.project:
+            root = self.project.layerTreeRoot()
+            group = root.findGroup(group_name)
+
+            if group:
+                self.project.addMapLayer(layer, False)
+                if position is not None:
+                    group.insertLayer(position, layer)
+                else:
+                    group.addLayer(layer)
+                return True
+            else:
+                # Si le groupe n'existe pas, ajouter directement au projet
+                self.project.addMapLayer(layer)
+                return True
+        return False
+
+    def show_attribute_table(self, layer):
+        """Affiche la table d'attributs d'une couche."""
+        if layer and layer.isValid():
+            self.iface.showAttributeTable(layer)
+            return True
+        return False
 
 
-#Get connexion to the Database
-conn = psycopg2.connect(
-    host = "localhost",
-    database = db_name,
-    user = "postgres",
-    password = "postgres"
-)
+def openProject():
+    try:
+        db_conn = DatabaseConnexion()
+        qgis_handler = QgisHandler()
 
-# Change the type of segments column in compositions table to be accepted as string by QGIS but to be array in reality
-cur = conn.cursor()
-cur.execute("""
-      ALTER TABLE compositions    
-            ALTER segments TYPE TEXT USING array_to_string(segments, ','); """)
-conn.commit()
+        if db_conn.check_column_type() == 'ARRAY':
+            db_conn.array_to_text()
 
-# Remove compositions layer of Qgis Legend interface
-project = QgsProject.instance()
-layer = project.mapLayersByName("compositions")[0]
-layer = layer.id()
-project.removeMapLayer(layer)
+        elif db_conn.check_column_type() == 'TEXT':
+            db_conn.text_to_array()
+            db_conn.array_to_text()
 
-# Get connexion to PostgreSQL 
-uri = QgsDataSourceUri()
-uri.setConnection("localhost", "5432", db_name, "postgres", "postgres")
-uri.setDataSource("public", "compositions", "geom")
+        qgis_handler.remove_layer("compositions")
 
-# Find the place where to insert the new compositions layer
-root = QgsProject.instance().layerTreeRoot()
-root = root.findGroup(group) 
-# And Insert it
-new = QgsVectorLayer(uri.uri(), "compositions", "postgres")
-QgsProject.instance().addMapLayer(new, False)
-root.insertLayer(4, new) # 4 because i have 3 layers upside compositions in my Qgis Legend Interface.
-    
-# Change again the type, String to Array.
+        new_layer = qgis_handler.create_postgres_layer("compositions")
+        if not new_layer:
+            return
 
-cur = conn.cursor()
-cur.execute("""
-      ALTER TABLE compositions 
-            ALTER segments TYPE INTEGER[] USING string_to_array(segments, ',')::int[]
-""")
-conn.commit()
+        # Ajouter la couche compositions au groupe postgres à la positions 3
+        qgis_handler.add_layer_to_group(new_layer, CONFIG['group'], 3)
 
-# Open the attribute table from Compositions.
-layer = QgsProject.instance().mapLayersByName('compositions')[0]
-iface.showAttributeTable(layer)
+        db_conn.text_to_array()
+
+        qgis_handler.show_attribute_table(new_layer)
+
+    except Exception as e:
+        iface.messageBar().pushMessage("Erreur", str(e), level=Qgis.Critical)
