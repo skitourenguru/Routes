@@ -171,7 +171,7 @@ def openProject():
         if re.search(no_problems, texte):
             iface.messageBar().pushMessage("Warnings ", "Aucun problème trouvé", level=Qgis.Success, duration=6)
 
-        else:
+        elif:
             liste_problems = find_warnings(texte, stop_here, capture_that)
             if liste_problems:
                 frequences = get_frequence(liste_problems)
@@ -198,6 +198,9 @@ def openProject():
                 button.pressed.connect(showError)
                 widget.layout().addWidget(button)
                 iface.messageBar().pushWidget(widget, Qgis.Warning)
+
+            else:
+                iface.messageBar().pushMessage("Warnings ", "Problème technique, pas accès au fichier ou aucune regex trouvée.", level=Qgis.Success, duration=6)
 
 
 
