@@ -1,3 +1,4 @@
+from contextlib import contextmanager
 import psycopg2
 from pygit2 import Repository
 from qgis.utils import iface
@@ -11,7 +12,197 @@ import collections
 import datetime
 import requests
 
-def saveProject():
+CONFIG = {
+    'database': {
+        'host': 'localhost',
+        'database': 'France_Alpes',
+        'user': 'postgres',
+        'password': 'postgres',
+        'port': 5432
+    },
+    'paths': {
+        'dropbox': '/home/ulysse/Dropbox/skitourenguru/Routes/France',
+        'dossier': '/home/ulysse/Data/Vecteurs/Routes/France',
+    }
+}
+
+class DatabaseConnexion:
+    @contextmanager
+    def get_db_connexion(self):
+        conn = psycopg2.connect(**CONFIG['database'])
+        try:
+            yield conn
+        finally:
+            conn.close()
+
+    def array_to_text(self):
+        with self.get_db_connexion() as conn:
+            with conn.cursor() as cur:
+                cur.execute("""
+                    ALTER TABLE compositions
+                    ALTER segments TYPE TEXT
+                    USING array_to_string(segments, ',');
+                """)
+                conn.commit()
+
+    def text_to_array(self):
+        with self.get_db_connexion() as conn:
+            with conn.cursor() as cur:
+                cur.execute("""
+                    ALTER TABLE compositions
+                    ALTER segments TYPE INTEGER[]
+                    USING string_to_array(segments, ',')::int[];
+                """)
+                conn.commit()
+
+class QgisHandler:
+    def __init__(self):
+        self.project = QgsProject.instance()
+        self.iface = iface
+
+    def remove_layer(self, layer_name):
+        """Supprime une couche du projet QGIS par son nom."""
+        if self.project:
+            layers = self.project.mapLayersByName(layer_name)
+            if layers:
+                self.project.removeMapLayer(layers[0].id())
+                return True
+        return False
+
+    def create_postgres_layer(self, table_name, geometry_column="geom"):
+
+        uri = QgsDataSourceUri()
+        uri.setConnection(
+            CONFIG['database']['host'],
+            str(CONFIG['database']['port']),
+            CONFIG['database']['database'],
+            CONFIG['database']['user'],
+            CONFIG['database']['password']
+        )
+        uri.setDataSource("public", table_name, geometry_column)
+
+        layer = QgsVectorLayer(uri.uri(), table_name, "postgres")
+        if not layer.isValid():
+            self.iface.messageBar().pushMessage(
+                "Erreur",
+                f"La couche {table_name} n'a pas pu être chargée",
+                level=Qgis.Critical
+            )
+            return None
+        return layer
+
+    def add_layer_to_group(self, layer, group_name, position=None):
+        """Ajoute une couche à un groupe spécifique."""
+        if self.project:
+            root = self.project.layerTreeRoot()
+            group = root.findGroup(group_name)
+
+            if group:
+                self.project.addMapLayer(layer, False)
+                if position is not None:
+                    group.insertLayer(position, layer)
+                else:
+                    group.addLayer(layer)
+                return True
+            else:
+                # Si le groupe n'existe pas, ajouter directement au projet
+                self.project.addMapLayer(layer)
+                return True
+        return False
+
+    def show_attribute_table(self, layer):
+        """Affiche la table d'attributs d'une couche."""
+        if layer and layer.isValid():
+            self.iface.showAttributeTable(layer)
+            return True
+        return False
+
+    def get_layer_by_name(self, layer_name):
+        """Récupère une couche par son nom."""
+        if self.project:
+            layers = self.project.mapLayersByName(layer_name)
+            if layers:
+                return layers[0]
+        return None
+
+class GitHandler:
+    def __init__(self):
+        self.dropbox = CONFIG['paths']['dropbox']
+        self.data_dir = CONFIG['paths']['data']
+        self.repo = Repository(self.data_dir)
+
+    def backup_data(self):
+        if self.repo.head.name == "refs/heads/backup":
+            self._export_compositions()
+            self._export_segments()
+            self._push_changes()
+            return True
+        return False
+
+    def _export_compositions(self):
+        statement = """SELECT id, start, stop, routes, mdiff, importance, REPLACE(REPLACE(segments::text, '{', ''), '}', '') as segments, massif FROM compositions ORDER BY id"""
+        self._export_layer("compositions", statement)
+
+    def _export_segments(self):
+        statement = """SELECT fid, id, importance, massif, geom FROM segments ORDER BY id"""
+        self._export_layer("segments", statement)
+
+    def _export_layer(self, name, statement):
+        # Première lettre en majuscule pour le nom du fichier
+        capitalized_name = name.capitalize()
+
+        db_params = f"host={CONFIG['database']['host']} " \
+                    f"dbname={CONFIG['database']['database']} " \
+                    f"user={CONFIG['database']['user']} " \
+                    f"password={CONFIG['database']['password']} " \
+                    f"port={CONFIG['database']['port']}"
+
+        command = f'ogr2ogr -sql "{statement}" -nln "{name}" ' \
+                f'{self.data_dir}/France_{capitalized_name}.geojson "PG:{db_params}"'
+
+        subprocess.check_call(command, shell=True)
+
+    def _push_changes(self):
+        # Push to data directory
+        push_cmd = f"cd {self.data_dir} && git commit -a -m 'backup' && git push"
+        subprocess.run(push_cmd, shell=True, timeout=10)
+
+        # Pull in Dropbox
+        pull_cmd = f"cd {self.dropbox} && git pull"
+        subprocess.run(pull_cmd, shell=True, timeout=10)
+
+
+def openProject():
+    try:
+        db_conn = DatabaseConnexion()
+        qgis_handler = QgisHandler()
+
+        db_conn.array_to_text()
+
+        qgis_handler.remove_layer("compositions")
+
+        new_layer = qgis_handler.create_postgres_layer("compositions")
+        if not new_layer:
+            return
+
+        # Ajouter la couche au groupe Postgres
+        qgis_handler.add_layer_to_group(new_layer, "Postgres", 3)
+
+        # Reconvertir text en array
+        db_conn.text_to_array()
+
+        # Ouvrir la table d'attributs
+        qgis_handler.show_attribute_table(new_layer)
+
+    except Exception as e:
+        iface.messageBar().pushMessage("Erreur", str(e), level=Qgis.Critical)
+
+
+
+
+
+
+
     dropbox = '/home/ulysse/Dropbox/skitourenguru/Routes/France'
     dossier = '/home/ulysse/Data/Vecteurs/Routes/France'
     repo = Repository(dossier)
@@ -109,108 +300,3 @@ iface.showAttributeTable(layer)
 
 cur.close()
 conn.close()
-
-############################################################################################
-########################### Check if there is Warnings #####################################
-############################################################################################
-
-def truncate(logs : str) -> None:
-    # Avant de chercher les warnings, vider les logs et alertes de la dernière fois.
-    with open(f"{logs}/Warnings_short.log", "w") as f:
-        f.write("")
-    cur.execute(f"TRUNCATE TABLE Alerte")
-
-def find_warnings(texte: str, stop_here: str, capture_that: str) -> list:
-    # Chercher les warnings dans le fichier téléchargé aujourd'hui.
-    segids = []
-
-    match_arret = re.search(stop_here, texte, re.DOTALL)
-    if match_arret:
-        texte_avant_arret = texte[:match_arret.start()]
-        for match in re.finditer(capture_that, texte_avant_arret):
-            segids.append(match.group(1))
-    return segids
-
-
-def get_frequence(segids: list) -> dict:
-
-    return collections.Counter(segids)
-
-def openProject():
-    conn = psycopg2.connect(
-        host = "localhost",
-        database = "France_Alpes",
-        user = "postgres",
-        password = "postgres" )
-    cur = conn.cursor()
-
-    path_to_warn = "/home/ulysse/Data/Vecteurs/Skitourenguru_Public"
-    logs = "/home/ulysse/Code/logs"
-    today = datetime.date.today()
-    # Expressions régulières :
-    no_problems = r"Had no problems"
-    problems = r"Had problems with (\d+) routes"
-    stop_here = r"Created \d+ new routes"
-    capture_that = r"Segment (\d+) is not well connected"
-
-    try :
-        download_warnings = "curl https://download.skitourenguru.com/public/Warnings.log --output /home/ulysse/Data/Vecteurs/Skitourenguru_Public/Warnings.log"
-        subprocess.run(download_warnings, shell=True, timeout=5)
-
-        truncate(logs)
-
-        with open(f"{path_to_warn}/Warnings.log", "r") as f:
-            texte = f.read()
-
-        match_problems = re.search(problems, texte)
-        if match_problems:
-            nombre_de_problemes = match_problems.group(1)
-        else:
-            nombre_de_problemes = 0
-
-        if re.search(no_problems, texte):
-            iface.messageBar().pushMessage("Warnings ", "Aucun problème trouvé", level=Qgis.Success, duration=6)
-
-        else:
-            liste_problems = find_warnings(texte, stop_here, capture_that)
-            if liste_problems:
-                frequences = get_frequence(liste_problems)
-
-                for segment_id, freq in frequences.items():
-                    if freq == 1:
-                        message = f"Problème avec le segment {segment_id}"
-                    else:
-                        message = f"Problème avec le segment {segment_id} dans {freq} itinéraires."
-
-                    with open(f"{logs}/Warnings_short.log", "a") as f:
-                        f.write(f'{today} : {message}.\n')
-                    print(message)
-
-                    cur.execute(f"INSERT INTO Alerte (id, geom) SELECT {segment_id}, geom FROM segments WHERE {segment_id} = segments.id ")
-                    conn.commit()
-
-                def showError():
-                        subprocess.run(["flatpak", "run", "org.gnome.TextEditor", f"{logs}/Warnings_short.log"])
-
-                widget = iface.messageBar().createMessage("Warnings ", f"Problème avec {nombre_de_problemes} routes.")
-                button = QPushButton(widget)
-                button.setText("Voir")
-                button.pressed.connect(showError)
-                widget.layout().addWidget(button)
-                iface.messageBar().pushWidget(widget, Qgis.Warning)
-
-
-
-    except subprocess.TimeoutExpired:
-        iface.messageBar().pushMessage("Erreur", "Timeout lors du téléchargement du fichier Warnings.log",
-                                        level=Qgis.MessageLevel.Critical)
-    except FileNotFoundError:
-        iface.messageBar().pushMessage("Erreur", "Impossible de trouver le fichier Warnings.log",
-                                        level=Qgis.MessageLevel.Critical)
-    except Exception as e:
-        iface.messageBar().pushMessage("Erreur", f"Une erreur inattendue s'est produite: {str(e)}",
-                                        level=Qgis.MessageLevel.Critical)
-
-    finally:
-        cur.close()
-        conn.close()
