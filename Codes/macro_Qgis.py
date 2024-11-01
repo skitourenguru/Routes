@@ -133,7 +133,7 @@ class QgisHandler:
 class GitHandler:
     def __init__(self):
         self.dropbox = CONFIG['paths']['dropbox']
-        self.data_dir = CONFIG['paths']['data']
+        self.data_dir = CONFIG['paths']['dossier']
         self.repo = Repository(self.data_dir)
 
     def backup_data(self):
