@@ -35,6 +35,19 @@ class DatabaseConnexion:
         finally:
             conn.close()
 
+    def check_column_type(self):
+        with self.get_db_connexion() as conn:
+            with conn.cursor() as cur:
+                cur.execute("""
+                    SELECT data_type
+                    FROM information_schema.columns
+                    WHERE table_name = 'compositions'
+                    AND column_name = 'segments';
+                    """)
+                result = cur.fetchone()
+                return result [0] if result else None
+
+
     def array_to_text(self):
         with self.get_db_connexion() as conn:
             with conn.cursor() as cur:
@@ -117,14 +130,6 @@ class QgisHandler:
             return True
         return False
 
-    def get_layer_by_name(self, layer_name):
-        """Récupère une couche par son nom."""
-        if self.project:
-            layers = self.project.mapLayersByName(layer_name)
-            if layers:
-                return layers[0]
-        return None
-
 class GitHandler:
     def __init__(self):
         self.dropbox = CONFIG['paths']['dropbox']
@@ -171,13 +176,57 @@ class GitHandler:
         pull_cmd = f"cd {self.dropbox} && git pull"
         subprocess.run(pull_cmd, shell=True, timeout=10)
 
+def saveProject():
+    try:
+        git_handler = GitHandler()
+        db_conn = DatabaseConnexion()
+
+        # Vérifie si on est sur la branche backup
+        if git_handler.backup_data():
+            iface.messageBar().pushMessage(
+                "Succès",
+                "Couches compositions et segments exportées et poussées sur la branche 'backup'.",
+                level=Qgis.Success
+            )
+        else:
+            iface.messageBar().pushMessage(
+                "Attention",
+                "Les couches n'ont pas été exportées car vous n'êtes pas sur la branche 'backup'. "
+                "Utilisez 'git checkout backup'",
+                level=Qgis.Warning
+            )
+
+    except subprocess.CalledProcessError as e:
+        iface.messageBar().pushMessage(
+            "Erreur",
+            f"Erreur lors de l'exécution de la commande : {str(e)}",
+            level=Qgis.Critical
+        )
+    except subprocess.TimeoutExpired:
+        iface.messageBar().pushMessage(
+            "Erreur",
+            "Timeout lors de l'exécution des commandes git",
+            level=Qgis.Critical
+        )
+    except Exception as e:
+        iface.messageBar().pushMessage(
+            "Erreur",
+            f"Une erreur inattendue s'est produite : {str(e)}",
+            level=Qgis.Critical
+        )
+
 
 def openProject():
     try:
         db_conn = DatabaseConnexion()
         qgis_handler = QgisHandler()
 
-        db_conn.array_to_text()
+        if db_conn.check_column_type() == 'ARRAY':
+            db_conn.array_to_text()
+
+        elif db_conn.check_column_type() == 'TEXT':
+            db_conn.text_to_array()
+            db_conn.array_to_text()
 
         qgis_handler.remove_layer("compositions")
 
@@ -185,13 +234,11 @@ def openProject():
         if not new_layer:
             return
 
-        # Ajouter la couche au groupe Postgres
+        # Ajouter la couche compositions au groupe postgres à la positions 3
         qgis_handler.add_layer_to_group(new_layer, "Postgres", 3)
 
-        # Reconvertir text en array
         db_conn.text_to_array()
 
-        # Ouvrir la table d'attributs
         qgis_handler.show_attribute_table(new_layer)
 
     except Exception as e:
