@@ -130,25 +130,21 @@ def print_geometry_info(geometry, label):
 @timer_decorator
 def get_compositions_list_segments(segment_id):
     """
-    Récupère toutes les listes de segments contenant le segment_id
+    Récupère toutes les listes de segments contenant l'id du segment divisé
     """
     if not segment_id:
         return []
 
     all_segments_lists = []
 
-    # Debug: Afficher le segment_id recherché
     print(f"\nRecherche du segment {segment_id} dans les compositions")
 
-    # Utiliser une expression plus robuste
     request = QgsFeatureRequest()
-    # Ajouter des délimiteurs pour éviter les faux positifs
     expression = f"segments LIKE '%,{segment_id},%' OR segments LIKE '{segment_id},%' OR segments LIKE '%,{segment_id}' OR segments = '{segment_id}'"
     request.setFilterExpression(expression)
 
     features = get_features_list(compositions_layer, request)
 
-    # Debug: Afficher le nombre de compositions trouvées
     print(f"Nombre de compositions trouvées avec la requête: {len(features)}")
 
     for feature in features:
@@ -207,10 +203,8 @@ def update_compositions_segments(old_id, new_id, original_feature, new_feature, 
             )
             print(f"Orientation correcte: {is_correctly_oriented}")
 
-            # Créer nouvelle liste avec nouveau segment
             new_segments_list = segments_list.copy()
 
-            # Remplacer l'ancien segment par la paire de nouveaux segments dans le bon ordre
             if is_correctly_oriented:
                 new_segments_list[old_index:old_index+1] = [int(old_id), int(new_id)]
             else:
@@ -265,7 +259,6 @@ def has_duplicate_segment_id(segment_id: str) -> bool:
     """
     Vérifie si un id de segments existe plusieurs fois. Si oui, il s'agit d'un segment divisé.
     Args:
-        segment_id: l'id correspondant à l'entité venant d'être ajoutée
     """
 
     expression = f"\"id\" = '{segment_id}'"
@@ -279,8 +272,6 @@ def has_duplicate_segment_id(segment_id: str) -> bool:
 def update_segment_id(fid, next_id):
     """
     Met à jour l'id des segments divisés.
-    Args:
-        fid: L'identifiant de l'entité venant d'être ajoutée
     """
     segments_layer.startEditing()
     segments_layer.changeAttributeValue(fid,
@@ -383,9 +374,6 @@ def start_script():
 
         segments_layer.featureAdded.connect(feature_added)
         iface.messageBar().pushMessage("Info", "Script démarré", level=Qgis.MessageLevel.Info)
-
-        segments_layer.beforeCommitChanges.connect(before_commit_changes)
-        segments_layer.afterCommitChanges.connect(after_commit_changes)
 
 def stop_script():
 
