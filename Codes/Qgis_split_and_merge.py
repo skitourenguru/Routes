@@ -234,7 +234,7 @@ def clean_invalid_segments() -> None:
     """
     Supprime les références aux segments qui n'existent plus dans la table segments
     """
-    valid_segments_ids = [str(f['id']) for f in get_features_list(segments_layer) if f['id'] is not None]
+    valid_segments_ids = {str(f['id']) for f in get_features_list(segments_layer) if f['id'] is not None}
     compositions = get_features_list(compositions_layer)
 
     compositions_layer.startEditing()
