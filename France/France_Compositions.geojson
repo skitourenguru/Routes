@@ -3818,11 +3818,12 @@
 { "type": "Feature", "properties": { "id": 3822, "start": "Arc 2000", "stop": "Mont Pourri", "routes": null, "mdiff": 8, "importance": 0, "segments": "7232,7231,7230", "massif": "Tarentaise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3823, "start": "La Chénarie", "stop": "Aiguille Grive", "routes": null, "mdiff": 4, "importance": 0, "segments": "7233", "massif": "Tarentaise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3824, "start": "Le Suffet", "stop": "Grand Roc Noir", "routes": null, "mdiff": 8, "importance": 2, "segments": "2238,7240,2246,6539,7234,7247,7237", "massif": "Haute-Maurienne" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3825, "start": "Le Suffet", "stop": "Grand Roc Noir", "routes": null, "mdiff": 8, "importance": 2, "segments": "2238,7240,2246,6539,7234,7247,7236", "massif": "Haute-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3825, "start": "Le Suffet", "stop": "Grand Roc Noir", "routes": null, "mdiff": 8, "importance": 2, "segments": "2238,7240,2246,6539,7234,7247,7249,7236", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3826, "start": "Le Manchet", "stop": "Pointe de la Sana", "routes": null, "mdiff": 5, "importance": 0, "segments": "7190,7213,7214,7215,7212,7211,7207", "massif": "Tarentaise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3827, "start": "Le Suffet", "stop": "Pointe du Grand Vallon", "routes": null, "mdiff": 4, "importance": 2, "segments": "7240,2238,7239", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3828, "start": "Le Suffet", "stop": "Pointe de Lanserlia", "routes": null, "mdiff": 6, "importance": 2, "segments": "2238,7240,2247,7241", "massif": "Vanoise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3829, "start": "Lanslebourg", "stop": "Pointe du Grand Vallon", "routes": null, "mdiff": 6, "importance": 0, "segments": "7243,7245,7244", "massif": "Haute-Maurienne" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3830, "start": "Lanslebourg", "stop": "Grand Roc Noir", "routes": null, "mdiff": 8, "importance": 2, "segments": "7243,7246,7247,7237", "massif": "Haute-Maurienne" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3830, "start": "Lanslebourg", "stop": "Grand Roc Noir", "routes": null, "mdiff": 8, "importance": 2, "segments": "7243,7246,7247,7237", "massif": "Haute-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3831, "start": "Lanslevillard", "stop": "Grand Roc Noir", "routes": null, "mdiff": 7, "importance": 1, "segments": "7248,7236", "massif": "Haute-Maurienne" }, "geometry": null }
 ]
 }
