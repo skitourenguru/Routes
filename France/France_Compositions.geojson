@@ -3830,6 +3830,7 @@
 { "type": "Feature", "properties": { "id": 3834, "start": "Refuge de la Femma", "stop": "Pointe Sud-Ouest du Châtelard", "routes": null, "mdiff": 7, "importance": 0, "segments": "7254", "massif": "Vanoise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3835, "start": "Refuge de la Femma", "stop": "Pointe de Claret", "routes": null, "mdiff": 6, "importance": 0, "segments": "2245,7257,7258", "massif": "Vanoise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3836, "start": "Refuge de la Femma", "stop": "Col du Géfret", "routes": null, "mdiff": 6, "importance": 0, "segments": "2245,7257", "massif": "Vanoise" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3837, "start": "Le Villaron", "stop": "Pointe de Claret", "routes": null, "mdiff": 8, "importance": 2, "segments": "7258", "massif": "Haute-Maurienne" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3837, "start": "Le Villaron", "stop": "Pointe de Claret", "routes": null, "mdiff": 8, "importance": 2, "segments": "7260,7255", "massif": "Haute-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3838, "start": "Le Villaron", "stop": "Aiguille de Méan Martin", "routes": null, "mdiff": 7, "importance": 2, "segments": "7260,7259", "massif": "Haute-Maurienne" }, "geometry": null }
 ]
 }
