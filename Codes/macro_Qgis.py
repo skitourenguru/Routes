@@ -99,7 +99,7 @@ class QgisHandler:
             self.iface.messageBar().pushMessage(
                 "Erreur",
                 f"La couche {table_name} n'a pas pu être chargée",
-                level=Qgis.Critical
+                level=Qgis.MessageLevel.Critical
             )
             return None
         return layer
@@ -186,33 +186,33 @@ def saveProject():
             iface.messageBar().pushMessage(
                 "Succès",
                 "Couches compositions et segments exportées et poussées sur la branche 'backup'.",
-                level=Qgis.Success
+                level=Qgis.MessageLevel.Success
             )
         else:
             iface.messageBar().pushMessage(
                 "Attention",
                 "Les couches n'ont pas été exportées car vous n'êtes pas sur la branche 'backup'. "
                 "Utilisez 'git checkout backup'",
-                level=Qgis.Warning
+                level=Qgis.MessageLevel.Warning
             )
 
     except subprocess.CalledProcessError as e:
         iface.messageBar().pushMessage(
             "Erreur",
             f"Erreur lors de l'exécution de la commande : {str(e)}",
-            level=Qgis.Critical
+            level=Qgis.MessageLevel.Critical
         )
     except subprocess.TimeoutExpired:
         iface.messageBar().pushMessage(
             "Erreur",
             "Timeout lors de l'exécution des commandes git",
-            level=Qgis.Critical
+            level=Qgis.MessageLevel.Critical
         )
     except Exception as e:
         iface.messageBar().pushMessage(
             "Erreur",
             f"Une erreur inattendue s'est produite : {str(e)}",
-            level=Qgis.Critical
+            level=Qgis.MessageLevel.Critical
         )
 
 
@@ -242,4 +242,4 @@ def openProject():
         qgis_handler.show_attribute_table(new_layer)
 
     except Exception as e:
-        iface.messageBar().pushMessage("Erreur", str(e), level=Qgis.Critical)
+        iface.messageBar().pushMessage("Erreur", str(e), level=Qgis.MessageLevel.Critical)
