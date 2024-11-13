@@ -216,30 +216,30 @@ def saveProject():
         )
 
 
-def openProject():
-    try:
-        db_conn = DatabaseConnexion()
-        qgis_handler = QgisHandler()
+# def openProject():
+#     try:
+#         db_conn = DatabaseConnexion()
+#         qgis_handler = QgisHandler()
 
-        if db_conn.check_column_type() == 'ARRAY':
-            db_conn.array_to_text()
+#         if db_conn.check_column_type() == 'ARRAY':
+#             db_conn.array_to_text()
 
-        elif db_conn.check_column_type() == 'TEXT':
-            db_conn.text_to_array()
-            db_conn.array_to_text()
+#         elif db_conn.check_column_type() == 'TEXT':
+#             db_conn.text_to_array()
+#             db_conn.array_to_text()
 
-        qgis_handler.remove_layer("compositions")
+#         qgis_handler.remove_layer("compositions")
 
-        new_layer = qgis_handler.create_postgres_layer("compositions")
-        if not new_layer:
-            return
+#         new_layer = qgis_handler.create_postgres_layer("compositions")
+#         if not new_layer:
+#             return
 
-        # Ajouter la couche compositions au groupe postgres à la positions 3
-        qgis_handler.add_layer_to_group(new_layer, "Postgres", 3)
+#         # Ajouter la couche compositions au groupe postgres à la positions 3
+#         qgis_handler.add_layer_to_group(new_layer, "Postgres", 3)
 
-        db_conn.text_to_array()
+#         db_conn.text_to_array()
 
-        qgis_handler.show_attribute_table(new_layer)
+#         qgis_handler.show_attribute_table(new_layer)
 
-    except Exception as e:
-        iface.messageBar().pushMessage("Erreur", str(e), level=Qgis.MessageLevel.Critical)
+#     except Exception as e:
+#         iface.messageBar().pushMessage("Erreur", str(e), level=Qgis.MessageLevel.Critical)
