@@ -181,7 +181,6 @@ def saveProject():
         git_handler = GitHandler()
         db_conn = DatabaseConnexion()
 
-        # Vérifie si on est sur la branche backup
         if git_handler.backup_data():
             iface.messageBar().pushMessage(
                 "Succès",
