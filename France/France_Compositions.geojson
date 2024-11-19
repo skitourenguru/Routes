@@ -530,7 +530,6 @@
 { "type": "Feature", "properties": { "id": 527, "start": "Les Chaffauds", "stop": "Croix du Col de la Sambuy", "routes": null, "mdiff": 4, "importance": 0, "segments": "386,6484", "massif": "Bauges" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 528, "start": "Abbaye de Tamié", "stop": "Pointe de Côte Favre", "routes": null, "mdiff": 0, "importance": 0, "segments": "384,378,382,380", "massif": "Bauges" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 529, "start": "Abbaye de Tamié", "stop": "Pointe de Côte Favre", "routes": null, "mdiff": 4, "importance": 0, "segments": "384,378,385,6491", "massif": "Bauges" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 530, "start": "Ne pas tenir compte", "stop": null, "routes": null, "mdiff": null, "importance": 1, "segments": "6778,6779", "massif": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 531, "start": "Abbaye de Tamié", "stop": "Pointe de Chaurionde", "routes": null, "mdiff": 5, "importance": 0, "segments": "384,378,385,6490,376", "massif": "Bauges" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 532, "start": "Abbaye de Tamié", "stop": "Pointe de Chaurionde", "routes": null, "mdiff": 5, "importance": 0, "segments": "384,381,376", "massif": "Bauges" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 533, "start": "Abbaye de Tamié", "stop": "Tête Noire", "routes": null, "mdiff": null, "importance": 0, "segments": "383", "massif": "Bauges" }, "geometry": null },
@@ -3707,8 +3706,8 @@
 { "type": "Feature", "properties": { "id": 3710, "start": "Le Châtelard", "stop": "Mont Valaisan", "routes": null, "mdiff": 6, "importance": 0, "segments": "7044,7052,7054,7049,7045,7047", "massif": "Tarentaise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3711, "start": "Le Châtelard", "stop": "Col du Grand Glacier", "routes": null, "mdiff": 4, "importance": 0, "segments": "7044,7052,7054,7049,7046,7048", "massif": "Tarentaise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3712, "start": "Le Châtelard", "stop": "Pointe des Couloureuses", "routes": null, "mdiff": 7, "importance": 0, "segments": "7044,7052,7054,7050,7058", "massif": "Tarentaise" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3713, "start": "Le Châtelard", "stop": "Bec Rouge", "routes": null, "mdiff": 3, "importance": 0, "segments": "7044,7051", "massif": "Tarentaise" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3714, "start": "Le Châtelard", "stop": "Bec Rouge", "routes": null, "mdiff": 5, "importance": 0, "segments": "7044,7052,7053", "massif": "Tarentaise" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3713, "start": "Le Châtelard", "stop": "Bec Rouge", "routes": null, "mdiff": 3, "importance": 0, "segments": "7044,7051,7275", "massif": "Tarentaise" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3714, "start": "Le Châtelard", "stop": "Bec Rouge", "routes": null, "mdiff": 5, "importance": 0, "segments": "7044,7052,7053,7275", "massif": "Tarentaise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3715, "start": "La Masure", "stop": "Roche Jaille", "routes": null, "mdiff": 5, "importance": 0, "segments": "7055,7109,7056", "massif": "Tarentaise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3716, "start": "La Masure", "stop": "Pointe des Couloureuses", "routes": null, "mdiff": 5, "importance": 0, "segments": "7055,7109,7057,7063,7060,7058", "massif": "Tarentaise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3717, "start": "La Masure", "stop": "Col de la Louïe Blanche", "routes": null, "mdiff": 3, "importance": 0, "segments": "7055,7109,7057,7063,7059", "massif": "Tarentaise" }, "geometry": null },
@@ -3833,11 +3832,11 @@
 { "type": "Feature", "properties": { "id": 3837, "start": "Le Villaron", "stop": "Pointe de Claret", "routes": null, "mdiff": 8, "importance": 2, "segments": "7260,7255", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3838, "start": "Le Villaron", "stop": "Aiguille de Méan Martin", "routes": null, "mdiff": 7, "importance": 2, "segments": "7260,7259", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3839, "start": "Pré-Ratte", "stop": "Pointe Nord-Est du Châtelard", "routes": null, "mdiff": 8, "importance": 2, "segments": "7261", "massif": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3840, "start": "Bonneval", "stop": "Pointe de la Met", "routes": null, "mdiff": 5, "importance": 2, "segments": "7263", "massif": "Haute-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3840, "start": "Bonneval", "stop": "Pointe de la Met", "routes": null, "mdiff": 5, "importance": 2, "segments": "7263,7273,7274", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3841, "start": "Pont de la Neige", "stop": "Col des Fours", "routes": null, "mdiff": 2, "importance": 2, "segments": "7264,7269,7266", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3842, "start": "Pont de la Neige", "stop": "Bosse des Fours", "routes": null, "mdiff": 2, "importance": 2, "segments": "7264,7269,7265", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3843, "start": "Le Manchet", "stop": "Bosse des Fours", "routes": null, "mdiff": 3, "importance": 2, "segments": "7190,7210,7192,7200,7193,7267", "massif": "Tarentaise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3844, "start": "Refuge du Fond des Fours", "stop": "Bosse des Fours", "routes": null, "mdiff": 3, "importance": 2, "segments": "7192,7200,7193,7268,7267", "massif": "Tarentaise" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3845, "start": "Refuge du Fond des Fours", "stop": "Pointe de Méan Martin", "routes": null, "mdiff": 5, "importance": 0, "segments": "7264,7270,7196,7271", "massif": null }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3845, "start": "Refuge du Fond des Fours", "stop": "Pointe de Méan Martin", "routes": null, "mdiff": 5, "importance": 0, "segments": "7264,7270,7273,7272,7196,7271", "massif": null }, "geometry": null }
 ]
 }
