@@ -3785,7 +3785,6 @@
 { "type": "Feature", "properties": { "id": 3790, "start": "Refuge du Fond des Fours", "stop": "Pointe des Fours", "routes": null, "mdiff": 5, "importance": 0, "segments": "7192,7200,7194", "massif": "Tarentaise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3791, "start": "Refuge du Fond des Fours", "stop": "Col des Fours", "routes": null, "mdiff": 3, "importance": 0, "segments": "7192,7200,7193,7268", "massif": "Tarentaise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3792, "start": "Refuge du Fond des Fours", "stop": "Pointe de Méan Martin", "routes": null, "mdiff": 5, "importance": 0, "segments": "7192,7195,7198,7201,7199,7197", "massif": "Tarentaise" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3793, "start": "Refuge du Fond des Fours", "stop": "Pointe de Méan Martin", "routes": null, "mdiff": 5, "importance": 0, "segments": "7192,7195,7196,7271", "massif": "Tarentaise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3794, "start": "Refuge du Fond des Fours", "stop": "Refuge de la Femma", "routes": null, "mdiff": 3, "importance": 0, "segments": "7192,7195,7198,7202,2249,2244,2241,2242", "massif": "Tarentaise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3795, "start": "Refuge de la Femma", "stop": "Pointe de la Sana", "routes": null, "mdiff": null, "importance": 0, "segments": "2242,6592,7238,7211,7207", "massif": "Vanoise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3796, "start": "Refuge de la Femma", "stop": "Col des Barmes de l'Ours", "routes": null, "mdiff": null, "importance": 0, "segments": "2242,2241,2244,2248,7199,7197", "massif": "Vanoise" }, "geometry": null },
@@ -3836,7 +3835,7 @@
 { "type": "Feature", "properties": { "id": 3841, "start": "Pont de la Neige", "stop": "Col des Fours", "routes": null, "mdiff": 2, "importance": 2, "segments": "7264,7269,7266", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3842, "start": "Pont de la Neige", "stop": "Bosse des Fours", "routes": null, "mdiff": 2, "importance": 2, "segments": "7264,7269,7265", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3843, "start": "Le Manchet", "stop": "Bosse des Fours", "routes": null, "mdiff": 3, "importance": 2, "segments": "7190,7210,7192,7200,7193,7267", "massif": "Tarentaise" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3844, "start": "Refuge du Fond des Fours", "stop": "Bosse des Fours", "routes": null, "mdiff": 3, "importance": 2, "segments": "7192,7200,7193,7268,7267", "massif": "Tarentaise" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3845, "start": "Refuge du Fond des Fours", "stop": "Pointe de Méan Martin", "routes": null, "mdiff": 5, "importance": 0, "segments": "7264,7270,7273,7272,7196,7271", "massif": null }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3844, "start": "Refuge du Fond des Fours", "stop": "Bosse des Fours", "routes": null, "mdiff": 3, "importance": 0, "segments": "7192,7200,7193,7267", "massif": "Tarentaise" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3845, "start": "Refuge du Fond des Fours", "stop": "Pointe de Méan Martin", "routes": null, "mdiff": 5, "importance": 0, "segments": "7192,7195,7196,7271,7197", "massif": null }, "geometry": null }
 ]
 }
