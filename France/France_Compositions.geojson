@@ -3755,12 +3755,11 @@
 { "type": "Feature", "properties": { "id": 3785, "start": "Le Manchet", "stop": "Col des Fours", "routes": null, "mdiff": 3, "segments": "7190,7210,7192,7200,7193,7268" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3786, "start": "Le Manchet", "stop": "Pointe des Fours", "routes": null, "mdiff": 5, "segments": "7190,7210,7192,7200,7194" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3787, "start": "Le Manchet", "stop": "Pointe de Méan Martin", "routes": null, "mdiff": 5, "segments": "7190,7210,7192,7195,7196,7271" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3788, "start": "Refuge du Fond des Fours", "stop": "Pointe de Méan Martin", "routes": null, "mdiff": 5, "segments": "7190,7210,7192,7195,7198,7201,7199,7197" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3788, "start": "Le Manchet", "stop": "Pointe de Méan Martin", "routes": null, "mdiff": 5, "segments": "7192,7210,7192,7195,7198,7201,7199,7197" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3789, "start": "Refuge du Fond des Fours", "stop": "Pélou Blanc", "routes": null, "mdiff": 6, "segments": "7191" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3790, "start": "Refuge du Fond des Fours", "stop": "Pointe des Fours", "routes": null, "mdiff": 5, "segments": "7192,7200,7194" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3791, "start": "Refuge du Fond des Fours", "stop": "Col des Fours", "routes": null, "mdiff": 3, "segments": "7192,7200,7193,7268" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3792, "start": "Refuge du Fond des Fours", "stop": "Pointe de Méan Martin", "routes": null, "mdiff": 5, "segments": "7192,7195,7198,7201,7199,7197" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3793, "start": "Refuge du Fond des Fours", "stop": "Pointe de Méan Martin", "routes": null, "mdiff": 5, "segments": "7192,7195,7196,7271" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3794, "start": "Refuge du Fond des Fours", "stop": "Refuge de la Femma", "routes": null, "mdiff": 3, "segments": "7192,7195,7198,7202,2249,2244,2241,2242" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3795, "start": "Refuge de la Femma", "stop": "Pointe de la Sana", "routes": null, "mdiff": null, "segments": "2242,6592,7238,7211,7207" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3796, "start": "Refuge de la Femma", "stop": "Col des Barmes de l'Ours", "routes": null, "mdiff": null, "segments": "2242,2241,2244,2248,7199,7197" }, "geometry": null },
@@ -3796,6 +3795,7 @@
 { "type": "Feature", "properties": { "id": 3834, "start": "Refuge de la Femma", "stop": "Pointe Sud-Ouest du Châtelard", "routes": null, "mdiff": 7, "segments": "7254" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3835, "start": "Refuge de la Femma", "stop": "Pointe de Claret", "routes": null, "mdiff": 6, "segments": "2245,7257,7258" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3836, "start": "Refuge de la Femma", "stop": "Col du Géfret", "routes": null, "mdiff": 6, "segments": "2245,7257" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3845, "start": "Refuge du Fond des Fours", "stop": "Pointe de Méan Martin", "routes": null, "mdiff": 5, "segments": "7264,7270,7273,7272,7196,7271" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3844, "start": "Refuge du Fond des Fours", "stop": "Bosse des Fours", "routes": null, "mdiff": 3, "segments": "7192,7200,7193,7267" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3845, "start": "Refuge du Fond des Fours", "stop": "Pointe de Méan Martin", "routes": null, "mdiff": 5, "segments": "7192,7195,7196,7271,7197" }, "geometry": null }
 ]
 }
