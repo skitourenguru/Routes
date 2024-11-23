@@ -70,15 +70,36 @@ class GitHandler:
             raise
 
     def _push_changes(self):
-        # Push to data directory
-        push_cmd = (
-            f"cd {self.data_dir} && git commit -a -m 'backup' && git push"
-        )
-        subprocess.run(push_cmd, shell=True, timeout=10)
+        # Navigate to the data directory
+        try:
+            os.chdir("/home/ulysse/Data/Vecteurs/Routes")
 
-        # Pull in Dropbox
-        pull_cmd = f"cd {self.dropbox} && git pull"
-        subprocess.run(pull_cmd, shell=True, timeout=10)
+            # Stage all changes
+            subprocess.run(["git", "add", "."], check=True)
+
+            # Commit changes if there are any
+            subprocess.run(["git", "commit", "-m", "backup"], check=True)
+
+            # Push changes to the remote repository
+            subprocess.run(["git", "push"], check=True)
+
+        except subprocess.CalledProcessError as e:
+            print(f"Git command failed: {e.cmd}")
+            print(f"Return code: {e.returncode}")
+            raise
+        except Exception as e:
+            print(f"An unexpected error occurred: {str(e)}")
+            raise
+
+        # Pull latest changes from Dropbox
+        try:
+            os.chdir("/home/ulysse/Dropbox/skitourenguru/Routes")
+            subprocess.run(["git", "pull"], check=True)
+
+        except subprocess.CalledProcessError as e:
+            print(f"Git pull command failed: {e.cmd}")
+            print(f"Return code: {e.returncode}")
+            raise
 
 
 def saveProject():
