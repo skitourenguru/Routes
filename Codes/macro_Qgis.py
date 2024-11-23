@@ -2,34 +2,30 @@ from contextlib import contextmanager
 import psycopg2
 from pygit2 import Repository
 from qgis.utils import iface
-from qgis.core import *
-from qgis.gui import *
+from qgis.core import Qgis
 import subprocess
-import os
-from PyQt5.QtWidgets import QPushButton
-import re
-import collections
-import datetime
-import requests
+
 
 CONFIG = {
-    'database': {
-        'host': 'localhost',
-        'database': 'France_Alpes',
-        'user': 'postgres',
-        'password': 'postgres',
-        'port': 5432
+    "database": {
+        "host": "localhost",
+        "database": "France_Alpes",
+        "user": "postgres",
+        "password": "postgres",
+        "port": 5432,
     },
-    'paths': {
-        'dropbox': '/home/ulysse/Dropbox/skitourenguru/Routes/France',
-        'dossier': '/home/ulysse/Data/Vecteurs/Routes/France',
-    }
+    "paths": {
+        "dropbox": "/home/ulysse/Dropbox/skitourenguru/Routes/France",
+        "dossier": "/home/ulysse/Data/Vecteurs/Routes/France",
+        "working_dir": "/home/ulysse/Data/Vecteurs/Routes/Working_dir/France_Alpes.gpkg",
+    },
 }
+
 
 class DatabaseConnexion:
     @contextmanager
     def get_db_connexion(self):
-        conn = psycopg2.connect(**CONFIG['database'])
+        conn = psycopg2.connect(**CONFIG["database"])
         try:
             yield conn
         finally:
@@ -38,35 +34,41 @@ class DatabaseConnexion:
     def check_column_type(self):
         with self.get_db_connexion() as conn:
             with conn.cursor() as cur:
-                cur.execute("""
+                cur.execute(
+                    """
                     SELECT data_type
                     FROM information_schema.columns
                     WHERE table_name = 'compositions'
                     AND column_name = 'segments';
-                    """)
+                    """
+                )
                 result = cur.fetchone()
-                return result [0] if result else None
-
+                return result[0] if result else None
 
     def array_to_text(self):
         with self.get_db_connexion() as conn:
             with conn.cursor() as cur:
-                cur.execute("""
+                cur.execute(
+                    """
                     ALTER TABLE compositions
                     ALTER segments TYPE TEXT
                     USING array_to_string(segments, ',');
-                """)
+                """
+                )
                 conn.commit()
 
     def text_to_array(self):
         with self.get_db_connexion() as conn:
             with conn.cursor() as cur:
-                cur.execute("""
+                cur.execute(
+                    """
                     ALTER TABLE compositions
                     ALTER segments TYPE INTEGER[]
                     USING string_to_array(segments, ',')::int[];
-                """)
+                """
+                )
                 conn.commit()
+
 
 class QgisHandler:
     def __init__(self):
@@ -86,11 +88,11 @@ class QgisHandler:
 
         uri = QgsDataSourceUri()
         uri.setConnection(
-            CONFIG['database']['host'],
-            str(CONFIG['database']['port']),
-            CONFIG['database']['database'],
-            CONFIG['database']['user'],
-            CONFIG['database']['password']
+            CONFIG["database"]["host"],
+            str(CONFIG["database"]["port"]),
+            CONFIG["database"]["database"],
+            CONFIG["database"]["user"],
+            CONFIG["database"]["password"],
         )
         uri.setDataSource("public", table_name, geometry_column)
 
@@ -99,7 +101,7 @@ class QgisHandler:
             self.iface.messageBar().pushMessage(
                 "Erreur",
                 f"La couche {table_name} n'a pas pu être chargée",
-                level=Qgis.MessageLevel.Critical
+                level=Qgis.MessageLevel.Critical,
             )
             return None
         return layer
@@ -130,10 +132,12 @@ class QgisHandler:
             return True
         return False
 
+
 class GitHandler:
     def __init__(self):
-        self.dropbox = CONFIG['paths']['dropbox']
-        self.data_dir = CONFIG['paths']['dossier']
+        self.dropbox = CONFIG["paths"]["dropbox"]
+        self.data_dir = CONFIG["paths"]["dossier"]
+        self.working_dir = CONFIG["paths"]["working_dir"]
         self.repo = Repository(self.data_dir)
 
     def backup_data(self):
@@ -145,7 +149,7 @@ class GitHandler:
         return False
 
     def _export_compositions(self):
-        statement = """SELECT id, start, stop, routes, mdiff, importance, REPLACE(REPLACE(segments::text, '{', ''), '}', '') as segments, massif FROM compositions ORDER BY id"""
+        statement = """SELECT id, start, stop, routes, mdiff, importance, REPLACE(REPLACE(segments, '{', ''), '}', '') as segments, massif FROM compositions ORDER BY id"""
         self._export_layer("compositions", statement)
 
     def _export_segments(self):
@@ -153,65 +157,63 @@ class GitHandler:
         self._export_layer("segments", statement)
 
     def _export_layer(self, name, statement):
-        # Première lettre en majuscule pour le nom du fichier
         capitalized_name = name.capitalize()
 
-        db_params = f"host={CONFIG['database']['host']} " \
-                    f"dbname={CONFIG['database']['database']} " \
-                    f"user={CONFIG['database']['user']} " \
-                    f"password={CONFIG['database']['password']} " \
-                    f"port={CONFIG['database']['port']}"
-
-        command = f'ogr2ogr -sql "{statement}" -nln "{name}" ' \
-                f'{self.data_dir}/France_{capitalized_name}.geojson "PG:{db_params}"'
+        command = (
+            f'ogr2ogr -sql "{statement}" -nln "{name}" '
+            f"/home/ulysse/Temp/France_{capitalized_name}.geojson "
+            f'"{self.working_dir}" '
+        )
 
         subprocess.check_call(command, shell=True)
 
     def _push_changes(self):
         # Push to data directory
-        push_cmd = f"cd {self.data_dir} && git commit -a -m 'backup' && git push"
+        push_cmd = (
+            f"cd {self.data_dir} && git commit -a -m 'backup' && git push"
+        )
         subprocess.run(push_cmd, shell=True, timeout=10)
 
         # Pull in Dropbox
         pull_cmd = f"cd {self.dropbox} && git pull"
         subprocess.run(pull_cmd, shell=True, timeout=10)
 
+
 def saveProject():
     try:
         git_handler = GitHandler()
-        db_conn = DatabaseConnexion()
 
         if git_handler.backup_data():
             iface.messageBar().pushMessage(
                 "Succès",
                 "Couches compositions et segments exportées et poussées sur la branche 'backup'.",
-                level=Qgis.MessageLevel.Success
+                level=Qgis.MessageLevel.Success,
             )
         else:
             iface.messageBar().pushMessage(
                 "Attention",
                 "Les couches n'ont pas été exportées car vous n'êtes pas sur la branche 'backup'. "
                 "Utilisez 'git checkout backup'",
-                level=Qgis.MessageLevel.Warning
+                level=Qgis.MessageLevel.Warning,
             )
 
     except subprocess.CalledProcessError as e:
         iface.messageBar().pushMessage(
             "Erreur",
             f"Erreur lors de l'exécution de la commande : {str(e)}",
-            level=Qgis.MessageLevel.Critical
+            level=Qgis.MessageLevel.Critical,
         )
     except subprocess.TimeoutExpired:
         iface.messageBar().pushMessage(
             "Erreur",
             "Timeout lors de l'exécution des commandes git",
-            level=Qgis.MessageLevel.Critical
+            level=Qgis.MessageLevel.Critical,
         )
     except Exception as e:
         iface.messageBar().pushMessage(
             "Erreur",
             f"Une erreur inattendue s'est produite : {str(e)}",
-            level=Qgis.MessageLevel.Critical
+            level=Qgis.MessageLevel.Critical,
         )
 
 
@@ -242,3 +244,7 @@ def saveProject():
 
 #     except Exception as e:
 #         iface.messageBar().pushMessage("Erreur", str(e), level=Qgis.MessageLevel.Critical)
+
+
+if __name__ == "__main__":
+    saveProject()
