@@ -4,133 +4,21 @@ from pygit2 import Repository
 from qgis.utils import iface
 from qgis.core import Qgis
 import subprocess
+import os
 
 
 CONFIG = {
-    "database": {
-        "host": "localhost",
-        "database": "France_Alpes",
-        "user": "postgres",
-        "password": "postgres",
-        "port": 5432,
-    },
     "paths": {
         "dropbox": "/home/ulysse/Dropbox/skitourenguru/Routes/France",
         "dossier": "/home/ulysse/Data/Vecteurs/Routes/France",
-        "working_dir": "/home/ulysse/Data/Vecteurs/Routes/Working_dir/France_Alpes.gpkg",
+        "working_dir": "/home/ulysse/Data/Vecteurs/Routes/Working_dir",
+    },
+    "names": {
+        "comp": "compositions",
+        "seg": "segments",
+        "db": "France_Alpes",
     },
 }
-
-
-class DatabaseConnexion:
-    @contextmanager
-    def get_db_connexion(self):
-        conn = psycopg2.connect(**CONFIG["database"])
-        try:
-            yield conn
-        finally:
-            conn.close()
-
-    def check_column_type(self):
-        with self.get_db_connexion() as conn:
-            with conn.cursor() as cur:
-                cur.execute(
-                    """
-                    SELECT data_type
-                    FROM information_schema.columns
-                    WHERE table_name = 'compositions'
-                    AND column_name = 'segments';
-                    """
-                )
-                result = cur.fetchone()
-                return result[0] if result else None
-
-    def array_to_text(self):
-        with self.get_db_connexion() as conn:
-            with conn.cursor() as cur:
-                cur.execute(
-                    """
-                    ALTER TABLE compositions
-                    ALTER segments TYPE TEXT
-                    USING array_to_string(segments, ',');
-                """
-                )
-                conn.commit()
-
-    def text_to_array(self):
-        with self.get_db_connexion() as conn:
-            with conn.cursor() as cur:
-                cur.execute(
-                    """
-                    ALTER TABLE compositions
-                    ALTER segments TYPE INTEGER[]
-                    USING string_to_array(segments, ',')::int[];
-                """
-                )
-                conn.commit()
-
-
-class QgisHandler:
-    def __init__(self):
-        self.project = QgsProject.instance()
-        self.iface = iface
-
-    def remove_layer(self, layer_name):
-        """Supprime une couche du projet QGIS par son nom."""
-        if self.project:
-            layers = self.project.mapLayersByName(layer_name)
-            if layers:
-                self.project.removeMapLayer(layers[0].id())
-                return True
-        return False
-
-    def create_postgres_layer(self, table_name, geometry_column="geom"):
-
-        uri = QgsDataSourceUri()
-        uri.setConnection(
-            CONFIG["database"]["host"],
-            str(CONFIG["database"]["port"]),
-            CONFIG["database"]["database"],
-            CONFIG["database"]["user"],
-            CONFIG["database"]["password"],
-        )
-        uri.setDataSource("public", table_name, geometry_column)
-
-        layer = QgsVectorLayer(uri.uri(), table_name, "postgres")
-        if not layer.isValid():
-            self.iface.messageBar().pushMessage(
-                "Erreur",
-                f"La couche {table_name} n'a pas pu être chargée",
-                level=Qgis.MessageLevel.Critical,
-            )
-            return None
-        return layer
-
-    def add_layer_to_group(self, layer, group_name, position=None):
-        """Ajoute une couche à un groupe spécifique."""
-        if self.project:
-            root = self.project.layerTreeRoot()
-            group = root.findGroup(group_name)
-
-            if group:
-                self.project.addMapLayer(layer, False)
-                if position is not None:
-                    group.insertLayer(position, layer)
-                else:
-                    group.addLayer(layer)
-                return True
-            else:
-                # Si le groupe n'existe pas, ajouter directement au projet
-                self.project.addMapLayer(layer)
-                return True
-        return False
-
-    def show_attribute_table(self, layer):
-        """Affiche la table d'attributs d'une couche."""
-        if layer and layer.isValid():
-            self.iface.showAttributeTable(layer)
-            return True
-        return False
 
 
 class GitHandler:
@@ -144,28 +32,44 @@ class GitHandler:
         if self.repo.head.name == "refs/heads/backup":
             self._export_compositions()
             self._export_segments()
-            self._push_changes()
+            # self._push_changes()
             return True
         return False
 
     def _export_compositions(self):
-        statement = """SELECT id, start, stop, routes, mdiff, importance, REPLACE(REPLACE(segments, '{', ''), '}', '') as segments, massif FROM compositions ORDER BY id"""
-        self._export_layer("compositions", statement)
+        layer_name = CONFIG["names"]["comp"]
+
+        statement = f"""SELECT id, start, stop, routes, mdiff, importance, segments, massif FROM {layer_name} ORDER BY id"""
+        self._export_layer(layer_name, statement)
 
     def _export_segments(self):
-        statement = """SELECT fid, id, importance, massif, geom FROM segments ORDER BY id"""
-        self._export_layer("segments", statement)
+        layer_name = CONFIG["names"]["seg"]
+
+        statement = f"""SELECT fid, id, importance, massif, geom FROM {layer_name} ORDER BY id"""
+        self._export_layer(layer_name, statement)
 
     def _export_layer(self, name, statement):
         capitalized_name = name.capitalize()
+        geojson_file_path = os.path.join(
+            self.data_dir, f"France_{capitalized_name}.geojson"
+        )
+        if os.path.exists(geojson_file_path):
+            os.remove(geojson_file_path)
+
+        db = CONFIG["names"]["db"]
 
         command = (
-            f'ogr2ogr -sql "{statement}" -nln "{name}" '
-            f"/home/ulysse/Temp/France_{capitalized_name}.geojson "
-            f'"{self.working_dir}" '
+            f'ogr2ogr -sql "{statement}" -nln "{name}" -append '
+            f'"{self.data_dir}/France_{capitalized_name}.geojson" '
+            f'"{self.working_dir}/{db}.gpkg" '
         )
 
-        subprocess.check_call(command, shell=True)
+        try:
+            subprocess.check_call(command, shell=True)
+        except subprocess.CalledProcessError as e:
+            print(f"Command failed: {command}")
+            print(f"Return code: {e.returncode}")
+            raise
 
     def _push_changes(self):
         # Push to data directory
@@ -215,35 +119,6 @@ def saveProject():
             f"Une erreur inattendue s'est produite : {str(e)}",
             level=Qgis.MessageLevel.Critical,
         )
-
-
-# def openProject():
-#     try:
-#         db_conn = DatabaseConnexion()
-#         qgis_handler = QgisHandler()
-
-#         if db_conn.check_column_type() == 'ARRAY':
-#             db_conn.array_to_text()
-
-#         elif db_conn.check_column_type() == 'TEXT':
-#             db_conn.text_to_array()
-#             db_conn.array_to_text()
-
-#         qgis_handler.remove_layer("compositions")
-
-#         new_layer = qgis_handler.create_postgres_layer("compositions")
-#         if not new_layer:
-#             return
-
-#         # Ajouter la couche compositions au groupe postgres à la positions 3
-#         qgis_handler.add_layer_to_group(new_layer, "Postgres", 3)
-
-#         db_conn.text_to_array()
-
-#         qgis_handler.show_attribute_table(new_layer)
-
-#     except Exception as e:
-#         iface.messageBar().pushMessage("Erreur", str(e), level=Qgis.MessageLevel.Critical)
 
 
 if __name__ == "__main__":
