@@ -1,5 +1,3 @@
-from contextlib import contextmanager
-import psycopg2
 from pygit2 import Repository
 from qgis.utils import iface
 from qgis.core import Qgis
