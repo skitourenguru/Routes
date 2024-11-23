@@ -59,7 +59,7 @@ class GitHandler:
         db = CONFIG["names"]["db"]
 
         command = (
-            f'ogr2ogr -sql "{statement}" -nln "{name}" -append '
+            f'ogr2ogr -sql "{statement}" -nln "{name}" '
             f'"{self.data_dir}/France_{capitalized_name}.geojson" '
             f'"{self.working_dir}/{db}.gpkg" '
         )
