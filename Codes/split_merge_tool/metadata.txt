@@ -1,0 +1,15 @@
+[general]
+name=Split & Merge Tool
+description=Outil de gestion de réseau
+version=1.0
+qgisMinimumVersion=3.0
+author=Ton Nom
+email=ulysse38250@gmail.com
+about=Ce plugin permet de gérer automatiquement la division des segments et la mise à jour des compositions
+repository=URL_du_repository
+tracker=URL_du_bug_tracker
+homepage=URL_de_la_page_web
+category=Vector
+icon=icons/icon.png
+experimental=False
+deprecated=False

@@ -30,7 +30,7 @@ class GitHandler:
         if self.repo.head.name == "refs/heads/backup":
             self._export_compositions()
             self._export_segments()
-            # self._push_changes()
+            self._push_changes()
             return True
         return False
 
@@ -70,17 +70,13 @@ class GitHandler:
             raise
 
     def _push_changes(self):
-        # Navigate to the data directory
         try:
             os.chdir("/home/ulysse/Data/Vecteurs/Routes")
 
-            # Stage all changes
             subprocess.run(["git", "add", "."], check=True)
 
-            # Commit changes if there are any
             subprocess.run(["git", "commit", "-m", "backup"], check=True)
 
-            # Push changes to the remote repository
             subprocess.run(["git", "push"], check=True)
 
         except subprocess.CalledProcessError as e:
@@ -91,7 +87,6 @@ class GitHandler:
             print(f"An unexpected error occurred: {str(e)}")
             raise
 
-        # Pull latest changes from Dropbox
         try:
             os.chdir("/home/ulysse/Dropbox/skitourenguru/Routes")
             subprocess.run(["git", "pull"], check=True)
