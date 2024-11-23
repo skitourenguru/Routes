@@ -3,7 +3,7 @@
 "name": "compositions",
 "features": [
 { "type": "Feature", "properties": { "id": 1, "start": "Le Châtelet", "stop": "Pointe des Jottis", "routes": null, "mdiff": 1, "importance": 0, "segments": "1", "massif": "Chablais" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 2, "start": "Col de Jambaz", "stop": "Pointe des Jottis", "routes": null, "mdiff": 2, "importance": 0, "segments": "2, 4", "massif": "Chablais" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 2, "start": "Col de Jambaz", "stop": "Pointe des Jottis", "routes": null, "mdiff": 2, "importance": 0, "segments": "2", "massif": "Chablais" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3, "start": "La Beauveau", "stop": "Sur la Pointe", "routes": null, "mdiff": 2, "importance": 0, "segments": "5,3,5425", "massif": "Chablais" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4, "start": "La Beauveau", "stop": "Pointe de la Gay", "routes": null, "mdiff": 2, "importance": 0, "segments": "5,4,6435,6438,6420,6437", "massif": "Chablais" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 5, "start": "La Beauveau", "stop": "Pointe de la Gay", "routes": null, "mdiff": 3, "importance": 0, "segments": "5,4,6435,6436,6437", "massif": "Chablais" }, "geometry": null },
