@@ -1,2 +1,5 @@
 *~
 *.qmd
+Working_dir/
+.ropeproject/
+.mypy_cache/
