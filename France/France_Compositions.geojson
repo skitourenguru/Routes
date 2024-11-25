@@ -2,6 +2,7 @@
 "type": "FeatureCollection",
 "name": "compositions",
 "features": [
+{ "type": "Feature", "properties": { "id": 1, "start": "Le Châtelet", "stop": "Pointe des Jottis", "routes": null, "mdiff": 1, "importance": 0, "segments": "1", "massif": "Chablais" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 2, "start": "Col de Jambaz", "stop": "Pointe des Jottis", "routes": null, "mdiff": 2, "importance": 0, "segments": "2", "massif": "Chablais" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3, "start": "La Beauveau", "stop": "Sur la Pointe", "routes": null, "mdiff": 2, "importance": 0, "segments": "5,3,5425", "massif": "Chablais" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4, "start": "La Beauveau", "stop": "Pointe de la Gay", "routes": null, "mdiff": 2, "importance": 0, "segments": "5,4,6435,6438,6420,6437", "massif": "Chablais" }, "geometry": null },
@@ -3829,7 +3830,7 @@
 { "type": "Feature", "properties": { "id": 3836, "start": "Refuge de la Femma", "stop": "Col du Géfret", "routes": null, "mdiff": 6, "importance": 0, "segments": "2245,7257", "massif": "Vanoise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3837, "start": "Le Villaron", "stop": "Pointe de Claret", "routes": null, "mdiff": 8, "importance": 2, "segments": "7260,7255", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3838, "start": "Le Villaron", "stop": "Aiguille de Méan Martin", "routes": null, "mdiff": 7, "importance": 2, "segments": "7260,7259", "massif": "Haute-Maurienne" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3839, "start": "Pré-Ratte", "stop": "Pointe Nord-Est du Châtelard", "routes": null, "mdiff": 8, "importance": 2, "segments": "7261", "massif": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3839, "start": null, "stop": null, "routes": null, "mdiff": 8, "importance": 2, "segments": null, "massif": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3840, "start": "Bonneval", "stop": "Pointe de la Met", "routes": null, "mdiff": 5, "importance": 2, "segments": "7263,7273,7274", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3841, "start": "Pont de la Neige", "stop": "Col des Fours", "routes": null, "mdiff": 2, "importance": 2, "segments": "7264,7269,7266", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3842, "start": "Pont de la Neige", "stop": "Bosse des Fours", "routes": null, "mdiff": 2, "importance": 2, "segments": "7264,7269,7265", "massif": "Haute-Maurienne" }, "geometry": null },
