@@ -3843,6 +3843,7 @@
 { "type": "Feature", "properties": { "id": 3849, "start": "Pont de la Neige", "stop": "Pointe de la Met", "routes": null, "mdiff": 3, "importance": 2, "segments": "7264,7277,7270,7285,7273,7274", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3850, "start": "Pont de la Neige", "stop": "Ouille des Trétêtes", "routes": null, "mdiff": 1, "importance": 2, "segments": "7264,7277,7270,7281", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3851, "start": "Bonneval-sur-Arc", "stop": "Pointe de Méan Martin", "routes": null, "mdiff": 5, "importance": 2, "segments": "7263,7273,7272,7271,7197", "massif": "Haute-Maurienne" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3852, "start": "Novel", "stop": "Col de Trepertuis", "routes": null, "mdiff": 3, "importance": 0, "segments": "6048,6054,6069", "massif": "Chablais" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3852, "start": "Novel", "stop": "Col de Trepertuis", "routes": null, "mdiff": 3, "importance": 0, "segments": "6048,6054,6069", "massif": "Chablais" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3853, "start": "Téléski du Montet", "stop": "Aiguille Pers", "routes": null, "mdiff": 6, "importance": 2, "segments": "7302", "massif": "Haut-Maurienne" }, "geometry": null }
 ]
 }
