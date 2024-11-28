@@ -3844,6 +3844,10 @@
 { "type": "Feature", "properties": { "id": 3850, "start": "Pont de la Neige", "stop": "Ouille des Trétêtes", "routes": null, "mdiff": 1, "importance": 2, "segments": "7264,7277,7270,7281", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3851, "start": "Bonneval-sur-Arc", "stop": "Pointe de Méan Martin", "routes": null, "mdiff": 5, "importance": 2, "segments": "7263,7273,7272,7271,7197", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3852, "start": "Novel", "stop": "Col de Trepertuis", "routes": null, "mdiff": 3, "importance": 0, "segments": "6048,6054,6069", "massif": "Chablais" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3853, "start": "Téléski du Montet", "stop": "Aiguille Pers", "routes": null, "mdiff": 6, "importance": 2, "segments": "7302", "massif": "Haut-Maurienne" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3853, "start": "Téléski du Montet", "stop": "Aiguille Pers", "routes": null, "mdiff": 6, "importance": 2, "segments": "7302", "massif": "Haut-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3854, "start": "L'Écot", "stop": "Grande Aiguille Rousse", "routes": null, "mdiff": 8, "importance": 2, "segments": "7303,7305,7309,7306", "massif": "Haute-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3855, "start": "L'Écot", "stop": "Col de Gontière", "routes": null, "mdiff": 6, "importance": 2, "segments": "7303,7304,7307", "massif": "Haute-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3856, "start": "Refuge du Carro", "stop": "Grande Aiguille Rousse", "routes": null, "mdiff": 8, "importance": 2, "segments": "7308,7309,7306", "massif": "Haute-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3857, "start": "Refuge du Carro", "stop": "Col de Gontière", "routes": null, "mdiff": 6, "importance": 2, "segments": "7303,7304,7307", "massif": "Haute-Maurienne" }, "geometry": null }
 ]
 }
