@@ -3929,6 +3929,7 @@
 { "type": "Feature", "properties": { "id": 3935, "start": "Refuge d'Avérole", "stop": "Neige de Marie", "routes": null, "mdiff": 4, "importance": 2, "segments": "7427,7434,7429", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3936, "start": "Refuge d'Avérole", "stop": "Passage du Colerin", "routes": null, "mdiff": 4, "importance": 2, "segments": "7417,7421,7419,7432", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3937, "start": "Refuge d'Avérole", "stop": "Passage du Colerin", "routes": null, "mdiff": 4, "importance": 2, "segments": "7427,7434,7428,7430", "massif": "Haute-Maurienne" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3938, "start": "Refuge d'Avérole", "stop": "Ouille d'Arbéron", "routes": null, "mdiff": 5, "importance": 2, "segments": "7427,7433", "massif": "Haute-Maurienne" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3938, "start": "Refuge d'Avérole", "stop": "Ouille d'Arbéron", "routes": null, "mdiff": 5, "importance": 2, "segments": "7427,7433,7435", "massif": "Haute-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3939, "start": "Refuge d'Avérole", "stop": "Pointe de la Valette", "routes": null, "mdiff": 4, "importance": 2, "segments": "7427,7433,7436,7438", "massif": "Haute-Maurienne" }, "geometry": null }
 ]
 }
