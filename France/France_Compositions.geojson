@@ -1608,10 +1608,10 @@
 { "type": "Feature", "properties": { "id": 1610, "start": "Béranger", "stop": "Le Verdet", "routes": null, "mdiff": 0, "importance": 0, "segments": "2488", "massif": "Vanoise" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1611, "start": "Le Charmaix", "stop": "Col d'Arplane", "routes": null, "mdiff": 2, "importance": 2, "segments": "5382", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1612, "start": "Le Charmaix", "stop": "Grand Col de Roc Rouge", "routes": null, "mdiff": 4, "importance": 2, "segments": "5382,5383", "massif": "Haute-Maurienne" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 1613, "start": "Le Charmaix", "stop": "Col d’Arplane", "routes": null, "mdiff": 4, "importance": 2, "segments": "5388,5386,5384,5383", "massif": "Haute-Maurienne" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 1614, "start": "Le Charmaix", "stop": "Grand Col de Roc Rouge", "routes": null, "mdiff": 4, "importance": 2, "segments": "5388,5386,5384", "massif": "Haute-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 1613, "start": "Le Charmaix", "stop": "Col d’Arplane", "routes": null, "mdiff": 4, "importance": 2, "segments": "5388,5386,5384,7485,5383", "massif": "Haute-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 1614, "start": "Le Charmaix", "stop": "Grand Col de Roc Rouge", "routes": null, "mdiff": 4, "importance": 2, "segments": "5388,5386,5384,7485", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1615, "start": "Le Charmaix", "stop": "Col des Sarrasins", "routes": null, "mdiff": 2, "importance": 2, "segments": "5388,5386,5389,5385", "massif": "Haute-Maurienne" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 1616, "start": "Le Charmaix", "stop": "Pointes des Sarrasins", "routes": null, "mdiff": 3, "importance": 2, "segments": "5388,5386,5389,5387", "massif": "Haute-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 1616, "start": "Le Charmaix", "stop": "Pointes des Sarrasins", "routes": null, "mdiff": 3, "importance": 2, "segments": "5388,5386,5389,5387,7487", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1617, "start": "Le Charmaix", "stop": "Le Mounioz", "routes": null, "mdiff": 9, "importance": 2, "segments": "5388,5390", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1618, "start": "Clavans-le-Haut", "stop": "Col du Fond du Ferrand", "routes": null, "mdiff": 0, "importance": 0, "segments": "2516,2545,2519,2518", "massif": "Grandes-Rousses" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1619, "start": "Clavans-le-Haut", "stop": "Col du Fond du Ferrand", "routes": null, "mdiff": 8, "importance": 0, "segments": "2516,2517", "massif": "Grandes-Rousses" }, "geometry": null },
@@ -3947,6 +3947,9 @@
 { "type": "Feature", "properties": { "id": 3954, "start": "Château-de-Caléyère", "stop": "L'Arpian", "routes": null, "mdiff": 5, "importance": 0, "segments": "4527,4637,4643,4641,4638,4645,7473", "massif": "Embrunais" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3955, "start": "Château-de-Caléyère", "stop": "Mont Guillaume", "routes": null, "mdiff": 5, "importance": 0, "segments": "4644,4655,4651,4648,7474,7475", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3956, "start": "Champ Perchier", "stop": "Col de Chargès", "routes": null, "mdiff": 6, "importance": 0, "segments": "4528,4724,4682,4718,5770,7479", "massif": "Embrunais" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3957, "start": "Prapic", "stop": "Col de Chargès", "routes": null, "mdiff": 6, "importance": 0, "segments": "4500,4503,4495,4498,4505,4497,7482", "massif": "Haute-Maurienne" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3957, "start": "Prapic", "stop": "Col de Chargès", "routes": null, "mdiff": 6, "importance": 0, "segments": "4500,4503,4495,4498,4505,4497,7482", "massif": "Haute-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3958, "start": "La Cassa", "stop": "Pointe du Lamet", "routes": null, "mdiff": 8, "importance": 2, "segments": "7483", "massif": "Haute-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3959, "start": "Les Fontainettes", "stop": "Pointe du Lamet", "routes": null, "mdiff": 10, "importance": 2, "segments": "7484", "massif": "Haute-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3960, "start": "Le Charmaix", "stop": "Pointe des Sarrasins", "routes": null, "mdiff": 3, "importance": 2, "segments": "5388,5386,5384,7486,7487", "massif": "Haute-Maurienne" }, "geometry": null }
 ]
 }
