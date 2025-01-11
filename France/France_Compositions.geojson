@@ -3976,8 +3976,10 @@
 { "type": "Feature", "properties": { "id": 3983, "start": "Télésiège du Punta Bagna", "stop": "Le Grand Argentier", "routes": null, "mdiff": 5, "importance": 2, "segments": "7536,7546,7541,7543", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3984, "start": "Télésiège de Punta Bagna", "stop": "Cime du Grand Vallon", "routes": null, "mdiff": 3, "importance": 2, "segments": "7536,7545,7547,7548", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3985, "start": "Télésiège du Punta Bagna", "stop": "La Belle Plinier", "routes": null, "mdiff": 5, "importance": 2, "segments": "7536,7545,7547,7549,7556,7551", "massif": "Haute-Maurienne" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3986, "start": "Le Charmaix", "stop": "La Belle Plinier", "routes": null, "mdiff": 6, "importance": 2, "segments": "5388,7550,7551", "massif": "Haute-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3986, "start": "Le Charmaix", "stop": "La Belle Plinier", "routes": null, "mdiff": 6, "importance": 2, "segments": "5388,7560,7562,7550,7551", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3988, "start": "Télésiège du Punta Bagna", "stop": "Aiguille de Scolette", "routes": null, "mdiff": 8, "importance": 2, "segments": "7536,7545,7547,7549,7557", "massif": "Haute-Maurienne" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3989, "start": "La Norma", "stop": "Aiguille de Scolette", "routes": null, "mdiff": 8, "importance": 2, "segments": "7558", "massif": "Haute-Maurienne" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 3989, "start": "La Norma", "stop": "Aiguille de Scolette", "routes": null, "mdiff": 8, "importance": 2, "segments": "7558", "massif": "Haute-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3990, "start": "Le Charmaix ", "stop": "Pointe 2416", "routes": null, "mdiff": 5, "importance": 2, "segments": "5388,7560,7559", "massif": "Haute-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3991, "start": "Le Charmaix", "stop": "Mont Rond", "routes": null, "mdiff": 7, "importance": 2, "segments": "5388,7560,7562,7561", "massif": "Haute-Maurienne" }, "geometry": null }
 ]
 }
