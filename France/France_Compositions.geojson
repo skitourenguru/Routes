@@ -3997,9 +3997,10 @@
 { "type": "Feature", "properties": { "id": 4005, "start": "Le Charmaix", "stop": "La Belle Plinier", "routes": null, "mdiff": 6, "importance": 2, "segments": "5388,7560,7562,7575,7576,7577,7571,7551", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4006, "start": "Col de Porte", "stop": "Canaple", "routes": null, "mdiff": 1, "importance": 2, "segments": "984,978,93,6477,6478,3209", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4007, "start": "Pomarey", "stop": "Canaple", "routes": null, "mdiff": 3, "importance": 2, "segments": "986,992,988,3015,2769,981", "massif": "Haute-Maurienne" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4008, "start": "Le Planay", "stop": "Pointe Saint-Michel", "routes": null, "mdiff": 8, "importance": 2, "segments": "7600,7606,7605,7603,7601", "massif": "Haute-Maurienne" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4009, "start": "Le Planay", "stop": "Gros Peyron", "routes": null, "mdiff": 5, "importance": 2, "segments": "7600,7606,7605,7602", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4011, "start": "Le Planay", "stop": "Le Petit Vallon", "routes": null, "mdiff": 6, "importance": 2, "segments": "7600,7606,7604", "massif": "Haute-Maurienne" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4012, "start": "Le Planay", "stop": "Roche d'Étache", "routes": null, "mdiff": 8, "importance": 2, "segments": "7600,7607", "massif": "Haute-Maurienne" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4012, "start": "Le Planay", "stop": "Roche d'Étache", "routes": null, "mdiff": 8, "importance": 2, "segments": "7600,7607", "massif": "Haute-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4013, "start": "Le Planay", "stop": "Gros Peyron", "routes": null, "mdiff": null, "importance": 2, "segments": "7600,7606,7605,7602", "massif": "Haute-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4014, "start": "Le Planay", "stop": "Pointe Saint-Michel", "routes": null, "mdiff": null, "importance": 2, "segments": "7600,7606,7605,7603,7601", "massif": "Haute-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4015, "start": "Le Planay", "stop": "Refuge d'Ambin", "routes": null, "mdiff": 0, "importance": 2, "segments": "7608", "massif": "Haute-Maurienne" }, "geometry": null }
 ]
 }
