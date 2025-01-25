@@ -4013,8 +4013,13 @@
 { "type": "Feature", "properties": { "id": 4024, "start": "Refuge d'Ambin", "stop": "Col de l'Agnel", "routes": null, "mdiff": 4, "importance": 2, "segments": "7608,7609,7617,7624,7626", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4025, "start": "Refuge d'Ambin", "stop": "Mont d'Ambin", "routes": null, "mdiff": 6, "importance": 2, "segments": "7608,7609,7617,7624,7627", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4026, "start": "Bramans", "stop": "Pointe de Bellecombe", "routes": null, "mdiff": 5, "importance": 2, "segments": "7591,7628,7629", "massif": "Haute-Maurienne" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4027, "start": "Sollières l'Envers", "stop": "Mont Froid", "routes": null, "mdiff": 5, "importance": 2, "segments": "7630,7633", "massif": "Haute-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4027, "start": "Sollières l'Envers", "stop": "Mont Froid", "routes": null, "mdiff": 5, "importance": 2, "segments": "7630,7633,7641", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4028, "start": "Le Verney", "stop": "Le Jeu", "routes": null, "mdiff": 3, "importance": 2, "segments": "7631", "massif": "Haute-Maurienne" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4029, "start": "Téléski du Lac", "stop": "Mont Froid", "routes": null, "mdiff": 3, "importance": 2, "segments": "7632,7633", "massif": "Haute-Maurienne" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4029, "start": "Téléski du Lac", "stop": "Mont Froid", "routes": null, "mdiff": 3, "importance": 2, "segments": "7632,7640,7633,7641", "massif": "Haute-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4030, "start": "Téléski du Lac", "stop": "Pointe de Cugne", "routes": null, "mdiff": 7, "importance": 2, "segments": "7632,7636", "massif": "Haute-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4031, "start": "Téléski du Lac", "stop": "Le Grand Coin", "routes": null, "mdiff": 5, "importance": 2, "segments": "7635", "massif": "Haute-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4032, "start": "La Ramasse", "stop": "Pas de la Beccia", "routes": null, "mdiff": 4, "importance": 2, "segments": "7638", "massif": "Haute-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4033, "start": "Barrage du Mont Cenis", "stop": "Pointe Droset", "routes": null, "mdiff": 5, "importance": 2, "segments": "7639", "massif": "Haute-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4034, "start": "Téléski du Lac", "stop": "Signal du Petit Mont Cenis", "routes": null, "mdiff": 7, "importance": 2, "segments": "7632,7640,7633,7637", "massif": "Haute-Maurienne" }, "geometry": null }
 ]
 }
