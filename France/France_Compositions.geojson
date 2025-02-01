@@ -738,7 +738,7 @@
 { "type": "Feature", "properties": { "id": 736, "start": "Le Baure", "stop": "Bec Charvet", "routes": null, "mdiff": 6, "segments": "879,911,883,914" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 737, "start": "Le Baure", "stop": "Pravouta", "routes": null, "mdiff": 1, "segments": "879,911,882,915,922" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 738, "start": "Col de Porte", "stop": "Chamechaude", "routes": null, "mdiff": 5, "segments": "880" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 739, "start": "Col de Porte", "stop": "La Pinéa", "routes": null, "mdiff": 5, "segments": "984,978,93,336,917" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 739, "start": "Col de Porte", "stop": "La Pinéa", "routes": null, "mdiff": 5, "segments": "984,978,336,917,1465,1503" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 740, "start": "Col de Porte", "stop": "Montfromage", "routes": null, "mdiff": 1, "segments": "984,978,93" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 741, "start": "Col de Porte", "stop": "Montfromage", "routes": null, "mdiff": null, "segments": "984,983,985,3247,4444,6477" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 742, "start": "Col de Porte", "stop": "Canaple", "routes": null, "mdiff": null, "segments": "984,983,985,3247,3213,3209,979" }, "geometry": null },
