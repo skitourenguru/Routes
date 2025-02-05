@@ -4055,6 +4055,8 @@
 { "type": "Feature", "properties": { "id": 4066, "start": "Pont de la Pêche", "stop": "Refuge de Péclet-Polset", "routes": null, "mdiff": 1, "importance": 2, "segments": "2105,2089,2117,2113,2103,2107,2476", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4067, "start": "Aussois", "stop": "Brèche de la Croix de la Rue", "routes": null, "mdiff": 4, "importance": 2, "segments": "7673,7685,7669,7680,7681,7697", "massif": "Haute-Maurienne" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4068, "start": "Refuge du Fond d'Aussois", "stop": "Brèche de la Croix de la Rue", "routes": null, "mdiff": 4, "importance": 2, "segments": "7681,7697", "massif": "Haute-Maurienne" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4069, "start": "Refuge du Fond d'Aussois", "stop": "Pointe de l'Observatoire", "routes": null, "mdiff": 2, "importance": 2, "segments": "7681,7698,7684,7682", "massif": "Haute-Maurienne" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4069, "start": "Refuge du Fond d'Aussois", "stop": "Pointe de l'Observatoire", "routes": null, "mdiff": 2, "importance": 2, "segments": "7681,7698,7684,7682", "massif": "Haute-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4070, "start": "Refuge du Fond d'Aussois", "stop": "La Tête d'Aussois", "routes": null, "mdiff": 6, "importance": 2, "segments": "7681,7698,7683", "massif": "Haute-Maurienne" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4071, "start": "Refuge de la Dent Parrachée", "stop": "La Dent Parrachée", "routes": null, "mdiff": 9, "importance": 2, "segments": "7699", "massif": "Haute-Maurienne" }, "geometry": null }
 ]
 }
