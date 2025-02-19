@@ -3782,7 +3782,7 @@
 { "type": "Feature", "properties": { "id": 3824, "start": "Le Suffet", "stop": "Grand Roc Noir", "routes": null, "mdiff": 8, "segments": "2238,7240,2246,6539,7234,7247,7237" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3825, "start": "Le Suffet", "stop": "Grand Roc Noir", "routes": null, "mdiff": 8, "segments": "2238,7240,2246,6539,7234,7247,7249,7236" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3826, "start": "Le Manchet", "stop": "Pointe de la Sana", "routes": null, "mdiff": 5, "segments": "7190,7213,7214,7215,7212,7211,7207" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3827, "start": "Le Suffet", "stop": "Pointe du Grand Vallon", "routes": null, "mdiff": 4, "segments": "7240,7239" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3827, "start": "Le Suffet", "stop": "Pointe du Grand Vallon", "routes": null, "mdiff": 4, "segments": "2238,7239" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3828, "start": "Le Suffet", "stop": "Pointe de Lanserlia", "routes": null, "mdiff": 6, "segments": "2238,7240,2247,7241" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3829, "start": "Lanslebourg", "stop": "Pointe du Grand Vallon", "routes": null, "mdiff": 6, "segments": "7243,7245,7244" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3830, "start": "Lanslebourg", "stop": "Grand Roc Noir", "routes": null, "mdiff": 8, "segments": "7243,7246,7247,7237" }, "geometry": null },
