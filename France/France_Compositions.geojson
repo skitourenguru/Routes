@@ -4148,9 +4148,6 @@
 { "type": "Feature", "properties": { "id": 4160, "start": "Le Chêney", "stop": "La Thuile", "routes": null, "mdiff": 6, "importance": 0, "segments": "1566,1568,2296", "massif": "Maurienne", "updated_at": "2025-02-26T16:05:08.085Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4161, "start": "Les Réaux", "stop": "Col du Vallon", "routes": null, "mdiff": 3, "importance": 0, "segments": "1866,1867,1881,1885,7863", "massif": "Maurienne", "updated_at": "2025-03-17T09:59:56.798Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4162, "start": "Les Réaux", "stop": "Col du Vallon", "routes": null, "mdiff": 4, "importance": 0, "segments": "1866,1867,1881,1885,7863", "massif": "Maurienne", "updated_at": "2025-03-17T10:01:54.775Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4163, "start": "Le Chêney", "stop": null, "routes": null, "mdiff": null, "importance": 0, "segments": "7863", "massif": "Maurienne", "updated_at": "2025-03-17T10:02:54.702Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4164, "start": "Le Chêney", "stop": null, "routes": null, "mdiff": null, "importance": 0, "segments": "7863", "massif": "Maurienne", "updated_at": "2025-03-17T10:03:32.476Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4165, "start": "Le Chêney", "stop": null, "routes": null, "mdiff": null, "importance": 0, "segments": "7863", "massif": "Maurienne", "updated_at": "2025-03-17T10:03:54.471Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4166, "start": "Le Chêney", "stop": null, "routes": null, "mdiff": null, "importance": 0, "segments": "7863", "massif": "Maurienne", "updated_at": "2025-03-17T10:04:17.587Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4163, "start": "Les Réaux", "stop": null, "routes": null, "mdiff": null, "importance": 0, "segments": "7863", "massif": "Maurienne", "updated_at": "2025-03-17T10:07:03.061Z" }, "geometry": null }
 ]
 }
