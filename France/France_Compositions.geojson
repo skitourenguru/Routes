@@ -3188,7 +3188,7 @@
 { "type": "Feature", "properties": { "id": 3193, "start": "Pont de l'Estrech", "stop": "Plateau de Bouchiers", "routes": null, "mdiff": 4, "importance": 0, "segments": "5201,5198", "massif": "Ubaye", "updated_at": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3194, "start": "Saint-Paul-sur-Ubaye", "stop": "Tête de l'Homme", "routes": null, "mdiff": 5, "importance": 0, "segments": "5199", "massif": "Ubaye", "updated_at": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3195, "start": "Saint Ours", "stop": "Tête de la Courbe", "routes": null, "mdiff": 9, "importance": 0, "segments": "5204", "massif": "Ubaye", "updated_at": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3196, "start": "Saint Ours", "stop": "Col sans Nom", "routes": null, "mdiff": 6, "importance": 0, "segments": "5205,5202", "massif": "Ubaye", "updated_at": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3196, "start": "Saint Ours", "stop": "Col sans Nom", "routes": null, "mdiff": 6, "importance": 0, "segments": "5205,5202", "massif": "Ubaye", "updated_at": "2025-03-28T17:52:01.855Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3197, "start": "Saint Ours", "stop": "Col de Viraysse", "routes": null, "mdiff": 4, "importance": 0, "segments": "5205,5203,5827,5192", "massif": "Ubaye", "updated_at": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3198, "start": "Saint Ours", "stop": "Tête de Viraysse", "routes": null, "mdiff": 4, "importance": 0, "segments": "5205,5203,5827,5193", "massif": "Ubaye", "updated_at": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3199, "start": "Saint Ours", "stop": "Col de Mallemort", "routes": null, "mdiff": 0, "importance": 0, "segments": "5205,5203,5826", "massif": "Ubaye", "updated_at": "2025-03-18T11:56:34.224Z" }, "geometry": null },
@@ -4148,6 +4148,7 @@
 { "type": "Feature", "properties": { "id": 4160, "start": "Le Chêney", "stop": "La Thuile", "routes": null, "mdiff": 6, "importance": 0, "segments": "1566,1568,2296", "massif": "Maurienne", "updated_at": "2025-02-26T16:05:08.085Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4163, "start": "Les Réaux", "stop": "Col du Vallon", "routes": null, "mdiff": 4, "importance": 0, "segments": "1866,1867,1881,1885,7863", "massif": "Maurienne", "updated_at": "2025-03-17T11:07:46.039Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4164, "start": "Les Réaux", "stop": "Grand Galibier Sommet Est", "routes": null, "mdiff": 6, "importance": 0, "segments": "1866,1867,1881,1888,1838,1883,1887,1879,7865,1840", "massif": "Maurienne", "updated_at": "2025-03-17T11:15:31.225Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4165, "start": "Le Villard Laté", "stop": "La Garidole", "routes": null, "mdiff": 4, "importance": 0, "segments": "7867", "massif": "Cerces", "updated_at": "2025-03-17T11:25:13.284Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4165, "start": "Le Villard Laté", "stop": "La Garidole", "routes": null, "mdiff": 4, "importance": 0, "segments": "7867", "massif": "Cerces", "updated_at": "2025-03-17T11:25:13.284Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4166, "start": "Le Villard Laté", "stop": null, "routes": null, "mdiff": null, "importance": 0, "segments": "5202", "massif": "Cerces", "updated_at": "2025-03-28T17:52:04.841Z" }, "geometry": null }
 ]
 }
