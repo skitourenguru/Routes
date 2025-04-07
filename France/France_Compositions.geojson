@@ -4162,8 +4162,8 @@
 { "type": "Feature", "properties": { "id": 4176, "start": "Le Monêtier-les-Bains", "stop": "Pic Ombière", "routes": null, "mdiff": 8, "importance": 0, "segments": "7886,7887", "massif": "Cerces", "updated_at": "2025-04-07T11:24:41.526Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4177, "start": "Le Monêtier-les-Bains", "stop": "Pointe du Demi", "routes": null, "mdiff": 7, "importance": 0, "segments": "7886,7888,7892,7889", "massif": "Cerces", "updated_at": "2025-04-07T11:32:23.229Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4178, "start": "Le Monêtier-les-Bains", "stop": "L'Aguilliers", "routes": null, "mdiff": 4, "importance": 0, "segments": "7886,7888,7891", "massif": "Cerces", "updated_at": "2025-04-07T11:34:21.197Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4179, "start": "Le Pont de l'Alpe", "stop": "Col de l'Aiguillette", "routes": null, "mdiff": 3, "importance": 0, "segments": "7893,7896", "massif": "Cerces", "updated_at": "2025-04-07T11:50:29.496Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4180, "start": "Le Pont de l'Alpe", "stop": "Sommet du Chardonnet", "routes": null, "mdiff": 4, "importance": 0, "segments": "7893,7896,7894", "massif": "Cerces", "updated_at": "2025-04-07T11:50:29.557Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4179, "start": "Le Pont de l'Alpe", "stop": "Col de l'Aiguillette", "routes": null, "mdiff": 3, "importance": 0, "segments": "7893,7896,7898", "massif": "Cerces", "updated_at": "2025-04-07T11:50:29.496Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4180, "start": "Le Pont de l'Alpe", "stop": "Sommet du Chardonnet", "routes": null, "mdiff": 4, "importance": 0, "segments": "7893,7896,7898,7894", "massif": "Cerces", "updated_at": "2025-04-07T11:50:29.557Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4181, "start": "Le Pont de l'Alpe", "stop": "Sommet du Chardonnet", "routes": null, "mdiff": 6, "importance": 0, "segments": "7893,7895", "massif": "Cerces", "updated_at": "2025-04-07T12:01:20.201Z" }, "geometry": null }
 ]
 }
