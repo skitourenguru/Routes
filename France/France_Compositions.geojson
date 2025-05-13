@@ -4241,6 +4241,7 @@
 { "type": "Feature", "properties": { "id": 4255, "start": "Refuge de la Buffère", "stop": "Crête de l'Échaillon", "routes": null, "mdiff": 2, "importance": 2, "segments": "8017,8033,8035,8032", "massif": "Cerces", "updated_at": "2025-05-13T11:22:21.217Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4256, "start": "Refuge de la Buffère", "stop": "Sommet de Cristol", "routes": null, "mdiff": 2, "importance": 2, "segments": "8017,8033,8035,8034", "massif": "Cerces", "updated_at": "2025-05-13T11:24:26.102Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4257, "start": "Névache", "stop": "Sommet de Cristol", "routes": null, "mdiff": 4, "importance": 2, "segments": "8036,8040,8038", "massif": "Cerces", "updated_at": "2025-05-13T11:31:56.684Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4258, "start": "Névache", "stop": "Crête de l'Échaillon", "routes": null, "mdiff": 3, "importance": 2, "segments": "8036,8040,8037", "massif": "Cerces", "updated_at": "2025-05-13T11:33:16.816Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4258, "start": "Névache", "stop": "Crête de l'Échaillon", "routes": null, "mdiff": 3, "importance": 2, "segments": "8036,8040,8037", "massif": "Cerces", "updated_at": "2025-05-13T11:33:16.816Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4259, "start": "Névache", "stop": "Pic du Longet", "routes": null, "mdiff": 4, "importance": 2, "segments": "8036,8039", "massif": "Cerces", "updated_at": "2025-05-13T11:33:50.668Z" }, "geometry": null }
 ]
 }
