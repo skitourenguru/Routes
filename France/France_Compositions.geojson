@@ -4245,6 +4245,8 @@
 { "type": "Feature", "properties": { "id": 4259, "start": "Névache", "stop": "Pic du Longet", "routes": null, "mdiff": 4, "importance": 2, "segments": "8036,8042,8039", "massif": "Cerces", "updated_at": "2025-05-13T11:33:50.668Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4260, "start": "Névache", "stop": "La Gardiole", "routes": null, "mdiff": 4, "importance": 2, "segments": "8036,8042,8041", "massif": "Cerces", "updated_at": "2025-05-14T09:43:00.405Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4261, "start": "Névache", "stop": "Croix Carail", "routes": null, "mdiff": 5, "importance": 2, "segments": "8043", "massif": "Cerces", "updated_at": "2025-05-14T09:53:51.237Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4262, "start": "Névache", "stop": "La Gardiole", "routes": null, "mdiff": 5, "importance": 2, "segments": "8036,8040,8046,8044,8045", "massif": "Cerces", "updated_at": "2025-05-14T10:01:53.625Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4262, "start": "Névache", "stop": "La Gardiole", "routes": null, "mdiff": 5, "importance": 2, "segments": "8036,8040,8046,8044,8045", "massif": "Cerces", "updated_at": "2025-05-14T10:01:53.625Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4263, "start": "Plampinet", "stop": "Roche Gauthier", "routes": null, "mdiff": 7, "importance": 2, "segments": "8051,8049,8047", "massif": "Cerces", "updated_at": "2025-05-14T10:21:50.333Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4264, "start": "Plampinet", "stop": "Ancien Fort de Lenlon", "routes": null, "mdiff": 5, "importance": 2, "segments": "8051,8049,8048", "massif": "Cerces", "updated_at": "2025-05-14T10:24:18.039Z" }, "geometry": null }
 ]
 }
