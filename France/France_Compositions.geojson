@@ -4283,6 +4283,9 @@
 { "type": "Feature", "properties": { "id": 4297, "start": "Névache", "stop": "Charoumu", "routes": null, "mdiff": 5, "importance": 2, "segments": "8098,8099,8101,8107,8118,8114,8116", "massif": "Cerces", "updated_at": "2025-05-15T12:08:11.077Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4298, "start": "Névache", "stop": "La Colette", "routes": null, "mdiff": 4, "importance": 2, "segments": "8098,8099,8101,8107,8118,8117", "massif": "Cerces", "updated_at": "2025-05-15T12:10:22.895Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4299, "start": "Névache", "stop": "La Colette", "routes": null, "mdiff": 4, "importance": 2, "segments": "8098,8110,8111,8112", "massif": "Cerces", "updated_at": "2025-05-15T12:10:23.006Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4300, "start": "Névache", "stop": "Refuge du Ricou", "routes": null, "mdiff": 1, "importance": 2, "segments": "8098,8110,8015,7996,8119,8120", "massif": "Cerces", "updated_at": "2025-05-15T12:13:08.703Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4300, "start": "Névache", "stop": "Refuge du Ricou", "routes": null, "mdiff": 1, "importance": 2, "segments": "8098,8110,8015,7996,8119,8120", "massif": "Cerces", "updated_at": "2025-05-15T12:13:08.703Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4301, "start": "Névache", "stop": "Pic du Lac Blanc", "routes": null, "mdiff": 7, "importance": 2, "segments": "8098,8099,8101,8107,8115,8105,8109,8108,8121", "massif": "Cerces", "updated_at": "2025-05-15T12:22:27.771Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4302, "start": "Refuge de Ricou", "stop": "Pic du Lac Blanc", "routes": null, "mdiff": 5, "importance": 2, "segments": "8122,8121", "massif": "Cerces", "updated_at": "2025-05-15T12:22:14.326Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4303, "start": "Névache", "stop": "Pic du Lac Blanc", "routes": null, "mdiff": 5, "importance": 2, "segments": "8098,8110,8015,7996,8119,8120,8122,8121", "massif": "Cerces", "updated_at": "2025-05-15T12:22:27.882Z" }, "geometry": null }
 ]
 }
