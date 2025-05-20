@@ -4333,6 +4333,8 @@
 { "type": "Feature", "properties": { "id": 4347, "start": "Plampinet", "stop": "Sommet du Guion", "routes": null, "mdiff": 8, "importance": 2, "segments": "8064,8178", "massif": "Cerces", "updated_at": "2025-05-19T11:27:17.591Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4348, "start": "Roubion", "stop": "L'Aiguille Rouge", "routes": null, "mdiff": 6, "importance": 2, "segments": "8180,8181", "massif": "Cerces", "updated_at": "2025-05-19T11:32:12.476Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4349, "start": "Roubion", "stop": "Crête de la Charmette", "routes": null, "mdiff": 7, "importance": 2, "segments": "8180,8182,8184,8176", "massif": "Cerces", "updated_at": "2025-05-19T11:33:30.710Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4350, "start": "Roubion", "stop": "Col de l'Étroit du Vallon", "routes": null, "mdiff": 3, "importance": 2, "segments": "8180,8182,8185,8186,8177,8173", "massif": "Cerces", "updated_at": "2025-05-19T11:36:39.337Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4350, "start": "Roubion", "stop": "Col de l'Étroit du Vallon", "routes": null, "mdiff": 3, "importance": 2, "segments": "8180,8182,8185,8186,8177,8173", "massif": "Cerces", "updated_at": "2025-05-19T11:36:39.337Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4351, "start": "Les Sauvas", "stop": "Pic de Bure", "routes": null, "mdiff": 6, "importance": 2, "segments": "8187,8190,8189", "massif": "Dévoluy", "updated_at": "2025-05-20T11:21:41.093Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4352, "start": "Les Sauvas", "stop": "Pic de Bure", "routes": null, "mdiff": 5, "importance": 2, "segments": "8187,8188,8189", "massif": "Dévoluy", "updated_at": "2025-05-20T11:21:41.166Z" }, "geometry": null }
 ]
 }
