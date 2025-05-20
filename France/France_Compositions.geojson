@@ -4344,6 +4344,7 @@
 { "type": "Feature", "properties": { "id": 4358, "start": "Serre du Faou", "stop": "Le Cuchon", "routes": null, "mdiff": 3, "importance": 2, "segments": "8198,8196,8197", "massif": "Dévoluy", "updated_at": "2025-05-20T12:07:25.626Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4359, "start": "Col Bayard", "stop": "Pic de Gleize", "routes": null, "mdiff": 2, "importance": 2, "segments": "8199", "massif": "Dévoluy", "updated_at": "2025-05-20T12:18:45.667Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4360, "start": "Le Noyer", "stop": "Sommet du Chamois", "routes": null, "mdiff": 5, "importance": 2, "segments": "8200,8202", "massif": "Dévoluy", "updated_at": "2025-05-20T12:26:42.937Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4361, "start": "Le Noyer", "stop": "Aiguille de Roche Noire", "routes": null, "mdiff": 5, "importance": 2, "segments": "8200,8201", "massif": "Dévoluy", "updated_at": "2025-05-20T12:27:56.578Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4361, "start": "Le Noyer", "stop": "Aiguille de Roche Noire", "routes": null, "mdiff": 5, "importance": 2, "segments": "8200,8201", "massif": "Dévoluy", "updated_at": "2025-05-20T12:27:56.578Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4362, "start": "Le Noyer", "stop": "Tête de Girbault", "routes": null, "mdiff": 6, "importance": 2, "segments": "8203,8206,8205", "massif": "Dévoluy", "updated_at": "2025-05-20T12:38:36.765Z" }, "geometry": null }
 ]
 }
