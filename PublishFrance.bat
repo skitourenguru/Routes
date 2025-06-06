@@ -72,7 +72,7 @@ if "%USERNAME%" == "Administrator" (
 	set MODEL=C:\Skitourenguru2\FR\model\FootSections_ModelCoefficients.csv
 	set MAPSERVER_DIR=\\192.168.1.41\gis\skitourenguru\vector
 	set PUBLIC_DIR=\\192.168.1.43\public
-	for /f "tokens=1-3 delims=/ " %%a in ('date /t') do (set MYDATE=%%c%%b%%a)
+	for /f "tokens=1-3 delims=. " %%a in ('date /t') do (set MYDATE=%%c%%b%%a)
 )
 
 rem User name of VirtualBox of Ulysse
@@ -89,6 +89,8 @@ if "%USERNAME%" == "ulysse" (
 	rem set PUBLIC_DIR=
 	for /f "tokens=1-3 delims=/ " %%a in ('date /t') do (set MYDATE=%%c%%b%%a)
 )
+
+echo MYDATE=%MYDATE%
 
 if "%1"=="NOTEST" (
 	set TEST=0
