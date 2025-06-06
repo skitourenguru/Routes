@@ -70,8 +70,8 @@ if "%USERNAME%" == "Administrator" (
 	set ZIP_TOOL=C:\Program Files\7-Zip\7z.exe
 	set TERRAIN_DIR=C:\Skitourenguru2\FR\terrain
 	set MODEL=C:\Skitourenguru2\FR\model\FootSections_ModelCoefficients.csv
-	set MAPSERVER_DIR=\\192.168.1.12\gis\skitourenguru\vector
-	set PUBLIC_DIR=\\SKITOURENGURU\public
+	set MAPSERVER_DIR=\\192.168.1.41\gis\skitourenguru\vector
+	set PUBLIC_DIR=\\192.168.1.43\public
 	for /f "tokens=1-3 delims=/ " %%a in ('date /t') do (set MYDATE=%%c%%b%%a)
 )
 
