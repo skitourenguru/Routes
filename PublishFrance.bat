@@ -294,9 +294,8 @@ echo copy /y "%ZIP_FILE%" "%BACKUP_ZIP_FILE%"
 copy /y "%ZIP_FILE%" "%BACKUP_ZIP_FILE%"
 
 
-echo copy /y "%TARGET_LOG_FILE%" "%PUBLIC_DIR%"
-copy /y "%TARGET_LOG_FILE%" "%PUBLIC_DIR%"
-
+rem echo copy /y "%TARGET_LOG_FILE%" "%PUBLIC_DIR%"
+rem copy /y "%TARGET_LOG_FILE%" "%PUBLIC_DIR%"
 
 if %TEST%==1 (
 	pause
