@@ -4367,6 +4367,7 @@
 { "type": "Feature", "properties": { "id": 4381, "start": "Col du Festre", "stop": "Tête de la Cluse", "routes": null, "mdiff": 6, "importance": 2, "segments": "8242,8244", "massif": "Dévoluy", "updated_at": "2025-05-26T14:33:58.995Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4382, "start": "Col du Festre", "stop": "Pic de Bure", "routes": null, "mdiff": 6, "importance": 2, "segments": "8242,8243,8245,8236,8230,8189", "massif": "Dévoluy", "updated_at": "2025-05-26T14:35:33.388Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4383, "start": "La Cluse", "stop": "Tête de l'Orme", "routes": null, "mdiff": 4, "importance": 2, "segments": "8246", "massif": "Dévoluy", "updated_at": "2025-05-26T14:45:43.248Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4384, "start": "Col du Festre", "stop": "Le Chauvet", "routes": null, "mdiff": 1, "importance": 2, "segments": "8247", "massif": "Dévoluy", "updated_at": "2025-05-28T10:01:30.176Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4384, "start": "Col du Festre", "stop": "Le Chauvet", "routes": null, "mdiff": 1, "importance": 2, "segments": "8247", "massif": "Dévoluy", "updated_at": "2025-05-28T10:01:30.176Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4385, "start": "Coutières", "stop": "L'Aiglière", "routes": null, "mdiff": 6, "importance": 2, "segments": "8250,8249", "massif": "Dévoluy", "updated_at": "2025-06-25T15:40:03.762Z" }, "geometry": null }
 ]
 }
