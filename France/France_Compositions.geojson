@@ -4380,7 +4380,8 @@
 { "type": "Feature", "properties": { "id": 4394, "start": "Lachaup", "stop": "Tête de Plate Longue", "routes": null, "mdiff": 6, "importance": 2, "segments": "8262,8263", "massif": "Dévoluy", "updated_at": "2025-06-26T10:05:23.717Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4395, "start": "Lachaup", "stop": "Grand Ferrand", "routes": null, "mdiff": 9, "importance": 2, "segments": "8262,8264,8268,8265", "massif": "Dévoluy", "updated_at": "2025-06-26T10:51:30.546Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4396, "start": "Lachaup", "stop": "Pas la Coche", "routes": null, "mdiff": 5, "importance": 2, "segments": "8262,8264,8268,8267,8270", "massif": "Dévoluy", "updated_at": "2025-06-26T11:03:31.374Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4397, "start": "Lachaup", "stop": "Pas la Coche", "routes": null, "mdiff": 5, "importance": 2, "segments": "8269,8272,8270", "massif": "Dévoluy", "updated_at": "2025-06-26T11:06:01.590Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4398, "start": "Lachaup", "stop": "Pas la Coche", "routes": null, "mdiff": 5, "importance": 2, "segments": "8269,8274,8271", "massif": "Dévoluy", "updated_at": "2025-06-26T11:08:32.795Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4397, "start": "Le Grand Villard", "stop": "Pas la Coche", "routes": null, "mdiff": 5, "importance": 2, "segments": "8269,8272,8270", "massif": "Dévoluy", "updated_at": "2025-06-26T11:17:04.577Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4398, "start": "Le Grand Villard", "stop": "Pas la Coche", "routes": null, "mdiff": 5, "importance": 2, "segments": "8269,8274,8271", "massif": "Dévoluy", "updated_at": "2025-06-26T11:17:07.298Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4399, "start": "Le Grand Villard", "stop": "Grand Ferrand", "routes": null, "mdiff": 13, "importance": 2, "segments": "8269,8274,8273", "massif": "Dévoluy", "updated_at": "2025-06-26T11:16:50.220Z" }, "geometry": null }
 ]
 }
