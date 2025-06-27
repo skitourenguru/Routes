@@ -4383,6 +4383,8 @@
 { "type": "Feature", "properties": { "id": 4397, "start": "Le Grand Villard", "stop": "Pas la Coche", "routes": null, "mdiff": 5, "importance": 2, "segments": "8269,8272,8270", "massif": "Dévoluy", "updated_at": "2025-06-26T11:17:04.577Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4398, "start": "Le Grand Villard", "stop": "Pas la Coche", "routes": null, "mdiff": 5, "importance": 2, "segments": "8269,8274,8271", "massif": "Dévoluy", "updated_at": "2025-06-26T11:17:07.298Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4399, "start": "Le Grand Villard", "stop": "Grand Ferrand", "routes": null, "mdiff": 13, "importance": 2, "segments": "8269,8274,8273", "massif": "Dévoluy", "updated_at": "2025-06-26T11:16:50.220Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4400, "start": "Le Grand Villard", "stop": "Tête de l'Aupet", "routes": null, "mdiff": 6, "importance": 2, "segments": "8275,8277", "massif": "Dévoluy", "updated_at": "2025-06-26T11:21:08.658Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4400, "start": "Les Pertusets", "stop": "Tête de l'Aupet", "routes": null, "mdiff": 6, "importance": 2, "segments": "8281,8277,8279,8280", "massif": "Dévoluy", "updated_at": "2025-06-27T10:49:18.377Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4401, "start": "Les Pertusets", "stop": "Tête de l'Aupet", "routes": null, "mdiff": 6, "importance": 2, "segments": "8281,8277,8283,8278,8280", "massif": "Dévoluy", "updated_at": "2025-06-27T10:49:23.153Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4402, "start": "Les Pertusets", "stop": "Tête d'Oriol", "routes": null, "mdiff": 3, "importance": 2, "segments": "8281,8277,8283,8282", "massif": "Dévoluy", "updated_at": "2025-06-27T10:55:22.360Z" }, "geometry": null }
 ]
 }
