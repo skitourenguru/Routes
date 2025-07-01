@@ -4413,6 +4413,8 @@
 { "type": "Feature", "properties": { "id": 4427, "start": "La Bessée", "stop": "Tête des Ormans", "routes": null, "mdiff": 5, "importance": 2, "segments": "8329,8326,8327", "massif": "Dévoluy", "updated_at": "2025-06-28T11:36:20.990Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4428, "start": "La Bessée", "stop": "Tête de Garnesier", "routes": null, "mdiff": 8, "importance": 2, "segments": "8329,8328", "massif": "Dévoluy", "updated_at": "2025-06-28T11:36:54.320Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4429, "start": "Saint-Julien-en-Beauchêne", "stop": "Montagne Durbonas", "routes": null, "mdiff": 4, "importance": 2, "segments": "8330", "massif": "Dévoluy", "updated_at": "2025-06-28T11:41:19.573Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4430, "start": "Col de la Croix-Haute", "stop": "Le Jocou", "routes": null, "mdiff": 5, "importance": 2, "segments": "8304,8331", "massif": "Dévoluy", "updated_at": "2025-06-28T11:43:19.616Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4430, "start": "Col de la Croix-Haute", "stop": "Le Jocou", "routes": null, "mdiff": 5, "importance": 2, "segments": "8304,8331", "massif": "Dévoluy", "updated_at": "2025-06-28T11:43:19.616Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4431, "start": "La Foux d'Allos", "stop": "Tête de l'Auriac", "routes": null, "mdiff": 5, "importance": 2, "segments": "8333", "massif": "Dévoluy", "updated_at": "2025-07-01T12:46:01.892Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4432, "start": "La Baumelle", "stop": "Sommet de Valdemars", "routes": null, "mdiff": 3, "importance": 2, "segments": "8334", "massif": "Dévoluy", "updated_at": "2025-07-01T12:50:58.190Z" }, "geometry": null }
 ]
 }
