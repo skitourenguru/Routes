@@ -4415,6 +4415,10 @@
 { "type": "Feature", "properties": { "id": 4429, "start": "Saint-Julien-en-Beauchêne", "stop": "Montagne Durbonas", "routes": null, "mdiff": 4, "importance": 2, "segments": "8330", "massif": "Dévoluy", "updated_at": "2025-06-28T11:41:19.573Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4430, "start": "Col de la Croix-Haute", "stop": "Le Jocou", "routes": null, "mdiff": 5, "importance": 2, "segments": "8304,8331", "massif": "Dévoluy", "updated_at": "2025-06-28T11:43:19.616Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4431, "start": "La Foux d'Allos", "stop": "Tête de l'Auriac", "routes": null, "mdiff": 5, "importance": 2, "segments": "8333", "massif": "Dévoluy", "updated_at": "2025-07-01T12:46:01.892Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4432, "start": "La Baumelle", "stop": "Sommet de Valdemars", "routes": null, "mdiff": 3, "importance": 2, "segments": "8334", "massif": "Dévoluy", "updated_at": "2025-07-01T12:50:58.190Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4432, "start": "La Baumelle", "stop": "Sommet de Valdemars", "routes": null, "mdiff": 3, "importance": 2, "segments": "8334,8343", "massif": "Dévoluy", "updated_at": "2025-07-15T12:24:53.954Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4433, "start": "Chasse", "stop": "Mourre de Simance", "routes": null, "mdiff": 5, "importance": 2, "segments": "8340,8337,8336,8335", "massif": "Dévoluy", "updated_at": "2025-07-15T12:22:34.909Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4434, "start": "Chasse", "stop": "Mourre de Simance", "routes": null, "mdiff": 3, "importance": 2, "segments": "8340,8337,8338,8335", "massif": "Dévoluy", "updated_at": "2025-07-15T12:22:35.234Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4435, "start": "Chasse", "stop": "Sommet du Caduc", "routes": null, "mdiff": 5, "importance": 2, "segments": "8340,8341,8339", "massif": "Dévoluy", "updated_at": "2025-07-15T12:25:39.052Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4436, "start": "Chasse", "stop": "Sommet de Valdemars", "routes": null, "mdiff": 5, "importance": 2, "segments": "8340,8341,8342,8343", "massif": "Dévoluy", "updated_at": "2025-07-15T12:25:37.320Z" }, "geometry": null }
 ]
 }
