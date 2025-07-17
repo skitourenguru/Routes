@@ -4419,6 +4419,8 @@
 { "type": "Feature", "properties": { "id": 4433, "start": "Chasse", "stop": "Mourre de Simance", "routes": null, "mdiff": 5, "importance": 2, "segments": "8340,8337,8336,8335", "massif": "Dévoluy", "updated_at": "2025-07-15T12:22:34.909Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4434, "start": "Chasse", "stop": "Mourre de Simance", "routes": null, "mdiff": 3, "importance": 2, "segments": "8340,8337,8338,8335", "massif": "Dévoluy", "updated_at": "2025-07-15T12:22:35.234Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4435, "start": "Chasse", "stop": "Sommet du Caduc", "routes": null, "mdiff": 5, "importance": 2, "segments": "8340,8341,8339", "massif": "Dévoluy", "updated_at": "2025-07-15T12:25:39.052Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4436, "start": "Chasse", "stop": "Sommet de Valdemars", "routes": null, "mdiff": 5, "importance": 2, "segments": "8340,8341,8342,8343", "massif": "Dévoluy", "updated_at": "2025-07-15T12:25:37.320Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4436, "start": "Chasse", "stop": "Sommet de Valdemars", "routes": null, "mdiff": 5, "importance": 2, "segments": "8340,8341,8342,8343", "massif": "Dévoluy", "updated_at": "2025-07-15T12:25:37.320Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4437, "start": "Colmars", "stop": "Le Laupon", "routes": null, "mdiff": 4, "importance": 2, "segments": "8344", "massif": "Dévoluy", "updated_at": "2025-07-17T15:21:02.020Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4438, "start": "Le Pont de la Serre", "stop": "Tête du Lanconet", "routes": null, "mdiff": 5, "importance": 2, "segments": "8345", "massif": "Dévoluy", "updated_at": "2025-07-17T15:29:46.958Z" }, "geometry": null }
 ]
 }
