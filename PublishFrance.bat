@@ -70,9 +70,9 @@ if "%USERNAME%" == "Administrator" (
 	set ZIP_TOOL=C:\Program Files\7-Zip\7z.exe
 	set TERRAIN_DIR=C:\Skitourenguru2\FR\terrain
 	set MODEL=C:\Skitourenguru2\FR\model\FootSections_ModelCoefficients.csv
-	set MAPSERVER_DIR=\\192.168.1.12\gis\skitourenguru\vector
-	set PUBLIC_DIR=\\SKITOURENGURU\public
-	for /f "tokens=1-3 delims=/ " %%a in ('date /t') do (set MYDATE=%%c%%b%%a)
+	set MAPSERVER_DIR=\\192.168.1.41\gis\skitourenguru\vector
+	set PUBLIC_DIR=\\192.168.1.43\public
+	for /f "tokens=1-3 delims=. " %%a in ('date /t') do (set MYDATE=%%c%%b%%a)
 )
 
 rem User name of VirtualBox of Ulysse
@@ -89,6 +89,8 @@ if "%USERNAME%" == "ulysse" (
 	rem set PUBLIC_DIR=
 	for /f "tokens=1-3 delims=/ " %%a in ('date /t') do (set MYDATE=%%c%%b%%a)
 )
+
+echo MYDATE=%MYDATE%
 
 if "%1"=="NOTEST" (
 	set TEST=0
@@ -292,9 +294,8 @@ echo copy /y "%ZIP_FILE%" "%BACKUP_ZIP_FILE%"
 copy /y "%ZIP_FILE%" "%BACKUP_ZIP_FILE%"
 
 
-echo copy /y "%TARGET_LOG_FILE%" "%PUBLIC_DIR%"
-copy /y "%TARGET_LOG_FILE%" "%PUBLIC_DIR%"
-
+rem echo copy /y "%TARGET_LOG_FILE%" "%PUBLIC_DIR%"
+rem copy /y "%TARGET_LOG_FILE%" "%PUBLIC_DIR%"
 
 if %TEST%==1 (
 	pause
