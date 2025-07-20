@@ -23,19 +23,19 @@ Goals:
 ## 2. Switzerland
 **Issuer**: All data of this folder were derived from the [Ski-Routes](https://www.geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/33090bf2-e8e5-4776-9f64-00d7a6170808), published by [Swisstopo](https://www.swisstopo.ch) in cooperation with the [Swiss Alpine Club](https://www.sac-cas.ch).
 
-**License**: [Open Geo Data License of Swisstopo](https://www.swisstopo.admin.ch/de/nutzungsbedingungen-kostenlose-geodaten-und-geodienste).
+**License**: [Open Geo Data (OGD) License of Swisstopo](https://www.swisstopo.admin.ch/de/nutzungsbedingungen-kostenlose-geodaten-und-geodienste).
 
-**Caution**: The data only contains the subset of ski routes that fulfill the quality requirements of Skitourengurub.
+**Caution**: The data only contains the subset of ski routes that fulfill the quality requirements of Skitourenguru.
 
 ## 3. Austria
 **Issuer**: [Österreichischer Alpenverein](https://www.alpenverein.at).
 
-**License**: Private license till 14. October 2026. From 15. October on published under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
+**License**: Private license till 14. October 2026. From 15. October 2026 on published under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
 
 ## 4. Germany
 **Issuer**:  [Deutcher Alpenverein](https://www.alpenverein.de/).
 
-**License**: Private license till 14. October 2026. From 15. October on published under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
+**License**: Private license till 14. October 2026. From 15. October 2026 on published under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
 
 ## 5. Italy
 **Issuer**: [Skitourenguru GmbH](https://www.skitourenguru.com).
@@ -47,6 +47,6 @@ While we strive to provide accurate and up-to-date information, we cannot guaran
 
 # Tools
 In order to edit ski routes within a network topology, two tools were developped:
-1. [RoutesComposer](https://github.com/UlysselaGlisse/RoutesComposer): A qGis plugin to edit routes within a network topology.
+1. [Routes Composer](https://github.com/UlysselaGlisse/RoutesComposer): A qGis plugin to edit routes within a network topology.
 2. [SAC Route Network Editor](https://github.com/andreglauser/sac-route-network-editor/): A SQL based method to edit routes within a network topology.
 
