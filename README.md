@@ -17,6 +17,7 @@ Goals:
 
 **License**: Creative Commons: [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/). Suggestion for the attribution: The ski routes are created and maintained [Petzl Foundation](https://www.petzl.com) in cooperation with the 
 [Skitourenguru GmbH](https://www.skitourenguru.com).
+
 **Caution**: The geometry of this data is highly abstracted, don't use it without the requiered smoothing. The folder [Derived Ski routes of France](https://download.skitourenguru.com/public/License.html) holds a smoothed ski routes collection and network.
 
 ## 2. Switzerland
