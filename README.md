@@ -15,10 +15,10 @@ Goals:
 ## 1. France
 **Issuer**: All data of this folder are created and maintained by the [Petzl Foundation](https://www.petzl.com) in cooperation with the [Skitourenguru GmbH](https://www.skitourenguru.com).
 
-**License**: Creative Commons: [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/). Suggestion for the attribution: The ski routes are created and maintained [Petzl Foundation](https://www.petzl.com) in cooperation with the 
-[Skitourenguru GmbH](https://www.skitourenguru.com).
+**License**: Creative Commons: [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/). Suggestion for the attribution: _The ski routes are created and maintained [Petzl Foundation](https://www.petzl.com) in cooperation with the 
+[Skitourenguru GmbH](https://www.skitourenguru.com)_.
 
-**Caution**: The geometry of this data is highly abstracted, don't use it without the requiered smoothing. The folder [Derived Ski routes of France](https://download.skitourenguru.com/public/License.html) holds a smoothed ski routes collection and network.
+**Caution**: The geometry of this data is highly abstracted, don't use it without the requiered smoothing. The folder [Derived Ski routes of France](https://download.skitourenguru.com/public/License.html) holds a smoothed version of the data (collection and network).
 
 ## 2. Switzerland
 **Issuer**: All data of this folder were derived from the [Ski-Routes](https://www.geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/33090bf2-e8e5-4776-9f64-00d7a6170808), published by [Swisstopo](https://www.swisstopo.ch) in cooperation with the [Swiss Alpine Club](https://www.sac-cas.ch).
