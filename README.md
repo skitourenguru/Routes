@@ -1,20 +1,26 @@
 # Introduction
 
-This readme is also in [:fr:](https://github.com/skitourenguru/Routes/blob/main/README-fr.md)
+This repository holds a network topology about backcountry ski tours in the Alps. Each region consists of two geojson files:
+1. Segments: A collection of LineString features with a segment id.
+2. Compositions: A collection of routes with attributes and a list of segment id's
 
-In this repository, you will find skitouring routes drawn by the [Petzl Foundation](https://www.petzl.com/fondation/) in collaboration with [Skitourenguru](https://skitourenguru.ch/) Gmbh.
-For now, only French routes are present. In the future, all Alpine routes should be included.
+# License
 
-These routes have not yet received their final treatment. Do not use them under any circumstances. If you wish to obtain them, send an email to
-randohiver@fondation-petzl.org, or go [here](https://download.skitourenguru.com/public/France-Ski.zip).
+## France
+Creative Commons: [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/)
+All data of this folder are created and maintained by the [Petzl Foundation](https://www.petzl.com) in cooperation with the [Skitourenguru GmbH](https://www.skitourenguru.com).
 
-For the creation of these routes, a method has been developed which you will find detailed in the project's [wiki](https://github.com/skitourenguru/Routes/wiki/Home-en).
+Caution: The geometry of this data is highly abstracted, don't use it woithout pre-processing. See also the [derived data](https://download.skitourenguru.com/public/License.html).
+
+## Switzerland
+
+## Austria
+
+## Italy
+
+# Disclaimer
+While we strive to provide accurate and up-to-date information, we cannot guarantee the completeness or correctness of the data presented. The data issuers assume no guarantee and therefore no liability for the accuracy of the data in this repository.
+
+# Tools
 
 
-## Installation
-
-If you wish to install the necessary tools to create a network of tracks, go to:
-* Windows:
-[English](https://github.com/skitourenguru/Routes/wiki/Installation-en-win), [French](https://github.com/skitourenguru/Routes/wiki/Installation-win), [German](https://github.com/skitourenguru/Routes/wiki/Installation-de-win)
-* Linux:
-[English](https://github.com/skitourenguru/Routes/wiki/Installation-en), [French](https://github.com/skitourenguru/Routes/wiki/Installation), [German](https://github.com/skitourenguru/Routes/wiki/Installation-de)
