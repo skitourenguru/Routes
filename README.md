@@ -14,24 +14,31 @@ Goals:
 
 ## 1. France
 **Issuer**: All data of this folder are created and maintained by the [Petzl Foundation](https://www.petzl.com) in cooperation with the [Skitourenguru GmbH](https://www.skitourenguru.com).
-**License**: Creative Commons: [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/). Suggestion for the attribution: The ski routes are created and maintained [Petzl Foundation](https://www.petzl.com) in cooperation with the [Skitourenguru GmbH](https://www.skitourenguru.com).
+
+**License**: Creative Commons: [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/). Suggestion for the attribution: The ski routes are created and maintained [Petzl Foundation](https://www.petzl.com) in cooperation with the 
+[Skitourenguru GmbH](https://www.skitourenguru.com).
 **Caution**: The geometry of this data is highly abstracted, don't use it without the requiered smoothing. The folder [Derived Ski routes of France](https://download.skitourenguru.com/public/License.html) holds a smoothed ski routes collection and network.
 
 ## 2. Switzerland
 **Issuer**: All data of this folder were derived from the [Ski-Routes](https://www.geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/33090bf2-e8e5-4776-9f64-00d7a6170808), published by [Swisstopo](https://www.swisstopo.ch) in cooperation with the [Swiss Alpine Club](https://www.sac-cas.ch).
+
 **License**: [Open Geo Data License of Swisstopo](https://www.swisstopo.admin.ch/de/nutzungsbedingungen-kostenlose-geodaten-und-geodienste).
+
 **Caution**: The data only contains the subset of ski routes that fulfill the quality requirements of Skitourengurub.
 
 ## 3. Austria
 **Issuer**: [Österreichischer Alpenverein](https://www.alpenverein.at).
+
 **License**: Private license till 14. October 2026. From 15. October on published under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
 
 ## 4. Germany
 **Issuer**:  [Deutcher Alpenverein](https://www.alpenverein.de/).
+
 **License**: Private license till 14. October 2026. From 15. October on published under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
 
 ## 5. Italy
 **Issuer**: [Skitourenguru GmbH](https://www.skitourenguru.com).
+
 **License**: Private license by Skitourenguru GmbH. Skitourenguru GmbH permits the usage of the data for private purpose. Aks the consent of Skitourenguru GmbH if you want to re-publish the data respectivly if you want to derive data from the raw data.
 
 # Disclaimer
