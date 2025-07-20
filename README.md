@@ -10,7 +10,7 @@ Goals:
 * Compliance with the requirements of nature conservation.
 * OpenData (Medium Term Goal)
 
-# License
+# Regions
 
 ## 1. France
 **Issuer**: All data of this folder are created and maintained by the [Petzl Foundation](https://www.petzl.com) in cooperation with the [Skitourenguru GmbH](https://www.skitourenguru.com).
@@ -43,6 +43,9 @@ Goals:
 **License**: Private license by Skitourenguru GmbH. Skitourenguru GmbH permits the usage of the data for private purpose. Aks the consent of Skitourenguru GmbH if you want to re-publish the data respectivly if you want to derive data from the raw data.
 
 **Remark**: Skitourenguru is looking for a person willing to complete the data set in Italy. Requiered skills: Experience with backcountry skiing, practical knowledge about backcountry areas in Italy, knowledge about avalanche terrain, cartographic knowledge, knowledge about qGis, open-minded. 
+
+## 6. Slovenia
+tbd
 
 # Disclaimer
 While we strive to provide accurate and up-to-date information, we cannot guarantee the completeness or correctness of the data presented. The data issuers assume no guarantee and therefore no liability for the accuracy of the data in this repository.
