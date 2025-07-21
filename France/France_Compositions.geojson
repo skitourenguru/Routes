@@ -3290,8 +3290,7 @@
 { "type": "Feature", "properties": { "id": 3322, "start": "Bayasse", "stop": "Tête du Laup", "routes": null, "mdiff": 0, "segments": "5255,4983,5308,5263,5871,5304" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3323, "start": "Bayasse", "stop": "Col de la Braïssa", "routes": null, "mdiff": 2, "segments": "5255,4983,5308,5268,5266,5267" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3324, "start": "Bayasse", "stop": "Col de Sanguinière", "routes": null, "mdiff": 2, "segments": "5255,4983,5308,5268,5266,5256,5257" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3325, "start": "Bayasse", "stop": "Sanguinière", "routes": null, "mdiff": 6, "segments": "5255,4983,5308,5268,5266,5256,5254,8396,5875,8399" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3326, "start": "Bayasse", "stop": "Tête du Colombier", "routes": null, "mdiff": 6, "segments": "5255,4983,5308,5268,5266,5256,5254,8396,5873" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3326, "start": "Bayasse", "stop": "Tête de Sanguinière", "routes": null, "mdiff": 6, "segments": "5255,4983,5308,5268,5266,5256,5254,8396,5873,8424" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3327, "start": "Bayasse", "stop": "Col de la Petite Cayolle", "routes": null, "mdiff": 2, "segments": "5255,5240,5279,5259,5261,5260,5784" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3328, "start": "Bayasse", "stop": "Col de la Cayolle", "routes": null, "mdiff": 0, "segments": "5255,5240,5279,5259,5876" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3329, "start": "Bayasse", "stop": "Sommet des Garrets", "routes": null, "mdiff": 4, "segments": "5255,5240,5279,5259,5261,5260,5258,8382,8390" }, "geometry": null },
@@ -4371,6 +4370,9 @@
 { "type": "Feature", "properties": { "id": 4428, "start": "La Bessée", "stop": "Tête de Garnesier", "routes": null, "mdiff": 8, "segments": "8329,8328" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4430, "start": "Col de la Croix-Haute", "stop": "Le Jocou", "routes": null, "mdiff": 5, "segments": "8304,8331" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4486, "start": "Le Tunnel des Vallois", "stop": "Collet du Clos Julien", "routes": null, "mdiff": 6, "segments": "7921,8417,8418" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4487, "start": "Les Amayères", "stop": "Pointe Feuillette", "routes": null, "mdiff": 2, "segments": "8305,8307,8419" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4487, "start": "Les Amayères", "stop": "Pointe Feuillette", "routes": null, "mdiff": 2, "segments": "8305,8307,8419" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4510, "start": "Les Pertusets", "stop": "Crête de l'Étoile", "routes": null, "mdiff": 3, "segments": "8281,8276" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4511, "start": "Col de la Croix-Haute", "stop": "Boutouret", "routes": null, "mdiff": 3, "segments": "8301,8302" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4512, "start": "Col de l'Espaule", "stop": "Le Petit Mounier", "routes": null, "mdiff": 6, "segments": "8364,8371,8370" }, "geometry": null }
 ]
 }
