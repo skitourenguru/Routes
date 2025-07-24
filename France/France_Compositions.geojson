@@ -4527,6 +4527,9 @@
 { "type": "Feature", "properties": { "id": 4544, "start": "Roya", "stop": "Cime Nègre", "routes": null, "mdiff": 3, "importance": 2, "segments": "8528,8529", "massif": "Mercantour", "updated_at": "2025-07-23T17:32:46.265Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4545, "start": "Roya", "stop": "Mont Mounier", "routes": null, "mdiff": 6, "importance": 2, "segments": "8527,8533,8532,8534,8367", "massif": "Mercantour", "updated_at": "2025-07-23T17:42:45.916Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4546, "start": "Roya", "stop": "Mont Mounier", "routes": null, "mdiff": 6, "importance": 2, "segments": "8527,8533,8530", "massif": "Mercantour", "updated_at": "2025-07-23T17:42:49.419Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4547, "start": "Plan de la Gourra", "stop": "Mont Pépoiri", "routes": null, "mdiff": 4, "importance": 2, "segments": "8535,8538,8536", "massif": "Mercantour", "updated_at": "2025-07-23T17:49:37.098Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4547, "start": "Plan de la Gourra", "stop": "Mont Pépoiri", "routes": null, "mdiff": 4, "importance": 2, "segments": "8535,8538,8536", "massif": "Mercantour", "updated_at": "2025-07-23T17:49:37.098Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4548, "start": "Plan de la Gourra", "stop": "Mont Pépoiri", "routes": null, "mdiff": 4, "importance": 2, "segments": "8535,8537", "massif": "Mercantour", "updated_at": "2025-07-23T17:50:40.337Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4549, "start": "Col Saint-Martin", "stop": "Tête du Brec", "routes": null, "mdiff": 3, "importance": 2, "segments": "8539", "massif": "Mercantour", "updated_at": "2025-07-24T12:19:06.673Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4550, "start": "Granges du Terras", "stop": "Pointe des Adus", "routes": null, "mdiff": 3, "importance": 2, "segments": "8540,8542", "massif": "Mercantour", "updated_at": "2025-07-24T12:40:10.247Z" }, "geometry": null }
 ]
 }
