@@ -4561,6 +4561,7 @@
 { "type": "Feature", "properties": { "id": 4578, "start": "Le Boréon", "stop": "Cime de Trecolpas", "routes": null, "mdiff": 8, "importance": 2, "segments": "8563,8566,8565,8583,8582,8581", "massif": "Mercantour", "updated_at": "2025-07-24T16:18:18.544Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4579, "start": "Le Boréon", "stop": "Col de Guilié", "routes": null, "mdiff": 5, "importance": 2, "segments": "8588,8585,8584", "massif": "Mercantour", "updated_at": "2025-07-24T16:21:57.575Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4580, "start": "Le Boréon", "stop": "Cime Guilié", "routes": null, "mdiff": 5, "importance": 2, "segments": "8588,8585,8586,8576", "massif": "Mercantour", "updated_at": "2025-07-24T16:24:11.741Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4581, "start": "Le Boréon", "stop": "Col de Cerise", "routes": null, "mdiff": 6, "importance": 2, "segments": "8588,8589,8591", "massif": "Mercantour", "updated_at": "2025-07-24T16:28:23.293Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4581, "start": "Le Boréon", "stop": "Col de Cerise", "routes": null, "mdiff": 6, "importance": 2, "segments": "8588,8589,8591", "massif": "Mercantour", "updated_at": "2025-07-24T16:28:23.293Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4582, "start": "Le Boréon", "stop": "Cime du Mercantour", "routes": null, "mdiff": 5, "importance": 2, "segments": "8588,8589,8590", "massif": "Mercantour", "updated_at": "2025-07-24T16:32:37.203Z" }, "geometry": null }
 ]
 }
