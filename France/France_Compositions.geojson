@@ -4614,6 +4614,8 @@
 { "type": "Feature", "properties": { "id": 4631, "start": "Les Mesches", "stop": "Mont de l'Arpette", "routes": null, "mdiff": 2, "importance": 2, "segments": "8677,8674,8676,8675", "massif": "Mercantour", "updated_at": "2025-07-25T15:04:28.672Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4632, "start": "Refuge des Merveilles", "stop": "Mont de l'Arpette", "routes": null, "mdiff": 2, "importance": 2, "segments": "8677,8674,8676,8675", "massif": "Mercantour", "updated_at": "2025-07-25T15:04:28.748Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4633, "start": "Refuge des Merveilles", "stop": "Cime du Diable", "routes": null, "mdiff": 4, "importance": 2, "segments": "8677,8678", "massif": "Mercantour", "updated_at": "2025-07-25T15:05:40.720Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4634, "start": "Les Mesches", "stop": "Cime du Diable", "routes": null, "mdiff": 4, "importance": 2, "segments": "8662,8664,8671,8672,8677,8678,8659", "massif": "Mercantour", "updated_at": "2025-07-25T15:05:57.532Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4634, "start": "Les Mesches", "stop": "Cime du Diable", "routes": null, "mdiff": 4, "importance": 2, "segments": "8662,8664,8671,8672,8677,8678,8659", "massif": "Mercantour", "updated_at": "2025-07-25T15:05:57.532Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4635, "start": "Casterino", "stop": "Cime du Plan Tendasque", "routes": null, "mdiff": 4, "importance": 2, "segments": "8680,8682", "massif": "Mercantour", "updated_at": "2025-07-25T15:24:21.787Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4636, "start": "Casterino", "stop": "Mont Sainte-Marie", "routes": null, "mdiff": 4, "importance": 2, "segments": "8680,8684,8681", "massif": "Mercantour", "updated_at": "2025-07-25T15:33:46.922Z" }, "geometry": null }
 ]
 }
