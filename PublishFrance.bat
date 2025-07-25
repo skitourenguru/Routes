@@ -177,7 +177,7 @@ echo ******************************************************************
 echo 5. Network to collection
 echo ******************************************************************
 
-%GEO_TOOL% /franceRouteConversionTool "%COMPOSITION%" "%SEGMENTS%" "%RESULT_DIR%" "" "%RESULT_DIR%\%NAME%_Raw.sqlite" 2154 1 1 ""
+%GEO_TOOL% /networkToRoutesTool "%COMPOSITION%" "%SEGMENTS%" "%RESULT_DIR%" "%RESULT_DIR%\%NAME%_Raw.sqlite" 2154 1 1
 
 :Step6
 echo .
@@ -200,7 +200,7 @@ echo ******************************************************************
 echo 5. Network to collection
 echo ******************************************************************
 
-%GEO_TOOL% /franceRouteConversionTool "%COMPOSITION%" "%SMOOTHED_SEGMENTS%" "%RESULT_DIR%" "" "%RESULT_DIR%\%NAME%_Smoothed.sqlite" 2154 1 1 ""
+%GEO_TOOL% /networkToRoutesTool "%COMPOSITION%" "%SMOOTHED_SEGMENTS%" "%RESULT_DIR%" "%RESULT_DIR%\%NAME%_Smoothed.sqlite" 2154 1 1
 
 :Step8
 echo .
