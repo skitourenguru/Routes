@@ -4583,6 +4583,9 @@
 { "type": "Feature", "properties": { "id": 4600, "start": "Isola 2000", "stop": "Cime du Gélas", "routes": null, "mdiff": 10, "importance": 2, "segments": "8624,8627,8626,8625", "massif": "Mercantour", "updated_at": "2025-07-25T09:37:57.531Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4601, "start": "Isola 2000", "stop": "Pas du Mont Colomb", "routes": null, "mdiff": 6, "importance": 2, "segments": "8624,8627,8628,8631", "massif": "Mercantour", "updated_at": "2025-07-25T10:06:09.269Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4602, "start": "La Madone de Fenestre", "stop": "Cime de la Valette de Prals", "routes": null, "mdiff": 5, "importance": 2, "segments": "8629", "massif": "Mercantour", "updated_at": "2025-07-25T09:45:16.529Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4603, "start": "La Madone de Fenestre", "stop": "Mont Colomb", "routes": null, "mdiff": 8, "importance": 2, "segments": "8624,8627,8628,8630", "massif": "Mercantour", "updated_at": "2025-07-25T10:05:47.257Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4603, "start": "La Madone de Fenestre", "stop": "Mont Colomb", "routes": null, "mdiff": 8, "importance": 2, "segments": "8624,8627,8628,8630,8633", "massif": "Mercantour", "updated_at": "2025-07-25T10:05:47.257Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4604, "start": "Pont du Countet", "stop": "Mont Colomb", "routes": null, "mdiff": 7, "importance": 2, "segments": "8632,8636,8634", "massif": "Mercantour", "updated_at": "2025-07-25T10:18:17.186Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4605, "start": "Pont du Countet", "stop": "Pas du Mont Colomb", "routes": null, "mdiff": 6, "importance": 2, "segments": "8632,8636,8635", "massif": "Mercantour", "updated_at": "2025-07-25T10:21:21.171Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4606, "start": "Pont du Countet", "stop": "Refuge de Nice", "routes": null, "mdiff": 2, "importance": 2, "segments": "8632,8637", "massif": "Mercantour", "updated_at": "2025-07-25T10:22:44.031Z" }, "geometry": null }
 ]
 }
