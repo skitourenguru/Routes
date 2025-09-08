@@ -4633,6 +4633,7 @@
 { "type": "Feature", "properties": { "id": 4650, "start": "Eyne 2600", "stop": "Cambra d'Ase", "routes": null, "mdiff": 3, "importance": 2, "segments": "8705", "massif": "Pyrénées", "updated_at": "2025-08-20T10:27:05.187Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4651, "start": "Cotzé", "stop": "Puigmal d'Err", "routes": null, "mdiff": 5, "importance": 2, "segments": "8708,8706", "massif": "Pyrénées", "updated_at": "2025-08-20T10:31:23.554Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4652, "start": "Cotzé", "stop": "Puigmal de Segre", "routes": null, "mdiff": 5, "importance": 2, "segments": "8708,8707", "massif": "Pyrénées", "updated_at": "2025-08-20T10:31:23.601Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4653, "start": "Granges du Terras", "stop": "Cime de Pagari de Salèse", "routes": null, "mdiff": 8, "importance": 0, "segments": "8540,8695,8551", "massif": "Mercantour", "updated_at": "2025-08-22T11:37:29.512Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4653, "start": "Granges du Terras", "stop": "Cime de Pagari de Salèse", "routes": null, "mdiff": 8, "importance": 0, "segments": "8540,8695,8551", "massif": "Mercantour", "updated_at": "2025-08-22T11:37:29.512Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4654, "start": "Porta", "stop": "Pic Negre d'Envalira", "routes": null, "mdiff": 5, "importance": 2, "segments": "8715,8709", "massif": "Pyrénées", "updated_at": "2025-09-08T09:47:47.048Z" }, "geometry": null }
 ]
 }
