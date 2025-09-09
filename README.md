@@ -116,7 +116,32 @@ git config --global user.name myName
 git config --global user.email myEmail@myEmail.com
 ```
 
-## 5. Useful GIT commands
+## 5. Daily work
+
+Suppose you work on a file, like **ReadMe.md** or **Italy_Compositions.geojson**. Just use normally whatever tool you are used to. At a certain moment you want to **commit** and **push** the changes to the Github-Server.
+
+Open a Git prompt 
+
+```
+// Make sure you are in the folder of your working dir
+cd D:\Local\Github
+
+// Make sure your local repository and the working dir are up-to-date
+git pull
+
+// First you commit: Changes are written to your local repository (a copy of the remote repository that is located on your computer)
+git commit -m "Corrected the typo in the name of route with id=45" Italy/Italy_Compositions.geojson
+
+// Second you push: Changes are written to the remote repository (on the Github-Server).
+git push
+
+```
+
+Remarks:
+* You can add also files. Usually that won't be necessary. 
+* In this example we worked on the **main** branch. Its also possible to work with branches. For the purpose of the current repository that won't be necessary.
+
+## 6. Useful GIT commands
 
 ```
 // Change a file
