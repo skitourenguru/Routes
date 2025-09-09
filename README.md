@@ -1,6 +1,6 @@
 # Introduction
 
-This repository holds a network topology about **backcountry ski routes of the Alps**. Each region consists of two **geojson** files:
+This repository holds a network topology about **backcountry ski routes of the Alps**. Each region consists of two [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) files:
 1. Segments: A collection of LineString features with a segment id.
 2. Compositions: A collection of routes with attributes and a list of segment id's.
 
@@ -12,6 +12,7 @@ Goals:
 
 Remarks:
 * Despite the formal definition of the format [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) it is possible to store the EPSG code in the node **crs**. See chapter 4 of [RFC_7946](https://datatracker.ietf.org/doc/html/rfc7946).
+* In order to support change-tracking, the coordinate precision must be set to two decimal digits.
 
 # Regions
 
