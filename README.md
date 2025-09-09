@@ -84,16 +84,19 @@ In order to edit ski routes within a network topology, two tools were developped
 # Github
 
 ## 1. Intro
+**Git** is a **version control software system** that is capable of managing versions of source code or data. It is often used to control source **code** or source **data** by participants who are developing the code or data collaboratively. Today, Git is the de facto standard version control system. 
 
-An intro to the purpose and structure of Git: [Video](https://www.youtube.com/watch?v=e9lnsKot_SQ)
-Installation and first commands: [Video](https://www.youtube.com/watch?v=r8jQ9hVA2qs)
+**GitHub** is is a proprietary developer platform that allows developers to create, store, manage, and share **code** resp. **data**. It is the world's largest source code host as of June 2023. Since 2018 its owned by Microsoft.
+
+* An intro to the purpose and structure of Git: [Video](https://www.youtube.com/watch?v=e9lnsKot_SQ)
+* Installation and first commands: [Video](https://www.youtube.com/watch?v=r8jQ9hVA2qs)
 
 ## 2. Install a GIT client
 
 Windows:
 Install [Git](https://git-scm.com/downloads/win)
 
-Accept all default values, ecept one: Override the default branch name.... (see second video).
+Accept all default values, ecept one: **Override the default branch name...** (see second video).
 
 ## 3. Clone Repo
 
