@@ -96,7 +96,7 @@ In order to edit ski routes within a network topology, two tools were developped
 Windows:
 Install [Git](https://git-scm.com/downloads/win)
 
-Accept all default values, ecept one: **Override the default branch name...** (see second video).
+Accept all default values, except one: **Override the default branch name...** (see second video).
 
 ## 3. Clone Repo
 
@@ -138,8 +138,9 @@ git push
 ```
 
 Remarks:
-* You can add also files. Usually that won't be necessary. 
+* You can add also new files. Usually that won't be necessary. 
 * In this example we worked on the **main** branch. Its also possible to work with branches. For the purpose of the current repository that won't be necessary.
+* A good field of excercise is ReadMe.md. You can change typos or improve the docu. The file is written with [Markup-Down](https://en.wikipedia.org/wiki/Markdown) language. That's a very simple  markup language that allows formatting documents. Use a Text-Editor like [Notepad++](https://notepad-plus-plus.org/downloads/) to edit ReadMe.md. Start with simple changes.
 
 ## 6. Useful GIT commands
 
