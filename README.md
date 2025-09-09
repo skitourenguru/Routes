@@ -83,12 +83,19 @@ In order to edit ski routes within a network topology, two tools were developped
 
 # Github
 
-## 1. Install a GIT client
+## 1. Intro
+
+An intro to the purpose and structure of Git: [Video](https://www.youtube.com/watch?v=e9lnsKot_SQ)
+Installation and first commands: [Video](https://www.youtube.com/watch?v=r8jQ9hVA2qs)
+
+## 2. Install a GIT client
 
 Windows:
 Install [Git](https://git-scm.com/downloads/win)
 
-## 2. Clone Repo
+Accept all default values, ecept one: Override the default branch name.... (see second video).
+
+## 3. Clone Repo
 
 Open a Git prompt and change to the parent dir of project:
 
@@ -97,7 +104,7 @@ cd D:\Local\Github
 git clone https://github.com/skitourenguru/Routes.git
 ```
 
-## 3. Register your id
+## 4. Register your id
 
 Open a Git prompt
 
@@ -106,7 +113,7 @@ git config --global user.name myName
 git config --global user.email myEmail@myEmail.com
 ```
 
-## 4. Useful GIT commands
+## 5. Useful GIT commands
 
 ```
 // Change a file
