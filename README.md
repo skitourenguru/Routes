@@ -55,7 +55,17 @@ Remarks:
 
 **License**: Private license by Skitourenguru GmbH. Skitourenguru GmbH permits the usage of the data for private purpose. Aks the consent of Skitourenguru GmbH if you want to re-publish the data respectivly if you want to derive data from the raw data.
 
-**Remark**: Skitourenguru is looking for a person willing to complete the data set in Italy. Requiered skills: Experience with backcountry skiing, practical knowledge about backcountry areas in Italy, knowledge about avalanche terrain, cartographic knowledge, knowledge about qGis, open-minded. 
+**Remark**: Skitourenguru is looking for a person willing to complete the data set in Italy. 
+
+Requiered skills: 
+* Experience with backcountry skiing
+* Practical knowledge about backcountry areas in Italy
+* Cartographic knowledge
+* Understanding of avalanche terrain
+* Affinity to IT
+* If possible experience with qGis
+* Open-minded
+* Willing to work in a team 
 
 ## 6. Slovenia
 tbd
@@ -67,4 +77,7 @@ While we strive to provide accurate and up-to-date information, we cannot guaran
 In order to edit ski routes within a network topology, two tools were developped:
 1. [Routes Composer](https://github.com/UlysselaGlisse/RoutesComposer): A qGis plugin to edit routes within a network topology.
 2. [SAC Route Network Editor](https://github.com/andreglauser/sac-route-network-editor/): A SQL based method to edit routes within a network topology.
+
+# Contact
+On [https://www.skitourenguru.com](https://www.skitourenguru.com) under about.
 
