@@ -11,7 +11,7 @@ Goals:
 * OpenData (Medium Term Goal)
 
 Remarks:
-* Despite the formal definition of the format [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) it is possible to store the EPSG code in **crs**.
+* Despite the formal definition of the format [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) it is possible to store the EPSG code in the node **crs**.
 
 # Regions
 
@@ -32,7 +32,7 @@ Remarks:
 
 **License**: [Open Geo Data (OGD) License of Swisstopo](https://www.swisstopo.admin.ch/de/nutzungsbedingungen-kostenlose-geodaten-und-geodienste).
 
-**Caution**: The data only contains the subset of ski routes that fulfill the quality requirements of Skitourenguru.
+**Caution**: The data only contains the subset of ski routes that fulfill the quality requirements of Skitourenguru. For the complete dataset see [Ski-Routes](https://www.geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/33090bf2-e8e5-4776-9f64-00d7a6170808).
 
 ## 3. Austria
 **Format**: [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) in EPSG=31287.
@@ -79,5 +79,5 @@ In order to edit ski routes within a network topology, two tools were developped
 2. [SAC Route Network Editor](https://github.com/andreglauser/sac-route-network-editor/): A SQL based method to edit routes within a network topology.
 
 # Contact
-On [https://www.skitourenguru.com](https://www.skitourenguru.com) under about.
+On [https://www.skitourenguru.com](https://www.skitourenguru.com) under **about**.
 
