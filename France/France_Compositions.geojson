@@ -4642,6 +4642,7 @@
 { "type": "Feature", "properties": { "id": 4659, "start": "Parking du Baladrar", "stop": "Pic de la Mina", "routes": null, "mdiff": 4, "importance": 2, "segments": "8721,8720", "massif": "Pyrénées", "updated_at": "2025-09-08T10:53:19.230Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4660, "start": "Col de Puymorens", "stop": "Tossa Rodona", "routes": null, "mdiff": 1, "importance": 2, "segments": "8723,8724", "massif": "Pyrénées", "updated_at": "2025-09-08T11:15:02.570Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4661, "start": "Col de Puymorens", "stop": "Portella de la Coma d'en Garcia", "routes": null, "mdiff": 1, "importance": 2, "segments": "8723,8725", "massif": "Pyrénées", "updated_at": "2025-09-08T11:22:19.095Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4662, "start": "Col de Puymorens", "stop": "Puig de Coma d'Or", "routes": null, "mdiff": 2, "importance": 2, "segments": "8723,8725,8726", "massif": "Pyrénées", "updated_at": "2025-09-08T11:22:19.119Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4662, "start": "Col de Puymorens", "stop": "Puig de Coma d'Or", "routes": null, "mdiff": 2, "importance": 2, "segments": "8723,8725,8726", "massif": "Pyrénées", "updated_at": "2025-09-08T11:22:19.119Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4663, "start": "Col de Puymorens", "stop": "Puig de Lanos", "routes": null, "mdiff": 4, "importance": 2, "segments": "8723,8725,8727", "massif": "Pyrénées", "updated_at": "2025-09-09T11:40:00.078Z" }, "geometry": null }
 ]
 }
