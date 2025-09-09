@@ -98,6 +98,8 @@ Install [Git](https://git-scm.com/downloads/win)
 
 Accept all default values, except one: **Override the default branch name...** (see second video).
 
+On Windows open the search box and type **git**. Now you can start **Git CMD** and a command prompt opens. Alternatively you open a normal **command prompt** and check, if the command **git** is available (it should).
+
 ## 3. Clone Repo
 
 Open a Git prompt and change to the parent dir of project:
@@ -106,6 +108,9 @@ Open a Git prompt and change to the parent dir of project:
 cd D:\Local\Github
 git clone https://github.com/skitourenguru/Routes.git
 ```
+
+Remark:
+* The path D:\Local\Github is an example. Thats the place where you want all your repositories to be located (parent directory)
 
 ## 4. Register your id
 
@@ -124,7 +129,7 @@ Open a Git prompt
 
 ```
 // Make sure you are in the folder of your working dir
-cd D:\Local\Github
+cd D:\Local\Github\Routes
 
 // Make sure your local repository and the working dir are up-to-date
 git pull
