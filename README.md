@@ -98,7 +98,7 @@ Install [Git](https://git-scm.com/downloads/win)
 
 Accept all default values, except one: **Override the default branch name...** (see second video).
 
-On Windows open the search box and type **git**. Now you can start **Git CMD** and a command prompt opens. Alternatively you open a normal **command prompt** and check, if the command **git** is available (it should).
+On Windows open the search box and type **git**. Now you can start **Git CMD** and a command prompt opens. Alternatively you open a normal **command prompt** and check, if the command **git** is available (it should). Alternatively you can also work with **Git GUI**.
 
 ## 3. Clone Repo
 
