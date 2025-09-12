@@ -16,7 +16,7 @@ Remarks:
 
 # Regions
 
-## 1. France
+## 1. France (Region=3)
 **Format**: [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) in EPSG=2154.
 
 **Issuer**: All data of this folder are created and maintained by the [Petzl Foundation](https://www.petzl.com) in cooperation with the [Skitourenguru GmbH](https://www.skitourenguru.com).
@@ -24,9 +24,9 @@ Remarks:
 **License**: Creative Commons: [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/). Suggestion for the attribution: _The ski routes are created and maintained [Petzl Foundation](https://www.petzl.com) in cooperation with the 
 [Skitourenguru GmbH](https://www.skitourenguru.com)_.
 
-**Caution**: The geometry of this data is highly abstracted, don't use it without the requiered smoothing. The folder [Derived Ski routes of France](https://download.skitourenguru.com/public/License.html) holds a smoothed version of the data (collection and network).
+**Caution**: The geometry of this data is highly abstracted, don't use it without the requiered smoothing. The [qGis smooth function](https://docs.qgis.org/3.40/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html#smooth) must be applied (ITERATIONS=4, OFFSET=0.25, MAX_ANGLE=180).The folder [Derived Ski routes of France](https://download.skitourenguru.com/public/License.html) holds a smoothed version of the data (collection and network).
 
-## 2. Switzerland
+## 2. Switzerland (Region=1)
 **Format**: [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) in EPSG=21781.
 
 **Issuer**: All data of this folder were derived from the [Ski-Routes](https://www.geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/33090bf2-e8e5-4776-9f64-00d7a6170808), published by [Swisstopo](https://www.swisstopo.ch) in cooperation with the [Swiss Alpine Club](https://www.sac-cas.ch).
@@ -37,28 +37,33 @@ Remarks:
 
 **Remark**: EPSG will eventually be changed from 21781 to 2056.
 
-## 3. Austria
+## 3. Austria (Region=2)
 **Format**: [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) in EPSG=31287.
 
 **Issuer**: [Österreichischer Alpenverein](https://www.alpenverein.at).
 
 **License**: Private license till 14. October 2026. From 15. October 2026 on published under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
 
-## 4. Germany
+**Remarks**:
+- Holds also South Tyrol (This is not a political statement!)
+
+## 4. Germany (Region=6)
 **Format**: [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) in EPSG=31468.
 
 **Issuer**:  [Deutcher Alpenverein](https://www.alpenverein.de/).
 
 **License**: Private license till 14. October 2026. From 15. October 2026 on published under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
 
-## 5. Italy
+## 5. Italy (Region=7)
 **Format**: [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) in EPSG=32632.
 
 **Issuer**: [Skitourenguru GmbH](https://www.skitourenguru.com).
 
 **License**: Private license by Skitourenguru GmbH. Skitourenguru GmbH permits the usage of the data for private purpose. Aks the consent of Skitourenguru GmbH if you want to re-publish the data respectivly if you want to derive data from the raw data.
 
-**Remark**: Skitourenguru is looking for a person willing to complete the data set in Italy. 
+**Remarks**: 
+- South Tyrol is contained in Austria (This is not a political statement!)
+- Skitourenguru is looking for a person willing to complete the data set in Italy. 
 
 Requiered skills: 
 * Experience with backcountry skiing
@@ -70,7 +75,7 @@ Requiered skills:
 * Open-minded
 * Willing to work in a team 
 
-## 6. Slovenia
+## 6. Slovenia (Region=8)
 tbd
 
 # Disclaimer
