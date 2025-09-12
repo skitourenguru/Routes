@@ -10,6 +10,8 @@ Goals:
 * Compliance with the requirements of nature conservation.
 * OpenData (Medium Term Goal)
 
+The exact data model description you find in the this [Tecnical Specification](https://github.com/skitourenguru/Routes/blob/main/Doc/Skitouring_Network_Specification_1.0.3.pdf).
+
 Remarks:
 * Despite the formal definition of the format [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) it is possible to store the EPSG code in the node **crs**. See chapter 4 of [RFC_7946](https://datatracker.ietf.org/doc/html/rfc7946).
 * In order to support change-tracking, the coordinate precision must be set to two decimal digits.
