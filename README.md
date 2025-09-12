@@ -24,7 +24,7 @@ Remarks:
 **License**: Creative Commons: [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/). Suggestion for the attribution: _The ski routes are created and maintained [Petzl Foundation](https://www.petzl.com) in cooperation with the 
 [Skitourenguru GmbH](https://www.skitourenguru.com)_.
 
-**Caution**: The geometry of this data is highly abstracted, don't use it without the requiered smoothing. The [qGis smooth function](https://docs.qgis.org/3.40/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html#smooth) must be applied (ITERATIONS=4, OFFSET=0.25, MAX_ANGLE=180).The folder [Derived Ski routes of France](https://download.skitourenguru.com/public/License.html) holds a smoothed version of the data (collection and network).
+**Caution**: The geometry of this data is highly abstracted, don't use it without the requiered smoothing. The [qGis smooth function](https://docs.qgis.org/3.40/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html#smooth) must be applied (ITERATIONS=4, OFFSET=0.25, MAX_ANGLE=180). The folder [Derived Ski routes of France](https://download.skitourenguru.com/public/License.html) holds a smoothed version of the data (collection and network).
 
 ## 2. Switzerland (Region=1)
 **Format**: [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) in EPSG=21781.
