@@ -4649,6 +4649,7 @@
 { "type": "Feature", "properties": { "id": 4666, "start": "Les Angles", "stop": "Puig Peric", "routes": null, "mdiff": 6, "importance": 2, "segments": "8729,8732,8731", "massif": "Pyrénées", "updated_at": "2025-09-12T09:42:25.444Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4667, "start": "Les Angles", "stop": "Puig de la Cometa d'Espagne", "routes": null, "mdiff": 4, "importance": 2, "segments": "8729,8730", "massif": "Pyrénées", "updated_at": "2025-09-12T09:45:50.554Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4668, "start": "L'Hospitalet-près-l'Andorre", "stop": "Tosse de Pedourres", "routes": null, "mdiff": 4, "importance": 2, "segments": "8734,8736", "massif": "Pyrénées", "updated_at": "2025-09-12T10:02:59.898Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4669, "start": "L'Hospitalet-près-l'Andorre", "stop": "Pic de Nérassol", "routes": null, "mdiff": 7, "importance": 2, "segments": "8734,8735", "massif": "Pyrénées", "updated_at": "2025-09-12T10:04:54.384Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4669, "start": "L'Hospitalet-près-l'Andorre", "stop": "Pic de Nérassol", "routes": null, "mdiff": 7, "importance": 2, "segments": "8734,8735", "massif": "Pyrénées", "updated_at": "2025-09-12T10:04:54.384Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4670, "start": "Mérens-les-Vals - Vallée du Mourguillou", "stop": "Pic Vaillette d'Esteil", "routes": null, "mdiff": 7, "importance": 2, "segments": "8737", "massif": "Pyrénées", "updated_at": "2025-09-12T10:40:29.212Z" }, "geometry": null }
 ]
 }
