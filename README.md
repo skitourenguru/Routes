@@ -90,8 +90,8 @@ Skitourenguru processes weekly (Monday 1:00h) the raw data contained in this rep
 4. The names (start and stop) are simplified where needed (Switzerland).
 5. Route identifiers are made unique by adding a region code at the end of the id. The region codes are documented in chapter B.
 6. The regions are merged.
-7. The routes are filtered by length, target end type.
-8. Attributes are added (**lit**: A hint about literature, in particular the editor Panico, **wildlife**: Distance to next nature protection area, **pop**: A popularity indicator, **adiff**: A difficulty grade automatically derived from terrain properties, **sri**: Standard rating indicators about the avalanche risk for 10 typical avalanche bulletins). If you need to know more abouzt these attributes, klick on a route on [https://www.skitourenguru.com](https://www.skitourenguru.com).
+7. The routes are filtered by **length**, **target** end **type** (Skitour = 1).
+8. Attributes are added (**lit**: A hint about literature, in particular the editor Panico, **wildlife**: Distance to next nature protection area, **pop**: A popularity indicator, **adiff**: A difficulty grade automatically derived from terrain properties, **sri**: Standard rating indicators about the avalanche risk for 10 typical avalanche bulletins). If you need to know more abouzt these attributes, click on a route on [https://www.skitourenguru.com](https://www.skitourenguru.com).
 9. The route collection is verified.
 10. The vector file is converted into two raster formats.
 11. Finally the results are "published" on the Internet:
