@@ -93,10 +93,10 @@ In order to edit ski routes within a network topology, two tools were developped
 In the folder [Batch](https://github.com/skitourenguru/Routes/tree/main/Scripts/Batch) you find an import and an export script. They can be used to convert the **geojson files** to a **geopackage network** that can be edited by the [Routes Composer](https://github.com/UlysselaGlisse/RoutesComposer).
 
 In order to make sure the script works follow theses steps:
-- Copy the script to an other directory anywhere on your harddisk
-- In **Settings.bat** choose your **working directories** and the **dataset** you want to work with
+- Copy the script to an other directory anywhere on your harddisk (Reason: You don't want to change the files in the repository).
+- In **Settings.bat** choose your **working directories** and the **dataset** you want to work with.
 - In **Environment.bat** you must set your [GDAL](https://gdal.org/) path. As GDAL is contained in qGis, its the easiest solution just to adapt the qgis version number.
-- Now you can use thpe scripts **ImportFromGithubToGpkg.bat** and **ExportFromGpkgToGithub.bat**. You can open them with a Text-Editor to see what they are doing.
+- Now you can use the scripts **ImportFromGithubToGpkg.bat** and **ExportFromGpkgToGithub.bat**. You can open them with a Text-Editor to see what they are doing.
 
 ## 3. [SAC Route Network Editor](https://github.com/andreglauser/sac-route-network-editor/)
 to be written
