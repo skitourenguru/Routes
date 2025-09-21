@@ -2,6 +2,8 @@
 
 This repository holds a network topology about **backcountry ski routes of the Alps**. It serves as entry point of **ski route raw data** for Skitourenguru. 
 
+**Caution**: Please be aware that this repository is under construction. It will be fully functional from the Spring 2026 on!
+
 Each region consists of two [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) files:
 1. Segments: A collection of LineString features with a segment id.
 2. Compositions: A collection of routes with attributes and a list of segment id's.
