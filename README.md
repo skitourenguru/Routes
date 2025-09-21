@@ -109,8 +109,8 @@ Skitourenguru processes daily the raw data contained in this repository and buil
 4. The names (start and stop) are simplified where needed (Switzerland).
 5. Route identifiers are made unique by adding a region code at the end of the id. The region codes are documented in chapter B.
 6. The regions are merged.
-7. The routes are filtered.
-8. Attributes are added (lit, wildlife, pop, adiff, sri).
+7. The routes are filtered by length, target end type.
+8. Attributes are added (lit: A hint about literature, wildlife: Distance to next wildlife protected area, pop: A popularity indicator, adiff: A difficulty grade automatically derived from terrain properties, sri: Standard rating indicators about the avalanche risk for 10 typical avalanche bulletins).
 9. The route collection is verified.
 10. The vector file is converted into two raster formats.
 11. Finally the results are "published" on the Internet:
