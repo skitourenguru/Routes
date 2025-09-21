@@ -1,4 +1,4 @@
-# Introduction
+# A: Introduction
 
 This repository holds a network topology about **backcountry ski routes of the Alps**. Each region consists of two [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) files:
 1. Segments: A collection of LineString features with a segment id.
@@ -16,7 +16,7 @@ Remarks:
 * Despite the formal definition of the format [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) it is possible to store the EPSG code in the node **crs**. See chapter 4 of [RFC_7946](https://datatracker.ietf.org/doc/html/rfc7946).
 * In order to support change-tracking, the coordinate precision must be set to two decimal digits.
 
-# Regions
+# B: Regions
 
 ## 1. France (Region=3)
 **Format**: [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) in EPSG=2154.
@@ -80,15 +80,28 @@ Requiered skills:
 ## 6. Slovenia (Region=8)
 tbd
 
-# Disclaimer
+# C: Disclaimer
 While we strive to provide accurate and up-to-date information, we cannot guarantee the completeness or correctness of the data presented. The data issuers assume no guarantee and therefore no liability for the accuracy of the data in this repository.
 
-# Tools
+# D: Digitizing Tools
+## 1. Digitizing in a network
 In order to edit ski routes within a network topology, two tools were developped:
 1. [Routes Composer](https://github.com/UlysselaGlisse/RoutesComposer): A qGis plugin to edit routes within a network topology.
 2. [SAC Route Network Editor](https://github.com/andreglauser/sac-route-network-editor/): A SQL based method to edit routes within a network topology.
 
-# Github
+## 2. [Routes Composer](https://github.com/UlysselaGlisse/RoutesComposer)
+In the folder [Batch](https://github.com/skitourenguru/Routes/tree/main/Scripts/Batch) you find an import and an export script. They can be used to convert the **geojson files** to a **geopackage network** that can be edited by the [Routes Composer](https://github.com/UlysselaGlisse/RoutesComposer).
+
+In order to make sure the script works follow theses steps:
+- Copy the script to an other directory anywhere on your harddisk
+- In **Settings.bat** choose your **working directories** and the **dataset** you want to work with
+- In **Environment.bat** you must set your [GDAL](https://gdal.org/) path. As GDAL is contained in qGis, its the easiest solution just to adapt the qgis version number.
+- Now you can use thpe scripts **ImportFromGithubToGpkg.bat** and **ExportFromGpkgToGithub.bat**. You can open them with a Text-Editor to see what they are doing.
+
+## 3. [SAC Route Network Editor](https://github.com/andreglauser/sac-route-network-editor/)
+to be written
+
+# E: Github
 
 ## 1. Intro
 **Git** is a **version control software system** that is capable of managing versions of source code or data. It is often used to control source **code** or source **data** by participants who are developing the code or data collaboratively. Today, Git is the de facto standard version control system. 
