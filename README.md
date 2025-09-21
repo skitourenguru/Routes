@@ -262,5 +262,12 @@ npx eslint . --ext .js,.vue
 ```
 
 # G: Contact
-On [https://www.skitourenguru.com](https://www.skitourenguru.com) under **about**.
+If you want to notify a remark about the routes data described in chapter B, contact us depending on the region:
+1. France: randohiver@fondation-petzl.org
+2. Switzerland: andreas.eisenhut@sac-cas.ch
+3. Austria: [AlpenvereinAktiv](https://www.alpenvereinaktiv.com/de/kontakt.html)
+4. Germany: [AlpenvereinAktiv](https://www.alpenvereinaktiv.com/de/kontakt.html)
+5. Italy: [Skitourenguru](https://www.skitourenguru.com) under **about**.
+
+For all other questions, contact [Skitourenguru](https://www.skitourenguru.com) under **about**.
 
