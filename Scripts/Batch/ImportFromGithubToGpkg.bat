@@ -8,8 +8,9 @@ set WORKING_DIR=%WORKING_DIR:~0,-1%
 call "%WORKING_DIR%"\Settings.bat
 call "%WORKING_DIR%"\Environment.bat
 
+if exist "%NETWORK%" del /F /Q "%NETWORK%"
 ogr2ogr -f GPKG "%NETWORK%" %SEGMENTS% -a_srs EPSG:%EPSG% -nln Segments -overwrite --debug %DEBUG%
-ogr2ogr -f GPKG "%NETWORK%" %COMPOSITIONS% -nln Compositions -append --debug %DEBUG%
+ogr2ogr -f GPKG "%NETWORK%" %COMPOSITIONS% -nln Compositions -nlt NONE -append --debug %DEBUG%
 
 pause
 
