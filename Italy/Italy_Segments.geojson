@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"name": "SELECT",
+"name": "Segments",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
 "xy_coordinate_resolution": 0.01,
 "features": [
