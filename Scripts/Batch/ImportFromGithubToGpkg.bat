@@ -8,10 +8,17 @@ set WORKING_DIR=%WORKING_DIR:~0,-1%
 call "%WORKING_DIR%"\Settings.bat
 call "%WORKING_DIR%"\Environment.bat
 
+
+if exist "%INTERMEDIATE_SEGMENTS%" del /F /Q "%INTERMEDIATE_SEGMENTS%"
+ogr2ogr -f GeoJSON %INTERMEDIATE_SEGMENTS% %SEGMENTS% -sql "SELECT id AS myown, length FROM Segments" -overwrite 
+
 if exist "%NETWORK%" del /F /Q "%NETWORK%"
-rem -sql "SELECT CAST(id AS INTEGER) AS id, * FROM Segments" -lco FID=id
-ogr2ogr -f GPKG "%NETWORK%" %SEGMENTS% -a_srs EPSG:%EPSG% -nln Segments -unsetFid -overwrite --debug %DEBUG%
+ogr2ogr -unsetFid -f GPKG "%NETWORK%" %INTERMEDIATE_SEGMENTS% -nln Segments -a_srs EPSG:%EPSG% -overwrite --debug %DEBUG%
 ogr2ogr -f GPKG "%NETWORK%" %COMPOSITIONS% -nln Compositions -nlt NONE -append --debug %DEBUG%
+
+ogrinfo -sql "alter table Segments add column id integer" "%NETWORK%"
+ogrinfo -dialect sqlite -sql "update Segments set id=myown" "%NETWORK%"
+ogrinfo -dialect sqlite -sql "ALTER TABLE Segments DROP COLUMN myown" "%NETWORK%"
 
 pause
 
