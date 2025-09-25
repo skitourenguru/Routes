@@ -20,10 +20,10 @@ set PROJ_LIB=%QGIS%\share\proj
 rem GDAL Commen
 rem -------------------------------------------------------------------
 
-echo GDAL_DIR=%GDAL_DIR%
-echo GDAL_DATA=%GDAL_DATA%
-echo GDAL_DRIVER_PATH=%GDAL_DRIVER_PATH%
-echo PROJ_LIB=%PROJ_LIB%
+rem echo GDAL_DIR=%GDAL_DIR%
+rem echo GDAL_DATA=%GDAL_DATA%
+rem echo GDAL_DRIVER_PATH=%GDAL_DRIVER_PATH%
+rem echo PROJ_LIB=%PROJ_LIB%
 
 %SystemDrive%
 cd "%GDAL_DIR%"
@@ -36,5 +36,7 @@ rem set DEBUG=on
 set DEBUG=off
 
 set NETWORK=%PROCESSING_DIR%\%NAME%_Network.gpkg
+set INTERMEDIATE_SEGMENTS=%PROCESSING_DIR%\%NAME%_Segments.geojson
+
 set COMPOSITIONS=%GITHUB_DIR%\%NAME%\%NAME%_Compositions.geojson
 set SEGMENTS=%GITHUB_DIR%\%NAME%\%NAME%_Segments.geojson
