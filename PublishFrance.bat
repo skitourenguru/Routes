@@ -99,9 +99,9 @@ if "%1"=="NOTEST" (
 )
 echo TEST=%TEST%
 
-set LOG_FILE=%TEMP%\TopoMap_%MYDATE%.log
+set LOG_FILE=C:\Skitourenguru2\log\TopoMap_%MYDATE%.log
 echo LOG_FILE=%LOG_FILE%
-del /q "%TEMP%\TopoMap_*.log"
+if exist "%LOG_FILE%" del /F /Q "%LOG_FILE%"
 
 :Step3
 echo .
