@@ -57,6 +57,7 @@ if "%USERNAME%" == "james" (
 	set MODEL=D:\Secure\GPS\Projekte\Switzerland\ART\Design\Modell_V3.0\Results\Current\FootSectionModel\ModelCoefficients.csv
 	set MAPSERVER_DIR=\\192.168.1.12\gis\skitourenguru\vector
 	set PUBLIC_DIR=D:\Temp
+	set LOG_DIR=%TEMP%
 	for /f "tokens=1-3 delims=. " %%a in ('date /t') do (set MYDATE=%%c%%b%%a)
 )
 
@@ -72,6 +73,7 @@ if "%USERNAME%" == "Administrator" (
 	set MODEL=C:\Skitourenguru2\FR\model\FootSections_ModelCoefficients.csv
 	set MAPSERVER_DIR=\\192.168.1.41\gis\skitourenguru\vector
 	set PUBLIC_DIR=\\192.168.1.43\public
+	set LOG_DIR=C:\Skitourenguru2\log
 	for /f "tokens=1-3 delims=. " %%a in ('date /t') do (set MYDATE=%%c%%b%%a)
 )
 
@@ -87,6 +89,7 @@ if "%USERNAME%" == "ulysse" (
 	set MODEL=
 	rem set MAPSERVER_DIR=
 	rem set PUBLIC_DIR=
+	rem set LOG_DIR=
 	for /f "tokens=1-3 delims=/ " %%a in ('date /t') do (set MYDATE=%%c%%b%%a)
 )
 
@@ -99,7 +102,7 @@ if "%1"=="NOTEST" (
 )
 echo TEST=%TEST%
 
-set LOG_FILE=C:\Skitourenguru2\log\TopoMap_%MYDATE%.log
+set LOG_FILE=%LOG_DIR%\TopoMap_%MYDATE%.log
 echo LOG_FILE=%LOG_FILE%
 if exist "%LOG_FILE%" del /F /Q "%LOG_FILE%"
 
@@ -133,43 +136,8 @@ set MIN_EXPANSION_LENGT=100
 rem Description = "If a gap between two foot section is shorter then minGapLength, they will be merged
 set MIN_GAP_LENGTH=100
 
-rem myAsymmetricFactor=1
-rem pThreashold=0.184021
-rem 
-rem       positives negatives
-rem true      16047   1879373
-rem false     15632     15632
-rem 
-rem myAsymmetricFactor=2
-rem pThreashold=0.1183014
-rem 
-rem       positives negatives
-rem true      19096   1869839
-rem false     25166     12583
-rem 
-rem myAsymmetricFactor=3
-rem pThreashold=0.09101105
-rem       positives negatives
-rem true      20547   1861608
-rem false     33397     11132
-rem 
-rem myAsymmetricFactor=4
-rem pThreashold= 0.07603073
-rem       positives negatives
-rem true      21529   1854404
-rem false     40601     10150
-rem 
-rem 
-rem myAsymmetricFactor <- 5
-rem pThreashold=0.06578827
-rem       positives negatives
-rem true      22223   1847724
-rem false     47281      9456
-
-rem set THREASHOLD=0.065
+rem Threashold of propability
 set THREASHOLD=0.069
-
-
 
 :Step5
 echo .
@@ -187,9 +155,6 @@ echo ******************************************************************
 echo .
 
 set SMOOTHED_SEGMENTS=%RESULT_DIR%\%NAME%-Alpes-Segments-Smoothed.sqlite
-
-rem set SMOOTH_COMMANDS=method=hermite threshold=5 angle_thresh=1;method=reumann threshold=3;method=chaiken threshold=5;method=reumann threshold=1
-rem set SMOOTH_COMMANDS=method=chaiken threshold=5;method=reumann threshold=3;method=hermite threshold=10 angle_thresh=1;method=reumann threshold=1
 set SMOOTH_COMMANDS=method=chaiken threshold=5 iterations=3;method=reumann threshold=1
 
 %GEO_TOOL% /lineSmoothingTool "%GRASSTOOL%" "%SEGMENTS%" "%SMOOTHED_SEGMENTS%" "%SMOOTH_COMMANDS%" %SOURCE_EPSG%
@@ -292,10 +257,6 @@ if defined TAG (
 set BACKUP_ZIP_FILE=%PUBLIC_DIR%\%NAME%-Ski-%MYDATE%-%MYREVISION%.zip
 echo copy /y "%ZIP_FILE%" "%BACKUP_ZIP_FILE%"
 copy /y "%ZIP_FILE%" "%BACKUP_ZIP_FILE%"
-
-
-rem echo copy /y "%TARGET_LOG_FILE%" "%PUBLIC_DIR%"
-rem copy /y "%TARGET_LOG_FILE%" "%PUBLIC_DIR%"
 
 if %TEST%==1 (
 	pause
