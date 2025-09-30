@@ -4693,6 +4693,7 @@
 { "type": "Feature", "properties": { "id": 4711, "start": "Mourtis", "stop": "Pic de l'Har", "routes": null, "mdiff": 3, "importance": 2, "segments": "8795", "massif": "Pyrénées", "updated_at": "2025-09-24T12:20:34.792Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4712, "start": "Rouech", "stop": "Pic de Paumade", "routes": null, "mdiff": 3, "importance": 2, "segments": "8798,8796", "massif": "Pyrénées", "updated_at": "2025-09-24T12:28:55.585Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4713, "start": "Rouech", "stop": "Pic de Calabasse", "routes": null, "mdiff": 3, "importance": 2, "segments": "8798,8797", "massif": "Pyrénées", "updated_at": "2025-09-24T12:30:21.023Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4714, "start": "Le Couéu", "stop": "Cap de Gauch", "routes": null, "mdiff": 3, "importance": 2, "segments": "8799", "massif": "Pyrénées", "updated_at": "2025-09-30T11:28:48.539Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4714, "start": "Le Couéu", "stop": "Cap de Gauch", "routes": null, "mdiff": 3, "importance": 2, "segments": "8799", "massif": "Pyrénées", "updated_at": "2025-09-30T11:28:48.539Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4715, "start": "Station de Puyvalador", "stop": "Puig del Pla de Bernat", "routes": null, "mdiff": 3, "importance": 2, "segments": "8747", "massif": "Pyrénées", "updated_at": "2025-09-30T11:31:45.527Z" }, "geometry": null }
 ]
 }
