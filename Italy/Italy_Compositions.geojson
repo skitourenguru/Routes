@@ -1164,6 +1164,6 @@
 { "type": "Feature", "properties": { "id": 1511, "segments": "1722,1719,1720", "start": "Bacino di Rio Freddo", "stop": "Testa Gias dei laghi", "adiff": null, "sdd": null, "wildlife": null, "sri": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1512, "segments": "1735,1736,1734", "start": "Callieri", "stop": "Paso del Bue", "adiff": null, "sdd": null, "wildlife": null, "sri": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1513, "segments": "1735,1737", "start": "Callieri", "stop": "Serriera del Pignal", "adiff": null, "sdd": null, "wildlife": null, "sri": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 1514, "segments": "320,1740,1739", "start": "Chiappi", "stop": "Monte Viridio", "adiff": null, "sdd": null, "wildlife": null, "sri": null }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 1514, "segments": "320", "start": "Chiappi", "stop": "Monte Viridio", "adiff": null, "sdd": null, "wildlife": null, "sri": null }, "geometry": null }
 ]
 }
