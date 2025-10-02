@@ -4715,6 +4715,7 @@
 { "type": "Feature", "properties": { "id": 4733, "start": "Bourdalès", "stop": "Mail Planet", "routes": null, "mdiff": 7, "importance": 2, "segments": "8824,8825", "massif": "Pyrénées", "updated_at": "2025-10-02T11:30:14.758Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4734, "start": "Les Granges d'Astau", "stop": "Refuge du Portillon", "routes": null, "mdiff": 3, "importance": 2, "segments": "8827", "massif": "Pyrénées", "updated_at": "2025-10-02T11:49:40.679Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4735, "start": "Les Granges d'Astau", "stop": "Tusse de Montarqué", "routes": null, "mdiff": 5, "importance": 2, "segments": "8827,8828", "massif": "Pyrénées", "updated_at": "2025-10-02T11:50:02.930Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4736, "start": "Refuge du Portillon", "stop": "Tusse de Montarqué", "routes": null, "mdiff": 5, "importance": 2, "segments": "8828", "massif": "Pyrénées", "updated_at": "2025-10-02T11:50:02.957Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4736, "start": "Refuge du Portillon", "stop": "Tusse de Montarqué", "routes": null, "mdiff": 5, "importance": 2, "segments": "8828", "massif": "Pyrénées", "updated_at": "2025-10-02T11:50:02.957Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4737, "start": "Pont d'Astau", "stop": "Pic d'Espingo", "routes": null, "mdiff": 5, "importance": 2, "segments": "8829", "massif": "Pyrénées", "updated_at": "2025-10-02T11:55:23.201Z" }, "geometry": null }
 ]
 }
