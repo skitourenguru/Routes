@@ -4709,6 +4709,9 @@
 { "type": "Feature", "properties": { "id": 4727, "start": "Cabane de Salit", "stop": "Sommet de la Coume de Bourg", "routes": null, "mdiff": 5, "importance": 2, "segments": "8814,8816,8817", "massif": "Pyrénées", "updated_at": "2025-10-01T11:25:16.733Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4728, "start": "Cabane de Salit", "stop": "Pic de Céciré", "routes": null, "mdiff": 5, "importance": 2, "segments": "8814,8815,8818", "massif": "Pyrénées", "updated_at": "2025-10-01T11:27:38.539Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4729, "start": "Bois du Croc", "stop": "Pic de Subescale", "routes": null, "mdiff": 3, "importance": 2, "segments": "8820,8822", "massif": "Pyrénées", "updated_at": "2025-10-01T12:24:45.251Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4730, "start": "Bois du Croc", "stop": "Sommet de la Coume de Bourg", "routes": null, "mdiff": 5, "importance": 2, "segments": "8820,8821", "massif": "Pyrénées", "updated_at": "2025-10-01T12:27:26.491Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4730, "start": "Bois du Croc", "stop": "Sommet de la Coume de Bourg", "routes": null, "mdiff": 5, "importance": 2, "segments": "8820,8821", "massif": "Pyrénées", "updated_at": "2025-10-01T12:27:26.491Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4731, "start": "Hospice de France", "stop": "Pic de Pouylané ou de Roumingau", "routes": null, "mdiff": 2, "importance": 2, "segments": "8823", "massif": "Pyrénées", "updated_at": "2025-10-02T10:31:13.554Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4732, "start": "Bourdalès", "stop": "Pic de Maupas", "routes": null, "mdiff": 8, "importance": 2, "segments": "8824,8826", "massif": "Pyrénées", "updated_at": "2025-10-02T11:28:15.738Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4733, "start": "Bourdalès", "stop": "Mail Planet", "routes": null, "mdiff": 7, "importance": 2, "segments": "8824,8825", "massif": "Pyrénées", "updated_at": "2025-10-02T11:30:14.758Z" }, "geometry": null }
 ]
 }
