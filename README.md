@@ -91,7 +91,7 @@ Skitourenguru is looking for a person willing to digitalize ski routes in Sloven
 
 Requiered skills: 
 * Experience with backcountry skiing
-* Practical knowledge about backcountry areas in Italy
+* Practical knowledge about backcountry areas in Slovenia
 * Cartographic knowledge
 * Understanding of avalanche terrain
 * Affinity to Slovenia
