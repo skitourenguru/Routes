@@ -4716,7 +4716,8 @@
 { "type": "Feature", "properties": { "id": 4734, "start": "Les Granges d'Astau", "stop": "Refuge du Portillon", "routes": null, "mdiff": 3, "importance": 2, "segments": "8827", "massif": "Pyrénées", "updated_at": "2025-10-09T09:01:47.598Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4735, "start": "Les Granges d'Astau", "stop": "Tusse de Montarqué", "routes": null, "mdiff": 5, "importance": 2, "segments": "8827,8828", "massif": "Pyrénées", "updated_at": "2025-10-09T09:01:47.846Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4736, "start": "Refuge du Portillon", "stop": "Tusse de Montarqué", "routes": null, "mdiff": 5, "importance": 2, "segments": "8828", "massif": "Pyrénées", "updated_at": "2025-10-09T09:01:47.759Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4737, "start": "Pont d'Astau", "stop": "Pic d'Espingo", "routes": null, "mdiff": 5, "importance": 2, "segments": "8829,8831", "massif": "Pyrénées", "updated_at": "2025-10-09T09:01:48.021Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4738, "start": "Pont d'Astau", "stop": "Montségu", "routes": null, "mdiff": 6, "importance": 2, "segments": "8829,8830", "massif": "Pyrénées", "updated_at": "2025-10-09T09:01:47.933Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4737, "start": "Pont d'Astau", "stop": "Pic d'Espingo", "routes": null, "mdiff": 5, "importance": 2, "segments": "8829,8831,8834", "massif": "Pyrénées", "updated_at": "2025-10-09T09:01:48.021Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4738, "start": "Pont d'Astau", "stop": "Montségu", "routes": null, "mdiff": 6, "importance": 2, "segments": "8829,8830", "massif": "Pyrénées", "updated_at": "2025-10-09T09:01:47.933Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4739, "start": "Peyresourde Balestas", "stop": "Pic de Hourgade", "routes": null, "mdiff": 6, "importance": 2, "segments": "8832", "massif": "Pyrénées", "updated_at": "2025-10-09T09:16:39.302Z" }, "geometry": null }
 ]
 }
