@@ -4762,6 +4762,8 @@
 { "type": "Feature", "properties": { "id": 4780, "start": "Bourg d'Oueil", "stop": "Mont Né", "routes": null, "mdiff": 3, "importance": 2, "segments": "8893,8898,8895", "massif": "Pyrénées", "updated_at": "2025-10-13T10:16:46.096Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4781, "start": "Bourg d'Oueil", "stop": "Hourgue de la Fousserette", "routes": null, "mdiff": 3, "importance": 2, "segments": "8893,8898,8897,8894", "massif": "Pyrénées", "updated_at": "2025-10-13T10:17:13.272Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4782, "start": "Bourg d'Oueil", "stop": "Hourgue de la Fousserette", "routes": null, "mdiff": 5, "importance": 2, "segments": "8893,8896,8900,8894", "massif": "Pyrénées", "updated_at": "2025-10-13T10:30:15.931Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4783, "start": "Bourg d'Oueil", "stop": "Pic du Lion", "routes": null, "mdiff": 5, "importance": 2, "segments": "8893,8896,8902,8899", "massif": "Pyrénées", "updated_at": "2025-10-13T10:33:50.561Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4783, "start": "Bourg d'Oueil", "stop": "Pic du Lion", "routes": null, "mdiff": 5, "importance": 2, "segments": "8893,8896,8902,8908,8899", "massif": "Pyrénées", "updated_at": "2025-10-13T10:33:50.561Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4784, "start": "Bourg d'Oueil", "stop": "Sommet de Pouy Louby", "routes": null, "mdiff": 5, "importance": 2, "segments": "8893,8896,8902,8901", "massif": "Pyrénées", "updated_at": "2025-10-13T10:40:47.503Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4785, "start": "Cazaux-Fréchet-Anéran-Camors", "stop": "Montious", "routes": null, "mdiff": 4, "importance": 2, "segments": "8903,8910,8909", "massif": "Pyrénées", "updated_at": "2025-10-14T08:31:58.359Z" }, "geometry": null }
 ]
 }
