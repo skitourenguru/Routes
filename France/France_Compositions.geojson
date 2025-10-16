@@ -4805,6 +4805,10 @@
 { "type": "Feature", "properties": { "id": 4823, "start": "Piau Engaly", "stop": "Lenquo de Capo", "routes": null, "mdiff": 5, "importance": 2, "segments": "8956,8965,8964", "massif": "Pyrénées", "updated_at": "2025-10-15T11:25:23.269Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4824, "start": "Piau Engaly", "stop": "Pic de Lentilla", "routes": null, "mdiff": 9, "importance": 2, "segments": "8956,8965,8968,8971,8967", "massif": "Pyrénées", "updated_at": "2025-10-15T11:30:05.791Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4825, "start": "Piau Engaly", "stop": "Pic de Lentilla", "routes": null, "mdiff": 8, "importance": 2, "segments": "8956,8966,8970,8969,8967", "massif": "Pyrénées", "updated_at": "2025-10-15T11:33:34.159Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4826, "start": "Piau Engaly", "stop": "Lenquo de Capo", "routes": null, "mdiff": 5, "importance": 2, "segments": "8956,8966,8970,8972", "massif": "Pyrénées", "updated_at": "2025-10-15T11:34:41.097Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4826, "start": "Piau Engaly", "stop": "Lenquo de Capo", "routes": null, "mdiff": 5, "importance": 2, "segments": "8956,8966,8970,8972", "massif": "Pyrénées", "updated_at": "2025-10-15T11:34:41.097Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4827, "start": "Espiaube", "stop": "Pic de Pichaley", "routes": null, "mdiff": 3, "importance": 2, "segments": "8973", "massif": "Pyrénées", "updated_at": "2025-10-16T08:38:17.710Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4828, "start": "Lurgues", "stop": "L'Arbizon", "routes": null, "mdiff": 8, "importance": 2, "segments": "8974,8976,8983,8979,8977", "massif": "Pyrénées", "updated_at": "2025-10-16T08:56:32.700Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4829, "start": "Lurgues", "stop": "L'Arbizon", "routes": null, "mdiff": 9, "importance": 2, "segments": "8974,8975,8977", "massif": "Pyrénées", "updated_at": "2025-10-16T08:57:59.869Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4830, "start": "Lurgues", "stop": "Pic de MonFaucon", "routes": null, "mdiff": 6, "importance": 2, "segments": "8974,8976,8983,8978", "massif": "Pyrénées", "updated_at": "2025-10-16T09:05:01.173Z" }, "geometry": null }
 ]
 }
