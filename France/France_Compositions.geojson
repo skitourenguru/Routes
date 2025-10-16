@@ -4817,6 +4817,7 @@
 { "type": "Feature", "properties": { "id": 4835, "start": "Lurgues", "stop": "Pic d'Aulon", "routes": null, "mdiff": 8, "importance": 2, "segments": "8974,8976,8980,8994,8988", "massif": "Pyrénées", "updated_at": "2025-10-16T09:44:31.504Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4836, "start": "Lurgues", "stop": "Pic de Montarrouyes", "routes": null, "mdiff": 4, "importance": 2, "segments": "8974,8976,8980,8989,8991", "massif": "Pyrénées", "updated_at": "2025-10-16T10:17:42.440Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4837, "start": "Lurgues", "stop": "Pic de Montarrouyes", "routes": null, "mdiff": 4, "importance": 2, "segments": "8990", "massif": "Pyrénées", "updated_at": "2025-10-16T10:18:09.740Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4838, "start": "Lurgues", "stop": "Pic de Cettiou", "routes": null, "mdiff": 5, "importance": 2, "segments": "8974,8976,8980,8994,8996,8993", "massif": "Pyrénées", "updated_at": "2025-10-16T10:25:04.486Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4838, "start": "Lurgues", "stop": "Pic de Cettiou", "routes": null, "mdiff": 5, "importance": 2, "segments": "8974,8976,8980,8994,8996,8993", "massif": "Pyrénées", "updated_at": "2025-10-16T10:25:04.486Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4839, "start": "Lurgues", "stop": "Col d'Aulon", "routes": null, "mdiff": 6, "importance": 2, "segments": "8974,8976,8980,8994,8996,8995", "massif": "Pyrénées", "updated_at": "2025-10-16T10:29:00.997Z" }, "geometry": null }
 ]
 }
