@@ -14,7 +14,7 @@ Goals:
 * Compliance with the requirements of nature conservation.
 * OpenData (Medium Term Goal)
 
-The exact data model description you find in the this [Tecnical Specification](https://github.com/skitourenguru/Routes/blob/main/Doc/Skitouring_Network_Specification_1.0.3.pdf).
+The exact data model description you find in the this [Tecnical Specification](https://github.com/skitourenguru/Routes/blob/main/Doc).
 
 Remarks:
 * Despite the formal definition of the format [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) it is possible to store the EPSG code in the node **crs**. See chapter 4 of [RFC_7946](https://datatracker.ietf.org/doc/html/rfc7946).
@@ -103,7 +103,8 @@ Contact [Skitourenguru](https://www.skitourenguru.com) under **about** if you wa
 
 # C: Derived data
 Skitourenguru processes weekly (Monday 1:00h) the raw data contained in this repository and builds a [SQLite / Spatialite RDBMS](https://gdal.org/en/stable/drivers/vector/sqlite.html) file containing a **collection of routes covering the whole Alps**. The automatic process performs the following steps:
-1. Where needed (France) the routes are smoothed.
+1. Where needed (France) the routes are smoothed: (Chaiken: 3 Interations, Threashold 5 m).
+2. Simplification (Douglas: Theashold: 1 m).
 2. The network is converted to a **route collection**.
 3. The routes are reprojected to the EPSG 3035.
 4. Geospatial filter
@@ -111,7 +112,7 @@ Skitourenguru processes weekly (Monday 1:00h) the raw data contained in this rep
 6. Route identifiers are made unique by adding a region code at the end of the id. The region codes are documented in chapter B.
 7. The regions are merged.
 8. The routes are filtered by **length**, **target** end **type** (Skitour = 1).
-9. Attributes are added (**lit**: A hint about literature, in particular the editor Panico, **wildlife**: Distance to next nature protection area, **pop**: A popularity indicator, **adiff**: A difficulty grade automatically derived from terrain properties, **sri**: Standard rating indicators about the avalanche risk for 10 typical avalanche bulletins). If you need to know more abouzt these attributes, click on a route on [https://www.skitourenguru.com](https://www.skitourenguru.com).
+9. Attributes are added (**lit**: A hint about literature, in particular the editor Panico, **wildlife**: Distance to next nature protection area, **pop**: A popularity indicator, **adiff**: A difficulty grade automatically derived from terrain properties, **sri**: Standard rating indicators about the avalanche risk for 10 typical avalanche bulletins). If you need to know more about these attributes, click on a route on [https://www.skitourenguru.com](https://www.skitourenguru.com).
 10. The route collection is verified.
 11. The vector file is converted into two raster formats.
 12. Finally the results are "published" on the Internet:
@@ -144,7 +145,7 @@ In order to make sure the script works follow theses steps:
 4. Now you can use the scripts **ImportFromGithubToGpkg.bat** and **ExportFromGpkgToGithub.bat**. You can open them with a Text-Editor to see what they are doing.
 
 ## 3. [SAC Route Network Editor](https://github.com/andreglauser/sac-route-network-editor/)
-tbd
+to be written
 
 # F: Github
 
