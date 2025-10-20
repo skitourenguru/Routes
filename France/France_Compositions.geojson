@@ -4837,6 +4837,8 @@
 { "type": "Feature", "properties": { "id": 4855, "start": "Lac d'Aubert", "stop": "Pic de Néouvielle ou d'Aubert", "routes": null, "mdiff": 5, "importance": 2, "segments": "9027,9028,9026", "massif": "Pyrénées", "updated_at": "2025-10-20T11:26:21.861Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4856, "start": "Lac d'Orédon", "stop": "Brèche de Chausenque", "routes": null, "mdiff": 4, "importance": 2, "segments": "9027,9028,9025", "massif": "Pyrénées", "updated_at": "2025-10-20T11:26:21.896Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4857, "start": "Lac d'Orédon", "stop": "Ramoun", "routes": null, "mdiff": 6, "importance": 2, "segments": "9024,9029", "massif": "Pyrénées", "updated_at": "2025-10-20T11:46:57.271Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4858, "start": "Lac d'Aubert", "stop": "Ramoun", "routes": null, "mdiff": 6, "importance": 2, "segments": "9027,9029", "massif": "Pyrénées", "updated_at": "2025-10-20T11:46:09.299Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4858, "start": "Lac d'Aubert", "stop": "Ramoun", "routes": null, "mdiff": 6, "importance": 2, "segments": "9027,9029", "massif": "Pyrénées", "updated_at": "2025-10-20T11:46:09.299Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4859, "start": "Lac d'Orédon", "stop": "Pics d'Estaragne", "routes": null, "mdiff": 7, "importance": 2, "segments": "9023,9031", "massif": "Pyrénées", "updated_at": "2025-10-20T11:58:30.253Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4860, "start": "Lac d'Orédon", "stop": "Col d'Estaragne", "routes": null, "mdiff": 6, "importance": 2, "segments": "9023,9030", "massif": "Pyrénées", "updated_at": "2025-10-20T11:58:30.290Z" }, "geometry": null }
 ]
 }
