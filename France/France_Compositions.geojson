@@ -4844,6 +4844,10 @@
 { "type": "Feature", "properties": { "id": 4862, "start": "Lac d'Aubert", "stop": "Turon de Néouvielle", "routes": null, "mdiff": 4, "importance": 2, "segments": "9024,9028,9025,9032,9035,9036", "massif": "Pyrénées", "updated_at": "2025-10-21T10:12:06.358Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4863, "start": "Le Peyras", "stop": "Liset de Hount de Blanque", "routes": null, "mdiff": 3, "importance": 2, "segments": "9022", "massif": "Pyrénées", "updated_at": "2025-10-21T11:45:37.849Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4864, "start": "Lac d'Orédon", "stop": "Pic Maubic", "routes": null, "mdiff": 5, "importance": 2, "segments": "9023,9030,9033", "massif": "Pyrénées", "updated_at": "2025-10-21T11:58:56.566Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4865, "start": "Lac d'Aubert", "stop": "Turon de Néouvielle", "routes": null, "mdiff": 4, "importance": 2, "segments": "9027,9028,9025,9032,9034", "massif": "Pyrénées", "updated_at": "2025-10-21T12:04:00.848Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4865, "start": "Lac d'Aubert", "stop": "Turon de Néouvielle", "routes": null, "mdiff": 4, "importance": 2, "segments": "9027,9028,9025,9032,9034", "massif": "Pyrénées", "updated_at": "2025-10-21T12:04:00.848Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4866, "start": "La Vialette", "stop": "La Peyre", "routes": null, "mdiff": 3, "importance": 2, "segments": "9038", "massif": "Pyrénées", "updated_at": "2025-10-24T09:01:22.056Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4867, "start": "Courtaou du Hourc", "stop": "Pic de Montaigu", "routes": null, "mdiff": 5, "importance": 2, "segments": "9039", "massif": "Pyrénées", "updated_at": "2025-10-24T09:08:53.679Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4868, "start": "Artigues", "stop": "Refuge de Campana de Cloutou", "routes": null, "mdiff": 3, "importance": 2, "segments": "9040", "massif": "Pyrénées", "updated_at": "2025-10-24T09:43:36.047Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4869, "start": "Artigues", "stop": "Col de Bastanet", "routes": null, "mdiff": 3, "importance": 2, "segments": "9040,9041", "massif": "Pyrénées", "updated_at": "2025-10-24T09:43:55.021Z" }, "geometry": null }
 ]
 }
