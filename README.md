@@ -114,8 +114,9 @@ Skitourenguru processes weekly (Monday 1:00h) the raw data contained in this rep
 8. The routes are filtered by **length**, **target** end **type** (Skitour = 1).
 9. Attributes are added (**lit**: A hint about literature, in particular the editor Panico, **wildlife**: Distance to next nature protection area, **pop**: A popularity indicator, **adiff**: A difficulty grade automatically derived from terrain properties, **sri**: Standard rating indicators about the avalanche risk for 10 typical avalanche bulletins). If you need to know more about these attributes, click on a route on [https://www.skitourenguru.com](https://www.skitourenguru.com).
 10. The route collection is verified.
-11. The vector file is converted into two raster formats.
-12. Finally the results are "published" on the Internet:
+11. [Corridors](https://info.skitourenguru.ch/index.php/corridors) are created
+12. The vector file is converted into two raster formats
+13. Finally the results are "published" on the Internet:
 
 [Alps as Vector](https://download.skitourenguru.com/routes/Alps.sqlite) in the [SQLite / Spatialite RDBMS](https://gdal.org/en/stable/drivers/vector/sqlite.html) format.
 
