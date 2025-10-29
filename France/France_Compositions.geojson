@@ -4859,6 +4859,7 @@
 { "type": "Feature", "properties": { "id": 4877, "start": "Artigues", "stop": "Tuhou de Cloutou", "routes": null, "mdiff": 6, "importance": 2, "segments": "9040,9054,9056,9045,9041,9049,9051", "massif": "Pyrénées", "updated_at": "2025-10-24T10:42:45.318Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4878, "start": "Artigues", "stop": "Pic de Barassé", "routes": null, "mdiff": 8, "importance": 2, "segments": "9040,9053", "massif": "Pyrénées", "updated_at": "2025-10-24T10:47:44.935Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4879, "start": "Artigues", "stop": "Pic de Moutarrouye", "routes": null, "mdiff": 9, "importance": 2, "segments": "9040,9054,9058,9055", "massif": "Pyrénées", "updated_at": "2025-10-24T11:09:04.057Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4880, "start": "Artigues", "stop": "Pene Arrouye", "routes": null, "mdiff": 6, "importance": 2, "segments": "9040,9054,9058,9057", "massif": "Pyrénées", "updated_at": "2025-10-24T11:11:02.818Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4880, "start": "Artigues", "stop": "Pene Arrouye", "routes": null, "mdiff": 6, "importance": 2, "segments": "9040,9054,9058,9057", "massif": "Pyrénées", "updated_at": "2025-10-24T11:11:02.818Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4881, "start": "Lac d'Orédon", "stop": "Pic de CampBieil", "routes": null, "mdiff": 7, "importance": 2, "segments": "9023,9031,9059", "massif": "Pyrénées", "updated_at": "2025-10-29T09:12:56.667Z" }, "geometry": null }
 ]
 }
