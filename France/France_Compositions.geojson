@@ -4872,6 +4872,8 @@
 { "type": "Feature", "properties": { "id": 4890, "start": "Bordes", "stop": "Hautacam Soum de Dabant Aygue", "routes": null, "mdiff": 2, "importance": 2, "segments": "9076", "massif": "Pyrénées", "updated_at": "2025-10-30T11:54:41.580Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4891, "start": "Les Gès", "stop": "Pene de Caucipeyre", "routes": null, "mdiff": 1, "importance": 2, "segments": "9077", "massif": "Pyrénées", "updated_at": "2025-10-30T11:57:33.229Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4892, "start": "Pène de Sérères", "stop": "Pic de Nerbiou", "routes": null, "mdiff": 2, "importance": 2, "segments": "9078,9080", "massif": "Pyrénées", "updated_at": "2025-10-30T12:04:47.953Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4893, "start": "Pène de Sérères", "stop": "Pic de Nerbiou", "routes": null, "mdiff": 4, "importance": 2, "segments": "9078,9079", "massif": "Pyrénées", "updated_at": "2025-10-30T12:04:47.976Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4893, "start": "Pène de Sérères", "stop": "Pic de Nerbiou", "routes": null, "mdiff": 4, "importance": 2, "segments": "9078,9079", "massif": "Pyrénées", "updated_at": "2025-10-30T12:04:47.976Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4894, "start": "Ortiac", "stop": "Hourquette de Bo", "routes": null, "mdiff": 3, "importance": 2, "segments": "9081,9083", "massif": "Pyrénées", "updated_at": "2025-10-30T12:18:01.488Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4895, "start": "Ortiac", "stop": "Soum de Leviste", "routes": null, "mdiff": 6, "importance": 2, "segments": "9081,9082", "massif": "Pyrénées", "updated_at": "2025-10-30T12:19:04.653Z" }, "geometry": null }
 ]
 }
