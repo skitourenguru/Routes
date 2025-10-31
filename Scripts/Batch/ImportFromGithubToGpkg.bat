@@ -8,6 +8,18 @@ set WORKING_DIR=%WORKING_DIR:~0,-1%
 call "%WORKING_DIR%"\Settings.bat
 call "%WORKING_DIR%"\Environment.bat
 
+if exist "%NETWORK%" (
+	echo WARNING: 
+	echo The target file %NETWORK% 
+	echo in the qGis environment exists already. 
+	echo If you press now any key, it will be overwritten and lost! 
+    choice /c YN /m "Press Y(Yes) to overwrite or N(No) to cancel."
+
+    if errorlevel 2 (
+        echo Operation cancelled.
+        exit /b
+    )	
+)
 
 if exist "%INTERMEDIATE_SEGMENTS%" del /F /Q "%INTERMEDIATE_SEGMENTS%"
 ogr2ogr -f GeoJSON %INTERMEDIATE_SEGMENTS% %SEGMENTS% -sql "SELECT id AS myown, length FROM Segments" -overwrite 

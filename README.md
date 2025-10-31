@@ -14,7 +14,7 @@ Goals:
 * Compliance with the requirements of nature conservation.
 * OpenData (Medium Term Goal)
 
-The exact data model description you find in the this [Tecnical Specification](https://github.com/skitourenguru/Routes/blob/main/Doc/Skitouring_Network_Specification_1.0.3.pdf).
+The exact data model description you find in the this [Tecnical Specification](https://github.com/skitourenguru/Routes/blob/main/Doc).
 
 Remarks:
 * Despite the formal definition of the format [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) it is possible to store the EPSG code in the node **crs**. See chapter 4 of [RFC_7946](https://datatracker.ietf.org/doc/html/rfc7946).
@@ -69,7 +69,9 @@ Remarks:
 
 **Remarks**: 
 - South Tyrol is contained in Austria (This is not a political statement!)
-- Skitourenguru is looking for a person willing to complete the data set in Italy. Contact [Skitourenguru](https://www.skitourenguru.com) under **about** if you want to collaborate.
+
+**Help needed**
+Skitourenguru is looking for a person willing to complete the data set in Italy. The work can be partly paid.
 
 Requiered skills: 
 * Experience with backcountry skiing
@@ -81,22 +83,40 @@ Requiered skills:
 * Open-minded
 * Willing to work in a team 
 
+Contact [Skitourenguru](https://www.skitourenguru.com) under **about** if you want to collaborate.
+
 ## 6. Slovenia (Region=8)
+**Help needed**
+Skitourenguru is looking for a person willing to digitalize ski routes in Slovenia. The work can be partly paid.
+
+Requiered skills: 
+* Experience with backcountry skiing
+* Practical knowledge about backcountry areas in Slovenia
+* Cartographic knowledge
+* Understanding of avalanche terrain
+* Affinity to Slovenia
+* If possible experience with qGis
+* Open-minded
+* Willing to work in a team 
+
 Contact [Skitourenguru](https://www.skitourenguru.com) under **about** if you want to collaborate.
 
 # C: Derived data
 Skitourenguru processes weekly (Monday 1:00h) the raw data contained in this repository and builds a [SQLite / Spatialite RDBMS](https://gdal.org/en/stable/drivers/vector/sqlite.html) file containing a **collection of routes covering the whole Alps**. The automatic process performs the following steps:
-1. Where needed (France) the routes are smoothed.
+1. Where needed (France) the routes are smoothed: (Chaiken: 3 Interations, Threashold 5 m).
+2. Simplification (Douglas: Theashold: 1 m).
 2. The network is converted to a **route collection**.
 3. The routes are reprojected to the EPSG 3035.
-4. The names (start and stop) are simplified where needed (Switzerland).
-5. Route identifiers are made unique by adding a region code at the end of the id. The region codes are documented in chapter B.
-6. The regions are merged.
-7. The routes are filtered by **length**, **target** end **type** (Skitour = 1).
-8. Attributes are added (**lit**: A hint about literature, in particular the editor Panico, **wildlife**: Distance to next nature protection area, **pop**: A popularity indicator, **adiff**: A difficulty grade automatically derived from terrain properties, **sri**: Standard rating indicators about the avalanche risk for 10 typical avalanche bulletins). If you need to know more abouzt these attributes, click on a route on [https://www.skitourenguru.com](https://www.skitourenguru.com).
-9. The route collection is verified.
-10. The vector file is converted into two raster formats.
-11. Finally the results are "published" on the Internet:
+4. Geospatial filter
+5. The names (start and stop) are simplified where needed (Switzerland).
+6. Route identifiers are made unique by adding a region code at the end of the id. The region codes are documented in chapter B.
+7. The regions are merged.
+8. The routes are filtered by **length**, **target** end **type** (Skitour = 1).
+9. Attributes are added (**lit**: A hint about literature, in particular the editor Panico, **wildlife**: Distance to next nature protection area, **pop**: A popularity indicator, **adiff**: A difficulty grade automatically derived from terrain properties, **sri**: Standard rating indicators about the avalanche risk for 10 typical avalanche bulletins). If you need to know more about these attributes, click on a route on [https://www.skitourenguru.com](https://www.skitourenguru.com).
+10. The route collection is verified.
+11. [Corridors](https://info.skitourenguru.ch/index.php/corridors) are created
+12. The vector file is converted into two raster formats
+13. Finally the results are "published" on the Internet:
 
 [Alps as Vector](https://download.skitourenguru.com/routes/Alps.sqlite) in the [SQLite / Spatialite RDBMS](https://gdal.org/en/stable/drivers/vector/sqlite.html) format.
 
@@ -105,7 +125,7 @@ Skitourenguru processes weekly (Monday 1:00h) the raw data contained in this rep
 [Alps as Raster](https://download.skitourenguru.com/routes/AP_SG_RT.mbtiles) in the  [MapBox-Tiles](https://github.com/mapbox/mbtiles-spec) format.
 
 **License**: 
-The usage of this data is limited by the licenses documented in chapter B. The usage of this data for **private non-commercial purposes is allowed**. **All other usage is prohibited**. In particular its not allowed to create derivates of the data (see ND in chapter B). Be aware, that this dataset not only contains data from the sources described in chapter B, but also additional attributes generated by Skiturenguru. If you want to use this data in a commercial context or re-publish them, contact Skitourenguru (see chapter G).
+The usage of this data is limited by the licenses documented in chapter B. Otherwise, the following applies: The usage of this data for **private non-commercial purposes is allowed**. **All other usage is prohibited**. In particular its not allowed to create derivates of the data (see ND in chapter B). Be aware, that this dataset not only contains data from the sources described in chapter B, but also additional attributes generated by Skiturenguru. If you want to use this data in a commercial context or re-publish them, contact Skitourenguru (see chapter G).
 
 # D: Disclaimer
 While we strive to provide accurate and up-to-date information, we cannot guarantee the completeness or correctness of the data presented. The data issuers assume no guarantee and therefore no liability for the accuracy of the data in this repository.
@@ -126,7 +146,7 @@ In order to make sure the script works follow theses steps:
 4. Now you can use the scripts **ImportFromGithubToGpkg.bat** and **ExportFromGpkgToGithub.bat**. You can open them with a Text-Editor to see what they are doing.
 
 ## 3. [SAC Route Network Editor](https://github.com/andreglauser/sac-route-network-editor/)
-tbd
+to be written
 
 # F: Github
 
