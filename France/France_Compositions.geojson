@@ -4923,6 +4923,7 @@
 { "type": "Feature", "properties": { "id": 4942, "start": "La Mougie", "stop": "Passage de la Néou", "routes": null, "mdiff": 5, "importance": 2, "segments": "9170,9184,9185,9178", "massif": "Pyrénées", "updated_at": "2025-11-03T12:38:58.965Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4943, "start": "La Mougie", "stop": "Passage de la Néou", "routes": null, "mdiff": 5, "importance": 2, "segments": "9170,9184,9181,9174,9180,9179", "massif": "Pyrénées", "updated_at": "2025-11-03T12:38:59.013Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4944, "start": "La Mougie", "stop": "Col du Pic d'Espade", "routes": null, "mdiff": 7, "importance": 2, "segments": "9170,9183", "massif": "Pyrénées", "updated_at": "2025-11-03T12:43:33.899Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4945, "start": "La Mougie", "stop": "Col du Pic d'Espade", "routes": null, "mdiff": 7, "importance": 2, "segments": "9170,9184,9185,9182", "massif": "Pyrénées", "updated_at": "2025-11-03T12:44:48.714Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4945, "start": "La Mougie", "stop": "Col du Pic d'Espade", "routes": null, "mdiff": 7, "importance": 2, "segments": "9170,9184,9185,9182", "massif": "Pyrénées", "updated_at": "2025-11-03T12:44:48.714Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4946, "start": "La Mougie", "stop": "Pic du Tourmalet", "routes": null, "mdiff": 5, "importance": 2, "segments": "9186", "massif": "Pyrénées", "updated_at": "2025-11-03T12:49:24.794Z" }, "geometry": null }
 ]
 }
