@@ -4977,6 +4977,8 @@
 { "type": "Feature", "properties": { "id": 4996, "start": "Barrage d'Ossoue", "stop": "Petit Vignemale", "routes": null, "mdiff": 5, "importance": 2, "segments": "9272,9277,9278,9287,9285,9288,9280", "massif": "Pyrénées", "updated_at": "2025-11-12T13:06:35.010Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4997, "start": "Refuge Bayssellance", "stop": "Hourquette d'Ossoue", "routes": null, "mdiff": 5, "importance": 2, "segments": "9279,9288,9281", "massif": "Pyrénées", "updated_at": "2025-11-12T11:35:21.583Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4998, "start": "Refuge Bayssellance", "stop": "Petit Vignemale", "routes": null, "mdiff": 5, "importance": 2, "segments": "9279,9288,9280", "massif": "Pyrénées", "updated_at": "2025-11-12T11:35:27.567Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4999, "start": "Barrage d'Ossoue", "stop": "Pic de la Sède", "routes": null, "mdiff": 7, "importance": 2, "segments": "9272,9277,9278,9287,9283", "massif": "Pyrénées", "updated_at": "2025-11-12T13:06:35.248Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 4999, "start": "Barrage d'Ossoue", "stop": "Pic de la Sède", "routes": null, "mdiff": 7, "importance": 2, "segments": "9272,9277,9278,9287,9283", "massif": "Pyrénées", "updated_at": "2025-11-12T13:06:35.248Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 5000, "start": "Barrage d'Ossoue", "stop": null, "routes": null, "mdiff": null, "importance": 2, "segments": "", "massif": "Pyrénées", "updated_at": "2025-11-17T10:25:58.433Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 5001, "start": "Barrage d'Ossoue", "stop": null, "routes": null, "mdiff": null, "importance": 2, "segments": "", "massif": "Pyrénées", "updated_at": "2025-11-17T10:26:36.357Z" }, "geometry": null }
 ]
 }
