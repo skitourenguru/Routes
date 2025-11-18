@@ -4991,6 +4991,7 @@
 { "type": "Feature", "properties": { "id": 5010, "start": "Pont de l'Arpet", "stop": "Cabane de Camplong", "routes": null, "mdiff": 1, "importance": 2, "segments": "9305,9303", "massif": "Pyrénées", "updated_at": "2025-11-17T12:35:35.319Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 5011, "start": "Pont de l'Arpet", "stop": "Pic de Soum Couy", "routes": null, "mdiff": 4, "importance": 2, "segments": "9305,9304,9300", "massif": "Pyrénées", "updated_at": "2025-11-17T12:38:31.550Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 5012, "start": "Sanchèse", "stop": "Table des Trois Rois", "routes": null, "mdiff": 5, "importance": 2, "segments": "9307", "massif": "Pyrénées", "updated_at": "2025-11-17T12:40:37.982Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 5013, "start": "Pont Lamareich", "stop": "Grande Aiguille d'Ansabère", "routes": null, "mdiff": 5, "importance": 2, "segments": "9308", "massif": "Pyrénées", "updated_at": "2025-11-17T12:45:38.526Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 5013, "start": "Pont Lamareich", "stop": "Grande Aiguille d'Ansabère", "routes": null, "mdiff": 5, "importance": 2, "segments": "9308", "massif": "Pyrénées", "updated_at": "2025-11-17T12:45:38.526Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 5014, "start": "Aumet", "stop": "Pic de Labigouer", "routes": null, "mdiff": 3, "importance": 2, "segments": "9309", "massif": "Pyrénées", "updated_at": "2025-11-18T11:13:39.288Z" }, "geometry": null }
 ]
 }
