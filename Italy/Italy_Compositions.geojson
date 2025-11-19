@@ -853,7 +853,7 @@
 { "type": "Feature", "properties": { "id": 1178, "segments": "310,1834", "start": "Colombata", "stop": "Monte Ruissas", "adiff": 4, "sdd": 10.0, "wildlife": 0, "sri": "0.48,0.48,0.49,0.87,0.94,0.96,1.34,1.57,1.91,2.35" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1179, "segments": "311,1818,1821", "start": "Saretto", "stop": "Cima delle Manse", "adiff": 4, "sdd": 40.0, "wildlife": 0, "sri": "0.78,1.02,1.25,1.46,1.75,2.03,2.24,2.26,2.93,3.00" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1180, "segments": "1014,1809,1447,1546,1547,1814,1817,1816", "start": "Chialvetta", "stop": "Monte Vanclava", "adiff": 6, "sdd": 50.0, "wildlife": 0, "sri": "0.96,1.01,1.22,1.68,1.75,1.99,2.47,2.48,3.00,3.00" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 1181, "segments": "312", "start": "Chianale", "stop": "Colle dell'Agnello", "adiff": 5, "sdd": 10.0, "wildlife": 0, "sri": "1.02,1.02,1.17,1.75,1.76,1.93,2.54,2.56,3.00,3.00" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 1181, "segments": "312,1879,1882", "start": "Chianale", "stop": "Colle dell'Agnello", "adiff": 5, "sdd": 10.0, "wildlife": 0, "sri": "1.02,1.02,1.17,1.75,1.76,1.93,2.54,2.56,3.00,3.00" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1182, "segments": "1029,1030", "start": "Villanova", "stop": "Praroussin", "adiff": 8, "sdd": 80.0, "wildlife": 0, "sri": "1.19,1.24,1.48,1.84,2.02,2.29,2.55,2.63,3.00,3.00" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1183, "segments": "1032,1033", "start": "Pian del Re", "stop": "Colle Armoine", "adiff": 5, "sdd": 100.0, "wildlife": 0, "sri": "0.53,0.54,0.65,1.05,1.07,1.26,1.79,1.79,2.55,2.56" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1184, "segments": "313", "start": "Pian Melze", "stop": "Punta Sea Bianca", "adiff": 5, "sdd": 10.0, "wildlife": 0, "sri": "0.72,0.72,0.74,1.37,1.38,1.39,2.12,2.17,2.72,2.93" }, "geometry": null },
@@ -878,7 +878,7 @@
 { "type": "Feature", "properties": { "id": 1204, "segments": "1114,1116,1452,1832,1453", "start": "Chiappera", "stop": "Pointe du Vallenet", "adiff": 5, "sdd": 40.0, "wildlife": 0, "sri": "0.84,1.06,1.17,1.52,1.80,1.93,2.29,2.33,2.95,3.00" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1205, "segments": "1114,1116,1452,1832,1454", "start": "Chiappera", "stop": "Monte Bellino", "adiff": 5, "sdd": 10.0, "wildlife": 0, "sri": "0.86,0.86,1.01,1.55,1.57,1.74,2.30,2.35,2.96,3.00" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1206, "segments": "1108,1110,1458,1459", "start": "Castello", "stop": "Passo di Vallanta", "adiff": 5, "sdd": 10.0, "wildlife": 13, "sri": "1.27,1.27,1.33,2.05,2.06,2.14,2.81,2.84,3.00,3.00" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 1207, "segments": "1108,1110,1041", "start": "Castello", "stop": "Monte Losetta", "adiff": 6, "sdd": 80.0, "wildlife": -1, "sri": "1.13,1.13,1.20,1.88,1.90,1.98,2.64,2.68,3.00,3.00" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 1207, "segments": "1108,1110,1041,1880", "start": "Castello", "stop": "Monte Losetta", "adiff": 6, "sdd": 80.0, "wildlife": -1, "sri": "1.13,1.13,1.20,1.88,1.90,1.98,2.64,2.68,3.00,3.00" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1208, "segments": "1042,1043", "start": "Indtritti", "stop": "Punta Gardetta", "adiff": 4, "sdd": 10.0, "wildlife": 0, "sri": "0.50,0.50,0.57,1.00,1.00,1.13,1.72,1.73,2.48,2.50" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1209, "segments": "1029,1031,1000", "start": "Villanova", "stop": "Colle Selliere", "adiff": 5, "sdd": 10.0, "wildlife": 15, "sri": "1.08,1.27,1.43,1.67,2.05,2.23,2.37,2.48,3.00,3.00" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1210, "segments": "322", "start": "Meire Durandini", "stop": "Punta Ostanetta", "adiff": 1, "sdd": 140.0, "wildlife": 0, "sri": "0.10,0.11,0.17,0.32,0.33,0.39,0.61,0.63,1.14,1.23" }, "geometry": null },
@@ -1229,6 +1229,8 @@
 { "type": "Feature", "properties": { "id": 1577, "segments": "1025,1026,1874,1875,1877", "start": "Rifugio Melezè", "stop": "Monte Salza", "adiff": null, "sdd": null, "wildlife": null, "sri": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1578, "segments": "1025,1026,1874,1875,1876,1872", "start": "Rifugio Melezè", "stop": "Punta di Fiutrusa", "adiff": null, "sdd": null, "wildlife": null, "sri": null }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1579, "segments": "1869,1871,1872", "start": "Rifugio Melezè", "stop": "Punta di Fiutrusa", "adiff": null, "sdd": null, "wildlife": null, "sri": null }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 1580, "segments": "1869,1870", "start": "Punta di Fiutrusa", "stop": "Monte Ferra", "adiff": null, "sdd": null, "wildlife": null, "sri": null }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 1580, "segments": "1869,1870", "start": "Punta di Fiutrusa", "stop": "Monte Ferra", "adiff": null, "sdd": null, "wildlife": null, "sri": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 1581, "segments": "312,1881,1880", "start": "Chianale", "stop": "Monte Losetta", "adiff": null, "sdd": null, "wildlife": null, "sri": null }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 1582, "segments": "312,1879,1883", "start": "Chianale", "stop": "Sella d'Asti", "adiff": null, "sdd": null, "wildlife": null, "sri": null }, "geometry": null }
 ]
 }
