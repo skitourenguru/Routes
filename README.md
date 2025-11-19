@@ -145,6 +145,14 @@ In order to make sure the script works follow theses steps:
 3. In **Environment.bat** you must set your [GDAL](https://gdal.org/) path. As GDAL is contained in qGis, its the easiest solution just to adapt the qgis version number.
 4. Now you can use the scripts **ImportFromGithubToGpkg.bat** and **ExportFromGpkgToGithub.bat**. You can open them with a Text-Editor to see what they are doing.
 
+Principally the **Compositions** layer has no geometry. However the plugin can also create geometries from the **Segments** and handle them during editing. That means whenever you change the geometry of a segment, all Compositions that use this geometry will update their geometry.
+1. Open the Plugin and click on **Create Geometries**: This will create an in-memory layer. In the next steps we will substitute the layer **Compositions** of the **GPKG** with the newly created in-memory layer.
+2. Right-Click on the in-memory Layer and click on **Make Permanent**.
+3. Choose Format **GPKG**, the file **MyRegion_Network.gpkg** and the **Layer Composition**.
+4. When you click on **OK** you will get asked about the desired overwriting behaviour. Choose **Overwrite Layer**.
+5. You can now remove the old layer **MyRegion_Network - Composition** from the project by right clicking on it and **Remove Layer**.
+6. Start the plugin after having made sure that configuration is correct.
+
 ## 3. [SAC Route Network Editor](https://github.com/andreglauser/sac-route-network-editor/)
 to be written
 
