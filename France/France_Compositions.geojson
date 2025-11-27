@@ -3891,7 +3891,7 @@
 { "type": "Feature", "properties": { "id": 3946, "start": "Bessans", "stop": "Pointe Sud du Grand Fond", "routes": null, "mdiff": 7, "segments": "7451,7452" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3947, "start": "Bessans", "stop": "Rochemelon", "routes": null, "mdiff": 9, "segments": "7451,7453" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3948, "start": "Lanslevillard", "stop": "Pointe de Ronce", "routes": null, "mdiff": 7, "segments": "7454" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3949, "start": "Casserousse", "stop": "Grand Van", "routes": null, "mdiff": 7, "segments": "1171,1173,1172,1178,1169,7457" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 3949, "start": "Casserousse", "stop": "Grand Van", "routes": null, "mdiff": 7, "segments": "1171,1173,1172,1178,1169,7457,7458" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3950, "start": "Casserousse", "stop": "Petit Van", "routes": null, "mdiff": 5, "segments": "1171,1173,1172,1178,1168,1170,1361,1165" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3951, "start": "Pré Marcel", "stop": "Le Grand Replomb", "routes": null, "mdiff": 8, "segments": "1257,1260,1364,1266,7461,7462" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3952, "start": "Sainte-Catherine", "stop": "Tête de Paneyron", "routes": null, "mdiff": 5, "segments": "5519,5520,5526,5536,7464,7466,7467" }, "geometry": null },
