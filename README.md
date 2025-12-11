@@ -264,7 +264,7 @@ git rev-parse HEAD
 git rev-parse --short HEAD
 
 // See history
-git log -n 3
+git --no-pager log -n 100 --pretty=format:"%h %ad %s" --date=iso
 
 // List last 10 commit statements of a particular file
 git log --pretty=oneline -10 src/locale/it.ts
