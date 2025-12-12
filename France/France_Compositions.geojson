@@ -5107,6 +5107,9 @@
 { "type": "Feature", "properties": { "id": 5131, "start": "Station de Ski du Haut Asco", "stop": "Bocca Tumasginesca ou Col Perdu", "routes": null, "mdiff": 5, "importance": 2, "segments": "9497,9498", "massif": "Corse", "updated_at": "2025-12-11T16:25:35.949Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 5132, "start": "Le Fer à Cheval", "stop": "Col des Maures", "routes": null, "mdiff": 4, "importance": 2, "segments": "9500,9502,9504", "massif": "Corse", "updated_at": "2025-12-11T16:31:24.300Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 5133, "start": "Le Fer à Cheval", "stop": "Punta di Tula", "routes": null, "mdiff": 3, "importance": 2, "segments": "9500,9501", "massif": "Corse", "updated_at": "2025-12-11T16:32:14.833Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 5134, "start": "Le Fer à Cheval", "stop": "Capu a e Ghiarghiole", "routes": null, "mdiff": 4, "importance": 2, "segments": "9500,9502,9503", "massif": "Corse", "updated_at": "2025-12-11T16:34:02.548Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 5134, "start": "Le Fer à Cheval", "stop": "Capu a e Ghiarghiole", "routes": null, "mdiff": 4, "importance": 2, "segments": "9500,9502,9503", "massif": "Corse", "updated_at": "2025-12-11T16:34:02.548Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 5135, "start": "Super Lioran", "stop": "Plomb du Cantal", "routes": null, "mdiff": 1, "importance": 2, "segments": "9507,9505", "massif": "Massif Central", "updated_at": "2025-12-12T10:47:34.700Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 5136, "start": "Prat de Bouc", "stop": "Plomb du Cantal", "routes": null, "mdiff": 1, "importance": 2, "segments": "9506,9505", "massif": "Massif Central", "updated_at": "2025-12-12T10:49:01.004Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 5137, "start": "Le Lioran", "stop": "Puy de Peyre Arse", "routes": null, "mdiff": 7, "importance": 2, "segments": "9508", "massif": "Massif Central", "updated_at": "2025-12-12T10:53:22.101Z" }, "geometry": null }
 ]
 }
