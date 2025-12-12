@@ -5135,6 +5135,9 @@
 { "type": "Feature", "properties": { "id": 5159, "start": "Le Tiocan", "stop": "Le Reculet", "routes": null, "mdiff": 4, "importance": 2, "segments": "9537", "massif": "Jura", "updated_at": "2025-12-12T12:10:28.915Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 5160, "start": "Lélex", "stop": "Grand Crêt", "routes": null, "mdiff": null, "importance": 2, "segments": "9538", "massif": "Jura", "updated_at": "2025-12-12T12:10:17.088Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 5161, "start": "La Pécharde", "stop": "Colomby de Gex", "routes": null, "mdiff": 3, "importance": 2, "segments": "9539", "massif": "Jura", "updated_at": "2025-12-12T12:13:27.719Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 5162, "start": "Col de la Faucille", "stop": "Montrond", "routes": null, "mdiff": 1, "importance": 2, "segments": "9540", "massif": "Jura", "updated_at": "2025-12-12T12:17:21.993Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 5162, "start": "Col de la Faucille", "stop": "Montrond", "routes": null, "mdiff": 1, "importance": 2, "segments": "9540", "massif": "Jura", "updated_at": "2025-12-12T12:17:21.993Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 5163, "start": "L'Archette", "stop": "La Dôle", "routes": null, "mdiff": 3, "importance": 2, "segments": "9541,9543", "massif": "Jura", "updated_at": "2025-12-12T12:33:57.244Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 5164, "start": "L'Archette", "stop": "La Dôle", "routes": null, "mdiff": 5, "importance": 2, "segments": "9541,9542", "massif": "Jura", "updated_at": "2025-12-12T12:33:57.263Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 5165, "start": "Gais Loisirs", "stop": "Le Morond", "routes": null, "mdiff": 1, "importance": 2, "segments": "9544", "massif": "Jura", "updated_at": "2025-12-12T12:37:31.114Z" }, "geometry": null }
 ]
 }
