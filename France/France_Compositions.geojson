@@ -5131,6 +5131,10 @@
 { "type": "Feature", "properties": { "id": 5155, "start": "Le Mézenc", "stop": "Mont Mézenc", "routes": null, "mdiff": 1, "importance": 2, "segments": "9532,9535,9531", "massif": "Massif Central", "updated_at": "2025-12-12T11:49:42.440Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 5156, "start": "Les Infruits", "stop": "Mont d'Alambre", "routes": null, "mdiff": 2, "importance": 2, "segments": "9533", "massif": "Massif Central", "updated_at": "2025-12-12T11:51:11.185Z" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 5157, "start": "La Charra", "stop": "Mont Mézenc", "routes": null, "mdiff": 3, "importance": 2, "segments": "9534,9531", "massif": "Massif Central", "updated_at": "2025-12-12T11:53:08.130Z" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 5158, "start": "Les Estables", "stop": "Chaulet", "routes": null, "mdiff": 2, "importance": 2, "segments": "9536", "massif": "Massif Central", "updated_at": "2025-12-12T11:54:55.064Z" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 5158, "start": "Les Estables", "stop": "Chaulet", "routes": null, "mdiff": 2, "importance": 2, "segments": "9536", "massif": "Massif Central", "updated_at": "2025-12-12T11:54:55.064Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 5159, "start": "Le Tiocan", "stop": "Le Reculet", "routes": null, "mdiff": 4, "importance": 2, "segments": "9537", "massif": "Jura", "updated_at": "2025-12-12T12:10:28.915Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 5160, "start": "Lélex", "stop": "Grand Crêt", "routes": null, "mdiff": null, "importance": 2, "segments": "9538", "massif": "Jura", "updated_at": "2025-12-12T12:10:17.088Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 5161, "start": "La Pécharde", "stop": "Colomby de Gex", "routes": null, "mdiff": 3, "importance": 2, "segments": "9539", "massif": "Jura", "updated_at": "2025-12-12T12:13:27.719Z" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 5162, "start": "Col de la Faucille", "stop": "Montrond", "routes": null, "mdiff": 1, "importance": 2, "segments": "9540", "massif": "Jura", "updated_at": "2025-12-12T12:17:21.993Z" }, "geometry": null }
 ]
 }
