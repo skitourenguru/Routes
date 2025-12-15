@@ -826,13 +826,13 @@
 { "type": "Feature", "properties": { "id": 832, "start": "Freydières", "stop": "Pic du Loup", "routes": null, "mdiff": 6, "segments": "1210,1213,1221,1241,1246,1245" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 833, "start": "Freydières", "stop": "Col des Lances", "routes": null, "mdiff": 6, "segments": "1210,1213,1221,1241,1244,1240" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 834, "start": "La Souille", "stop": "Mont Saint-Mury", "routes": null, "mdiff": 1, "segments": "1310" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 835, "start": "La Gorge", "stop": "Col de Roche Noire", "routes": null, "mdiff": 8, "segments": "1243,1252,1247,1249" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 836, "start": "La Gorge", "stop": "Col du Rocher de l'Homme", "routes": null, "mdiff": 8, "segments": "1243,1252,1247,1250" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 837, "start": "La Gorge", "stop": "Col de Freydanne", "routes": null, "mdiff": 7, "segments": "1243,1252,1248,1258" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 838, "start": "La Gorge", "stop": "Col des Lances", "routes": null, "mdiff": 7, "segments": "1243,1254,1253" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 839, "start": "La Gorge", "stop": "Col de la Balmette", "routes": null, "mdiff": 7, "segments": "1243,1252,1248,1251" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 843, "start": "Près Marcel", "stop": "Orionde", "routes": null, "mdiff": 1, "segments": "1257,1260,1364" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 844, "start": "Près Marcel", "stop": "Le Grand Replomb", "routes": null, "mdiff": 8, "segments": "1257,1260,1364,1266,7460" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 835, "start": "Le Chenevrey", "stop": "Col de Roche Noire", "routes": null, "mdiff": 8, "segments": "1243,1252,1247,1249" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 836, "start": "Le Chenevrey", "stop": "Col du Rocher de l'Homme", "routes": null, "mdiff": 8, "segments": "1243,1252,1247,1250" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 837, "start": "Le Chenevrey", "stop": "Col de Freydanne", "routes": null, "mdiff": 7, "segments": "1243,1252,1248,1258" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 838, "start": "Le Chenevrey", "stop": "Col des Lances", "routes": null, "mdiff": 7, "segments": "1243,1254,1253" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 839, "start": "Le Chenevrey", "stop": "Col de la Balmette", "routes": null, "mdiff": 7, "segments": "1243,1252,1248,1251" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 843, "start": "Prè Marcel", "stop": "Orionde", "routes": null, "mdiff": 1, "segments": "1257,1260,1364" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 844, "start": "Prè Marcel", "stop": "Le Grand Replomb", "routes": null, "mdiff": 8, "segments": "1257,1260,1364,1266,7460" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 845, "start": "Prabert", "stop": "Orionde", "routes": null, "mdiff": 1, "segments": "1265,1280,1263,1364" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 846, "start": "Prabert", "stop": "Col de la Mine de Fer", "routes": null, "mdiff": 7, "segments": "1265,1280,1264,1276,1268,1289" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 847, "start": "Prabert", "stop": "Brèche de Roche Fendue", "routes": null, "mdiff": 7, "segments": "1265,1280,1264,1276,1268,1316,1284,1290,1057" }, "geometry": null },
@@ -4571,6 +4571,7 @@
 { "type": "Feature", "properties": { "id": 4643, "start": "Les Mesches", "stop": "Pointe de la Corne de Bouc", "routes": null, "mdiff": 4, "segments": "8662,8668,8667,8663" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4644, "start": "La Madone de Fenestre", "stop": "Pas des Ladres", "routes": null, "mdiff": 3, "segments": "8624,8621,8622" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4653, "start": "Granges du Terras", "stop": "Cime de Pagari de Salèse", "routes": null, "mdiff": 8, "segments": "8540,8695,8551" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 5051, "start": "Le Collet", "stop": "La Grand Roche", "routes": null, "mdiff": 6, "segments": "9373" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 5051, "start": "Le Collet", "stop": "La Grand Roche", "routes": null, "mdiff": 6, "segments": "9373" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 5128, "start": "Gleysin", "stop": "Le Charmet de l'Aiguille", "routes": null, "mdiff": 6, "segments": "1119,1125,1123,1134,1126,1390,1131,1130,1030,1132,9492,9495,9491" }, "geometry": null }
 ]
 }
