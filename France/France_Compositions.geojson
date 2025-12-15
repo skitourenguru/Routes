@@ -4572,6 +4572,8 @@
 { "type": "Feature", "properties": { "id": 4644, "start": "La Madone de Fenestre", "stop": "Pas des Ladres", "routes": null, "mdiff": 3, "segments": "8624,8621,8622" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4653, "start": "Granges du Terras", "stop": "Cime de Pagari de Salèse", "routes": null, "mdiff": 8, "segments": "8540,8695,8551" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 5051, "start": "Le Collet", "stop": "La Grand Roche", "routes": null, "mdiff": 6, "segments": "9373" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 5128, "start": "Gleysin", "stop": "Le Charmet de l'Aiguille", "routes": null, "mdiff": 6, "segments": "1119,1125,1123,1134,1126,1390,1131,1130,1030,1132,9492,9495,9491" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 5128, "start": "Gleysin", "stop": "Le Charmet de l'Aiguille", "routes": null, "mdiff": 6, "segments": "1119,1125,1123,1134,1126,1390,1131,1130,1030,1132,9492,9495,9491" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 5179, "start": "Aiguille du Midi", "stop": "Chamonix", "routes": null, "mdiff": 6, "segments": "9566,9564,6733,6728,6730,6846,6727,6721,6725" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 5180, "start": "Aiguille du Midi", "stop": "Gare de Montenvers", "routes": null, "mdiff": 6, "segments": "9566,9564,6733,6728,6730,6846,6727,6721,6726" }, "geometry": null }
 ]
 }
