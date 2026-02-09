@@ -137,14 +137,24 @@ In order to edit ski routes within a network topology, two tools were developped
 2. [SAC Route Network Editor](https://github.com/andreglauser/sac-route-network-editor/): A SQL based method to edit routes within a network topology.
 
 ## 2. [Routes Composer](https://github.com/UlysselaGlisse/RoutesComposer)
-In the folder [Batch](https://github.com/skitourenguru/Routes/tree/main/Scripts/Batch) you find an import and an export script. They can be used to convert the **geojson files** to a **geopackage network** that can be edited by the [Routes Composer](https://github.com/UlysselaGlisse/RoutesComposer).
+In the folder [Batch](https://github.com/skitourenguru/Routes/tree/main/Scripts/Batch) or [Bash](https://github.com/skitourenguru/Routes/tree/main/Scripts/Bash) you find an import and an export script. They can be used to convert the **geojson files** to a **geopackage network** that can be edited by the [Routes Composer](https://github.com/UlysselaGlisse/RoutesComposer).
 
+### Windows (Batch)
 In order to make sure the script works follow theses steps:
 1. Copy the script to an other directory anywhere on your harddisk (Reason: You don't want to change the files in the repository).
 2. In **Settings.bat** choose your **working directories** and the **dataset** you want to work with.
 3. In **Environment.bat** you must set your [GDAL](https://gdal.org/) path. As GDAL is contained in qGis, its the easiest solution just to adapt the qgis version number.
 4. Now you can use the scripts **ImportFromGithubToGpkg.bat** and **ExportFromGpkgToGithub.bat**. You can open them with a Text-Editor to see what they are doing.
 5. Make sure that **Segments** and **Compositions** auto-set their id: Open **Attributes Form**, click on id and enter under **Default** the **Default value**: **maximum(id)+1**.
+
+### Linux/MacOs (Bash)
+1. Launch the script **ImportFromGithubToGpkg.sh** a first time, it will copy the settings file. Edit the **Settings.sh** file with the country name. 
+2. Launch the script again, it will create the corresponding gpkg file inside the country folder. You normally don't need to run it again - but if for some reason you lose the gpkg files, run again the script **ImportFromGithubToGpkg.sh**. 
+3. Add the layers to the project.
+4. Make sure that **Segments** and **Compositions** auto-set their id: Open **Attributes Form**, click on id and enter under **Default** the **Default value**: **maximum(id)+1**.
+5. Make some changes, and before committing your work, run the script **ExportFromGpkgToGithub.sh**. Commit and push.
+
+***
 
 Principally the **Compositions** layer has no geometry. However the plugin can also create geometries from the **Segments** and handle them during editing. That means whenever you change the geometry of a segment, all Compositions that use this geometry will update their geometry.
 1. Open the Plugin and click on **Create Geometries**: This will create an in-memory layer. In the next steps we will substitute the layer **Compositions** of the **GPKG** with the newly created in-memory layer.
@@ -308,4 +318,3 @@ If you want to notify an error or a remark about the routes data described in ch
 6. Slovenia: tbd
 
 For all other questions, contact [Skitourenguru](https://www.skitourenguru.com) under **about**.
-
