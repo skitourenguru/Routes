@@ -1335,7 +1335,7 @@
 { "type": "Feature", "properties": { "id": 1347, "start": "La Villette", "stop": "Col des Encombres", "routes": null, "mdiff": 0, "segments": "1563,1820,1813,1534,1547" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1348, "start": "Beaune", "stop": "Col de la Vallée Étroite", "routes": null, "mdiff": 0, "segments": "1557,1559,1558" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1349, "start": "Beaune", "stop": "Mont Bréquin", "routes": null, "mdiff": 0, "segments": "1557,1559,1560" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 1350, "start": "Beaune", "stop": "Mont du Chat", "routes": null, "mdiff": 0, "segments": "1559,1578" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 1350, "start": "Beaune", "stop": "Mont du Chat", "routes": null, "mdiff": 0, "segments": "1557,1578" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1351, "start": "Beau Mollard", "stop": "Les Frettes", "routes": null, "mdiff": 0, "segments": "1523,1527,2371" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1352, "start": "Beau Mollard", "stop": "La Grande Muraille", "routes": null, "mdiff": 0, "segments": "1523,1525" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 1353, "start": "Champagny le Haut", "stop": "Col du Tougne ", "routes": null, "mdiff": 5, "segments": "2002,7749,2207,2006,2038" }, "geometry": null },
