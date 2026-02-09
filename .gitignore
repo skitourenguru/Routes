@@ -1,6 +1,8 @@
 *~
 *.qmd
 *.gpkg
+*.gpkg-shm
+*.gpkg-wal
 Scripts/Bash/Settings.sh
 Routes.qgz
 *.qgz
