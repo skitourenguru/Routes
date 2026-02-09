@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"name": "compositions",
+"name": "Compositions",
 "features": [
 { "type": "Feature", "properties": { "id": 1, "start": "Le Châtelet", "stop": "Pointe des Jottis", "routes": null, "mdiff": 1, "segments": "1" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 2, "start": "Col de Jambaz", "stop": "Pointe des Jottis", "routes": null, "mdiff": 2, "segments": "2" }, "geometry": null },

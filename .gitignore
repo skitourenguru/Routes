@@ -1,2 +1,4 @@
 *~
 *.qmd
+*.gpkg
+Scripts/Bash/Settings.sh
