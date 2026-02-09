@@ -150,7 +150,7 @@ In order to make sure the script works follow theses steps:
 ### Linux/MacOs (Bash)
 1. Launch the script **ImportFromGithubToGpkg.sh** a first time, it will copy the settings file. Edit the **Settings.sh** file with the country name. 
 2. Launch the script again, it will create the corresponding gpkg file inside the country folder. You normally don't need to run it again - but if for some reason you lose the gpkg files, run again the script **ImportFromGithubToGpkg.sh**. 
-3. Add the layers to the project.
+3. Add the layers to the project - all the changes made on the gpkg files will be ignored..
 4. Make sure that **Segments** and **Compositions** auto-set their id: Open **Attributes Form**, click on id and enter under **Default** the **Default value**: **maximum(id)+1**.
 5. Make some changes, and before committing your work, run the script **ExportFromGpkgToGithub.sh**. Commit and push.
 
