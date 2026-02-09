@@ -159,7 +159,7 @@ In order to make sure the script works follow theses steps:
 Principally the **Compositions** layer has no geometry. However the plugin can also create geometries from the **Segments** and handle them during editing. That means whenever you change the geometry of a segment, all Compositions that use this geometry will update their geometry.
 1. Open the Plugin and click on **Create Geometries**: This will create an in-memory layer. In the next steps we will substitute the layer **Compositions** of the **GPKG** with the newly created in-memory layer.
 2. Right-Click on the in-memory Layer and click on **Make Permanent**.
-3. Choose Format **GPKG**, the file **MyRegion_Network.gpkg** and the **Layer Composition**.
+3. Choose Format **GPKG**, the file **MyRegion_Network.gpkg** and the **Layer Composition**. Be careful to name the layer **"Compositions"**.
 4. When you click on **OK** you will get asked about the desired overwriting behaviour. Choose **Overwrite Layer**.
 5. You can now remove the old layer **MyRegion_Network - Composition** from the project by right clicking on it and **Remove Layer**.
 6. Start the plugin after having made sure that configuration is correct.
@@ -171,7 +171,18 @@ Remarks:
 ## 3. [SAC Route Network Editor](https://github.com/andreglauser/sac-route-network-editor/)
 to be written
 
-# F: Github
+# F: QGIS
+## Project Template
+There is a template QGIS project available in the repository: *TEMPLATE_routes_project.qgz*
+
+**Don't open it directly !** This is a template.
+
+Make simply a copy (all the QGIS project files are ignored by git) and open it. You could now make all the changes you want.
+
+## Style
+You could find styles for the Segments and Compositions layers in [Styles](https://github.com/skitourenguru/Routes/tree/main/Styles). There was made for the french network, so they used smoothing style.
+
+# G: Github
 
 ## 1. Intro
 **Git** is a **version control software system** that is capable of managing versions of source code or data. It is often used to control source **code** or source **data** by participants who are developing the code or data collaboratively. Today, Git is the de facto standard version control system. 
@@ -308,7 +319,7 @@ npx eslint . --ext .js,.vue
 
 ```
 
-# G: Contact
+# H: Contact
 If you want to notify an error or a remark about the routes data described in chapter B, contact us depending on the region:
 1. France: randohiver@fondation-petzl.org
 2. Switzerland: andreas.eisenhut@sac-cas.ch

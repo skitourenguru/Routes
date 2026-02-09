@@ -3,3 +3,5 @@
 *.gpkg
 Scripts/Bash/Settings.sh
 Routes.qgz
+*.qgz
+!TEMPLATE_routes_project.qgz
