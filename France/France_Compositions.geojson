@@ -4110,7 +4110,7 @@
 { "type": "Feature", "properties": { "id": 4178, "start": "Le Monêtier-les-Bains", "stop": "L'Aguilliers", "routes": null, "mdiff": 4, "segments": "7886,7888,7891" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4179, "start": "Le Pont de l'Alpe", "stop": "Col de l'Aiguillette", "routes": null, "mdiff": 3, "segments": "7893,7896,7917,7898" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4180, "start": "Le Pont de l'Alpe", "stop": "Sommet du Chardonnet", "routes": null, "mdiff": 4, "segments": "7893,7896,7917,7898,7894" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4181, "start": "Le Pont de l'Alpe", "stop": "Sommet du Chardonnet", "routes": null, "mdiff": 6, "segments": "7893,7895" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4181, "start": "Le Pont de l'Alpe", "stop": "Sommet du Chardonnet", "routes": null, "mdiff": 6, "segments": "7893,9571,7895" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4182, "start": "Le Pont de l'Alpe", "stop": "Refuge du Clôt des Vaches", "routes": null, "mdiff": 1, "segments": "7893,7896,7917,7897,7900" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4183, "start": "Le Pont de l'Alpe", "stop": "Tête de la Cassille", "routes": null, "mdiff": 9, "segments": "7893,7896,7917,7897,7899,7901,7915,7908,7913,7904" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4184, "start": "Refuge du Clôt des Vaches", "stop": "Tête de la Cassille", "routes": null, "mdiff": 9, "segments": "7902,7901,7915,7908,7913,7904" }, "geometry": null },
@@ -4124,7 +4124,7 @@
 { "type": "Feature", "properties": { "id": 4192, "start": "Refuge du Clôt des Vaches", "stop": "Le Grand Galibier", "routes": null, "mdiff": 5, "segments": "7902,7901,7914,7916,7911,7866,7928,1877,7931,1906" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4193, "start": "Le Pont de l'Alpe", "stop": "Le Grand Galibier", "routes": null, "mdiff": 5, "segments": "7893,7896,7917,7897,7899,7901,7914,7916,7911,7866,7928,1877,7931,1906" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4194, "start": "Le Pont de l'Alpe", "stop": "Roche Robert", "routes": null, "mdiff": 2, "segments": "7893,7896,7918,7920" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4195, "start": "Le Pont de l'Alpe", "stop": "Roche Robert", "routes": null, "mdiff": 2, "segments": "7893,7896,7918,7919" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4195, "start": "Le Pont de l'Alpe", "stop": "Belvédère de la Guisane", "routes": null, "mdiff": 2, "segments": "7893,7896,7918,9573,7919" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4197, "start": "Le Tunnel des Vallois", "stop": "Tête de Colombe", "routes": null, "mdiff": 8, "segments": "7921,8417,7922" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4198, "start": "Le Tunnel du Rif Blanc", "stop": "Pointe de la Tête Noire", "routes": null, "mdiff": 4, "segments": "7924,7929,7930,7925" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4199, "start": "Le Tunnel du Rif Blanc", "stop": "Le Galibier", "routes": null, "mdiff": 11, "segments": "7924,7926,7928,1877,7931,1906" }, "geometry": null },
@@ -4574,6 +4574,8 @@
 { "type": "Feature", "properties": { "id": 5051, "start": "Le Collet", "stop": "La Grand Roche", "routes": null, "mdiff": 6, "segments": "9373" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 5128, "start": "Gleysin", "stop": "Le Charmet de l'Aiguille", "routes": null, "mdiff": 6, "segments": "1119,1125,1123,1134,1126,1390,1131,1130,1030,1132,9492,9495,9491" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 5179, "start": "Aiguille du Midi", "stop": "Chamonix", "routes": null, "mdiff": 6, "segments": "9566,9564,6733,6728,6730,6846,6727,6721,6725" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 5180, "start": "Aiguille du Midi", "stop": "Gare de Montenvers", "routes": null, "mdiff": 6, "segments": "9566,9564,6733,6728,6730,6846,6727,6721,6726" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 5180, "start": "Aiguille du Midi", "stop": "Gare de Montenvers", "routes": null, "mdiff": 6, "segments": "9566,9564,6733,6728,6730,6846,6727,6721,6726" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 5181, "start": "Le Pont de l'Alpe", "stop": "Col de l'Aiguillette", "routes": null, "mdiff": 5, "segments": "7893,9571,9570" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 5182, "start": "Le Pont de l'Alpe", "stop": "Roche Robert", "routes": null, "mdiff": 2, "segments": "7893,7896,7918,9573,9572" }, "geometry": null }
 ]
 }
