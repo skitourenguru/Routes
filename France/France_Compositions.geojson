@@ -3311,15 +3311,10 @@
 { "type": "Feature", "properties": { "id": 3352, "start": "Fours Saint-Laurent", "stop": "Le Grand Cheval de Bois", "routes": null, "mdiff": 9, "segments": "5226,5247,5246" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3353, "start": "Pont Font d'Arnaud", "stop": "Le Grand Cheval de Bois", "routes": null, "mdiff": 10, "segments": "5249" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3354, "start": "Col d'Allos", "stop": "Le Petit Cheval de Bois", "routes": null, "mdiff": 0, "segments": "5227" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3355, "start": "Col d'Allos", "stop": "Le Petit Cheval de Bois", "routes": null, "mdiff": 8, "segments": "5248" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3356, "start": "Pra-Loup", "stop": "Grande Séolane", "routes": null, "mdiff": 8, "segments": "5252,4982,5889" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3357, "start": "Pra-Loup", "stop": "Antécime Grande Séolane", "routes": null, "mdiff": 0, "segments": "5252,4982,5888" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3358, "start": "Pra-Loup", "stop": "Antécime Grande Séolane", "routes": null, "mdiff": 7, "segments": "5252,5253" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3359, "start": "Pra-Loup", "stop": "Terre Blanche", "routes": null, "mdiff": 8, "segments": "5252,4982,5889,5250,5070" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3360, "start": "Les Charbonnières", "stop": "Terre Blanche", "routes": null, "mdiff": 5, "segments": "5251,5245,5242,5238" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3361, "start": "Les Charbonnières", "stop": "Col de Terre Blanche", "routes": null, "mdiff": 5, "segments": "5251,5245,5242,5239" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3362, "start": "Les Charbonnières", "stop": "Séolane des Besses", "routes": null, "mdiff": 5, "segments": "5251,5245,5243" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 3363, "start": "Les Charbonnières", "stop": "La Riquista", "routes": null, "mdiff": 0, "segments": "5251,5245,5242,5238,5070,5073" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3364, "start": "Les Besses", "stop": "Petite Séolane", "routes": null, "mdiff": 6, "segments": "5067,5064,5068" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3365, "start": "Les Besses", "stop": "Le Pinet", "routes": null, "mdiff": 4, "segments": "5067,5058,5066" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 3366, "start": "Les Besses", "stop": "Roche Bénite", "routes": null, "mdiff": 5, "segments": "5067,5058,5066,5071,5061" }, "geometry": null },
@@ -4357,7 +4352,7 @@
 { "type": "Feature", "properties": { "id": 4427, "start": "La Bessée", "stop": "Tête des Ormans", "routes": null, "mdiff": 5, "segments": "8329,8326,8327" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4428, "start": "La Bessée", "stop": "Tête de Garnesier", "routes": null, "mdiff": 8, "segments": "8329,8328" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4430, "start": "Col de la Croix-Haute", "stop": "Le Jocou", "routes": null, "mdiff": 5, "segments": "8304,8331" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 4431, "start": "La Foux d'Allos", "stop": "Tête de l'Auriac", "routes": null, "mdiff": 5, "segments": "8333" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 4431, "start": "La Foux d'Allos", "stop": "Tête de l'Auriac", "routes": null, "mdiff": 5, "segments": "8333,9575" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4432, "start": "La Baumelle", "stop": "Sommet de Valdemars", "routes": null, "mdiff": 3, "segments": "8334,8343" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4433, "start": "Chasse", "stop": "Mourre de Simance", "routes": null, "mdiff": 5, "segments": "8340,8337,8336,8335" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 4434, "start": "Chasse", "stop": "Mourre de Simance", "routes": null, "mdiff": 3, "segments": "8340,8337,8338,8335" }, "geometry": null },
@@ -4576,6 +4571,7 @@
 { "type": "Feature", "properties": { "id": 5179, "start": "Aiguille du Midi", "stop": "Chamonix", "routes": null, "mdiff": 6, "segments": "9566,9564,6733,6728,6730,6846,6727,6721,6725" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 5180, "start": "Aiguille du Midi", "stop": "Gare de Montenvers", "routes": null, "mdiff": 6, "segments": "9566,9564,6733,6728,6730,6846,6727,6721,6726" }, "geometry": null },
 { "type": "Feature", "properties": { "id": 5181, "start": "Le Pont de l'Alpe", "stop": "Col de l'Aiguillette", "routes": null, "mdiff": 5, "segments": "7893,9571,9570" }, "geometry": null },
-{ "type": "Feature", "properties": { "id": 5182, "start": "Le Pont de l'Alpe", "stop": "Roche Robert", "routes": null, "mdiff": 2, "segments": "7893,7896,7918,9573,9572" }, "geometry": null }
+{ "type": "Feature", "properties": { "id": 5182, "start": "Le Pont de l'Alpe", "stop": "Roche Robert", "routes": null, "mdiff": 2, "segments": "7893,7896,7918,9573,9572" }, "geometry": null },
+{ "type": "Feature", "properties": { "id": 5183, "start": "La Foux d'Allos", "stop": "Baisse de l'Auriac ou Pas de l'Estrop", "routes": null, "mdiff": 2, "segments": "8333,9574" }, "geometry": null }
 ]
 }
