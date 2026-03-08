@@ -1,15 +1,15 @@
 # A: Introduction
 
-This repository holds a network topology about **backcountry ski routes of the Alps**. It serves as entry point of **ski route raw data** for Skitourenguru. 
+This repository holds a network topology about **backcountry ski routes of the Alps and the Pyrenees**. It serves as entry point of **ski route raw data** for Skitourenguru. 
 
-**Caution**: Please take not of the license conditions!
+**Caution**: The route datasets are still under construction. Datasets more or less covering the whole respective region are not to be expected before 2030.
 
 Each region consists of two [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) files:
 1. Segments: A collection of LineString features with a segment id.
 2. Compositions: A collection of routes with attributes and a list of segment id's.
 
 Goals:
-* Complete set of ski routes throughout the whole Alps.
+* Complete set of ski routes throughout the whole Alps and Pyrenees.
 * High quality standards.
 * Compliance with the requirements of nature conservation.
 * OpenData (Medium Term Goal)
@@ -130,7 +130,7 @@ Requiered skills:
 Contact [Skitourenguru](https://www.skitourenguru.com) under **about** if you want to collaborate.
 
 # C: Derived data
-Skitourenguru processes weekly (Monday 1:00h) the raw data contained in this repository and builds a [SQLite / Spatialite RDBMS](https://gdal.org/en/stable/drivers/vector/sqlite.html) file containing a **collection of routes covering the whole Alps**. The automatic process performs the following steps:
+Skitourenguru processes twice a year (~ 1. December) and (~ 1. March) the raw data contained in this repository and builds a [SQLite / Spatialite RDBMS](https://gdal.org/en/stable/drivers/vector/sqlite.html) file containing a **collection of routes covering the whole Alps**. The automatic process performs the following steps:
 1. Where needed (France) the routes are smoothed: (Chaiken: 3 Interations, Threashold 5 m).
 2. Simplification (Douglas: Theashold: 1 m).
 2. The network is converted to a **route collection**.
