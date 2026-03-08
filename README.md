@@ -23,6 +23,8 @@ Remarks:
 # B: Regions
 
 ## 1. Switzerland (RegionCode=1)
+Holds raw ski routes of Switzerland and Lichtensteig.
+
 **Format**: [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) in EPSG=21781.
 
 **Issuer**: All data of this folder were derived from the [Ski-Routes](https://www.geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/33090bf2-e8e5-4776-9f64-00d7a6170808), published by [Swisstopo](https://www.swisstopo.ch) in cooperation with the [Swiss Alpine Club](https://www.sac-cas.ch).
@@ -34,6 +36,8 @@ Remarks:
 **Remark**: EPSG will eventually be changed from 21781 to 2056.
 
 ## 2. Austria (RegionCode=2)
+Holds raw ski routes of Austria.
+
 **Format**: [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) in EPSG=31287.
 
 **Issuer**: [Österreichischer Alpenverein](https://www.alpenverein.at).
@@ -44,6 +48,8 @@ Remarks:
 - Holds also South Tyrol (This is not a political statement!)
 
 ## 3. France (RegionCode=3)
+Holds raw ski routes of the Alps of France.
+
 **Format**: [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) in EPSG=2154.
 
 **Issuer**: All data of this folder are created and maintained by the [Petzl Foundation](https://www.petzl.com) in cooperation with the [Skitourenguru GmbH](https://www.skitourenguru.com).
@@ -56,6 +62,8 @@ Remarks:
 **Smoothed Data**: The folder [Derived Ski routes](https://download.skitourenguru.com/public) holds a smoothed version of the data (collection and network).
 
 ## 4. Pyrenees (RegionCode=9)
+Holds raw ski routes of the Pyrenees (France, Spain, Andorra).
+
 **Format**: [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) in EPSG=2154.
 
 **Issuer**: All data of this folder are created and maintained by the [Petzl Foundation](https://www.petzl.com) in cooperation with the [Skitourenguru GmbH](https://www.skitourenguru.com).
@@ -68,6 +76,8 @@ Remarks:
 **Smoothed Data**: The folder [Derived Ski routes](https://download.skitourenguru.com/public) holds a smoothed version of the data (collection and network).
 
 ## 5. Italy (RegionCode=6)
+Holds raw ski routes of Italy.
+
 **Format**: [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) in EPSG=32632.
 
 **Issuer**: [Skitourenguru GmbH](https://www.skitourenguru.com).
@@ -93,6 +103,8 @@ Requiered skills:
 Contact [Skitourenguru](https://www.skitourenguru.com) under **about** if you want to collaborate.
 
 ## 6. Germany (RegionCode=7)
+Holds raw ski routes of Germany (Bavaria).
+
 **Format**: [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) in EPSG=31468.
 
 **Issuer**:  [Deutcher Alpenverein](https://www.alpenverein.de/).
@@ -100,6 +112,8 @@ Contact [Skitourenguru](https://www.skitourenguru.com) under **about** if you wa
 **License**: Private license till 14. October 2026. From 15. October 2026 on published under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
 
 ## 7. Slovenia (RegionCode=8)
+Holds raw ski routes of Slovenia.
+
 **Help needed**
 Skitourenguru is looking for a person willing to digitalize ski routes in Slovenia. The work can be partly paid.
 
