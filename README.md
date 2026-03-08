@@ -2,7 +2,7 @@
 
 This repository holds a network topology about **backcountry ski routes of the Alps**. It serves as entry point of **ski route raw data** for Skitourenguru. 
 
-**Caution**: Please be aware that this repository is under construction. It will be fully functional from the Spring 2026 on!
+**Caution**: Please take not of the license conditions!
 
 Each region consists of two [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) files:
 1. Segments: A collection of LineString features with a segment id.
@@ -53,8 +53,7 @@ Remarks:
 
 **Caution**: The geometry of this data is highly abstracted, don't use it without the requiered smoothing. The [qGis smooth function](https://docs.qgis.org/3.40/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html#smooth) must be applied (ITERATIONS=4, OFFSET=0.25, MAX_ANGLE=180). 
 
-**Smoothed Data**
-The folder [Derived Ski routes](https://download.skitourenguru.com/public) holds a smoothed version of the data (collection and network).
+**Smoothed Data**: The folder [Derived Ski routes](https://download.skitourenguru.com/public) holds a smoothed version of the data (collection and network).
 
 ## 4. Pyrenees (RegionCode=9)
 **Format**: [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) in EPSG=2154.
@@ -66,8 +65,7 @@ The folder [Derived Ski routes](https://download.skitourenguru.com/public) holds
 
 **Caution**: The geometry of this data is highly abstracted, don't use it without the requiered smoothing. The [qGis smooth function](https://docs.qgis.org/3.40/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html#smooth) must be applied (ITERATIONS=4, OFFSET=0.25, MAX_ANGLE=180). 
 
-**Smoothed Data**
-The folder [Derived Ski routes](https://download.skitourenguru.com/public) holds a smoothed version of the data (collection and network).
+**Smoothed Data**: The folder [Derived Ski routes](https://download.skitourenguru.com/public) holds a smoothed version of the data (collection and network).
 
 ## 5. Italy (RegionCode=6)
 **Format**: [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) in EPSG=32632.
