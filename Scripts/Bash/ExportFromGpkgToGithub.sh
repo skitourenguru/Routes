@@ -10,7 +10,7 @@ SEGMENTS="${ROUTES_DIR}/${COUNTRY_NAME}/${COUNTRY_NAME}_Segments"
 
 rm -f "${SEGMENTS}.geojson"
 ogr2ogr -f "GeoJSON" -overwrite -lco COORDINATE_PRECISION=2 -nln Segments \
-    -sql "SELECT id, geom FROM Segments ORDER BY id" \
+    -sql "SELECT * FROM Segments ORDER BY id" \
     "${SEGMENTS}.geojson" \
     "${SEGMENTS}.gpkg"
 echo "✓ Segments converted successfully."
