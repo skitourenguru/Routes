@@ -7,3 +7,4 @@ Scripts/Bash/Settings.sh
 Routes.qgz
 *.qgz
 !Styles/TEMPLATE_routes_project.qgz
+.DS_Store
