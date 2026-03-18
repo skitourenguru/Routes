@@ -195,7 +195,9 @@ Remarks:
 - If you want to manually update the geometry of the **Compositions** layer with **Update Geometry**, make sure the the layer **Compositions** is on editing.
 
 ## 3. [SAC Route Network Editor](https://github.com/andreglauser/sac-route-network-editor/)
-to be written
+Descriptions and manuals are available directly in the wiki of the linked repository.
+Routes can be created either in two steps (segment / route (composition)) or in three steps (segment / route section / route).
+For compatibility with this Repository there is an import script, and for exporting back to GeoJSON there is a database view for data export.
 
 # F: QGIS
 ## Project Template
