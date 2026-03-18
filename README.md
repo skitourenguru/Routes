@@ -25,15 +25,13 @@ Remarks:
 ## 1. Switzerland (RegionCode=1)
 Holds raw ski routes of Switzerland and Lichtensteig.
 
-**Format**: [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) in EPSG=21781.
+**Format**: [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) in EPSG=2056.
 
 **Issuer**: All data of this folder were derived from the [Ski-Routes](https://www.geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/33090bf2-e8e5-4776-9f64-00d7a6170808), published by [Swisstopo](https://www.swisstopo.ch) in cooperation with the [Swiss Alpine Club](https://www.sac-cas.ch).
 
 **License**: [Open Geo Data (OGD) License of Swisstopo](https://www.swisstopo.admin.ch/de/nutzungsbedingungen-kostenlose-geodaten-und-geodienste).
 
 **Caution**: The data only contains the subset of ski routes that fulfill the quality requirements of Skitourenguru. For the complete dataset see [Ski-Routes](https://www.geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/33090bf2-e8e5-4776-9f64-00d7a6170808).
-
-**Remark**: EPSG will eventually be changed from 21781 to 2056.
 
 ## 2. Austria (RegionCode=2)
 Holds raw ski routes of Austria.
