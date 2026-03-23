@@ -1,18 +1,18 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis autoRefreshTime="0" simplifyDrawingTol="1" minScale="100000000" simplifyLocal="1" symbologyReferenceScale="-1" simplifyAlgorithm="0" readOnly="0" version="3.44.8-Solothurn" maxScale="0" styleCategories="AllStyleCategories" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" autoRefreshMode="Disabled" labelsEnabled="0">
+<qgis version="3.44.8-Solothurn" simplifyDrawingHints="1" autoRefreshMode="Disabled" autoRefreshTime="0" symbologyReferenceScale="-1" labelsEnabled="0" simplifyMaxScale="1" styleCategories="AllStyleCategories" simplifyAlgorithm="0" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" minScale="100000000" readOnly="0" maxScale="0" simplifyDrawingTol="1">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
     <Private>0</Private>
   </flags>
-  <temporal endExpression="" endField="" enabled="0" limitMode="0" fixedDuration="0" durationUnit="min" accumulate="0" mode="0" startField="updated_at" durationField="fid" startExpression="">
+  <temporal fixedDuration="0" startExpression="" enabled="0" limitMode="0" durationField="fid" accumulate="0" endExpression="" durationUnit="min" mode="0" endField="" startField="updated_at">
     <fixedRange>
       <start></start>
       <end></end>
     </fixedRange>
   </temporal>
-  <elevation clamping="Terrain" binding="Centroid" zscale="1" showMarkerSymbolInSurfacePlots="0" customToleranceEnabled="0" respectLayerSymbol="1" zoffset="0" extrusion="0" symbology="Line" extrusionEnabled="0" type="IndividualFeatures">
+  <elevation zscale="1" binding="Centroid" respectLayerSymbol="1" zoffset="0" extrusion="0" symbology="Line" showMarkerSymbolInSurfacePlots="0" clamping="Terrain" extrusionEnabled="0" type="IndividualFeatures" customToleranceEnabled="0">
     <data-defined-properties>
       <Option type="Map">
         <Option name="name" value="" type="QString"/>
@@ -21,7 +21,7 @@
       </Option>
     </data-defined-properties>
     <profileLineSymbol>
-      <symbol is_animated="0" name="" alpha="1" clip_to_extent="1" force_rhr="0" type="line" frame_rate="10">
+      <symbol frame_rate="10" alpha="1" is_animated="0" name="" force_rhr="0" type="line" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" value="" type="QString"/>
@@ -29,7 +29,7 @@
             <Option name="type" value="collection" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer id="{f9476a9e-99d9-45e6-8a6a-f954b31efb7e}" class="SimpleLine" enabled="1" pass="0" locked="0">
+        <layer id="{f9476a9e-99d9-45e6-8a6a-f954b31efb7e}" enabled="1" locked="0" class="SimpleLine" pass="0">
           <Option type="Map">
             <Option name="align_dash_pattern" value="0" type="QString"/>
             <Option name="capstyle" value="square" type="QString"/>
@@ -70,7 +70,7 @@
       </symbol>
     </profileLineSymbol>
     <profileFillSymbol>
-      <symbol is_animated="0" name="" alpha="1" clip_to_extent="1" force_rhr="0" type="fill" frame_rate="10">
+      <symbol frame_rate="10" alpha="1" is_animated="0" name="" force_rhr="0" type="fill" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" value="" type="QString"/>
@@ -78,7 +78,7 @@
             <Option name="type" value="collection" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer id="{cf399d83-bb54-4e94-a83a-84d2a122997b}" class="SimpleFill" enabled="1" pass="0" locked="0">
+        <layer id="{cf399d83-bb54-4e94-a83a-84d2a122997b}" enabled="1" locked="0" class="SimpleFill" pass="0">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
             <Option name="color" value="213,180,60,255,rgb:0.8352941,0.7058824,0.2352941,1" type="QString"/>
@@ -103,7 +103,7 @@
       </symbol>
     </profileFillSymbol>
     <profileMarkerSymbol>
-      <symbol is_animated="0" name="" alpha="1" clip_to_extent="1" force_rhr="0" type="marker" frame_rate="10">
+      <symbol frame_rate="10" alpha="1" is_animated="0" name="" force_rhr="0" type="marker" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" value="" type="QString"/>
@@ -111,7 +111,7 @@
             <Option name="type" value="collection" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer id="{f87419f9-dc32-40fb-9e0d-fef35a2314ce}" class="SimpleMarker" enabled="1" pass="0" locked="0">
+        <layer id="{f87419f9-dc32-40fb-9e0d-fef35a2314ce}" enabled="1" locked="0" class="SimpleMarker" pass="0">
           <Option type="Map">
             <Option name="angle" value="0" type="QString"/>
             <Option name="cap_style" value="square" type="QString"/>
@@ -144,9 +144,9 @@
       </symbol>
     </profileMarkerSymbol>
   </elevation>
-  <renderer-v2 enableorderby="0" forceraster="0" referencescale="-1" type="singleSymbol" symbollevels="0">
+  <renderer-v2 enableorderby="0" symbollevels="0" referencescale="-1" forceraster="0" type="singleSymbol">
     <symbols>
-      <symbol is_animated="0" name="0" alpha="1" clip_to_extent="1" force_rhr="0" type="line" frame_rate="10">
+      <symbol frame_rate="10" alpha="1" is_animated="0" name="0" force_rhr="0" type="line" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" value="" type="QString"/>
@@ -154,7 +154,7 @@
             <Option name="type" value="collection" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer id="{bb113213-d414-4c62-ab62-ec03f0936a10}" class="GeometryGenerator" enabled="1" pass="0" locked="0">
+        <layer id="{bb113213-d414-4c62-ab62-ec03f0936a10}" enabled="1" locked="0" class="GeometryGenerator" pass="0">
           <Option type="Map">
             <Option name="SymbolType" value="Line" type="QString"/>
             <Option name="geometryModifier" value="smooth($geometry,3)" type="QString"/>
@@ -167,7 +167,7 @@
               <Option name="type" value="collection" type="QString"/>
             </Option>
           </data_defined_properties>
-          <symbol is_animated="0" name="@0@0" alpha="1" clip_to_extent="1" force_rhr="0" type="line" frame_rate="10">
+          <symbol frame_rate="10" alpha="1" is_animated="0" name="@0@0" force_rhr="0" type="line" clip_to_extent="1">
             <data_defined_properties>
               <Option type="Map">
                 <Option name="name" value="" type="QString"/>
@@ -175,32 +175,32 @@
                 <Option name="type" value="collection" type="QString"/>
               </Option>
             </data_defined_properties>
-            <layer id="{1973db87-329c-4152-8e36-c4393cd05965}" class="SimpleLine" enabled="1" pass="0" locked="0">
+            <layer id="{1973db87-329c-4152-8e36-c4393cd05965}" enabled="1" locked="0" class="SimpleLine" pass="0">
               <Option type="Map">
                 <Option name="align_dash_pattern" value="0" type="QString"/>
                 <Option name="capstyle" value="square" type="QString"/>
                 <Option name="customdash" value="5;2" type="QString"/>
                 <Option name="customdash_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                <Option name="customdash_unit" value="Pixel" type="QString"/>
+                <Option name="customdash_unit" value="MM" type="QString"/>
                 <Option name="dash_pattern_offset" value="0" type="QString"/>
                 <Option name="dash_pattern_offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                <Option name="dash_pattern_offset_unit" value="Pixel" type="QString"/>
+                <Option name="dash_pattern_offset_unit" value="MM" type="QString"/>
                 <Option name="draw_inside_polygon" value="0" type="QString"/>
                 <Option name="joinstyle" value="bevel" type="QString"/>
                 <Option name="line_color" value="224,27,36,255,rgb:0.8784314,0.1058824,0.1411765,1" type="QString"/>
                 <Option name="line_style" value="solid" type="QString"/>
-                <Option name="line_width" value="2.5" type="QString"/>
-                <Option name="line_width_unit" value="Pixel" type="QString"/>
+                <Option name="line_width" value="0.75" type="QString"/>
+                <Option name="line_width_unit" value="MM" type="QString"/>
                 <Option name="offset" value="0" type="QString"/>
                 <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                <Option name="offset_unit" value="Pixel" type="QString"/>
+                <Option name="offset_unit" value="MM" type="QString"/>
                 <Option name="ring_filter" value="0" type="QString"/>
                 <Option name="trim_distance_end" value="0" type="QString"/>
                 <Option name="trim_distance_end_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                <Option name="trim_distance_end_unit" value="Pixel" type="QString"/>
+                <Option name="trim_distance_end_unit" value="MM" type="QString"/>
                 <Option name="trim_distance_start" value="0" type="QString"/>
                 <Option name="trim_distance_start_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                <Option name="trim_distance_start_unit" value="Pixel" type="QString"/>
+                <Option name="trim_distance_start_unit" value="MM" type="QString"/>
                 <Option name="tweak_dash_pattern_on_corners" value="0" type="QString"/>
                 <Option name="use_custom_dash" value="0" type="QString"/>
                 <Option name="width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
@@ -215,7 +215,7 @@
             </layer>
           </symbol>
         </layer>
-        <layer id="{f1870743-df55-45b0-85ff-0ae115c150be}" class="MarkerLine" enabled="1" pass="0" locked="0">
+        <layer id="{f1870743-df55-45b0-85ff-0ae115c150be}" enabled="1" locked="0" class="MarkerLine" pass="0">
           <Option type="Map">
             <Option name="average_angle_length" value="4" type="QString"/>
             <Option name="average_angle_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
@@ -241,7 +241,7 @@
               <Option name="type" value="collection" type="QString"/>
             </Option>
           </data_defined_properties>
-          <symbol is_animated="0" name="@0@1" alpha="0.751" clip_to_extent="1" force_rhr="0" type="marker" frame_rate="10">
+          <symbol frame_rate="10" alpha="0.751" is_animated="0" name="@0@1" force_rhr="0" type="marker" clip_to_extent="1">
             <data_defined_properties>
               <Option type="Map">
                 <Option name="name" value="" type="QString"/>
@@ -249,7 +249,7 @@
                 <Option name="type" value="collection" type="QString"/>
               </Option>
             </data_defined_properties>
-            <layer id="{b8f574d1-0af3-4f18-9a47-4af54e472a50}" class="SimpleMarker" enabled="1" pass="0" locked="0">
+            <layer id="{b8f574d1-0af3-4f18-9a47-4af54e472a50}" enabled="1" locked="0" class="SimpleMarker" pass="0">
               <Option type="Map">
                 <Option name="angle" value="0" type="QString"/>
                 <Option name="cap_style" value="square" type="QString"/>
@@ -259,16 +259,16 @@
                 <Option name="name" value="circle" type="QString"/>
                 <Option name="offset" value="0,0" type="QString"/>
                 <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                <Option name="offset_unit" value="Pixel" type="QString"/>
+                <Option name="offset_unit" value="MM" type="QString"/>
                 <Option name="outline_color" value="35,35,35,255,rgb:0.1372549,0.1372549,0.1372549,1" type="QString"/>
                 <Option name="outline_style" value="solid" type="QString"/>
                 <Option name="outline_width" value="0" type="QString"/>
                 <Option name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                <Option name="outline_width_unit" value="Pixel" type="QString"/>
+                <Option name="outline_width_unit" value="MM" type="QString"/>
                 <Option name="scale_method" value="diameter" type="QString"/>
-                <Option name="size" value="10" type="QString"/>
+                <Option name="size" value="1.4" type="QString"/>
                 <Option name="size_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                <Option name="size_unit" value="Pixel" type="QString"/>
+                <Option name="size_unit" value="MM" type="QString"/>
                 <Option name="vertical_anchor_point" value="1" type="QString"/>
               </Option>
               <data_defined_properties>
@@ -281,7 +281,7 @@
             </layer>
           </symbol>
         </layer>
-        <layer id="{dbc838a3-6462-4070-acee-695fe514c58e}" class="MarkerLine" enabled="1" pass="0" locked="0">
+        <layer id="{dbc838a3-6462-4070-acee-695fe514c58e}" enabled="1" locked="0" class="MarkerLine" pass="0">
           <Option type="Map">
             <Option name="average_angle_length" value="4" type="QString"/>
             <Option name="average_angle_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
@@ -307,7 +307,7 @@
               <Option name="type" value="collection" type="QString"/>
             </Option>
           </data_defined_properties>
-          <symbol is_animated="0" name="@0@2" alpha="0.751" clip_to_extent="1" force_rhr="0" type="marker" frame_rate="10">
+          <symbol frame_rate="10" alpha="0.751" is_animated="0" name="@0@2" force_rhr="0" type="marker" clip_to_extent="1">
             <data_defined_properties>
               <Option type="Map">
                 <Option name="name" value="" type="QString"/>
@@ -315,7 +315,7 @@
                 <Option name="type" value="collection" type="QString"/>
               </Option>
             </data_defined_properties>
-            <layer id="{967d0232-f05c-4709-9006-103dafd84713}" class="SimpleMarker" enabled="1" pass="0" locked="0">
+            <layer id="{967d0232-f05c-4709-9006-103dafd84713}" enabled="1" locked="0" class="SimpleMarker" pass="0">
               <Option type="Map">
                 <Option name="angle" value="0" type="QString"/>
                 <Option name="cap_style" value="square" type="QString"/>
@@ -325,16 +325,16 @@
                 <Option name="name" value="triangle" type="QString"/>
                 <Option name="offset" value="0,0" type="QString"/>
                 <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                <Option name="offset_unit" value="Pixel" type="QString"/>
+                <Option name="offset_unit" value="MM" type="QString"/>
                 <Option name="outline_color" value="35,35,35,255,rgb:0.1372549,0.1372549,0.1372549,1" type="QString"/>
                 <Option name="outline_style" value="solid" type="QString"/>
                 <Option name="outline_width" value="0" type="QString"/>
                 <Option name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                <Option name="outline_width_unit" value="Pixel" type="QString"/>
+                <Option name="outline_width_unit" value="MM" type="QString"/>
                 <Option name="scale_method" value="diameter" type="QString"/>
-                <Option name="size" value="15" type="QString"/>
+                <Option name="size" value="1.4" type="QString"/>
                 <Option name="size_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                <Option name="size_unit" value="Pixel" type="QString"/>
+                <Option name="size_unit" value="MM" type="QString"/>
                 <Option name="vertical_anchor_point" value="1" type="QString"/>
               </Option>
               <data_defined_properties>
@@ -360,9 +360,9 @@
     </data-defined-properties>
   </renderer-v2>
   <selection mode="CustomSymbol">
-    <selectionColor red="0.8784313725490196" spec="rgb" blue="0.14117647058823529" green="0.10588235294117647"/>
+    <selectionColor spec="rgb" green="0.10588235294117647" blue="0.14117647058823529" red="0.8784313725490196"/>
     <selectionSymbol>
-      <symbol is_animated="0" name="" alpha="1" clip_to_extent="1" force_rhr="0" type="line" frame_rate="10">
+      <symbol frame_rate="10" alpha="1" is_animated="0" name="" force_rhr="0" type="line" clip_to_extent="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" value="" type="QString"/>
@@ -370,7 +370,7 @@
             <Option name="type" value="collection" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer id="{32af5cde-2faf-4756-8934-56085eac7c2d}" class="SimpleLine" enabled="1" pass="0" locked="0">
+        <layer id="{32af5cde-2faf-4756-8934-56085eac7c2d}" enabled="1" locked="0" class="SimpleLine" pass="0">
           <Option type="Map">
             <Option name="align_dash_pattern" value="0" type="QString"/>
             <Option name="capstyle" value="square" type="QString"/>
@@ -414,7 +414,9 @@
   <customproperties>
     <Option type="Map">
       <Option name="dualview/previewExpressions" type="List">
+        <Option value="COALESCE( &quot;start&quot;, '&lt;NULL>' )" type="QString"/>
         <Option value="&quot;start&quot;" type="QString"/>
+        <Option type="invalid"/>
       </Option>
       <Option name="embeddedWidgets/count" value="0" type="int"/>
       <Option name="variableNames"/>
@@ -424,12 +426,12 @@
   <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
-  <LinearlyInterpolatedDiagramRenderer upperHeight="5" classificationAttributeExpression="" lowerWidth="0" upperWidth="5" attributeLegend="1" diagramType="Histogram" lowerHeight="0" lowerValue="0" upperValue="0">
-    <DiagramCategory scaleBasedVisibility="0" lineSizeScale="3x:0,0,0,0,0,0" direction="0" height="15" stackedDiagramSpacing="0" barWidth="5" scaleDependency="Area" penColor="#000000" enabled="0" penAlpha="255" diagramOrientation="Up" width="15" showAxis="1" spacingUnitScale="3x:0,0,0,0,0,0" minScaleDenominator="0" sizeType="MM" sizeScale="3x:0,0,0,0,0,0" labelPlacementMethod="XHeight" maxScaleDenominator="1e+08" stackedDiagramSpacingUnit="MM" opacity="1" backgroundColor="#ffffff" stackedDiagramSpacingUnitScale="3x:0,0,0,0,0,0" stackedDiagramMode="Horizontal" backgroundAlpha="255" minimumSize="0" lineSizeType="MM" spacing="5" spacingUnit="MM" penWidth="0" rotationOffset="270">
-      <fontProperties underline="0" description="Ubuntu,11,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" strikethrough="0"/>
-      <attribute label="" field="" color="#000000" colorOpacity="1"/>
+  <LinearlyInterpolatedDiagramRenderer lowerValue="0" upperValue="0" upperHeight="5" lowerWidth="0" upperWidth="5" attributeLegend="1" diagramType="Histogram" lowerHeight="0" classificationAttributeExpression="">
+    <DiagramCategory sizeType="MM" spacingUnitScale="3x:0,0,0,0,0,0" enabled="0" labelPlacementMethod="XHeight" scaleDependency="Area" diagramOrientation="Up" minScaleDenominator="0" height="15" stackedDiagramSpacingUnitScale="3x:0,0,0,0,0,0" maxScaleDenominator="1e+08" sizeScale="3x:0,0,0,0,0,0" opacity="1" stackedDiagramSpacing="0" penWidth="0" backgroundColor="#ffffff" backgroundAlpha="255" lineSizeScale="3x:0,0,0,0,0,0" scaleBasedVisibility="0" stackedDiagramMode="Horizontal" spacing="5" direction="0" minimumSize="0" barWidth="5" penColor="#000000" stackedDiagramSpacingUnit="MM" rotationOffset="270" width="15" penAlpha="255" spacingUnit="MM" lineSizeType="MM" showAxis="1">
+      <fontProperties italic="0" underline="0" strikethrough="0" style="" description="Ubuntu,11,-1,5,50,0,0,0,0,0" bold="0"/>
+      <attribute colorOpacity="1" field="" color="#000000" label=""/>
       <axisSymbol>
-        <symbol is_animated="0" name="" alpha="1" clip_to_extent="1" force_rhr="0" type="line" frame_rate="10">
+        <symbol frame_rate="10" alpha="1" is_animated="0" name="" force_rhr="0" type="line" clip_to_extent="1">
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" value="" type="QString"/>
@@ -437,7 +439,7 @@
               <Option name="type" value="collection" type="QString"/>
             </Option>
           </data_defined_properties>
-          <layer id="{1259a527-cc48-47e6-b7c6-1a4b4bbfa4f8}" class="SimpleLine" enabled="1" pass="0" locked="0">
+          <layer id="{1259a527-cc48-47e6-b7c6-1a4b4bbfa4f8}" enabled="1" locked="0" class="SimpleLine" pass="0">
             <Option type="Map">
               <Option name="align_dash_pattern" value="0" type="QString"/>
               <Option name="capstyle" value="square" type="QString"/>
@@ -668,63 +670,49 @@
     <default applyOnUpdate="0" field="skitour_url" expression=""/>
   </defaults>
   <constraints>
-    <constraint notnull_strength="1" exp_strength="0" field="fid" constraints="3" unique_strength="1"/>
-    <constraint notnull_strength="1" exp_strength="0" field="id" constraints="3" unique_strength="1"/>
-    <constraint notnull_strength="0" exp_strength="0" field="start" constraints="0" unique_strength="0"/>
-    <constraint notnull_strength="0" exp_strength="0" field="stop" constraints="0" unique_strength="0"/>
-    <constraint notnull_strength="0" exp_strength="0" field="routes" constraints="0" unique_strength="0"/>
-    <constraint notnull_strength="0" exp_strength="0" field="mdiff" constraints="0" unique_strength="0"/>
-    <constraint notnull_strength="0" exp_strength="0" field="importance" constraints="0" unique_strength="0"/>
-    <constraint notnull_strength="0" exp_strength="0" field="segments" constraints="0" unique_strength="0"/>
-    <constraint notnull_strength="0" exp_strength="0" field="massif" constraints="0" unique_strength="0"/>
-    <constraint notnull_strength="0" exp_strength="0" field="updated_at" constraints="0" unique_strength="0"/>
-    <constraint notnull_strength="0" exp_strength="0" field="skitour_url" constraints="0" unique_strength="0"/>
+    <constraint unique_strength="1" field="fid" constraints="3" notnull_strength="1" exp_strength="0"/>
+    <constraint unique_strength="1" field="id" constraints="3" notnull_strength="1" exp_strength="0"/>
+    <constraint unique_strength="0" field="start" constraints="0" notnull_strength="0" exp_strength="0"/>
+    <constraint unique_strength="0" field="stop" constraints="0" notnull_strength="0" exp_strength="0"/>
+    <constraint unique_strength="0" field="routes" constraints="0" notnull_strength="0" exp_strength="0"/>
+    <constraint unique_strength="0" field="mdiff" constraints="0" notnull_strength="0" exp_strength="0"/>
+    <constraint unique_strength="0" field="importance" constraints="0" notnull_strength="0" exp_strength="0"/>
+    <constraint unique_strength="0" field="segments" constraints="0" notnull_strength="0" exp_strength="0"/>
+    <constraint unique_strength="0" field="massif" constraints="0" notnull_strength="0" exp_strength="0"/>
+    <constraint unique_strength="0" field="updated_at" constraints="0" notnull_strength="0" exp_strength="0"/>
+    <constraint unique_strength="0" field="skitour_url" constraints="0" notnull_strength="0" exp_strength="0"/>
   </constraints>
   <constraintExpressions>
-    <constraint exp="" field="fid" desc=""/>
-    <constraint exp="" field="id" desc=""/>
-    <constraint exp="" field="start" desc=""/>
-    <constraint exp="" field="stop" desc=""/>
-    <constraint exp="" field="routes" desc=""/>
-    <constraint exp="" field="mdiff" desc=""/>
-    <constraint exp="" field="importance" desc=""/>
-    <constraint exp="" field="segments" desc=""/>
-    <constraint exp="" field="massif" desc=""/>
-    <constraint exp="" field="updated_at" desc=""/>
-    <constraint exp="" field="skitour_url" desc=""/>
+    <constraint desc="" field="fid" exp=""/>
+    <constraint desc="" field="id" exp=""/>
+    <constraint desc="" field="start" exp=""/>
+    <constraint desc="" field="stop" exp=""/>
+    <constraint desc="" field="routes" exp=""/>
+    <constraint desc="" field="mdiff" exp=""/>
+    <constraint desc="" field="importance" exp=""/>
+    <constraint desc="" field="segments" exp=""/>
+    <constraint desc="" field="massif" exp=""/>
+    <constraint desc="" field="updated_at" exp=""/>
+    <constraint desc="" field="skitour_url" exp=""/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
-    <defaultAction key="Canvas" value="{2cb3bab9-21ed-4f52-bc0c-263aba571cd7}"/>
-    <actionsetting capture="0" id="{2cb3bab9-21ed-4f52-bc0c-263aba571cd7}" shortTitle="Toponeige" name="Toponeige" notificationMessage="" icon="/home/ulysse/Data/Styles/Toponeiges.png" action="evince -l &quot;[%stop%]&quot; /home/ulysse/Documents/Toponeiges.pdf" type="4" isEnabledOnlyWhenEditable="0">
-      <actionScope id="Layer"/>
-      <actionScope id="Canvas"/>
-      <actionScope id="Field"/>
-      <actionScope id="Feature"/>
-      <actionScope id="Form"/>
-    </actionsetting>
-    <actionsetting capture="0" id="{68248e4c-ea96-4044-88b2-d46ce301f358}" shortTitle="Skitour / C2C" name="Skitour / C2C" notificationMessage="" icon="/home/ulysse/Data/Styles/C2C&amp;Skitour.png" action="https://www.google.com/search?q=skitour+camptocamp+[%stop%]" type="5" isEnabledOnlyWhenEditable="0">
-      <actionScope id="Layer"/>
-      <actionScope id="Canvas"/>
-      <actionScope id="Field"/>
-      <actionScope id="Feature"/>
-      <actionScope id="Form"/>
-    </actionsetting>
+    <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
   </attributeactions>
-  <attributetableconfig sortOrder="1" actionWidgetStyle="dropDown" sortExpression="&quot;id&quot;">
+  <attributetableconfig sortOrder="1" sortExpression="&quot;id&quot;" actionWidgetStyle="dropDown">
     <columns>
-      <column name="id" hidden="0" type="field" width="57"/>
-      <column name="start" hidden="0" type="field" width="211"/>
-      <column name="stop" hidden="0" type="field" width="171"/>
-      <column name="routes" hidden="0" type="field" width="82"/>
-      <column name="mdiff" hidden="0" type="field" width="57"/>
-      <column name="segments" hidden="0" type="field" width="784"/>
-      <column name="fid" hidden="0" type="field" width="-1"/>
-      <column name="importance" hidden="0" type="field" width="-1"/>
-      <column name="massif" hidden="0" type="field" width="-1"/>
-      <column name="updated_at" hidden="0" type="field" width="-1"/>
-      <column name="skitour_url" hidden="0" type="field" width="-1"/>
-      <column hidden="1" type="actions" width="-1"/>
+      <column name="id" hidden="0" width="57" type="field"/>
+      <column name="start" hidden="0" width="211" type="field"/>
+      <column name="stop" hidden="0" width="171" type="field"/>
+      <column name="routes" hidden="0" width="82" type="field"/>
+      <column name="mdiff" hidden="0" width="57" type="field"/>
+      <column name="segments" hidden="0" width="784" type="field"/>
+      <column name="fid" hidden="0" width="-1" type="field"/>
+      <column name="importance" hidden="0" width="-1" type="field"/>
+      <column name="massif" hidden="0" width="-1" type="field"/>
+      <column name="updated_at" hidden="0" width="-1" type="field"/>
+      <column name="skitour_url" hidden="0" width="-1" type="field"/>
+      <column hidden="1" width="-1" type="actions"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
@@ -756,58 +744,58 @@ def my_form_open(dialog, layer, feature):
   <featformsuppress>0</featformsuppress>
   <editorlayout>tablayout</editorlayout>
   <attributeEditorForm>
-    <labelStyle overrideLabelFont="0" overrideLabelColor="0" labelColor="">
-      <labelFont underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" strikethrough="0"/>
+    <labelStyle overrideLabelColor="0" labelColor="" overrideLabelFont="0">
+      <labelFont italic="0" underline="0" strikethrough="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" bold="0"/>
     </labelStyle>
-    <attributeEditorField name="id" horizontalStretch="0" index="1" showLabel="1" verticalStretch="0">
-      <labelStyle overrideLabelFont="0" overrideLabelColor="0" labelColor="0,0,0,255,rgb:0,0,0,1">
-        <labelFont underline="0" description="Ubuntu,11,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" strikethrough="0"/>
+    <attributeEditorField showLabel="1" horizontalStretch="0" name="id" verticalStretch="0" index="1">
+      <labelStyle overrideLabelColor="0" labelColor="0,0,0,255,rgb:0,0,0,1" overrideLabelFont="0">
+        <labelFont italic="0" underline="0" strikethrough="0" style="" description="Ubuntu,11,-1,5,50,0,0,0,0,0" bold="0"/>
       </labelStyle>
     </attributeEditorField>
-    <attributeEditorField name="start" horizontalStretch="0" index="2" showLabel="1" verticalStretch="0">
-      <labelStyle overrideLabelFont="0" overrideLabelColor="0" labelColor="0,0,0,255,rgb:0,0,0,1">
-        <labelFont underline="0" description="Ubuntu,11,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" strikethrough="0"/>
+    <attributeEditorField showLabel="1" horizontalStretch="0" name="start" verticalStretch="0" index="2">
+      <labelStyle overrideLabelColor="0" labelColor="0,0,0,255,rgb:0,0,0,1" overrideLabelFont="0">
+        <labelFont italic="0" underline="0" strikethrough="0" style="" description="Ubuntu,11,-1,5,50,0,0,0,0,0" bold="0"/>
       </labelStyle>
     </attributeEditorField>
-    <attributeEditorField name="stop" horizontalStretch="0" index="3" showLabel="1" verticalStretch="0">
-      <labelStyle overrideLabelFont="0" overrideLabelColor="0" labelColor="0,0,0,255,rgb:0,0,0,1">
-        <labelFont underline="0" description="Ubuntu,11,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" strikethrough="0"/>
+    <attributeEditorField showLabel="1" horizontalStretch="0" name="stop" verticalStretch="0" index="3">
+      <labelStyle overrideLabelColor="0" labelColor="0,0,0,255,rgb:0,0,0,1" overrideLabelFont="0">
+        <labelFont italic="0" underline="0" strikethrough="0" style="" description="Ubuntu,11,-1,5,50,0,0,0,0,0" bold="0"/>
       </labelStyle>
     </attributeEditorField>
-    <attributeEditorField name="routes" horizontalStretch="0" index="4" showLabel="1" verticalStretch="0">
-      <labelStyle overrideLabelFont="0" overrideLabelColor="0" labelColor="0,0,0,255,rgb:0,0,0,1">
-        <labelFont underline="0" description="Ubuntu,11,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" strikethrough="0"/>
+    <attributeEditorField showLabel="1" horizontalStretch="0" name="routes" verticalStretch="0" index="4">
+      <labelStyle overrideLabelColor="0" labelColor="0,0,0,255,rgb:0,0,0,1" overrideLabelFont="0">
+        <labelFont italic="0" underline="0" strikethrough="0" style="" description="Ubuntu,11,-1,5,50,0,0,0,0,0" bold="0"/>
       </labelStyle>
     </attributeEditorField>
-    <attributeEditorField name="mdiff" horizontalStretch="0" index="5" showLabel="1" verticalStretch="0">
-      <labelStyle overrideLabelFont="0" overrideLabelColor="0" labelColor="0,0,0,255,rgb:0,0,0,1">
-        <labelFont underline="0" description="Ubuntu,11,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" strikethrough="0"/>
+    <attributeEditorField showLabel="1" horizontalStretch="0" name="mdiff" verticalStretch="0" index="5">
+      <labelStyle overrideLabelColor="0" labelColor="0,0,0,255,rgb:0,0,0,1" overrideLabelFont="0">
+        <labelFont italic="0" underline="0" strikethrough="0" style="" description="Ubuntu,11,-1,5,50,0,0,0,0,0" bold="0"/>
       </labelStyle>
     </attributeEditorField>
-    <attributeEditorField name="importance" horizontalStretch="0" index="6" showLabel="1" verticalStretch="0">
-      <labelStyle overrideLabelFont="0" overrideLabelColor="0" labelColor="0,0,0,255,rgb:0,0,0,1">
-        <labelFont underline="0" description="Ubuntu,11,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" strikethrough="0"/>
+    <attributeEditorField showLabel="1" horizontalStretch="0" name="importance" verticalStretch="0" index="6">
+      <labelStyle overrideLabelColor="0" labelColor="0,0,0,255,rgb:0,0,0,1" overrideLabelFont="0">
+        <labelFont italic="0" underline="0" strikethrough="0" style="" description="Ubuntu,11,-1,5,50,0,0,0,0,0" bold="0"/>
       </labelStyle>
     </attributeEditorField>
-    <attributeEditorField name="segments" horizontalStretch="0" index="7" showLabel="1" verticalStretch="0">
-      <labelStyle overrideLabelFont="0" overrideLabelColor="0" labelColor="0,0,0,255,rgb:0,0,0,1">
-        <labelFont underline="0" description="Ubuntu,11,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" strikethrough="0"/>
+    <attributeEditorField showLabel="1" horizontalStretch="0" name="segments" verticalStretch="0" index="7">
+      <labelStyle overrideLabelColor="0" labelColor="0,0,0,255,rgb:0,0,0,1" overrideLabelFont="0">
+        <labelFont italic="0" underline="0" strikethrough="0" style="" description="Ubuntu,11,-1,5,50,0,0,0,0,0" bold="0"/>
       </labelStyle>
     </attributeEditorField>
   </attributeEditorForm>
   <editable>
-    <field name="fid" editable="1"/>
-    <field name="id" editable="1"/>
-    <field name="importance" editable="1"/>
-    <field name="massif" editable="1"/>
-    <field name="mdiff" editable="1"/>
-    <field name="routes" editable="1"/>
-    <field name="segment" editable="1"/>
-    <field name="segments" editable="1"/>
-    <field name="skitour_url" editable="1"/>
-    <field name="start" editable="1"/>
-    <field name="stop" editable="1"/>
-    <field name="updated_at" editable="1"/>
+    <field editable="1" name="fid"/>
+    <field editable="1" name="id"/>
+    <field editable="1" name="importance"/>
+    <field editable="1" name="massif"/>
+    <field editable="1" name="mdiff"/>
+    <field editable="1" name="routes"/>
+    <field editable="1" name="segment"/>
+    <field editable="1" name="segments"/>
+    <field editable="1" name="skitour_url"/>
+    <field editable="1" name="start"/>
+    <field editable="1" name="stop"/>
+    <field editable="1" name="updated_at"/>
   </editable>
   <labelOnTop>
     <field name="fid" labelOnTop="0"/>
@@ -839,7 +827,7 @@ def my_form_open(dialog, layer, feature):
   </reuseLastValue>
   <dataDefinedFieldProperties/>
   <widgets/>
-  <previewExpression>"start"</previewExpression>
+  <previewExpression>COALESCE( "start", '&lt;NULL>' )</previewExpression>
   <mapTip enabled="1">[% "start" %] > [% "stop" %] - [% CASE  
 when mdiff = 0 then '.'
 when mdiff = 1 then '1.2'
