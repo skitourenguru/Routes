@@ -38,7 +38,7 @@ for region in "${regions[@]}"; do
         -overwrite \
         -lco COORDINATE_PRECISION=2 \
         -nln  "Segments" \
-        -sql  "SELECT * FROM Segments WHERE $FILTER ORDER BY id" \
+        -sql  "SELECT * FROM Segments WHERE $FILTER  AND importance = 0 ORDER BY id" \
         "$OUTPUT_SEGMENTS" \
         "$SEGMENTS"
 
@@ -48,7 +48,7 @@ for region in "${regions[@]}"; do
         -lco COORDINATE_PRECISION=2 \
         -nlt NONE \
         -nln  "Compositions" \
-        -sql  "SELECT * FROM Compositions WHERE $FILTER ORDER BY id" \
+        -sql  "SELECT * FROM Compositions WHERE $FILTER AND importance = 0 ORDER BY id" \
         "$OUTPUT_COMPOSITIONS" \
         "$COMPOSITIONS"
 done
