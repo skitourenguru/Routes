@@ -129,31 +129,28 @@ Contact [Skitourenguru](https://www.skitourenguru.com) under **about** if you wa
 
 # C: Derived data
 Skitourenguru processes twice a year (~ 1. December) and (~ 1. March) the raw data contained in this repository and builds a [SQLite / Spatialite RDBMS](https://gdal.org/en/stable/drivers/vector/sqlite.html) file containing a **collection of routes covering the whole Alps**. The automatic process performs the following steps:
-1. The segments are reprojected to the EPSG 3035.
-2. Where needed (France) the segments are smoothed: (Chaiken: 3 Interations, Threashold 5 m).
-3. Segments are simplified (Douglas: Theashold: 1 m).
+1. The **segments** are reprojected to the projection EPSG 3035.
+2. Where needed (France) the **segments** are smoothed: (Chaiken: 3 Interations, Threashold 5 m).
+3. **Segments** are simplified (Douglas: Theashold: 1 m).
 4. The network is converted to a **route collection**.
-5. Geospatial filter
+5. A Geospatial filter is applied.
 6. Route identifiers are made unique by adding a region code at the end of the id. The region codes are documented in chapter B.
 7. The regions are merged.
 8. The routes are filtered by **length**, **target** end **type** (Skitour = 1).
 9. Attributes are added (**lit**: A hint about literature, in particular the editor Panico, **wildlife**: Distance to next nature protection area, **pop**: A popularity indicator, **adiff**: A difficulty grade automatically derived from terrain properties, **sri**: Standard rating indicators about the avalanche risk for 10 typical avalanche bulletins). If you need to know more about these attributes, click on a route on [https://www.skitourenguru.com](https://www.skitourenguru.com).
-10. Routes are snapped to each other
-11. Exact-Dulicates and Allmost-Duplicates (Jaccard-Index > 0.98)
+10. Routes are snapped to each other.
+11. Exact-Dulicates and Allmost-Duplicates (Jaccard-Index) are removed.
 12. The route collection is verified.
 13. [Corridors](https://info.skitourenguru.ch/index.php/corridors) are created
 14. The vector file is converted into two raster formats
-15. Finally the results are "published" on the Internet:
 
-[Alps as Vector](https://download.skitourenguru.com/routes/Alps.sqlite) in the [SQLite / Spatialite RDBMS](https://gdal.org/en/stable/drivers/vector/sqlite.html) format.
+Finally the results are "published" on the Internet:
 
-[Alps as Vector](https://www.skitourenguru.com/calc_data2/gpx/Alps.gpx) in the [GPX](https://en.wikipedia.org/wiki/GPS_Exchange_Format) format.
-
-[Alps as Vector](https://download.skitourenguru.com/Routes/Skitourenguru4Garmin.zip) in the proprietary [Garmin Image](https://wiki.openstreetmap.org/wiki/OSM_Map_On_Garmin/IMG_File_Format?utm_source=chatgpt.com) format.
-
-[Alps as Raster](https://download.skitourenguru.com/routes/AP_SG_RT.sqlitedb) in the [RMaps / Galileo](https://www.bluemarblegeo.com/knowledgebase/global-mapper/Formats/RMaps_SQLite_Database.htm) format.
-
-[Alps as Raster](https://download.skitourenguru.com/routes/AP_SG_RT.mbtiles) in the [MapBox-Tiles](https://github.com/mapbox/mbtiles-spec) format.
+* [Alps as Vector](https://download.skitourenguru.com/routes/Alps.sqlite) in the [SQLite / Spatialite RDBMS](https://gdal.org/en/stable/drivers/vector/sqlite.html) format.
+* [Alps as Vector](https://www.skitourenguru.com/calc_data2/gpx/Alps.gpx) in the [GPX](https://en.wikipedia.org/wiki/GPS_Exchange_Format) format.
+* [Alps as Vector](https://download.skitourenguru.com/Routes/Skitourenguru4Garmin.zip) in the proprietary [Garmin Image](https://wiki.openstreetmap.org/wiki/OSM_Map_On_Garmin/IMG_File_Format) format.
+* [Alps as Raster](https://download.skitourenguru.com/routes/AP_SG_RT.sqlitedb) in the [RMaps / Galileo](https://www.bluemarblegeo.com/knowledgebase/global-mapper/Formats/RMaps_SQLite_Database.htm) format.
+* [Alps as Raster](https://download.skitourenguru.com/routes/AP_SG_RT.mbtiles) in the [MapBox-Tiles](https://github.com/mapbox/mbtiles-spec) format.
 
 Note: There is no guarantee that these files are up to date.
 
