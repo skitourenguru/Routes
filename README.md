@@ -364,17 +364,18 @@ For all other questions, contact [Skitourenguru](https://www.skitourenguru.com) 
 
 # I: FAQ
 **How can I harmonize border areas betweeen two regions?**
+
 Open a terminal that gives access to **ogr2ogr**. On Windows you can use this batch to start a terminal. 
 ```
 C:\Program Files\QGIS 3.34.11\OSGeo4W.bat
 ```
-Now you can re-project from one projection to the other with the following format:
+Now you can re-project from one projection to the other with the following commands:
 ```
-# Go into your dirs where you have the geojson
+# Change to your directory where you have located the geojson
 cd D:\Temp
 D:
 # Re-project from 31468 to 31287
 ogr2ogr -s_srs EPSG:31468 -t_srs EPSG:31287 -f GeoJson Germany_Segments_31287.geojson Germany_Segments_31468.geojson
 
 ```
-Now you can harmonize the border areas in a qGis project with 31287. As soon as the geojson is ready go back to the original projection and check in.
+Now you can harmonize the border areas in a qGis project with the projection 31287. As soon as the geojson is ready go back to the original projection and check in.
