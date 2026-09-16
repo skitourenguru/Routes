@@ -19,6 +19,7 @@ The exact data model description you find in this [Technical Specification](http
 Remarks:
 * Despite the formal definition of the format [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) it is possible to store the EPSG code in the node **crs**. See chapter 4 of [RFC_7946](https://datatracker.ietf.org/doc/html/rfc7946).
 * In order to support change-tracking, the coordinate precision must be set to two decimal digits.
+* The field target defines, if a route/segment can be published. Never publish routes/segments with target=x or target=X. For more information look in the [Technical Specification](https://github.com/skitourenguru/Routes/blob/main/Doc).
 
 # B: Regions
 
