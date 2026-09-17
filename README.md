@@ -104,11 +104,15 @@ Contact [Skitourenguru](https://www.skitourenguru.com) under **about** if you wa
 ## 6. Germany (RegionCode=7)
 Holds raw ski routes of Germany (Bavaria).
 
-**Format**: [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) in EPSG=31468.
+**Format**: [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) in EPSG=31287.
 
 **Issuer**:  [Deutcher Alpenverein](https://www.alpenverein.de/).
 
 **License**: Private license till 14. October 2026. From 15. October 2026 on published under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
+
+Remarks:
+* Germany will be soon integrated into Austria. As preparative step the EPSG was already changed to 31287.
+* The field **target** defines, if a route/segment can be published. Never publish routes/segments with **target=x** or **target=X**. For more information look in the [Technical Specification](https://github.com/skitourenguru/Routes/blob/main/Doc).
 
 ## 7. Slovenia (RegionCode=8)
 Holds raw ski routes of Slovenia.
