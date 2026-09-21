@@ -154,10 +154,10 @@ Finally the results are "published" on the Internet:
 
 * [Alps as Vector](https://download.skitourenguru.com/routes/Alps.sqlite) in the [SQLite / Spatialite RDBMS](https://gdal.org/en/stable/drivers/vector/sqlite.html) format.
 * [Alps as Vector](https://www.skitourenguru.com/calc_data2/gpx/Alps.gpx) in the [GPX](https://en.wikipedia.org/wiki/GPS_Exchange_Format) format.
-* Alps as Vector in the proprietary [Garmin Image](https://wiki.openstreetmap.org/wiki/OSM_Map_On_Garmin/IMG_File_Format) format: Coming back in December 2026!
-<!-- * [Alps as Vector](https://download.skitourenguru.com/Routes/Skitourenguru4Garmin.zip) in the proprietary [Garmin Image](https://wiki.openstreetmap.org/wiki/OSM_Map_On_Garmin/IMG_File_Format) format.-->
 * [Alps as Raster](https://download.skitourenguru.com/routes/AP_SG_RT.sqlitedb) in the [RMaps / Galileo](https://www.bluemarblegeo.com/knowledgebase/global-mapper/Formats/RMaps_SQLite_Database.htm) format.
 * [Alps as Raster](https://download.skitourenguru.com/routes/AP_SG_RT.mbtiles) in the [MapBox-Tiles](https://github.com/mapbox/mbtiles-spec) format.
+* Alps as Vector in the proprietary [Garmin Image](https://wiki.openstreetmap.org/wiki/OSM_Map_On_Garmin/IMG_File_Format) format: Coming back in December 2026!
+<!-- * [Alps as Vector](https://download.skitourenguru.com/Routes/Skitourenguru4Garmin.zip) in the proprietary [Garmin Image](https://wiki.openstreetmap.org/wiki/OSM_Map_On_Garmin/IMG_File_Format) format.-->
 
 Note: There is no guarantee that these files are up to date.
 
