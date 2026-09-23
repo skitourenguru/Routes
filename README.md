@@ -142,7 +142,7 @@ Skitourenguru processes twice a year (~ 1. December) and (~ 1. March) the raw da
 5. A Geospatial filter is applied.
 6. Route identifiers are made unique by adding a region code at the end of the id. The region codes are documented in chapter B.
 7. The regions are merged.
-8. The routes are filtered by **length**, **target** end **type** (Skitour = 1).
+8. The routes are filtered by **length**, **target** end **type** (Skitour = 1). In particular all routes/segments not allowed to be published (see field **target**) are discarded.
 9. Attributes are added (**lit**: A hint about literature, in particular the editor Panico, **wildlife**: Distance to next nature protection area, **pop**: A popularity indicator, **adiff**: A difficulty grade automatically derived from terrain properties, **sri**: Standard rating indicators about the avalanche risk for 10 typical avalanche bulletins). If you need to know more about these attributes, click on a route on [https://www.skitourenguru.com](https://www.skitourenguru.com).
 10. Routes are snapped to each other.
 11. Exact-Dulicates and Allmost-Duplicates (Jaccard-Index) are removed.
