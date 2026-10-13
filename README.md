@@ -42,7 +42,6 @@ Holds raw ski routes of Austria.
 **License**: Private license till 30. October 2026. From 31. October 2026 on published under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/). Date changed from 15. October to 31. October due to delays.
 
 This ski touring dataset for Austria, Germany and South Tyrol is published soon under the [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/) license.
-Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0) license.
 
 The license permits the use, reproduction, and redistribution of the dataset in its unmodified form, provided that appropriate attribution is given.
 
@@ -66,7 +65,7 @@ Contact: Wolfgang Warmuth (Project Management, Österreichischer Alpenverein),  
 Note: Scientific, tourism-related and commercial applications are welcome. If your project requires modifications or redistribution of derived datasets, please contact us for an individual licensing agreement.
 
 **Remarks**:
-- Holds also South Tyrol and soon Bavaria (this is noa a political statement).
+- Holds also South Tyrol and soon Bavaria (this is not a political statement).
 
 ## 3. France (RegionCode=3)
 Holds raw ski routes of the Alps of France.
