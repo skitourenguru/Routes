@@ -32,7 +32,7 @@ Holds raw ski routes of Switzerland and Lichtensteig.
 
 **Caution**: The data only contains the subset of ski routes that fulfill the quality requirements of Skitourenguru. For the complete dataset see [Ski-Routes](https://www.geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/33090bf2-e8e5-4776-9f64-00d7a6170808).
 
-## 2. Austria, South-Tyrol (RegionCode=2)
+## 2. Austria, South-Tyrol, Bavaria (soon) (RegionCode=2)
 Holds raw ski routes of Austria.
 
 **Format**: [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) in EPSG=31287.
@@ -40,6 +40,30 @@ Holds raw ski routes of Austria.
 **Issuer**: [Österreichischer Alpenverein](https://www.alpenverein.at).
 
 **License**: Private license till 30. October 2026. From 31. October 2026 on published under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/). Date changed from 15. October to 31. October due to delays.
+
+This ski touring dataset for Austria, Germany and South Tyrol is published soon under the [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/) license.
+Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0) license.
+
+The license permits the use, reproduction, and redistribution of the dataset in its unmodified form, provided that appropriate attribution is given.
+
+Please use one of the following attributions:
+
+* © ÖAV, DAV, AVS – Ski Touring Routes for Austria, Germany and South Tyrol, CC BY-ND 4.0
+* © Österreichischer Alpenverein, Deutscher Alpenverein, Alpenverein Südtirol – Ski Touring Routes for Austria, Germany and South Tyrol, CC BY-ND 4.0
+
+Extended Usage Rights
+
+The publication or distribution of modified, enriched, corrected, or derived datasets is not covered by CC BY-ND 4.0. For use cases exceeding the scope of the standard license, including:
+
+* modification or enhancement of the dataset,
+* publication of derived datasets,
+* integration into maps, apps, or platforms using adapted datasets,
+* collaborative maintenance or synchronization processes,
+
+Individual licensing agreements may be arranged upon request.
+Contact: Wolfgang Warmuth (Project Management, Österreichischer Alpenverein),  wolfgang.warmuth@alpenverein.at
+
+Note: Scientific, tourism-related and commercial applications are welcome. If your project requires modifications or redistribution of derived datasets, please contact us for an individual licensing agreement.
 
 **Remarks**:
 - Holds also South Tyrol and soon Bavaria (this is noa a political statement).
