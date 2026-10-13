@@ -41,7 +41,7 @@ Holds raw ski routes of Austria, South Tyrol and soon Bavaria.
 
 **License**: Private license till 30. October 2026. From 31. October 2026 on published under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/). Date changed from 15. October to 31. October due to delays.
 
-This ski touring dataset for Austria, Germany and South Tyrol is published soon under the [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/) license.
+This ski touring dataset for Austria, Germany and South Tyrol is published soon under a [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/) license.
 
 The license permits the use, reproduction, and redistribution of the dataset in its unmodified form, provided that appropriate attribution is given.
 
