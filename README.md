@@ -32,17 +32,17 @@ Holds raw ski routes of Switzerland and Lichtensteig.
 
 **Caution**: The data only contains the subset of ski routes that fulfill the quality requirements of Skitourenguru. For the complete dataset see [Ski-Routes](https://www.geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/33090bf2-e8e5-4776-9f64-00d7a6170808).
 
-## 2. Austria (RegionCode=2)
+## 2. Austria, South-Tyrol (RegionCode=2)
 Holds raw ski routes of Austria.
 
 **Format**: [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) in EPSG=31287.
 
 **Issuer**: [Österreichischer Alpenverein](https://www.alpenverein.at).
 
-**License**: Private license till 14. October 2026. From 15. October 2026 on published under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
+**License**: Private license till 30. October 2026. From 31. October 2026 on published under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/). Date changed from 15. October to 31. October due to delays.
 
 **Remarks**:
-- Holds also South Tyrol (This is not a political statement!)
+- Holds also South Tyrol and soon Bavaria (this is noa a political statement).
 
 ## 3. France (RegionCode=3)
 Holds raw ski routes of the Alps of France.
@@ -106,7 +106,7 @@ Holds raw ski routes of Germany (Bavaria).
 
 **Issuer**:  [Deutcher Alpenverein](https://www.alpenverein.de/).
 
-**License**: Private license till 14. October 2026. From 15. October 2026 on published under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
+**License**: Private license till 30. October 2026. From 31. October 2026 on published under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/). Date changed from 15. October to 31. October due to delays.
 
 Remarks:
 * Germany will be soon integrated into Austria. As preparative step the EPSG was already changed from 31468 to 31287.
