@@ -32,8 +32,8 @@ Holds raw ski routes of Switzerland and Lichtensteig.
 
 **Caution**: The data only contains the subset of ski routes that fulfill the quality requirements of Skitourenguru. For the complete dataset see [Ski-Routes](https://www.geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/33090bf2-e8e5-4776-9f64-00d7a6170808).
 
-## 2. Austria, South-Tyrol, Bavaria (soon) (RegionCode=2)
-Holds raw ski routes of Austria.
+## 2. Austria, South-Tyrol, 'Bavaria' (RegionCode=2)
+Holds raw ski routes of Austria, South Tyrol and soon Bavaria.
 
 **Format**: [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) in EPSG=31287.
 
