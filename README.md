@@ -61,7 +61,6 @@ Individual licensing agreements may be arranged upon request.
 Contact: Wolfgang Warmuth (Project Management, Österreichischer Alpenverein),  wolfgang.warmuth@alpenverein.at
 
 **Remarks**:
-- Holds also South Tyrol and soon Bavaria (this is not a political statement).
 - Scientific, tourism-related and commercial applications are welcome. If your project requires modifications or redistribution of derived datasets, please contact us for an individual licensing agreement.
 
 ## 3. France (RegionCode=3)
@@ -100,9 +99,6 @@ Holds raw ski routes of Italy.
 **Issuer**: [Skitourenguru GmbH](https://www.skitourenguru.com).
 
 **License**: Private license by Skitourenguru GmbH. Skitourenguru GmbH permits the usage of the data for private purpose. Aks the consent of Skitourenguru GmbH if you want to re-publish the data respectivly if you want to derive data from the raw data.
-
-**Remarks**: 
-- South Tyrol is contained in Austria (This is not a political statement!)
 
 **Help needed**
 Skitourenguru is looking for a person willing to complete the data set in Italy. The work can be partly paid.
