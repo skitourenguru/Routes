@@ -32,17 +32,36 @@ Holds raw ski routes of Switzerland and Lichtensteig.
 
 **Caution**: The data only contains the subset of ski routes that fulfill the quality requirements of Skitourenguru. For the complete dataset see [Ski-Routes](https://www.geocat.ch/geonetwork/srv/eng/catalog.search#/metadata/33090bf2-e8e5-4776-9f64-00d7a6170808).
 
-## 2. Austria (RegionCode=2)
-Holds raw ski routes of Austria.
+## 2. Austria, South-Tyrol, Bavaria (RegionCode=2)
+Holds raw ski routes of Austria, South Tyrol and Bavaria.
 
 **Format**: [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) in EPSG=31287.
 
-**Issuer**: [Österreichischer Alpenverein](https://www.alpenverein.at).
+**Issuer**: Österreichischer Alpenverein (ÖAV), Deutscher Alpenverein (DAV), Alpenverein Südtirol (AVS)
 
-**License**: Private license till 14. October 2026. From 15. October 2026 on published under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
+**License**: Private license till 30. October 2026. From 31. October 2026 on published under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/). Date changed from 15. October to 31. October due to delays.
+
+The license permits the use, reproduction, and redistribution of the dataset in its unmodified form, provided that appropriate attribution is given.
+
+Please use one of the following attributions:
+
+* © ÖAV, DAV, AVS – Ski Touring Routes for Austria, Germany and South Tyrol, CC BY-ND 4.0
+* © Österreichischer Alpenverein, Deutscher Alpenverein, Alpenverein Südtirol – Ski Touring Routes for Austria, Germany and South Tyrol, CC BY-ND 4.0
+
+Extended Usage Rights
+
+The publication or distribution of modified, enriched, corrected, or derived datasets is not covered by CC BY-ND 4.0. For use cases exceeding the scope of the standard license, including:
+
+* modification or enhancement of the dataset,
+* publication of derived datasets,
+* integration into maps, apps, or platforms using adapted datasets,
+* collaborative maintenance or synchronization processes,
+
+Individual licensing agreements may be arranged upon request.
+Contact: Wolfgang Warmuth (Project Management, Österreichischer Alpenverein),  wolfgang.warmuth@alpenverein.at
 
 **Remarks**:
-- Holds also South Tyrol (This is not a political statement!)
+- Scientific, tourism-related and commercial applications are welcome. If your project requires modifications or redistribution of derived datasets, please contact us for an individual licensing agreement.
 
 ## 3. France (RegionCode=3)
 Holds raw ski routes of the Alps of France.
@@ -81,9 +100,6 @@ Holds raw ski routes of Italy.
 
 **License**: Private license by Skitourenguru GmbH. Skitourenguru GmbH permits the usage of the data for private purpose. Aks the consent of Skitourenguru GmbH if you want to re-publish the data respectivly if you want to derive data from the raw data.
 
-**Remarks**: 
-- South Tyrol is contained in Austria (This is not a political statement!)
-
 **Help needed**
 Skitourenguru is looking for a person willing to complete the data set in Italy. The work can be partly paid.
 
@@ -99,19 +115,7 @@ Requiered skills:
 
 Contact [Skitourenguru](https://www.skitourenguru.com) under **about** if you want to collaborate.
 
-## 6. Germany (RegionCode=7)
-Holds raw ski routes of Germany (Bavaria).
-
-**Format**: [GeoJson](https://gdal.org/en/stable/drivers/vector/geojson.html) in EPSG=31287.
-
-**Issuer**:  [Deutcher Alpenverein](https://www.alpenverein.de/).
-
-**License**: Private license till 14. October 2026. From 15. October 2026 on published under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
-
-Remarks:
-* Germany will be soon integrated into Austria. As preparative step the EPSG was already changed from 31468 to 31287.
-
-## 7. Slovenia (RegionCode=8)
+## 6. Slovenia (RegionCode=8)
 Holds raw ski routes of Slovenia.
 
 **Help needed**
