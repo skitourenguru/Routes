@@ -39,7 +39,7 @@ Holds raw ski routes of Austria, South Tyrol and Bavaria.
 
 **Issuer**: Österreichischer Alpenverein (ÖAV), Deutscher Alpenverein (DAV), Alpenverein Südtirol (AVS)
 
-**License**: Private license till 30. October 2026. From 31. October 2026 on published under [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/). Date changed from 15. October to 31. October due to delays.
+**License**: [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
 
 The license permits the use, reproduction, and redistribution of the dataset in its unmodified form, provided that appropriate attribution is given.
 
@@ -352,12 +352,12 @@ npx eslint . --ext .js,.vue
 If you want to notify an error or a remark about the routes data described in chapter B, contact us depending on the region:
 1. France: randohiver@fondation-petzl.org
 2. Switzerland: andreas.eisenhut@sac-cas.ch
-3. Austria: [AlpenvereinAktiv](https://www.alpenvereinaktiv.com/de/kontakt.html)
-4. Germany: [AlpenvereinAktiv](https://www.alpenvereinaktiv.com/de/kontakt.html)
-5. Italy: [Skitourenguru](https://www.skitourenguru.com) under **about**.
+3. Austria: wolfgang.warmuth@alpenverein.at
+4. Germany: wolfgang.warmuth@alpenverein.at
+5. Italy: info@skitourenguru.com
 6. Slovenia: tbd
 
-For all other questions, contact [Skitourenguru](https://www.skitourenguru.com) under **about**.
+For all other questions, contact info@skitourenguru.com.
 
 
 # I: FAQ
