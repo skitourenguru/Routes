@@ -98,7 +98,7 @@ Holds raw ski routes of Italy.
 
 **Issuer**: [Skitourenguru GmbH](https://www.skitourenguru.com).
 
-**License**: Private license by Skitourenguru GmbH. Skitourenguru GmbH permits the usage of the data for private purpose. Aks the consent of Skitourenguru GmbH if you want to re-publish the data respectivly if you want to derive data from the raw data.
+**License**: Private license by Skitourenguru GmbH. Skitourenguru GmbH permits the usage of the data for private purpose. **Aks the consent of Skitourenguru GmbH if you want to re-publish the data respectivly if you want to derive data from the raw data.** Website operators displaying this route package without consent will be subject to an expensive cease-and-desist notice.
 
 **Help needed**
 Skitourenguru is looking for a person willing to complete the data set in Italy. The work can be partly paid.
